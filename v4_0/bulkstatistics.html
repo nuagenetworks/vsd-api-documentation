@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BulkStatistics API Reference 4.0</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbarmain">
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbarmain">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 4.0</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a data-id="intro" href="#intro">Top</a></li>
+                    <li><a data-id="overview" href="#overview">Overview</a></li>
+                    <li><a data-id="apiresources" href="#apiresources">API Resource</a></li>
+                    <li><a data-id="parents" href="#parents">Parents</a></li>
+                    <li><a data-id="children" href="#children">Children</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            
+                            <li><a data-id="attr_data" href="#attr_data" class="fixed-text">data</a></li>
+                            
+                            <li><a data-id="attr_endTime" href="#attr_endTime" class="fixed-text">endTime</a></li>
+                            
+                            <li><a data-id="attr_numberOfDataPoints" href="#attr_numberOfDataPoints" class="fixed-text">numberOfDataPoints</a></li>
+                            
+                            <li><a data-id="attr_startTime" href="#attr_startTime" class="fixed-text">startTime</a></li>
+                            
+                            <li><a data-id="attr_version" href="#attr_version" class="fixed-text">version</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group dropdown">
+                        <input type="text" class="form-control" placeholder="Search" id="searchfield">
+                        <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+    <div class="container">
+
+        <section id="intro">
+            <h2>BulkStatistics</h2>
+            <p>Retrieves the statistics for a particular Entity and its immediate child entity.</p>
+        </section>
+
+        <section id="overview">
+            <h3>Overview</h3>
+                <table class="width: 100%">
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_data" title="Map&lt;TCAMetric, Long[]&gt; TCAMetric is an Enum. Possible values are packets_in, bytes_in, packets_in_dropped, packets_in_errors, packets_out, bytes_out, packets_out_dropped, packeMaprs, packets_dropped_rate_limit">data</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_list">list
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_endTime" title="End time for the statistics to be retrieved">endTime</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_numberOfDataPoints" title="Number of data points between start time and end time">numberOfDataPoints</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_startTime" title="Start time for the statistics to be retrieved">startTime</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_version" title="Version of this Sequence number.">version</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                </table>
+        </section>
+
+        <section id="apiresources">
+            <h3>API Resource</h3>
+            
+    
+    
+    
+
+    
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            <span class="fixed-text">/bulkstatistics/<span class="text-muted">id</span></a>
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+        </div>
+    </div>
+    
+    
+    
+        </section>
+
+        <section id="parents">
+            <h3>Parents</h3>
+            
+    
+    
+    
+
+    
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="patnatpool.html">patnatpools</a>/<span class="text-muted">id</span>/bulkstatistics</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    
+    
+        </section>
+
+        <section id="children">
+            <h3>Children</h3>
+            
+    
+    
+    
+
+    
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/bulkstatistics/<span class="text-muted">id</span>/<a href="metadata.html">metadatas</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/bulkstatistics/<span class="text-muted">id</span>/<a href="globalmetadata.html">globalmetadatas</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
+    
+    
+        </section>
+
+        <section id="attributes">
+            <h3>Attributes documentation</h3>
+            
+            <section id="attr_data" class="filterable" data-filter-keyword="data" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>data</b>
+                        <span class="type_list fixed-text">list</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Map&lt;TCAMetric, Long[]&gt; TCAMetric is an Enum. Possible values are packets_in, bytes_in, packets_in_dropped, packets_in_errors, packets_out, bytes_out, packets_out_dropped, packeMaprs, packets_dropped_rate_limit</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">data</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_endTime" class="filterable" data-filter-keyword="endTime" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>endTime</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>End time for the statistics to be retrieved</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">endTime</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_numberOfDataPoints" class="filterable" data-filter-keyword="numberOfDataPoints" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>numberOfDataPoints</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Number of data points between start time and end time</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">numberOfDataPoints</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_startTime" class="filterable" data-filter-keyword="startTime" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>startTime</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Start time for the statistics to be retrieved</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">startTime</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_version" class="filterable" data-filter-keyword="version" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>version</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Version of this Sequence number.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">version</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            initialize_search("attr_");
+            initialize_scrollspy();
+        });
+    </script>
+
+</body>
+</html>

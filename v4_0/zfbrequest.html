@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ZFBRequest API Reference 4.0</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbarmain">
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbarmain">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 4.0</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a data-id="intro" href="#intro">Top</a></li>
+                    <li><a data-id="overview" href="#overview">Overview</a></li>
+                    <li><a data-id="apiresources" href="#apiresources">API Resource</a></li>
+                    <li><a data-id="parents" href="#parents">Parents</a></li>
+                    <li><a data-id="children" href="#children">Children</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            
+                            <li><a data-id="attr_associatedEnterpriseID" href="#attr_associatedEnterpriseID" class="fixed-text">associatedEnterpriseID</a></li>
+                            
+                            <li><a data-id="attr_associatedEnterpriseName" href="#attr_associatedEnterpriseName" class="fixed-text">associatedEnterpriseName</a></li>
+                            
+                            <li><a data-id="attr_associatedNSGatewayID" href="#attr_associatedNSGatewayID" class="fixed-text">associatedNSGatewayID</a></li>
+                            
+                            <li><a data-id="attr_associatedNSGatewayName" href="#attr_associatedNSGatewayName" class="fixed-text">associatedNSGatewayName</a></li>
+                            
+                            <li><a data-id="attr_CPUType" href="#attr_CPUType" class="fixed-text">CPUType</a></li>
+                            
+                            <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
+                            
+                            <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
+                            
+                            <li><a data-id="attr_family" href="#attr_family" class="fixed-text">family</a></li>
+                            
+                            <li><a data-id="attr_hostname" href="#attr_hostname" class="fixed-text">hostname</a></li>
+                            
+                            <li><a data-id="attr_IPAddress" href="#attr_IPAddress" class="fixed-text">IPAddress</a></li>
+                            
+                            <li><a data-id="attr_lastConnectedTime" href="#attr_lastConnectedTime" class="fixed-text">lastConnectedTime</a></li>
+                            
+                            <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
+                            
+                            <li><a data-id="attr_MACAddress" href="#attr_MACAddress" class="fixed-text">MACAddress</a></li>
+                            
+                            <li><a data-id="attr_NSGVersion" href="#attr_NSGVersion" class="fixed-text">NSGVersion</a></li>
+                            
+                            <li><a data-id="attr_serialNumber" href="#attr_serialNumber" class="fixed-text">serialNumber</a></li>
+                            
+                            <li><a data-id="attr_SKU" href="#attr_SKU" class="fixed-text">SKU</a></li>
+                            
+                            <li><a data-id="attr_statusString" href="#attr_statusString" class="fixed-text">statusString</a></li>
+                            
+                            <li><a data-id="attr_UUID" href="#attr_UUID" class="fixed-text">UUID</a></li>
+                            
+                            <li><a data-id="attr_ZFBApprovalStatus" href="#attr_ZFBApprovalStatus" class="fixed-text">ZFBApprovalStatus</a></li>
+                            
+                            <li><a data-id="attr_ZFBBootstrapEnabled" href="#attr_ZFBBootstrapEnabled" class="fixed-text">ZFBBootstrapEnabled</a></li>
+                            
+                            <li><a data-id="attr_ZFBInfo" href="#attr_ZFBInfo" class="fixed-text">ZFBInfo</a></li>
+                            
+                            <li><a data-id="attr_ZFBRequestRetryTimer" href="#attr_ZFBRequestRetryTimer" class="fixed-text">ZFBRequestRetryTimer</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group dropdown">
+                        <input type="text" class="form-control" placeholder="Search" id="searchfield">
+                        <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+    <div class="container">
+
+        <section id="intro">
+            <h2>ZFBRequest</h2>
+            <p>A ZFB Request from an NSG</p>
+        </section>
+
+        <section id="overview">
+            <h3>Overview</h3>
+                <table class="width: 100%">
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedEnterpriseID" title="the ID of the associated enteprise">associatedEnterpriseID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedEnterpriseName" title="name of the associated Enterprise">associatedEnterpriseName</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedNSGatewayID" title="ID of the assigned NSG">associatedNSGatewayID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedNSGatewayName" title="name of the associated NSG">associatedNSGatewayName</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_CPUType" title="Processor Type">CPUType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_entityScope" title="Specify if scope of entity is Data center or Enterprise level">entityScope</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (ENTERPRISE | GLOBAL)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_externalID" title="External object ID. Used for integration with third party systems">externalID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+     <span class="label label-warning"> locally unique </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_family" title="NSG Type">family</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_hostname" title="hostname of the NSG">hostname</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_IPAddress" title="IP Address of the NSG">IPAddress</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_lastConnectedTime" title="the time in which the last GET was made from the NSG">lastConnectedTime</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_time">time
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_lastUpdatedBy" title="ID of the user who last updated the object.">lastUpdatedBy</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_MACAddress" title="MAC Address fo the NSG Port1 interface">MACAddress</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_NSGVersion" title="The Nuage NSG Version">NSGVersion</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_serialNumber" title="The NSG's Serial Number">serialNumber</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_SKU" title="The part number of the NSG">SKU</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_statusString" title="Extra status info">statusString</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_UUID" title="Redhat UUID">UUID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_ZFBApprovalStatus" title="the status of the request">ZFBApprovalStatus</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (APPROVED | ASSIGNED | DENIED | UNASSIGNED)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_ZFBBootstrapEnabled" title="whether the NSG should bootstrap, or just simulate bootstrap. Set from System Config">ZFBBootstrapEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_ZFBInfo" title="The Base64 encoded JSON string of ZFB Attributes">ZFBInfo</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_ZFBRequestRetryTimer" title="ZFB Request retry timer on NSG. Set from System Config">ZFBRequestRetryTimer</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                </table>
+        </section>
+
+        <section id="apiresources">
+            <h3>API Resource</h3>
+            
+    
+    
+    
+
+    
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            <span class="fixed-text">/zfbrequests/<span class="text-muted">id</span></a>
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-danger">delete</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
+    
+    
+        </section>
+
+        <section id="parents">
+            <h3>Parents</h3>
+            
+    
+    
+    
+
+    
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/zfbrequests</a>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/zfbrequests</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    
+    
+        </section>
+
+        <section id="children">
+            <h3>Children</h3>
+            
+    
+    
+    
+
+    
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/zfbrequests/<span class="text-muted">id</span>/<a href="metadata.html">metadatas</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/zfbrequests/<span class="text-muted">id</span>/<a href="globalmetadata.html">globalmetadatas</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/zfbrequests/<span class="text-muted">id</span>/<a href="job.html">jobs</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    
+    
+        </section>
+
+        <section id="attributes">
+            <h3>Attributes documentation</h3>
+            
+            <section id="attr_associatedEnterpriseID" class="filterable" data-filter-keyword="associatedEnterpriseID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedEnterpriseID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>the ID of the associated enteprise</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedEnterpriseID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedEnterpriseName" class="filterable" data-filter-keyword="associatedEnterpriseName" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedEnterpriseName</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>name of the associated Enterprise</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedEnterpriseName</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedNSGatewayID" class="filterable" data-filter-keyword="associatedNSGatewayID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedNSGatewayID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the assigned NSG</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedNSGatewayID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedNSGatewayName" class="filterable" data-filter-keyword="associatedNSGatewayName" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedNSGatewayName</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>name of the associated NSG</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedNSGatewayName</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_CPUType" class="filterable" data-filter-keyword="CPUType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>CPUType</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Processor Type</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">CPUType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_entityScope" class="filterable" data-filter-keyword="entityScope" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>entityScope</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Specify if scope of entity is Data center or Enterprise level</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ENTERPRISE, GLOBAL</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">entityScope</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_externalID" class="filterable" data-filter-keyword="externalID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>externalID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+     <span class="label label-warning"> locally unique </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>External object ID. Used for integration with third party systems</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">externalID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_family" class="filterable" data-filter-keyword="family" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>family</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>NSG Type</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">family</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_hostname" class="filterable" data-filter-keyword="hostname" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>hostname</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>hostname of the NSG</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">hostname</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_IPAddress" class="filterable" data-filter-keyword="IPAddress" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>IPAddress</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>IP Address of the NSG</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">IPAddress</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_lastConnectedTime" class="filterable" data-filter-keyword="lastConnectedTime" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>lastConnectedTime</b>
+                        <span class="type_time fixed-text">time</span>
+                        
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>the time in which the last GET was made from the NSG</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">lastConnectedTime</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_lastUpdatedBy" class="filterable" data-filter-keyword="lastUpdatedBy" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>lastUpdatedBy</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the user who last updated the object.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">lastUpdatedBy</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_MACAddress" class="filterable" data-filter-keyword="MACAddress" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>MACAddress</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>MAC Address fo the NSG Port1 interface</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">MACAddress</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_NSGVersion" class="filterable" data-filter-keyword="NSGVersion" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>NSGVersion</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The Nuage NSG Version</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">NSGVersion</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_serialNumber" class="filterable" data-filter-keyword="serialNumber" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>serialNumber</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The NSG's Serial Number</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">serialNumber</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_SKU" class="filterable" data-filter-keyword="SKU" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>SKU</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The part number of the NSG</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">SKU</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_statusString" class="filterable" data-filter-keyword="statusString" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>statusString</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Extra status info</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">statusString</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_UUID" class="filterable" data-filter-keyword="UUID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>UUID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Redhat UUID</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">UUID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_ZFBApprovalStatus" class="filterable" data-filter-keyword="ZFBApprovalStatus" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>ZFBApprovalStatus</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>the status of the request</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">APPROVED, ASSIGNED, DENIED, UNASSIGNED</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ZFBApprovalStatus</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_ZFBBootstrapEnabled" class="filterable" data-filter-keyword="ZFBBootstrapEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>ZFBBootstrapEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>whether the NSG should bootstrap, or just simulate bootstrap. Set from System Config</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ZFBBootstrapEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_ZFBInfo" class="filterable" data-filter-keyword="ZFBInfo" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>ZFBInfo</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The Base64 encoded JSON string of ZFB Attributes</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ZFBInfo</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_ZFBRequestRetryTimer" class="filterable" data-filter-keyword="ZFBRequestRetryTimer" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>ZFBRequestRetryTimer</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ZFB Request retry timer on NSG. Set from System Config</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ZFBRequestRetryTimer</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            initialize_search("attr_");
+            initialize_scrollspy();
+        });
+    </script>
+
+</body>
+</html>
