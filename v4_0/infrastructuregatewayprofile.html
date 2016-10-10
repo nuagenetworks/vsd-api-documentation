@@ -34,6 +34,10 @@
                             
                             <li><a data-id="attr_controllerLessEnabled" href="#attr_controllerLessEnabled" class="fixed-text">controllerLessEnabled</a></li>
                             
+                            <li><a data-id="attr_controllerLessForwardingMode" href="#attr_controllerLessForwardingMode" class="fixed-text">controllerLessForwardingMode</a></li>
+                            
+                            <li><a data-id="attr_controllerLessRemoteDuration" href="#attr_controllerLessRemoteDuration" class="fixed-text">controllerLessRemoteDuration</a></li>
+                            
                             <li><a data-id="attr_datapathSyncTimeout" href="#attr_datapathSyncTimeout" class="fixed-text">datapathSyncTimeout</a></li>
                             
                             <li><a data-id="attr_deadTimer" href="#attr_deadTimer" class="fixed-text">deadTimer</a></li>
@@ -115,7 +119,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_controllerLessDuration" title="Duration for a controller-less operation (in ISO-duration format).">controllerLessDuration</a>
+                            <a href="#attr_controllerLessDuration" title="Duration for a controller-less local operation (in ISO-duration format).">controllerLessDuration</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -156,9 +160,82 @@
     
     
     
+     <span class="label label-default"> deprecated </span>&nbsp;
     
     
     
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_controllerLessForwardingMode" title="The forwarding mode to use for controllerLess operations">controllerLessForwardingMode</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (DISABLED | LOCAL_AND_REMOTE | LOCAL_ONLY)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_controllerLessRemoteDuration" title="Duration for a controller-less remote operation (in ISO-duration format).">controllerLessRemoteDuration</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -993,7 +1070,7 @@ Because the years and month are units that vary in length, for the time being th
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Duration for a controller-less operation (in ISO-duration format).</p>
+                        <p>Duration for a controller-less local operation (in ISO-duration format).</p>
 
                         <hr/>
 
@@ -1004,7 +1081,7 @@ Because the years and month are units that vary in length, for the time being th
                             
 
                             
-                            <span class="small"><b>Default value: </b></span><span class="fixed-text">PT2H</span><br/>
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">PT7D</span><br/>
                             
 
                             
@@ -1033,6 +1110,8 @@ Because the years and month are units that vary in length, for the time being th
                         
     
     
+    
+     <span class="label label-default"> deprecated </span>&nbsp;
     
     
     
@@ -1067,6 +1146,116 @@ Because the years and month are units that vary in length, for the time being th
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">controllerLessEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_controllerLessForwardingMode" class="filterable" data-filter-keyword="controllerLessForwardingMode" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>controllerLessForwardingMode</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The forwarding mode to use for controllerLess operations</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DISABLED, LOCAL_AND_REMOTE, LOCAL_ONLY</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">DISABLED</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">controllerLessForwardingMode</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_controllerLessRemoteDuration" class="filterable" data-filter-keyword="controllerLessRemoteDuration" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>controllerLessRemoteDuration</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Duration for a controller-less remote operation (in ISO-duration format).</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">PT7D</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">controllerLessRemoteDuration</span>
                         </p>
                     </div>
                 </div>
