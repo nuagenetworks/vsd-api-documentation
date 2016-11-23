@@ -32,9 +32,15 @@
                             
                             <li><a data-id="attr_address" href="#attr_address" class="fixed-text">address</a></li>
                             
+                            <li><a data-id="attr_advertisementCriteria" href="#attr_advertisementCriteria" class="fixed-text">advertisementCriteria</a></li>
+                            
                             <li><a data-id="attr_associatedVSCProfileID" href="#attr_associatedVSCProfileID" class="fixed-text">associatedVSCProfileID</a></li>
                             
+                            <li><a data-id="attr_assocUnderlayID" href="#attr_assocUnderlayID" class="fixed-text">assocUnderlayID</a></li>
+                            
                             <li><a data-id="attr_DNSAddress" href="#attr_DNSAddress" class="fixed-text">DNSAddress</a></li>
+                            
+                            <li><a data-id="attr_gateway" href="#attr_gateway" class="fixed-text">gateway</a></li>
                             
                             <li><a data-id="attr_mode" href="#attr_mode" class="fixed-text">mode</a></li>
                             
@@ -43,6 +49,8 @@
                             <li><a data-id="attr_password" href="#attr_password" class="fixed-text">password</a></li>
                             
                             <li><a data-id="attr_role" href="#attr_role" class="fixed-text">role</a></li>
+                            
+                            <li><a data-id="attr_uplinkID" href="#attr_uplinkID" class="fixed-text">uplinkID</a></li>
                             
                             <li><a data-id="attr_username" href="#attr_username" class="fixed-text">username</a></li>
                             
@@ -124,6 +132,47 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_advertisementCriteria" title="Advertisement Criteria for Traffic Flow">advertisementCriteria</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (CONTROL_SESSION | GATEWAY_PING | OPERATIONAL_LINK)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_associatedVSCProfileID" title="The ID of the infrastructure VSC profile this is associated with this instance of a vlan or vlan template.">associatedVSCProfileID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -154,7 +203,67 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_assocUnderlayID" title="UUID of the underlay associated to the uplink.">assocUnderlayID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_DNSAddress" title="DNS server address">DNSAddress</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_gateway" title="IP address of the gateway bound to the port">gateway</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -307,7 +416,39 @@
     
     
     
-     (PRIMARY | SECONDARY | TERTIARY | UNKNOWN)
+    
+    
+     (NONE | PRIMARY | SECONDARY | TERTIARY | UNKNOWN)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_uplinkID" title="ID that unqiuely identifies the uplink. ">uplinkID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -486,7 +627,37 @@
     
 
     
-    <p>This object has no child.</p>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/uplinkconnections/<span class="text-muted">id</span>/<a href="underlay.html">underlays</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
     
     
         </section>
@@ -549,6 +720,59 @@
                 </div>
             </section>
             
+            <section id="attr_advertisementCriteria" class="filterable" data-filter-keyword="advertisementCriteria" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>advertisementCriteria</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Advertisement Criteria for Traffic Flow</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">CONTROL_SESSION, GATEWAY_PING, OPERATIONAL_LINK</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">advertisementCriteria</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_associatedVSCProfileID" class="filterable" data-filter-keyword="associatedVSCProfileID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -602,6 +826,59 @@
                 </div>
             </section>
             
+            <section id="attr_assocUnderlayID" class="filterable" data-filter-keyword="assocUnderlayID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>assocUnderlayID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>UUID of the underlay associated to the uplink.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">assocUnderlayID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_DNSAddress" class="filterable" data-filter-keyword="DNSAddress" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -650,6 +927,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">DNSAddress</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_gateway" class="filterable" data-filter-keyword="gateway" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>gateway</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>IP address of the gateway bound to the port</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">gateway</span>
                         </p>
                     </div>
                 </div>
@@ -846,7 +1176,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">PRIMARY, SECONDARY, TERTIARY, UNKNOWN</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">NONE, PRIMARY, SECONDARY, TERTIARY, UNKNOWN</span><br/>
                             
 
                             
@@ -866,6 +1196,63 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">role</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_uplinkID" class="filterable" data-filter-keyword="uplinkID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>uplinkID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID that unqiuely identifies the uplink. </p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">65535</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">uplinkID</span>
                         </p>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>BRConnection API Reference 4.0</title>
+    <title>NSGGroup API Reference 4.0</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -30,19 +30,13 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             
-                            <li><a data-id="attr_address" href="#attr_address" class="fixed-text">address</a></li>
+                            <li><a data-id="attr_associatedNSGs" href="#attr_associatedNSGs" class="fixed-text">associatedNSGs</a></li>
                             
-                            <li><a data-id="attr_advertisementCriteria" href="#attr_advertisementCriteria" class="fixed-text">advertisementCriteria</a></li>
+                            <li><a data-id="attr_description " href="#attr_description " class="fixed-text">description </a></li>
                             
-                            <li><a data-id="attr_DNSAddress" href="#attr_DNSAddress" class="fixed-text">DNSAddress</a></li>
+                            <li><a data-id="attr_id" href="#attr_id" class="fixed-text">id</a></li>
                             
-                            <li><a data-id="attr_gateway" href="#attr_gateway" class="fixed-text">gateway</a></li>
-                            
-                            <li><a data-id="attr_mode" href="#attr_mode" class="fixed-text">mode</a></li>
-                            
-                            <li><a data-id="attr_netmask" href="#attr_netmask" class="fixed-text">netmask</a></li>
-                            
-                            <li><a data-id="attr_uplinkID" href="#attr_uplinkID" class="fixed-text">uplinkID</a></li>
+                            <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
                             
                         </ul>
                     </li>
@@ -73,7 +67,7 @@
     <div class="container">
 
         <section id="intro">
-            <h2>BRConnection</h2>
+            <h2>NSGGroup</h2>
             <p>None</p>
         </section>
 
@@ -83,7 +77,37 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_address" title="Static IP address for the VLAN">address</a>
+                            <a href="#attr_associatedNSGs" title="List of NSGs that belong to NSG Group">associatedNSGs</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_list">list
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_description " title="Description of the NSG Group">description </a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -113,48 +137,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_advertisementCriteria" title="Advertisement Criteria for Traffic Flow">advertisementCriteria</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (GATEWAY_PING | LINK_BASED | OPENFLOW)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_DNSAddress" title="DNS Address for the vlan">DNSAddress</a>
+                            <a href="#attr_id" title="UUID of the NSG Group">id</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -184,107 +167,10 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_gateway" title="IP address of the gateway bound to the VLAN.">gateway</a>
+                            <a href="#attr_name" title="Name of the NSG Group">name</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_mode" title="Connection mode: Static.">mode</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (Static)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_netmask" title="network mask">netmask</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_uplinkID" title="Internally generated ID in the range that idenitifies the uplink within the cotext of NSG">uplinkID</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_integer">integer
     
     
     
@@ -325,7 +211,7 @@
         <div class="col-xs-7">
 
             
-            <span class="fixed-text">/brconnections/<span class="text-muted">id</span></a>
+            <span class="fixed-text">/nsggroups/<span class="text-muted">id</span></a>
             
         </div>
         <div class="col-xs-5 text-right">
@@ -372,7 +258,7 @@
 
             
             
-            <span class="fixed-text">/<a href="vlan.html">vlans</a>/<span class="text-muted">id</span>/brconnections</span>
+            <span class="fixed-text">/nsggroups</a>
             
 
             
@@ -401,7 +287,7 @@
 
             
             
-            <span class="fixed-text">/<a href="vlantemplate.html">vlantemplates</a>/<span class="text-muted">id</span>/brconnections</span>
+            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/nsggroups</span>
             
 
             
@@ -437,7 +323,67 @@
     
 
     
-    <p>This object has no child.</p>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/nsggroups/<span class="text-muted">id</span>/<a href="nsgateway.html">nsgateways</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/nsggroups/<span class="text-muted">id</span>/<a href="ducgroupbinding.html">ducgroupbindings</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
     
     
         </section>
@@ -445,10 +391,61 @@
         <section id="attributes">
             <h3>Attributes documentation</h3>
             
-            <section id="attr_address" class="filterable" data-filter-keyword="address" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_associatedNSGs" class="filterable" data-filter-keyword="associatedNSGs" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>address</b>
+                        <b>associatedNSGs</b>
+                        <span class="type_list fixed-text">list</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>List of NSGs that belong to NSG Group</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedNSGs</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_description " class="filterable" data-filter-keyword="description " style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>description </b>
                         <span class="type_string fixed-text">string</span>
                         
     
@@ -468,7 +465,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Static IP address for the VLAN</p>
+                        <p>Description of the NSG Group</p>
 
                         <hr/>
 
@@ -492,69 +489,16 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">address</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">description </span>
                         </p>
                     </div>
                 </div>
             </section>
             
-            <section id="attr_advertisementCriteria" class="filterable" data-filter-keyword="advertisementCriteria" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_id" class="filterable" data-filter-keyword="id" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>advertisementCriteria</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Advertisement Criteria for Traffic Flow</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">GATEWAY_PING, LINK_BASED, OPENFLOW</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">advertisementCriteria</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_DNSAddress" class="filterable" data-filter-keyword="DNSAddress" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>DNSAddress</b>
+                        <b>id</b>
                         <span class="type_string fixed-text">string</span>
                         
     
@@ -574,7 +518,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>DNS Address for the vlan</p>
+                        <p>UUID of the NSG Group</p>
 
                         <hr/>
 
@@ -598,16 +542,16 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">DNSAddress</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">id</span>
                         </p>
                     </div>
                 </div>
             </section>
             
-            <section id="attr_gateway" class="filterable" data-filter-keyword="gateway" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_name" class="filterable" data-filter-keyword="name" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>gateway</b>
+                        <b>name</b>
                         <span class="type_string fixed-text">string</span>
                         
     
@@ -627,7 +571,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>IP address of the gateway bound to the VLAN.</p>
+                        <p>Name of the NSG Group</p>
 
                         <hr/>
 
@@ -651,168 +595,7 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">gateway</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_mode" class="filterable" data-filter-keyword="mode" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>mode</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Connection mode: Static.</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">Static</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">mode</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_netmask" class="filterable" data-filter-keyword="netmask" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>netmask</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>network mask</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">netmask</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_uplinkID" class="filterable" data-filter-keyword="uplinkID" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>uplinkID</b>
-                        <span class="type_integer fixed-text">integer</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Internally generated ID in the range that idenitifies the uplink within the cotext of NSG</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1</span><br/>
-                            
-
-                            
-                            <span class="small"><b>Max value: </b></span><span class="fixed-text">65535</span><br/>
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">uplinkID</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">name</span>
                         </p>
                     </div>
                 </div>

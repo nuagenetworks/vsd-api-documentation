@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>BRConnection API Reference 4.0</title>
+    <title>DUCGroupBinding API Reference 4.0</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -30,19 +30,13 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             
-                            <li><a data-id="attr_address" href="#attr_address" class="fixed-text">address</a></li>
+                            <li><a data-id="attr_associatedDUCGroupID" href="#attr_associatedDUCGroupID" class="fixed-text">associatedDUCGroupID</a></li>
                             
-                            <li><a data-id="attr_advertisementCriteria" href="#attr_advertisementCriteria" class="fixed-text">advertisementCriteria</a></li>
+                            <li><a data-id="attr_id" href="#attr_id" class="fixed-text">id</a></li>
                             
-                            <li><a data-id="attr_DNSAddress" href="#attr_DNSAddress" class="fixed-text">DNSAddress</a></li>
+                            <li><a data-id="attr_oneWayDelay" href="#attr_oneWayDelay" class="fixed-text">oneWayDelay</a></li>
                             
-                            <li><a data-id="attr_gateway" href="#attr_gateway" class="fixed-text">gateway</a></li>
-                            
-                            <li><a data-id="attr_mode" href="#attr_mode" class="fixed-text">mode</a></li>
-                            
-                            <li><a data-id="attr_netmask" href="#attr_netmask" class="fixed-text">netmask</a></li>
-                            
-                            <li><a data-id="attr_uplinkID" href="#attr_uplinkID" class="fixed-text">uplinkID</a></li>
+                            <li><a data-id="attr_priority" href="#attr_priority" class="fixed-text">priority</a></li>
                             
                         </ul>
                     </li>
@@ -73,7 +67,7 @@
     <div class="container">
 
         <section id="intro">
-            <h2>BRConnection</h2>
+            <h2>DUCGroupBinding</h2>
             <p>None</p>
         </section>
 
@@ -83,7 +77,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_address" title="Static IP address for the VLAN">address</a>
+                            <a href="#attr_associatedDUCGroupID" title="Identification of the UBR Group associated to this group binding instance.">associatedDUCGroupID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -113,48 +107,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_advertisementCriteria" title="Advertisement Criteria for Traffic Flow">advertisementCriteria</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (GATEWAY_PING | LINK_BASED | OPENFLOW)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_DNSAddress" title="DNS Address for the vlan">DNSAddress</a>
+                            <a href="#attr_id" title="VSD UUID of the UBR Group Binding instance.">id</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -184,10 +137,10 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_gateway" title="IP address of the gateway bound to the VLAN.">gateway</a>
+                            <a href="#attr_oneWayDelay" title="SLA delay value in milliseconds that is tolerated between NSG instances and NSG-UBR (DUC) instances being bound through this binding instance.  If delay is to be ignored, then the value of -1 is to be entered.  Value 0 is not permitted.">oneWayDelay</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
+                            <span class="type_integer">integer
     
     
     
@@ -214,74 +167,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_mode" title="Connection mode: Static.">mode</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (Static)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_netmask" title="network mask">netmask</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_uplinkID" title="Internally generated ID in the range that idenitifies the uplink within the cotext of NSG">uplinkID</a>
+                            <a href="#attr_priority" title="The priority for NSG Group to UBR Group relationship.">priority</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -325,7 +211,7 @@
         <div class="col-xs-7">
 
             
-            <span class="fixed-text">/brconnections/<span class="text-muted">id</span></a>
+            <span class="fixed-text">/ducgroupbindings/<span class="text-muted">id</span></a>
             
         </div>
         <div class="col-xs-5 text-right">
@@ -372,36 +258,7 @@
 
             
             
-            <span class="fixed-text">/<a href="vlan.html">vlans</a>/<span class="text-muted">id</span>/brconnections</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="vlantemplate.html">vlantemplates</a>/<span class="text-muted">id</span>/brconnections</span>
+            <span class="fixed-text">/<a href="nsggroup.html">nsggroups</a>/<span class="text-muted">id</span>/ducgroupbindings</span>
             
 
             
@@ -445,10 +302,10 @@
         <section id="attributes">
             <h3>Attributes documentation</h3>
             
-            <section id="attr_address" class="filterable" data-filter-keyword="address" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_associatedDUCGroupID" class="filterable" data-filter-keyword="associatedDUCGroupID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>address</b>
+                        <b>associatedDUCGroupID</b>
                         <span class="type_string fixed-text">string</span>
                         
     
@@ -468,7 +325,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Static IP address for the VLAN</p>
+                        <p>Identification of the UBR Group associated to this group binding instance.</p>
 
                         <hr/>
 
@@ -492,69 +349,16 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">address</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedDUCGroupID</span>
                         </p>
                     </div>
                 </div>
             </section>
             
-            <section id="attr_advertisementCriteria" class="filterable" data-filter-keyword="advertisementCriteria" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_id" class="filterable" data-filter-keyword="id" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>advertisementCriteria</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Advertisement Criteria for Traffic Flow</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">GATEWAY_PING, LINK_BASED, OPENFLOW</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">advertisementCriteria</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_DNSAddress" class="filterable" data-filter-keyword="DNSAddress" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>DNSAddress</b>
+                        <b>id</b>
                         <span class="type_string fixed-text">string</span>
                         
     
@@ -574,7 +378,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>DNS Address for the vlan</p>
+                        <p>VSD UUID of the UBR Group Binding instance.</p>
 
                         <hr/>
 
@@ -598,175 +402,16 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">DNSAddress</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">id</span>
                         </p>
                     </div>
                 </div>
             </section>
             
-            <section id="attr_gateway" class="filterable" data-filter-keyword="gateway" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_oneWayDelay" class="filterable" data-filter-keyword="oneWayDelay" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>gateway</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>IP address of the gateway bound to the VLAN.</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">gateway</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_mode" class="filterable" data-filter-keyword="mode" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>mode</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Connection mode: Static.</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">Static</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">mode</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_netmask" class="filterable" data-filter-keyword="netmask" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>netmask</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>network mask</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">netmask</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_uplinkID" class="filterable" data-filter-keyword="uplinkID" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>uplinkID</b>
+                        <b>oneWayDelay</b>
                         <span class="type_integer fixed-text">integer</span>
                         
     
@@ -786,7 +431,64 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Internally generated ID in the range that idenitifies the uplink within the cotext of NSG</p>
+                        <p>SLA delay value in milliseconds that is tolerated between NSG instances and NSG-UBR (DUC) instances being bound through this binding instance.  If delay is to be ignored, then the value of -1 is to be entered.  Value 0 is not permitted.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">50</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">9999</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">oneWayDelay</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_priority" class="filterable" data-filter-keyword="priority" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>priority</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The priority for NSG Group to UBR Group relationship.</p>
 
                         <hr/>
 
@@ -809,10 +511,10 @@
                             
 
                             
-                            <span class="small"><b>Max value: </b></span><span class="fixed-text">65535</span><br/>
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">65335</span><br/>
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">uplinkID</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">priority</span>
                         </p>
                     </div>
                 </div>

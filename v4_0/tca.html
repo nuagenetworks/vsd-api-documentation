@@ -30,7 +30,15 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             
+                            <li><a data-id="attr_action" href="#attr_action" class="fixed-text">action</a></li>
+                            
+                            <li><a data-id="attr_count" href="#attr_count" class="fixed-text">count</a></li>
+                            
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
+                            
+                            <li><a data-id="attr_disable" href="#attr_disable" class="fixed-text">disable</a></li>
+                            
+                            <li><a data-id="attr_displayStatus" href="#attr_displayStatus" class="fixed-text">displayStatus</a></li>
                             
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
@@ -44,9 +52,13 @@
                             
                             <li><a data-id="attr_period" href="#attr_period" class="fixed-text">period</a></li>
                             
-                            <li><a data-id="attr_scope" href="#attr_scope" class="fixed-text">scope</a></li>
+                            <li><a data-id="attr_status" href="#attr_status" class="fixed-text">status</a></li>
+                            
+                            <li><a data-id="attr_targetPolicyGroupID" href="#attr_targetPolicyGroupID" class="fixed-text">targetPolicyGroupID</a></li>
                             
                             <li><a data-id="attr_threshold" href="#attr_threshold" class="fixed-text">threshold</a></li>
+                            
+                            <li><a data-id="attr_throttleTime" href="#attr_throttleTime" class="fixed-text">throttleTime</a></li>
                             
                             <li><a data-id="attr_type" href="#attr_type" class="fixed-text">type</a></li>
                             
@@ -91,6 +103,69 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_action" title="Action to be taken when TCA is fired - Alert or PolicyGroupChange">action</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (ALERT | ALERT_POLICYGROUPCHANGE)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+     <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_count" title="Count of the attempts by maintenanace thread to create/update watcher">count</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_description" title="Desription of the TCA">description</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -110,6 +185,58 @@
     
     
      <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_disable" title="This flag is used to indicate whether the watch(TCA) is enabled/disabled">disable</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_displayStatus" title="Explanation of the TCA status">displayStatus</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
     
     
     
@@ -268,7 +395,13 @@
     
     
     
-     (ADDRESS_MAP_EGRESS_BYTE_CNT | ADDRESS_MAP_EGRESS_PKT_CNT | ADDRESS_MAP_INGRESS_BYTE_CNT | ADDRESS_MAP_INGRESS_PKT_CNT | BYTES_IN | BYTES_OUT | EGRESS_BYTE_COUNT | EGRESS_PACKET_COUNT | INGRESS_BYTE_COUNT | INGRESS_PACKET_COUNT | PACKETS_DROPPED_BY_RATE_LIMIT | PACKETS_IN | PACKETS_IN_DROPPED | PACKETS_IN_ERROR | PACKETS_OUT | PACKETS_OUT_DROPPED | PACKETS_OUT_ERROR)
+    
+    
+    
+    
+    
+    
+     (ACL_DENY_EVENT_COUNT | ADDRESS_MAP_EGRESS_BYTE_CNT | ADDRESS_MAP_EGRESS_PKT_CNT | ADDRESS_MAP_INGRESS_BYTE_CNT | ADDRESS_MAP_INGRESS_PKT_CNT | ANTI_SPOOF_EVENT_COUNT | BYTES_IN | BYTES_OUT | EGRESS_BYTE_COUNT | EGRESS_PACKET_COUNT | INGRESS_BYTE_COUNT | INGRESS_PACKET_COUNT | PACKETS_DROPPED_BY_RATE_LIMIT | PACKETS_IN | PACKETS_IN_DROPPED | PACKETS_IN_ERROR | PACKETS_OUT | PACKETS_OUT_DROPPED | PACKETS_OUT_ERROR | TCP_SYN_EVENT_COUNT)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -353,39 +486,50 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_scope" title="GLOBAL or LOCAL scope. Global refers to aggregate values across subnets, zones or domains. Local refers to traffic from/to individual VMs.">scope</a>
+                            <a href="#attr_status" title="This flag is used to indicate the status of TCA">status</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
+                            <span class="type_boolean">boolean
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-     (GLOBAL | LOCAL)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
-     <span class="label label-danger"> required </span>&nbsp;
     
     
     
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
-     <span class="label label-info"> orderable </span>&nbsp;
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_targetPolicyGroupID" title="Target policygroup when TCA is triggered">targetPolicyGroupID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
     
     
     
@@ -418,6 +562,32 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_throttleTime" title="Throttle time in secs">throttleTime</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
     
     
     
@@ -968,6 +1138,104 @@
         <section id="attributes">
             <h3>Attributes documentation</h3>
             
+            <section id="attr_action" class="filterable" data-filter-keyword="action" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>action</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+     <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Action to be taken when TCA is fired - Alert or PolicyGroupChange</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ALERT, ALERT_POLICYGROUPCHANGE</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">action</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_count" class="filterable" data-filter-keyword="count" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>count</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Count of the attempts by maintenanace thread to create/update watcher</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">count</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_description" class="filterable" data-filter-keyword="description" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1018,6 +1286,104 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">description</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_disable" class="filterable" data-filter-keyword="disable" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>disable</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>This flag is used to indicate whether the watch(TCA) is enabled/disabled</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">disable</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_displayStatus" class="filterable" data-filter-keyword="displayStatus" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>displayStatus</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Explanation of the TCA status</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">displayStatus</span>
                         </p>
                     </div>
                 </div>
@@ -1216,7 +1582,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ADDRESS_MAP_EGRESS_BYTE_CNT, ADDRESS_MAP_EGRESS_PKT_CNT, ADDRESS_MAP_INGRESS_BYTE_CNT, ADDRESS_MAP_INGRESS_PKT_CNT, BYTES_IN, BYTES_OUT, EGRESS_BYTE_COUNT, EGRESS_PACKET_COUNT, INGRESS_BYTE_COUNT, INGRESS_PACKET_COUNT, PACKETS_DROPPED_BY_RATE_LIMIT, PACKETS_IN, PACKETS_IN_DROPPED, PACKETS_IN_ERROR, PACKETS_OUT, PACKETS_OUT_DROPPED, PACKETS_OUT_ERROR</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ACL_DENY_EVENT_COUNT, ADDRESS_MAP_EGRESS_BYTE_CNT, ADDRESS_MAP_EGRESS_PKT_CNT, ADDRESS_MAP_INGRESS_BYTE_CNT, ADDRESS_MAP_INGRESS_PKT_CNT, ANTI_SPOOF_EVENT_COUNT, BYTES_IN, BYTES_OUT, EGRESS_BYTE_COUNT, EGRESS_PACKET_COUNT, INGRESS_BYTE_COUNT, INGRESS_PACKET_COUNT, PACKETS_DROPPED_BY_RATE_LIMIT, PACKETS_IN, PACKETS_IN_DROPPED, PACKETS_IN_ERROR, PACKETS_OUT, PACKETS_OUT_DROPPED, PACKETS_OUT_ERROR, TCP_SYN_EVENT_COUNT</span><br/>
                             
 
                             
@@ -1355,24 +1721,18 @@
                 </div>
             </section>
             
-            <section id="attr_scope" class="filterable" data-filter-keyword="scope" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_status" class="filterable" data-filter-keyword="status" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>scope</b>
-                        <span class="type_enum fixed-text">enum</span>
+                        <b>status</b>
+                        <span class="type_boolean fixed-text">boolean</span>
                         
     
-     <span class="label label-danger"> required </span>&nbsp;
     
     
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1380,14 +1740,18 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>GLOBAL or LOCAL scope. Global refers to aggregate values across subnets, zones or domains. Local refers to traffic from/to individual VMs.</p>
+                        <p>This flag is used to indicate the status of TCA</p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">GLOBAL, LOCAL</span><br/>
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
                             
 
                             
@@ -1400,11 +1764,56 @@
 
                             
 
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">status</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_targetPolicyGroupID" class="filterable" data-filter-keyword="targetPolicyGroupID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>targetPolicyGroupID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Target policygroup when TCA is triggered</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
                             
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">scope</span>
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">targetPolicyGroupID</span>
                         </p>
                     </div>
                 </div>
@@ -1462,6 +1871,55 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">threshold</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_throttleTime" class="filterable" data-filter-keyword="throttleTime" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>throttleTime</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Throttle time in secs</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">0</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">throttleTime</span>
                         </p>
                     </div>
                 </div>
