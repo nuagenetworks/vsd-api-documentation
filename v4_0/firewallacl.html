@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>DUCGroup API Reference 4.0</title>
+    <title>FirewallAcl API Reference 4.0</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -30,13 +30,17 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             
-                            <li><a data-id="attr_associatedDUCs" href="#attr_associatedDUCs" class="fixed-text">associatedDUCs</a></li>
+                            <li><a data-id="attr_active" href="#attr_active" class="fixed-text">active</a></li>
                             
-                            <li><a data-id="attr_associatedPerformanceMonitorID" href="#attr_associatedPerformanceMonitorID" class="fixed-text">associatedPerformanceMonitorID</a></li>
+                            <li><a data-id="attr_defaultAllowIP" href="#attr_defaultAllowIP" class="fixed-text">defaultAllowIP</a></li>
+                            
+                            <li><a data-id="attr_defaultAllowNonIP" href="#attr_defaultAllowNonIP" class="fixed-text">defaultAllowNonIP</a></li>
                             
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
                             <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
+                            
+                            <li><a data-id="attr_ruleIds" href="#attr_ruleIds" class="fixed-text">ruleIds</a></li>
                             
                         </ul>
                     </li>
@@ -67,7 +71,7 @@
     <div class="container">
 
         <section id="intro">
-            <h2>DUCGroup</h2>
+            <h2>FirewallAcl</h2>
             <p>None</p>
         </section>
 
@@ -77,100 +81,160 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedDUCs" title="List of NSG UBRs (formely named DUCs) that belong to this Disjoint Underlay Connector Group. ">associatedDUCs</a>
+                            <a href="#attr_active" title="If enabled, it means that this ACL or QOS entry is active">active</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_defaultAllowIP" title="If enabled a default ACL of Allow All is added as the last entry in thelist of ACL entries ">defaultAllowIP</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_defaultAllowNonIP" title="If enabled, non ip traffic will be dropped">defaultAllowNonIP</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_description" title="A description of the entity">description</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_name" title="The name of the entity">name</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_ruleIds" title="Firewall rules associated with this firewall acl.">ruleIds</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_list">list
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_associatedPerformanceMonitorID" title="Identification of the Performance Monitoring Probe that is associated with this instance of a UBR Group.">associatedPerformanceMonitorID</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_description" title="Description of the UBR Group.">description</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_name" title="Name given to the UBR Group.">name</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
     
     
     
@@ -211,7 +275,7 @@
         <div class="col-xs-7">
 
             
-            <span class="fixed-text">/ducgroups/<span class="text-muted">id</span></a>
+            <span class="fixed-text">/firewallacls/<span class="text-muted">id</span></a>
             
         </div>
         <div class="col-xs-5 text-right">
@@ -258,7 +322,29 @@
 
             
             
-            <span class="fixed-text">/ducgroups</a>
+            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/firewallacls</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/firewallacls</span>
             
 
             
@@ -301,7 +387,7 @@
             
 
             
-            <span class="fixed-text">/ducgroups/<span class="text-muted">id</span>/<a href="nsgateway.html">nsgateways</a></span>
+            <span class="fixed-text">/firewallacls/<span class="text-muted">id</span>/<a href="firewallrule.html">firewallrules</a></span>
             
 
             
@@ -315,11 +401,27 @@
     <span class="label label-default">get</span>
     
             
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/firewallacls/<span class="text-muted">id</span>/<a href="domain.html">domains</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
             
     
     
     
-    <span class="label label-success">put</span>
+    <span class="label label-default">get</span>
     
             
         </div>
@@ -332,11 +434,11 @@
         <section id="attributes">
             <h3>Attributes documentation</h3>
             
-            <section id="attr_associatedDUCs" class="filterable" data-filter-keyword="associatedDUCs" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_active" class="filterable" data-filter-keyword="active" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>associatedDUCs</b>
-                        <span class="type_list fixed-text">list</span>
+                        <b>active</b>
+                        <span class="type_boolean fixed-text">boolean</span>
                         
     
     
@@ -355,7 +457,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>List of NSG UBRs (formely named DUCs) that belong to this Disjoint Underlay Connector Group. </p>
+                        <p>If enabled, it means that this ACL or QOS entry is active</p>
 
                         <hr/>
 
@@ -377,17 +479,17 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedDUCs</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">active</span>
                         </p>
                     </div>
                 </div>
             </section>
             
-            <section id="attr_associatedPerformanceMonitorID" class="filterable" data-filter-keyword="associatedPerformanceMonitorID" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_defaultAllowIP" class="filterable" data-filter-keyword="defaultAllowIP" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>associatedPerformanceMonitorID</b>
-                        <span class="type_string fixed-text">string</span>
+                        <b>defaultAllowIP</b>
+                        <span class="type_boolean fixed-text">boolean</span>
                         
     
     
@@ -406,7 +508,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Identification of the Performance Monitoring Probe that is associated with this instance of a UBR Group.</p>
+                        <p>If enabled a default ACL of Allow All is added as the last entry in thelist of ACL entries </p>
 
                         <hr/>
 
@@ -419,7 +521,50 @@
                             
 
                             
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">defaultAllowIP</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_defaultAllowNonIP" class="filterable" data-filter-keyword="defaultAllowNonIP" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>defaultAllowNonIP</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>If enabled, non ip traffic will be dropped</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
                             
 
                             
@@ -430,7 +575,13 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedPerformanceMonitorID</span>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">defaultAllowNonIP</span>
                         </p>
                     </div>
                 </div>
@@ -459,7 +610,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Description of the UBR Group.</p>
+                        <p>A description of the entity</p>
 
                         <hr/>
 
@@ -477,6 +628,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -512,7 +665,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Name given to the UBR Group.</p>
+                        <p>The name of the entity</p>
 
                         <hr/>
 
@@ -529,7 +682,11 @@
                             
 
                             
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
+                            
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -537,6 +694,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">name</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_ruleIds" class="filterable" data-filter-keyword="ruleIds" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>ruleIds</b>
+                        <span class="type_list fixed-text">list</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Firewall rules associated with this firewall acl.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ruleIds</span>
                         </p>
                     </div>
                 </div>
