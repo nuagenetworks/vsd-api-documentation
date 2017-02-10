@@ -46,6 +46,8 @@
                             
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
+                            <li><a data-id="attr_DHCPRelayStatus" href="#attr_DHCPRelayStatus" class="fixed-text">DHCPRelayStatus</a></li>
+                            
                             <li><a data-id="attr_DPI" href="#attr_DPI" class="fixed-text">DPI</a></li>
                             
                             <li><a data-id="attr_encryption" href="#attr_encryption" class="fixed-text">encryption</a></li>
@@ -859,6 +861,45 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_DHCPRelayStatus" title="None">DHCPRelayStatus</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (DISABLED | ENABLED)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_DPI" title="determines whether or not Deep packet inspection is enabled">DPI</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -1606,7 +1647,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_underlay" title="Boolean flag to indicate whether underlay is enabled directly or indirectly">underlay</a>
+                            <a href="#attr_underlay" title="Read Only Boolean flag to indicate whether underlay is enabled directly or indirectly">underlay</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_boolean">boolean
@@ -1619,6 +1660,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -2930,6 +2973,59 @@
                 </div>
             </section>
             
+            <section id="attr_DHCPRelayStatus" class="filterable" data-filter-keyword="DHCPRelayStatus" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>DHCPRelayStatus</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>None</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DISABLED, ENABLED</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">DHCPRelayStatus</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_DPI" class="filterable" data-filter-keyword="DPI" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -4159,6 +4255,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -4172,7 +4270,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Boolean flag to indicate whether underlay is enabled directly or indirectly</p>
+                        <p>Read Only Boolean flag to indicate whether underlay is enabled directly or indirectly</p>
 
                         <hr/>
 
@@ -4184,8 +4282,6 @@
 
                             
 
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             

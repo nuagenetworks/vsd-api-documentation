@@ -34,13 +34,19 @@
                             
                             <li><a data-id="attr_advertisementCriteria" href="#attr_advertisementCriteria" class="fixed-text">advertisementCriteria</a></li>
                             
+                            <li><a data-id="attr_associatedUnderlayName" href="#attr_associatedUnderlayName" class="fixed-text">associatedUnderlayName</a></li>
+                            
                             <li><a data-id="attr_associatedVSCProfileID" href="#attr_associatedVSCProfileID" class="fixed-text">associatedVSCProfileID</a></li>
                             
                             <li><a data-id="attr_assocUnderlayID" href="#attr_assocUnderlayID" class="fixed-text">assocUnderlayID</a></li>
                             
+                            <li><a data-id="attr_auxiliaryLink" href="#attr_auxiliaryLink" class="fixed-text">auxiliaryLink</a></li>
+                            
                             <li><a data-id="attr_DNSAddress" href="#attr_DNSAddress" class="fixed-text">DNSAddress</a></li>
                             
                             <li><a data-id="attr_gateway" href="#attr_gateway" class="fixed-text">gateway</a></li>
+                            
+                            <li><a data-id="attr_interfaceConnectionType" href="#attr_interfaceConnectionType" class="fixed-text">interfaceConnectionType</a></li>
                             
                             <li><a data-id="attr_mode" href="#attr_mode" class="fixed-text">mode</a></li>
                             
@@ -150,7 +156,39 @@
     
     
     
-     (CONTROL_SESSION | GATEWAY_PING | OPERATIONAL_LINK)
+    
+    
+     (CONTROL_SESSION | FATE_SHARING | GATEWAY_PING | OPERATIONAL_LINK)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedUnderlayName" title="The display name of the Underlay instance associated with this uplink connection.">associatedUnderlayName</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -207,6 +245,36 @@
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_auxiliaryLink" title="Make this uplink an auxiliary one that will only come up when all other uplinks are disconnected or can't perform their role.">auxiliaryLink</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
     
     
     
@@ -293,7 +361,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_mode" title="Specify how to connect to the network. Possible values: Any, Dynamic (DHCP), Static (static configuration is required), PPPoE (pppoe configuration required). Default: Dynamic">mode</a>
+                            <a href="#attr_interfaceConnectionType" title="The way the interface is connected via the NSG.  This value depends on if the interface internal or external to the NSG.">interfaceConnectionType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -313,7 +381,54 @@
     
     
     
-     (Any | Dynamic | PPPoE | Static)
+    
+    
+     (AUTOMATIC | EMBEDDED | PCI_EXPRESS | USB_ETHERNET | USB_MODEM)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_mode" title="Specify how to connect to the network. Possible values: Any, Dynamic (DHCP), Static (static configuration is required), PPPoE (pppoe configuration required), LTE (LTE configuration required). Default: Dynamic">mode</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (Any | Dynamic | LTE | PPPoE | Static)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -658,6 +773,36 @@
         </div>
     </div>
     
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/uplinkconnections/<span class="text-muted">id</span>/<a href="customproperty.html">customproperties</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
     
     
         </section>
@@ -750,7 +895,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">CONTROL_SESSION, GATEWAY_PING, OPERATIONAL_LINK</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">CONTROL_SESSION, FATE_SHARING, GATEWAY_PING, OPERATIONAL_LINK</span><br/>
                             
 
                             
@@ -768,6 +913,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">advertisementCriteria</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedUnderlayName" class="filterable" data-filter-keyword="associatedUnderlayName" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedUnderlayName</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The display name of the Underlay instance associated with this uplink connection.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedUnderlayName</span>
                         </p>
                     </div>
                 </div>
@@ -879,6 +1077,59 @@
                 </div>
             </section>
             
+            <section id="attr_auxiliaryLink" class="filterable" data-filter-keyword="auxiliaryLink" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>auxiliaryLink</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Make this uplink an auxiliary one that will only come up when all other uplinks are disconnected or can't perform their role.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">auxiliaryLink</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_DNSAddress" class="filterable" data-filter-keyword="DNSAddress" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -985,6 +1236,61 @@
                 </div>
             </section>
             
+            <section id="attr_interfaceConnectionType" class="filterable" data-filter-keyword="interfaceConnectionType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>interfaceConnectionType</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The way the interface is connected via the NSG.  This value depends on if the interface internal or external to the NSG.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">AUTOMATIC, EMBEDDED, PCI_EXPRESS, USB_ETHERNET, USB_MODEM</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">AUTOMATIC</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">interfaceConnectionType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_mode" class="filterable" data-filter-keyword="mode" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1008,14 +1314,14 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Specify how to connect to the network. Possible values: Any, Dynamic (DHCP), Static (static configuration is required), PPPoE (pppoe configuration required). Default: Dynamic</p>
+                        <p>Specify how to connect to the network. Possible values: Any, Dynamic (DHCP), Static (static configuration is required), PPPoE (pppoe configuration required), LTE (LTE configuration required). Default: Dynamic</p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">Any, Dynamic, PPPoE, Static</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">Any, Dynamic, LTE, PPPoE, Static</span><br/>
                             
 
                             
