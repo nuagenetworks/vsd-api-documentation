@@ -36,11 +36,9 @@
                             
                             <li><a data-id="attr_dictionaryVersion" href="#attr_dictionaryVersion" class="fixed-text">dictionaryVersion</a></li>
                             
-                            <li><a data-id="attr_guidstring" href="#attr_guidstring" class="fixed-text">guidstring</a></li>
+                            <li><a data-id="attr_GUID" href="#attr_GUID" class="fixed-text">GUID</a></li>
                             
                             <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
-                            
-                            <li><a data-id="attr_readonly" href="#attr_readonly" class="fixed-text">readonly</a></li>
                             
                         </ul>
                     </li>
@@ -171,7 +169,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_guidstring" title="GUID of the Application">guidstring</a>
+                            <a href="#attr_GUID" title="GUID of the Application">GUID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -215,36 +213,6 @@
                             
     
      <span class="label label-danger"> required </span>&nbsp;
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_readonly" title="Determines whether this entity is read only.  Read only objects cannot be modified or deleted.">readonly</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_boolean">boolean
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
     
     
     
@@ -410,9 +378,11 @@
                             
 
                             
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
+                            
 
                             
-                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">128</span><br/>
                             
 
                             
@@ -531,10 +501,10 @@
                 </div>
             </section>
             
-            <section id="attr_guidstring" class="filterable" data-filter-keyword="guidstring" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_GUID" class="filterable" data-filter-keyword="GUID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>guidstring</b>
+                        <b>GUID</b>
                         <span class="type_string fixed-text">string</span>
                         
     
@@ -582,7 +552,7 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">guidstring</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">GUID</span>
                         </p>
                     </div>
                 </div>
@@ -642,59 +612,6 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">name</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_readonly" class="filterable" data-filter-keyword="readonly" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>readonly</b>
-                        <span class="type_boolean fixed-text">boolean</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Determines whether this entity is read only.  Read only objects cannot be modified or deleted.</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">readonly</span>
                         </p>
                     </div>
                 </div>
