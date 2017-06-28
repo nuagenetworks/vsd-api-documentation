@@ -376,16 +376,16 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="containers" id="containers" href="container.html" title="API reference for container">containers </a>
+                    <a class="filterable" data-filter-keyword="containerresync" id="containerresync" href="containerresync.html" title="API reference for containerresync">containerresync </a>
                     <br>
-                        <small>Read only API that can retrieve the containers associated with a domain, zone or subnet for mediation created containers for REST created  containers you need to set the additional proxy user header in http request : X-Nuage-ProxyUservalue of the header has to be either :1) enterpriseName@UserName (example : Alcatel Lucent@bob), or 2) external ID of user in VSD, typically is UUID generally decided by the CMS tool in questionUser needs to have CMS privileges to use proxy user header.</small>
+                        <small>Provide information about the state of a container resync request.</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="containerresync" id="containerresync" href="containerresync.html" title="API reference for containerresync">containerresync </a>
+                    <a class="filterable" data-filter-keyword="containers" id="containers" href="container.html" title="API reference for container">containers </a>
                     <br>
-                        <small>Provide information about the state of a container resync request.</small>
+                        <small>Read only API that can retrieve the containers associated with a domain, zone or subnet for mediation created containers for REST created  containers you need to set the additional proxy user header in http request : X-Nuage-ProxyUservalue of the header has to be either :1) enterpriseName@UserName (example : Alcatel Lucent@bob), or 2) external ID of user in VSD, typically is UUID generally decided by the CMS tool in questionUser needs to have CMS privileges to use proxy user header.</small>
                 </div>
             </div>
                     </section>
@@ -676,16 +676,16 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="enterprisesecureddatas" id="enterprisesecureddatas" href="enterprisesecureddata.html" title="API reference for enterprisesecureddata">enterprisesecureddatas </a>
+                    <a class="filterable" data-filter-keyword="gatewaysecurities" id="gatewaysecurities" href="gatewaysecurity.html" title="API reference for gatewaysecurity">gatewaysecurities </a>
                     <br>
-                        <small>This object represents the secured data object under the enterprise</small>
+                        <small>This object represents the gateway security object</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="gatewaysecurities" id="gatewaysecurities" href="gatewaysecurity.html" title="API reference for gatewaysecurity">gatewaysecurities </a>
+                    <a class="filterable" data-filter-keyword="enterprisesecureddatas" id="enterprisesecureddatas" href="enterprisesecureddata.html" title="API reference for enterprisesecureddata">enterprisesecureddatas </a>
                     <br>
-                        <small>This object represents the gateway security object</small>
+                        <small>This object represents the secured data object under the enterprise</small>
                 </div>
             </div>
                     </section>
@@ -937,13 +937,6 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="uplinkconnections" id="uplinkconnections" href="uplinkconnection.html" title="API reference for uplinkconnection">uplinkconnections </a>
-                    <br>
-                        <small>No description available</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="floatingips" id="floatingips" href="floatingip.html" title="API reference for floatingip">floatingips </a>
                     <br>
                         <small>Floating IP that is associated to a Domain. This floating IP could be used in the VM interface for NAT functionality.</small>
@@ -954,6 +947,13 @@
                     <a class="filterable" data-filter-keyword="vpnconnections" id="vpnconnections" href="vpnconnection.html" title="API reference for vpnconnection">vpnconnections </a>
                     <br>
                         <small>This is the definition of a VPN Connect which holds the PE service assocaition with a DOMAIN.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="uplinkconnections" id="uplinkconnections" href="uplinkconnection.html" title="API reference for uplinkconnection">uplinkconnections </a>
+                    <br>
+                        <small>No description available</small>
                 </div>
             </div>
                     </section>
@@ -1103,6 +1103,13 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="egressfloatingipaclentrytemplates" id="egressfloatingipaclentrytemplates" href="egressfloatingipaclentrytemplate.html" title="API reference for egressfloatingipaclentrytemplate">egressfloatingipaclentrytemplates </a>
+                    <br>
+                        <small>Defines the template of Egress ACL Template entries</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="egressdomainfloatingipacltemplates" id="egressdomainfloatingipacltemplates" href="egressdomainfloatingipacltemplate.html" title="API reference for egressdomainfloatingipacltemplate">egressdomainfloatingipacltemplates </a>
                     <br>
                         <small>Defines the template for an Domain Floating IP ACL</small>
@@ -1120,13 +1127,6 @@
                     <a class="filterable" data-filter-keyword="policydecisions" id="policydecisions" href="policydecision.html" title="API reference for policydecision">policydecisions </a>
                     <br>
                         <small>This object is a read only object that provides the policy decisions for a particular VM interface.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="egressfloatingipaclentrytemplates" id="egressfloatingipaclentrytemplates" href="egressfloatingipaclentrytemplate.html" title="API reference for egressfloatingipaclentrytemplate">egressfloatingipaclentrytemplates </a>
-                    <br>
-                        <small>Defines the template of Egress ACL Template entries</small>
                 </div>
             </div>
                     </section>
@@ -1573,9 +1573,9 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="policygrouptemplates" id="policygrouptemplates" href="policygrouptemplate.html" title="API reference for policygrouptemplate">policygrouptemplates </a>
+                    <a class="filterable" data-filter-keyword="policygroups" id="policygroups" href="policygroup.html" title="API reference for policygroup">policygroups </a>
                     <br>
-                        <small>PolicyGroupTemplate represents the template of a policy group object. PolicyGroup is group of vports on which a user can policies like ACL, QoS, etc.</small>
+                        <small>PolicyGroup is group of policys on which a user can policies like ACL, QoS, etc.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1601,9 +1601,9 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="policygroups" id="policygroups" href="policygroup.html" title="API reference for policygroup">policygroups </a>
+                    <a class="filterable" data-filter-keyword="policygrouptemplates" id="policygrouptemplates" href="policygrouptemplate.html" title="API reference for policygrouptemplate">policygrouptemplates </a>
                     <br>
-                        <small>PolicyGroup is group of policys on which a user can policies like ACL, QoS, etc.</small>
+                        <small>PolicyGroupTemplate represents the template of a policy group object. PolicyGroup is group of vports on which a user can policies like ACL, QoS, etc.</small>
                 </div>
             </div>
             <div class="row bordered-row">
