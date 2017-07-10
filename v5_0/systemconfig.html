@@ -178,6 +178,10 @@
                             
                             <li><a data-id="attr_performancePathSelectionVNID" href="#attr_performancePathSelectionVNID" class="fixed-text">performancePathSelectionVNID</a></li>
                             
+                            <li><a data-id="attr_PGIDLowerLimit" href="#attr_PGIDLowerLimit" class="fixed-text">PGIDLowerLimit</a></li>
+                            
+                            <li><a data-id="attr_PGIDUpperLimit" href="#attr_PGIDUpperLimit" class="fixed-text">PGIDUpperLimit</a></li>
+                            
                             <li><a data-id="attr_postProcessorThreadsCount" href="#attr_postProcessorThreadsCount" class="fixed-text">postProcessorThreadsCount</a></li>
                             
                             <li><a data-id="attr_RDLowerLimit" href="#attr_RDLowerLimit" class="fixed-text">RDLowerLimit</a></li>
@@ -263,6 +267,8 @@
                             <li><a data-id="attr_VMUnreachableCleanupTime" href="#attr_VMUnreachableCleanupTime" class="fixed-text">VMUnreachableCleanupTime</a></li>
                             
                             <li><a data-id="attr_VMUnreachableTime" href="#attr_VMUnreachableTime" class="fixed-text">VMUnreachableTime</a></li>
+                            
+                            <li><a data-id="attr_VNFTaskTimeout" href="#attr_VNFTaskTimeout" class="fixed-text">VNFTaskTimeout</a></li>
                             
                             <li><a data-id="attr_VNIDLowerLimit" href="#attr_VNIDLowerLimit" class="fixed-text">VNIDLowerLimit</a></li>
                             
@@ -2407,6 +2413,58 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_PGIDLowerLimit" title="Lower limit for the policy group id.">PGIDLowerLimit</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_object">object
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_PGIDUpperLimit" title="Upper limit for the policy group id.">PGIDUpperLimit</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_object">object
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_postProcessorThreadsCount" title="Post processor thread count.">postProcessorThreadsCount</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -3139,7 +3197,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_sysmonNodePresenceTimeout" title="Node presence timeout in seconds if no messages.">sysmonNodePresenceTimeout</a>
+                            <a href="#attr_sysmonNodePresenceTimeout" title="Time interval in seconds at which sysmon messages are reported by controller.">sysmonNodePresenceTimeout</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -3548,6 +3606,36 @@
     
     
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_VNFTaskTimeout" title="Timeout for VNF task for nsg agent">VNFTaskTimeout</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -7804,6 +7892,112 @@
                 </div>
             </section>
             
+            <section id="attr_PGIDLowerLimit" class="filterable" data-filter-keyword="PGIDLowerLimit" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>PGIDLowerLimit</b>
+                        <span class="type_object fixed-text">object</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Lower limit for the policy group id.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">65536</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">65536</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">2147483646</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">PGIDLowerLimit</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_PGIDUpperLimit" class="filterable" data-filter-keyword="PGIDUpperLimit" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>PGIDUpperLimit</b>
+                        <span class="type_object fixed-text">object</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Upper limit for the policy group id.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">2147483647</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">65537</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">2147483647</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">PGIDUpperLimit</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_postProcessorThreadsCount" class="filterable" data-filter-keyword="postProcessorThreadsCount" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -9261,7 +9455,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Node presence timeout in seconds if no messages.</p>
+                        <p>Time interval in seconds at which sysmon messages are reported by controller.</p>
 
                         <hr/>
 
@@ -10014,6 +10208,63 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">VMUnreachableTime</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_VNFTaskTimeout" class="filterable" data-filter-keyword="VNFTaskTimeout" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>VNFTaskTimeout</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Timeout for VNF task for nsg agent</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">3600</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">300</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">10000</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">VNFTaskTimeout</span>
                         </p>
                     </div>
                 </div>

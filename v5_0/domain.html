@@ -32,8 +32,6 @@
                             
                             <li><a data-id="attr_advertiseCriteria" href="#attr_advertiseCriteria" class="fixed-text">advertiseCriteria</a></li>
                             
-                            <li><a data-id="attr_applicationDeploymentPolicy" href="#attr_applicationDeploymentPolicy" class="fixed-text">applicationDeploymentPolicy</a></li>
-                            
                             <li><a data-id="attr_associatedBGPProfileID" href="#attr_associatedBGPProfileID" class="fixed-text">associatedBGPProfileID</a></li>
                             
                             <li><a data-id="attr_associatedMulticastChannelMapID" href="#attr_associatedMulticastChannelMapID" class="fixed-text">associatedMulticastChannelMapID</a></li>
@@ -87,6 +85,8 @@
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
                             <li><a data-id="attr_leakingEnabled" href="#attr_leakingEnabled" class="fixed-text">leakingEnabled</a></li>
+                            
+                            <li><a data-id="attr_localAS" href="#attr_localAS" class="fixed-text">localAS</a></li>
                             
                             <li><a data-id="attr_maintenanceMode" href="#attr_maintenanceMode" class="fixed-text">maintenanceMode</a></li>
                             
@@ -186,43 +186,6 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_applicationDeploymentPolicy" title="Application deployment policy.">applicationDeploymentPolicy</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (NONE | ZONE)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
     
     
     
@@ -535,7 +498,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_DHCPBehavior" title="DHCPBehaviorType is an enum that indicates DHCP Behavior of VRS having VM's under this domain. Possible values are FLOOD, CONSUME ,RELAY Possible values are CONSUME, FLOOD, RELAY, .">DHCPBehavior</a>
+                            <a href="#attr_DHCPBehavior" title="DHCPBehaviorType is an enum that indicates DHCP Behavior of VRS having VM's under this domain. Possible values are FLOOD, CONSUME, OVERLAY_RELAY, UNDERLAY_RELAY.">DHCPBehavior</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -1028,6 +991,32 @@
     
     
      <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_localAS" title="Local autonomous system for the domain">localAS</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
     
     
     
@@ -1616,6 +1605,35 @@
 
             
             
+            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/domains</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="firewallacl.html">firewallacls</a>/<span class="text-muted">id</span>/domains</span>
             
 
@@ -1708,35 +1726,6 @@
     
     
     <span class="label label-success">put</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/domains</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
     
             
         </div>
@@ -1935,6 +1924,36 @@
 
             
             <span class="fixed-text">/domains/<span class="text-muted">id</span>/<a href="egressacltemplate.html">egressacltemplates</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/domains/<span class="text-muted">id</span>/<a href="egressadvfwdtemplate.html">egressadvfwdtemplates</a></span>
             
 
             
@@ -2991,57 +3010,6 @@
                 </div>
             </section>
             
-            <section id="attr_applicationDeploymentPolicy" class="filterable" data-filter-keyword="applicationDeploymentPolicy" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>applicationDeploymentPolicy</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Application deployment policy.</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">NONE, ZONE</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">applicationDeploymentPolicy</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
             <section id="attr_associatedBGPProfileID" class="filterable" data-filter-keyword="associatedBGPProfileID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3620,7 +3588,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>DHCPBehaviorType is an enum that indicates DHCP Behavior of VRS having VM's under this domain. Possible values are FLOOD, CONSUME ,RELAY Possible values are CONSUME, FLOOD, RELAY, .</p>
+                        <p>DHCPBehaviorType is an enum that indicates DHCP Behavior of VRS having VM's under this domain. Possible values are FLOOD, CONSUME, OVERLAY_RELAY, UNDERLAY_RELAY.</p>
 
                         <hr/>
 
@@ -4432,6 +4400,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">leakingEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_localAS" class="filterable" data-filter-keyword="localAS" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>localAS</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Local autonomous system for the domain</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">64534</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">localAS</span>
                         </p>
                     </div>
                 </div>
