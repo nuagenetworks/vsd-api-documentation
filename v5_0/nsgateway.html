@@ -36,6 +36,8 @@
                             
                             <li><a data-id="attr_associatedNSGInfoID" href="#attr_associatedNSGInfoID" class="fixed-text">associatedNSGInfoID</a></li>
                             
+                            <li><a data-id="attr_associatedNSGUpgradeProfileID" href="#attr_associatedNSGUpgradeProfileID" class="fixed-text">associatedNSGUpgradeProfileID</a></li>
+                            
                             <li><a data-id="attr_autoDiscGatewayID" href="#attr_autoDiscGatewayID" class="fixed-text">autoDiscGatewayID</a></li>
                             
                             <li><a data-id="attr_BIOSVersion" href="#attr_BIOSVersion" class="fixed-text">BIOSVersion</a></li>
@@ -47,6 +49,10 @@
                             <li><a data-id="attr_configurationReloadState" href="#attr_configurationReloadState" class="fixed-text">configurationReloadState</a></li>
                             
                             <li><a data-id="attr_configurationStatus" href="#attr_configurationStatus" class="fixed-text">configurationStatus</a></li>
+                            
+                            <li><a data-id="attr_controlTrafficCOSValue" href="#attr_controlTrafficCOSValue" class="fixed-text">controlTrafficCOSValue</a></li>
+                            
+                            <li><a data-id="attr_controlTrafficDSCPValue" href="#attr_controlTrafficDSCPValue" class="fixed-text">controlTrafficDSCPValue</a></li>
                             
                             <li><a data-id="attr_CPUType" href="#attr_CPUType" class="fixed-text">CPUType</a></li>
                             
@@ -233,6 +239,32 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_associatedNSGUpgradeProfileID" title="The UUID of the NSG Upgrade Profile associated to this NSG instance.">associatedNSGUpgradeProfileID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_autoDiscGatewayID" title="The Auto Discovered Gateway associated with this Gateway Instance">autoDiscGatewayID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -277,10 +309,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -434,10 +462,10 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_CPUType" title="The NSG Processor Type">CPUType</a>
+                            <a href="#attr_controlTrafficCOSValue" title="COS Value for Self Generated Traffic (Control Traffic). Min is 0 and Max is 7">controlTrafficCOSValue</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
+                            <span class="type_integer">integer
     
     
     
@@ -456,6 +484,62 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_controlTrafficDSCPValue" title="DSCP Value for Self Generated Traffic (Control Traffic). Min is 0 and Max is 63">controlTrafficDSCPValue</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_CPUType" title="The NSG Processor Type">CPUType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
     
     
     
@@ -616,10 +700,6 @@
      <span class="label label-info"> autogenerated </span>&nbsp;
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -680,7 +760,19 @@
     
     
     
-     (ANY | NSG_E | NSG_V)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (ANY | NSG_AMI | NSG_C | NSG_E | NSG_E200 | NSG_E300 | NSG_V | NSG_X | NSG_X200)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -691,10 +783,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -864,10 +952,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -993,10 +1077,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1023,10 +1103,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1053,10 +1129,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1209,10 +1281,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1265,10 +1333,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1295,10 +1359,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1515,10 +1575,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1647,6 +1703,35 @@
             
             
             <span class="fixed-text">/<a href="policyobjectgroup.html">policyobjectgroups</a>/<span class="text-muted">id</span>/nsgateways</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="performancemonitor.html">performancemonitors</a>/<span class="text-muted">id</span>/nsgateways</span>
             
 
             
@@ -2078,6 +2163,36 @@
             
 
             
+            <span class="fixed-text">/nsgateways/<span class="text-muted">id</span>/<a href="command.html">commands</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/nsgateways/<span class="text-muted">id</span>/<a href="monitorscope.html">monitorscopes</a></span>
             
 
@@ -2424,6 +2539,55 @@
                 </div>
             </section>
             
+            <section id="attr_associatedNSGUpgradeProfileID" class="filterable" data-filter-keyword="associatedNSGUpgradeProfileID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedNSGUpgradeProfileID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The UUID of the NSG Upgrade Profile associated to this NSG instance.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedNSGUpgradeProfileID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_autoDiscGatewayID" class="filterable" data-filter-keyword="autoDiscGatewayID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2485,10 +2649,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2730,6 +2890,116 @@
                 </div>
             </section>
             
+            <section id="attr_controlTrafficCOSValue" class="filterable" data-filter-keyword="controlTrafficCOSValue" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>controlTrafficCOSValue</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>COS Value for Self Generated Traffic (Control Traffic). Min is 0 and Max is 7</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">7</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">7</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">controlTrafficCOSValue</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_controlTrafficDSCPValue" class="filterable" data-filter-keyword="controlTrafficDSCPValue" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>controlTrafficDSCPValue</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>DSCP Value for Self Generated Traffic (Control Traffic). Min is 0 and Max is 63</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">56</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">63</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">controlTrafficDSCPValue</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_CPUType" class="filterable" data-filter-keyword="CPUType" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2742,10 +3012,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2999,10 +3265,6 @@
      <span class="label label-info"> autogenerated </span>&nbsp;
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -3024,8 +3286,6 @@
 
                             
 
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             
@@ -3111,10 +3371,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -3129,7 +3385,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, NSG_E, NSG_V</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, NSG_AMI, NSG_C, NSG_E, NSG_E200, NSG_E300, NSG_V, NSG_X, NSG_X200</span><br/>
                             
 
                             
@@ -3415,10 +3671,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -3629,10 +3881,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -3682,10 +3930,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -3735,10 +3979,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -3943,10 +4183,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -4047,10 +4283,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -4100,10 +4332,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -4469,10 +4697,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     

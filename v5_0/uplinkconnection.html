@@ -166,9 +166,7 @@
     
     
     
-    
-    
-     (CONTROL_SESSION | FATE_SHARING | GATEWAY_PING | OPERATIONAL_LINK)
+     (BFD | CONTROL_SESSION | OPERATIONAL_LINK)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -446,7 +444,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_mode" title="Specify how to connect to the network. Possible values: Any, Dynamic (DHCP), Static (static configuration is required), PPPoE (pppoe configuration required), LTE (LTE configuration required). Default: Dynamic">mode</a>
+                            <a href="#attr_mode" title="Specify how to connect to the network. Possible values: Dynamic (DHCP), Static (static configuration is required), PPPoE (pppoe configuration required), LTE (LTE configuration required). Default: Dynamic">mode</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -466,9 +464,7 @@
     
     
     
-    
-    
-     (Any | Dynamic | LTE | PPPoE | Static)
+     (Dynamic | LTE | PPPoE | Static)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -921,6 +917,36 @@
             
 
             
+            <span class="fixed-text">/uplinkconnections/<span class="text-muted">id</span>/<a href="bfdsession.html">bfdsessions</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/uplinkconnections/<span class="text-muted">id</span>/<a href="underlay.html">underlays</a></span>
             
 
@@ -1060,7 +1086,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">CONTROL_SESSION, FATE_SHARING, GATEWAY_PING, OPERATIONAL_LINK</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">BFD, CONTROL_SESSION, OPERATIONAL_LINK</span><br/>
                             
 
                             
@@ -1536,14 +1562,14 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Specify how to connect to the network. Possible values: Any, Dynamic (DHCP), Static (static configuration is required), PPPoE (pppoe configuration required), LTE (LTE configuration required). Default: Dynamic</p>
+                        <p>Specify how to connect to the network. Possible values: Dynamic (DHCP), Static (static configuration is required), PPPoE (pppoe configuration required), LTE (LTE configuration required). Default: Dynamic</p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">Any, Dynamic, LTE, PPPoE, Static</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">Dynamic, LTE, PPPoE, Static</span><br/>
                             
 
                             

@@ -36,7 +36,15 @@
                             
                             <li><a data-id="attr_addressOverride" href="#attr_addressOverride" class="fixed-text">addressOverride</a></li>
                             
+                            <li><a data-id="attr_appType" href="#attr_appType" class="fixed-text">appType</a></li>
+                            
+                            <li><a data-id="attr_associatedApplicationID" href="#attr_associatedApplicationID" class="fixed-text">associatedApplicationID</a></li>
+                            
                             <li><a data-id="attr_associatedLiveEntityID" href="#attr_associatedLiveEntityID" class="fixed-text">associatedLiveEntityID</a></li>
+                            
+                            <li><a data-id="attr_associatedTrafficType" href="#attr_associatedTrafficType" class="fixed-text">associatedTrafficType</a></li>
+                            
+                            <li><a data-id="attr_associatedTrafficTypeID" href="#attr_associatedTrafficTypeID" class="fixed-text">associatedTrafficTypeID</a></li>
                             
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
@@ -54,6 +62,8 @@
                             
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
+                            <li><a data-id="attr_failsafeDatapath" href="#attr_failsafeDatapath" class="fixed-text">failsafeDatapath</a></li>
+                            
                             <li><a data-id="attr_FCOverride" href="#attr_FCOverride" class="fixed-text">FCOverride</a></li>
                             
                             <li><a data-id="attr_flowLoggingEnabled" href="#attr_flowLoggingEnabled" class="fixed-text">flowLoggingEnabled</a></li>
@@ -63,6 +73,8 @@
                             <li><a data-id="attr_ICMPType" href="#attr_ICMPType" class="fixed-text">ICMPType</a></li>
                             
                             <li><a data-id="attr_IPv6AddressOverride" href="#attr_IPv6AddressOverride" class="fixed-text">IPv6AddressOverride</a></li>
+                            
+                            <li><a data-id="attr_isSLAAware" href="#attr_isSLAAware" class="fixed-text">isSLAAware</a></li>
                             
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
@@ -238,6 +250,77 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_appType" title="Type of application selected, ALL (all applications in match criteria), NONE (no application in match criteria), APPLICATION (specific application in match criteria).">appType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (ALL | APPLICATION | NONE)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedApplicationID" title="Associated application UUID.">associatedApplicationID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_associatedLiveEntityID" title="In the draft mode, the ACL entry refers to this LiveEntity. In non-drafted mode, this is null.">associatedLiveEntityID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -258,6 +341,75 @@
     
      <span class="label label-info"> filterable </span>&nbsp;
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedTrafficType" title="This property reflects the type of traffic in case an ACL entry is created using an L4 Service or L4 Service Group. In case a protocol and port are specified for the ACL entry, this property has to be empty (null). Supported values are L4_SERVICE, L4_SERVICE_GROUP and empty.">associatedTrafficType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (L4_SERVICE | L4_SERVICE_GROUP)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedTrafficTypeID" title="If a traffic type is specified as L4 Service or Service Group, then the associated Id of  Service / Service Group should be specifed here">associatedTrafficTypeID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -437,10 +589,6 @@
      <span class="label label-info"> autogenerated </span>&nbsp;
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -507,6 +655,45 @@
     
     
      <span class="label label-warning"> locally unique </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_failsafeDatapath" title="Backup datapath option if VNF/VM is down">failsafeDatapath</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (FAIL_TO_BLOCK | FAIL_TO_WIRE)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -678,6 +865,36 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_isSLAAware" title="This flag denotes whether the Uplink Preference configured by the user will work with AAR or will over-ride AAR.">isSLAAware</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_lastUpdatedBy" title="ID of the user who last updated the object.">lastUpdatedBy</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -706,7 +923,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_locationID" title="The ID of the location entity (Subnet/Zone/VportTag)">locationID</a>
+                            <a href="#attr_locationID" title="The ID of the location entity (Subnet/Zone/VportTag/PolicyGroupExpression)">locationID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -760,7 +977,9 @@
     
     
     
-     (ANY | POLICYGROUP | REDIRECTIONTARGET | SUBNET | VPORTTAG | ZONE)
+    
+    
+     (ANY | PGEXPRESSION | POLICYGROUP | REDIRECTIONTARGET | SUBNET | VPORTTAG | ZONE)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -841,7 +1060,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_networkID" title="The destination network entity that is referenced(subnet/zone/macro)">networkID</a>
+                            <a href="#attr_networkID" title="The destination network entity that is referenced(subnet/zone/macro/PolicyGroupExpression)">networkID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -907,7 +1126,9 @@
     
     
     
-     (ANY | ENDPOINT_DOMAIN | ENDPOINT_SUBNET | ENDPOINT_ZONE | ENTERPRISE_NETWORK | INTERNET_POLICYGROUP | NETWORK_MACRO_GROUP | POLICYGROUP | PUBLIC_NETWORK | SUBNET | UNDERLAY_INTERNET_POLICYGROUP | ZONE)
+    
+    
+     (ANY | ENDPOINT_DOMAIN | ENDPOINT_SUBNET | ENDPOINT_ZONE | ENTERPRISE_NETWORK | INTERNET_POLICYGROUP | NETWORK_MACRO_GROUP | PGEXPRESSION | POLICYGROUP | PUBLIC_NETWORK | SUBNET | UNDERLAY_INTERNET_POLICYGROUP | ZONE)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1342,7 +1563,7 @@
 
             
             
-            <span class="fixed-text">/<a href="vport.html">vports</a>/<span class="text-muted">id</span>/ingressadvfwdentrytemplates</span>
+            <span class="fixed-text">/<a href="mirrordestination.html">mirrordestinations</a>/<span class="text-muted">id</span>/ingressadvfwdentrytemplates</span>
             
 
             
@@ -1364,7 +1585,7 @@
 
             
             
-            <span class="fixed-text">/<a href="mirrordestination.html">mirrordestinations</a>/<span class="text-muted">id</span>/ingressadvfwdentrytemplates</span>
+            <span class="fixed-text">/<a href="vport.html">vports</a>/<span class="text-muted">id</span>/ingressadvfwdentrytemplates</span>
             
 
             
@@ -1724,6 +1945,114 @@
                 </div>
             </section>
             
+            <section id="attr_appType" class="filterable" data-filter-keyword="appType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>appType</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Type of application selected, ALL (all applications in match criteria), NONE (no application in match criteria), APPLICATION (specific application in match criteria).</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ALL, APPLICATION, NONE</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">NONE</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">appType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedApplicationID" class="filterable" data-filter-keyword="associatedApplicationID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedApplicationID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Associated application UUID.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedApplicationID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_associatedLiveEntityID" class="filterable" data-filter-keyword="associatedLiveEntityID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1770,6 +2099,112 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedLiveEntityID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedTrafficType" class="filterable" data-filter-keyword="associatedTrafficType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedTrafficType</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>This property reflects the type of traffic in case an ACL entry is created using an L4 Service or L4 Service Group. In case a protocol and port are specified for the ACL entry, this property has to be empty (null). Supported values are L4_SERVICE, L4_SERVICE_GROUP and empty.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">L4_SERVICE, L4_SERVICE_GROUP</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedTrafficType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedTrafficTypeID" class="filterable" data-filter-keyword="associatedTrafficTypeID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedTrafficTypeID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>If a traffic type is specified as L4 Service or Service Group, then the associated Id of  Service / Service Group should be specifed here</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedTrafficTypeID</span>
                         </p>
                     </div>
                 </div>
@@ -2048,10 +2483,6 @@
      <span class="label label-info"> autogenerated </span>&nbsp;
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2073,8 +2504,6 @@
 
                             
 
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             
@@ -2198,6 +2627,61 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">externalID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_failsafeDatapath" class="filterable" data-filter-keyword="failsafeDatapath" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>failsafeDatapath</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Backup datapath option if VNF/VM is down</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">FAIL_TO_BLOCK, FAIL_TO_WIRE</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">FAIL_TO_BLOCK</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">failsafeDatapath</span>
                         </p>
                     </div>
                 </div>
@@ -2460,6 +2944,59 @@
                 </div>
             </section>
             
+            <section id="attr_isSLAAware" class="filterable" data-filter-keyword="isSLAAware" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>isSLAAware</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>This flag denotes whether the Uplink Preference configured by the user will work with AAR or will over-ride AAR.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">isSLAAware</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_lastUpdatedBy" class="filterable" data-filter-keyword="lastUpdatedBy" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2534,7 +3071,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The ID of the location entity (Subnet/Zone/VportTag)</p>
+                        <p>The ID of the location entity (Subnet/Zone/VportTag/PolicyGroupExpression)</p>
 
                         <hr/>
 
@@ -2596,7 +3133,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, POLICYGROUP, REDIRECTIONTARGET, SUBNET, VPORTTAG, ZONE</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, PGEXPRESSION, POLICYGROUP, REDIRECTIONTARGET, SUBNET, VPORTTAG, ZONE</span><br/>
                             
 
                             
@@ -2748,7 +3285,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The destination network entity that is referenced(subnet/zone/macro)</p>
+                        <p>The destination network entity that is referenced(subnet/zone/macro/PolicyGroupExpression)</p>
 
                         <hr/>
 
@@ -2808,7 +3345,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENDPOINT_DOMAIN, ENDPOINT_SUBNET, ENDPOINT_ZONE, ENTERPRISE_NETWORK, INTERNET_POLICYGROUP, NETWORK_MACRO_GROUP, POLICYGROUP, PUBLIC_NETWORK, SUBNET, UNDERLAY_INTERNET_POLICYGROUP, ZONE</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENDPOINT_DOMAIN, ENDPOINT_SUBNET, ENDPOINT_ZONE, ENTERPRISE_NETWORK, INTERNET_POLICYGROUP, NETWORK_MACRO_GROUP, PGEXPRESSION, POLICYGROUP, PUBLIC_NETWORK, SUBNET, UNDERLAY_INTERNET_POLICYGROUP, ZONE</span><br/>
                             
 
                             
