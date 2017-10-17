@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>PerformanceMonitor API Reference 4.0</title>
+    <title>IngressQOSPolicy API Reference 4.0</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -30,25 +30,35 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             
+                            <li><a data-id="attr_assocEgressQosId" href="#attr_assocEgressQosId" class="fixed-text">assocEgressQosId</a></li>
+                            
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
-                            <li><a data-id="attr_interval" href="#attr_interval" class="fixed-text">interval</a></li>
-                            
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
                             <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
                             
-                            <li><a data-id="attr_numberOfPackets" href="#attr_numberOfPackets" class="fixed-text">numberOfPackets</a></li>
+                            <li><a data-id="attr_parentQueueAssociatedRateLimiterID" href="#attr_parentQueueAssociatedRateLimiterID" class="fixed-text">parentQueueAssociatedRateLimiterID</a></li>
                             
-                            <li><a data-id="attr_payloadSize" href="#attr_payloadSize" class="fixed-text">payloadSize</a></li>
+                            <li><a data-id="attr_queue1AssociatedRateLimiterID" href="#attr_queue1AssociatedRateLimiterID" class="fixed-text">queue1AssociatedRateLimiterID</a></li>
                             
-                            <li><a data-id="attr_readOnly" href="#attr_readOnly" class="fixed-text">readOnly</a></li>
+                            <li><a data-id="attr_queue1ForwardingClasses" href="#attr_queue1ForwardingClasses" class="fixed-text">queue1ForwardingClasses</a></li>
                             
-                            <li><a data-id="attr_serviceClass" href="#attr_serviceClass" class="fixed-text">serviceClass</a></li>
+                            <li><a data-id="attr_queue2AssociatedRateLimiterID" href="#attr_queue2AssociatedRateLimiterID" class="fixed-text">queue2AssociatedRateLimiterID</a></li>
+                            
+                            <li><a data-id="attr_queue2ForwardingClasses" href="#attr_queue2ForwardingClasses" class="fixed-text">queue2ForwardingClasses</a></li>
+                            
+                            <li><a data-id="attr_queue3AssociatedRateLimiterID" href="#attr_queue3AssociatedRateLimiterID" class="fixed-text">queue3AssociatedRateLimiterID</a></li>
+                            
+                            <li><a data-id="attr_queue3ForwardingClasses" href="#attr_queue3ForwardingClasses" class="fixed-text">queue3ForwardingClasses</a></li>
+                            
+                            <li><a data-id="attr_queue4AssociatedRateLimiterID" href="#attr_queue4AssociatedRateLimiterID" class="fixed-text">queue4AssociatedRateLimiterID</a></li>
+                            
+                            <li><a data-id="attr_queue4ForwardingClasses" href="#attr_queue4ForwardingClasses" class="fixed-text">queue4ForwardingClasses</a></li>
                             
                         </ul>
                     </li>
@@ -79,8 +89,8 @@
     <div class="container">
 
         <section id="intro">
-            <h2>PerformanceMonitor</h2>
-            <p>None</p>
+            <h2>IngressQOSPolicy</h2>
+            <p>The object manipulates Ingress QoS parameters attached to a Access Port / VLAN or Network port.</p>
         </section>
 
         <section id="overview">
@@ -89,7 +99,33 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_description" title="Description of application group probe">description</a>
+                            <a href="#attr_assocEgressQosId" title="ID of object associated with this QoS object">assocEgressQosId</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_description" title="A description of the QoS object">description</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -109,8 +145,6 @@
     
      <span class="label label-info"> filterable </span>&nbsp;
     
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -194,38 +228,6 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_interval" title="interval in seconds">interval</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_integer">integer
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-     <span class="label label-danger"> required </span>&nbsp;
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
                             <a href="#attr_lastUpdatedBy" title="ID of the user who last updated the object.">lastUpdatedBy</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -254,7 +256,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_name" title="Name of the application group probe">name</a>
+                            <a href="#attr_name" title="A unique name of the QoS object">name</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -286,74 +288,10 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_numberOfPackets" title="number of packets">numberOfPackets</a>
+                            <a href="#attr_parentQueueAssociatedRateLimiterID" title="ID of the parent rate limiter associated with this Ingress QOS policy.">parentQueueAssociatedRateLimiterID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_integer">integer
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-     <span class="label label-danger"> required </span>&nbsp;
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_payloadSize" title="Payload size">payloadSize</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_integer">integer
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-     <span class="label label-danger"> required </span>&nbsp;
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_readOnly" title="Determines whether this entity is read only.  Read only objects cannot be modified or deleted.">readOnly</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_boolean">boolean
+                            <span class="type_string">string
     
     
     
@@ -376,35 +314,14 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_serviceClass" title="Class of service to be used.  Service classes in order of priority are A, B, C, D, E, F, G, and H.">serviceClass</a>
+                            <a href="#attr_queue1AssociatedRateLimiterID" title="ID of the queue1 rate limiter associated with this Ingress QOS policy.">queue1AssociatedRateLimiterID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
+                            <span class="type_string">string
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (A | B | C | D | E | F | G | H)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -415,10 +332,280 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
-     <span class="label label-info"> orderable </span>&nbsp;
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_queue1ForwardingClasses" title="Queue1 Forwarding Classes for this Ingress QOS Policy Possible values are NONE, A, B, C, D, E, F, G, H, .">queue1ForwardingClasses</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_list">list
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (A | B | C | D | E | F | G | H | NONE)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_queue2AssociatedRateLimiterID" title="ID of the queue2 rate limiter associated with this Ingress QOS policy.">queue2AssociatedRateLimiterID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_queue2ForwardingClasses" title="Queue2 Forwarding Classes for this Ingress QOS Policy Possible values are NONE, A, B, C, D, E, F, G, H, .">queue2ForwardingClasses</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_list">list
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (A | B | C | D | E | F | G | H | NONE)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_queue3AssociatedRateLimiterID" title="ID of the queue3 rate limiter associated with this Ingress QOS policy.">queue3AssociatedRateLimiterID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_queue3ForwardingClasses" title="Queue3 Forwarding Classes for this Ingress QOS Policy Possible values are NONE, A, B, C, D, E, F, G, H, .">queue3ForwardingClasses</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_list">list
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (A | B | C | D | E | F | G | H | NONE)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_queue4AssociatedRateLimiterID" title="ID of the queue4 rate limiter associated with this Ingress QOS policy.">queue4AssociatedRateLimiterID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_queue4ForwardingClasses" title="Queue4 Forwarding Classes for this Ingress QOS Policy Possible values are NONE, A, B, C, D, E, F, G, H, .">queue4ForwardingClasses</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_list">list
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (A | B | C | D | E | F | G | H | NONE)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
     
     
     
@@ -441,7 +628,7 @@
         <div class="col-xs-7">
 
             
-            <span class="fixed-text">/performancemonitors/<span class="text-muted">id</span></a>
+            <span class="fixed-text">/ingressqospolicies/<span class="text-muted">id</span></a>
             
         </div>
         <div class="col-xs-5 text-right">
@@ -488,7 +675,7 @@
 
             
             
-            <span class="fixed-text">/performancemonitors</a>
+            <span class="fixed-text">/ingressqospolicies</a>
             
 
             
@@ -517,7 +704,7 @@
 
             
             
-            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/performancemonitors</span>
+            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/ingressqospolicies</span>
             
 
             
@@ -560,7 +747,7 @@
             
 
             
-            <span class="fixed-text">/performancemonitors/<span class="text-muted">id</span>/<a href="applicationperformancemanagement.html">applicationperformancemanagements</a></span>
+            <span class="fixed-text">/ingressqospolicies/<span class="text-muted">id</span>/<a href="metadata.html">metadatas</a></span>
             
 
             
@@ -574,6 +761,50 @@
     <span class="label label-default">get</span>
     
             
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/ingressqospolicies/<span class="text-muted">id</span>/<a href="globalmetadata.html">globalmetadatas</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
         </div>
     </div>
     
@@ -583,6 +814,55 @@
 
         <section id="attributes">
             <h3>Attributes documentation</h3>
+            
+            <section id="attr_assocEgressQosId" class="filterable" data-filter-keyword="assocEgressQosId" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>assocEgressQosId</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of object associated with this QoS object</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">assocEgressQosId</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
             
             <section id="attr_description" class="filterable" data-filter-keyword="description" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
@@ -599,15 +879,13 @@
      <span class="label label-info"> filterable </span>&nbsp;
     
     
-     <span class="label label-info"> orderable </span>&nbsp;
-    
     
     
                     </div>
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Description of application group probe</p>
+                        <p>A description of the QoS object</p>
 
                         <hr/>
 
@@ -753,63 +1031,6 @@
                 </div>
             </section>
             
-            <section id="attr_interval" class="filterable" data-filter-keyword="interval" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>interval</b>
-                        <span class="type_integer fixed-text">integer</span>
-                        
-    
-     <span class="label label-danger"> required </span>&nbsp;
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>interval in seconds</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1</span><br/>
-                            
-
-                            
-                            <span class="small"><b>Max value: </b></span><span class="fixed-text">1818000</span><br/>
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">interval</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
             <section id="attr_lastUpdatedBy" class="filterable" data-filter-keyword="lastUpdatedBy" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -886,7 +1107,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Name of the application group probe</p>
+                        <p>A unique name of the QoS object</p>
 
                         <hr/>
 
@@ -920,24 +1141,18 @@
                 </div>
             </section>
             
-            <section id="attr_numberOfPackets" class="filterable" data-filter-keyword="numberOfPackets" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_parentQueueAssociatedRateLimiterID" class="filterable" data-filter-keyword="parentQueueAssociatedRateLimiterID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>numberOfPackets</b>
-                        <span class="type_integer fixed-text">integer</span>
+                        <b>parentQueueAssociatedRateLimiterID</b>
+                        <span class="type_string fixed-text">string</span>
                         
     
-     <span class="label label-danger"> required </span>&nbsp;
     
     
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -945,7 +1160,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>number of packets</p>
+                        <p>ID of the parent rate limiter associated with this Ingress QOS policy.</p>
 
                         <hr/>
 
@@ -958,43 +1173,35 @@
                             
 
                             
-
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             
 
                             
-                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1</span><br/>
+
                             
 
                             
-                            <span class="small"><b>Max value: </b></span><span class="fixed-text">9999</span><br/>
-                            
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">numberOfPackets</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">parentQueueAssociatedRateLimiterID</span>
                         </p>
                     </div>
                 </div>
             </section>
             
-            <section id="attr_payloadSize" class="filterable" data-filter-keyword="payloadSize" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_queue1AssociatedRateLimiterID" class="filterable" data-filter-keyword="queue1AssociatedRateLimiterID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>payloadSize</b>
-                        <span class="type_integer fixed-text">integer</span>
+                        <b>queue1AssociatedRateLimiterID</b>
+                        <span class="type_string fixed-text">string</span>
                         
     
-     <span class="label label-danger"> required </span>&nbsp;
     
     
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1002,7 +1209,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Payload size</p>
+                        <p>ID of the queue1 rate limiter associated with this Ingress QOS policy.</p>
 
                         <hr/>
 
@@ -1015,30 +1222,28 @@
                             
 
                             
-
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             
 
                             
-                            <span class="small"><b>Min value: </b></span><span class="fixed-text">108</span><br/>
+
                             
 
                             
-                            <span class="small"><b>Max value: </b></span><span class="fixed-text">1500</span><br/>
-                            
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">payloadSize</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">queue1AssociatedRateLimiterID</span>
                         </p>
                     </div>
                 </div>
             </section>
             
-            <section id="attr_readOnly" class="filterable" data-filter-keyword="readOnly" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_queue1ForwardingClasses" class="filterable" data-filter-keyword="queue1ForwardingClasses" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>readOnly</b>
-                        <span class="type_boolean fixed-text">boolean</span>
+                        <b>queue1ForwardingClasses</b>
+                        <span class="type_list fixed-text">list</span>
                         
     
     
@@ -1053,18 +1258,14 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Determines whether this entity is read only.  Read only objects cannot be modified or deleted.</p>
+                        <p>Queue1 Forwarding Classes for this Ingress QOS Policy Possible values are NONE, A, B, C, D, E, F, G, H, .</p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-
-                            
-
-                            
-                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">A, B, C, D, E, F, G, H, NONE</span><br/>
                             
 
                             
@@ -1077,17 +1278,21 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">readOnly</span>
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">queue1ForwardingClasses</span>
                         </p>
                     </div>
                 </div>
             </section>
             
-            <section id="attr_serviceClass" class="filterable" data-filter-keyword="serviceClass" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_queue2AssociatedRateLimiterID" class="filterable" data-filter-keyword="queue2AssociatedRateLimiterID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>serviceClass</b>
-                        <span class="type_enum fixed-text">enum</span>
+                        <b>queue2AssociatedRateLimiterID</b>
+                        <span class="type_string fixed-text">string</span>
                         
     
     
@@ -1095,10 +1300,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1106,14 +1307,63 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Class of service to be used.  Service classes in order of priority are A, B, C, D, E, F, G, and H.</p>
+                        <p>ID of the queue2 rate limiter associated with this Ingress QOS policy.</p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">A, B, C, D, E, F, G, H</span><br/>
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">queue2AssociatedRateLimiterID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_queue2ForwardingClasses" class="filterable" data-filter-keyword="queue2ForwardingClasses" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>queue2ForwardingClasses</b>
+                        <span class="type_list fixed-text">list</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Queue2 Forwarding Classes for this Ingress QOS Policy Possible values are NONE, A, B, C, D, E, F, G, H, .</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">A, B, C, D, E, F, G, H, NONE</span><br/>
                             
 
                             
@@ -1130,7 +1380,203 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">serviceClass</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">queue2ForwardingClasses</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_queue3AssociatedRateLimiterID" class="filterable" data-filter-keyword="queue3AssociatedRateLimiterID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>queue3AssociatedRateLimiterID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the queue3 rate limiter associated with this Ingress QOS policy.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">queue3AssociatedRateLimiterID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_queue3ForwardingClasses" class="filterable" data-filter-keyword="queue3ForwardingClasses" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>queue3ForwardingClasses</b>
+                        <span class="type_list fixed-text">list</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Queue3 Forwarding Classes for this Ingress QOS Policy Possible values are NONE, A, B, C, D, E, F, G, H, .</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">A, B, C, D, E, F, G, H, NONE</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">queue3ForwardingClasses</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_queue4AssociatedRateLimiterID" class="filterable" data-filter-keyword="queue4AssociatedRateLimiterID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>queue4AssociatedRateLimiterID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the queue4 rate limiter associated with this Ingress QOS policy.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">queue4AssociatedRateLimiterID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_queue4ForwardingClasses" class="filterable" data-filter-keyword="queue4ForwardingClasses" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>queue4ForwardingClasses</b>
+                        <span class="type_list fixed-text">list</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Queue4 Forwarding Classes for this Ingress QOS Policy Possible values are NONE, A, B, C, D, E, F, G, H, .</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">A, B, C, D, E, F, G, H, NONE</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">queue4ForwardingClasses</span>
                         </p>
                     </div>
                 </div>

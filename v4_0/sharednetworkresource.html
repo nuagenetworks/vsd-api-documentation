@@ -72,6 +72,10 @@
                             
                             <li><a data-id="attr_sharedResourceParentID" href="#attr_sharedResourceParentID" class="fixed-text">sharedResourceParentID</a></li>
                             
+                            <li><a data-id="attr_subnetRouteDistinguisher" href="#attr_subnetRouteDistinguisher" class="fixed-text">subnetRouteDistinguisher</a></li>
+                            
+                            <li><a data-id="attr_subnetRouteTarget" href="#attr_subnetRouteTarget" class="fixed-text">subnetRouteTarget</a></li>
+                            
                             <li><a data-id="attr_type" href="#attr_type" class="fixed-text">type</a></li>
                             
                             <li><a data-id="attr_underlay" href="#attr_underlay" class="fixed-text">underlay</a></li>
@@ -211,7 +215,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_backHaulRouteDistinguisher" title="backHaulRouteDistinguisher of the Shared Resource">backHaulRouteDistinguisher</a>
+                            <a href="#attr_backHaulRouteDistinguisher" title="Backhaul route distinguisher of the shared resource. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]">backHaulRouteDistinguisher</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -241,7 +245,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_backHaulRouteTarget" title="backHaulRouteTarget of the Shared Resource">backHaulRouteTarget</a>
+                            <a href="#attr_backHaulRouteTarget" title="Backhaul route target of the shared resource. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]">backHaulRouteTarget</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -271,7 +275,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_backHaulVNID" title="backHaulVNID of the Shared Resource">backHaulVNID</a>
+                            <a href="#attr_backHaulVNID" title="Backhaul virtual network ID of the shared resource">backHaulVNID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -355,7 +359,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_domainRouteDistinguisher" title="Route distinguisher configured on the shared resource">domainRouteDistinguisher</a>
+                            <a href="#attr_domainRouteDistinguisher" title="Route distinguisher configured on the shared resource. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]">domainRouteDistinguisher</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -385,7 +389,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_domainRouteTarget" title="Route target configured on the shared resource">domainRouteTarget</a>
+                            <a href="#attr_domainRouteTarget" title="Route target configured on the shared resource. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]">domainRouteTarget</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -771,6 +775,66 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_subnetRouteDistinguisher" title="Route distinguisher configured on the shared resource subnetwork. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]">subnetRouteDistinguisher</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_subnetRouteTarget" title="Route target configured on the shared resource subnetwork. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]">subnetRouteTarget</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_type" title="Type of the shared resource.">type</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -993,7 +1057,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_vnID" title="VNID of the Shared Resource">vnID</a>
+                            <a href="#attr_vnID" title="Virtual network ID of the shared resource">vnID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -1595,7 +1659,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>backHaulRouteDistinguisher of the Shared Resource</p>
+                        <p>Backhaul route distinguisher of the shared resource. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]</p>
 
                         <hr/>
 
@@ -1648,7 +1712,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>backHaulRouteTarget of the Shared Resource</p>
+                        <p>Backhaul route target of the shared resource. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]</p>
 
                         <hr/>
 
@@ -1701,7 +1765,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>backHaulVNID of the Shared Resource</p>
+                        <p>Backhaul virtual network ID of the shared resource</p>
 
                         <hr/>
 
@@ -1854,7 +1918,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Route distinguisher configured on the shared resource</p>
+                        <p>Route distinguisher configured on the shared resource. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]</p>
 
                         <hr/>
 
@@ -1907,7 +1971,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Route target configured on the shared resource</p>
+                        <p>Route target configured on the shared resource. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]</p>
 
                         <hr/>
 
@@ -2528,6 +2592,112 @@
                 </div>
             </section>
             
+            <section id="attr_subnetRouteDistinguisher" class="filterable" data-filter-keyword="subnetRouteDistinguisher" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>subnetRouteDistinguisher</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Route distinguisher configured on the shared resource subnetwork. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">subnetRouteDistinguisher</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_subnetRouteTarget" class="filterable" data-filter-keyword="subnetRouteTarget" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>subnetRouteTarget</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Route target configured on the shared resource subnetwork. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">subnetRouteTarget</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_type" class="filterable" data-filter-keyword="type" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2912,7 +3082,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>VNID of the Shared Resource</p>
+                        <p>Virtual network ID of the shared resource</p>
 
                         <hr/>
 
