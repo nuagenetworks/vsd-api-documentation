@@ -74,8 +74,6 @@
                             
                             <li><a data-id="attr_multicast" href="#attr_multicast" class="fixed-text">multicast</a></li>
                             
-                            <li><a data-id="attr_multiHomeEnabled" href="#attr_multiHomeEnabled" class="fixed-text">multiHomeEnabled</a></li>
-                            
                             <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
                             
                             <li><a data-id="attr_netmask" href="#attr_netmask" class="fixed-text">netmask</a></li>
@@ -872,36 +870,6 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_multiHomeEnabled" title="Boolean flag to indicate whether this is a Multi-homed subnet or not.">multiHomeEnabled</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_boolean">boolean
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
                             <a href="#attr_name" title="Name of the current entity(Zone or zone template or subnet etc..) Valid characters are alphabets, numbers, space and hyphen( - ).">name</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -1130,7 +1098,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_routeDistinguisher" title="Route distinguisher for this subnet that is used by the BGP-EVPN protocol in VSC. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]">routeDistinguisher</a>
+                            <a href="#attr_routeDistinguisher" title="The Route Distinguisher value assigned by VSD for this subnet that is used by the BGP-EVPN protocol in VSC">routeDistinguisher</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -1160,7 +1128,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_routeTarget" title="Route target for this subnet that is used by the BGP-EVPN protocol in VSC. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]">routeTarget</a>
+                            <a href="#attr_routeTarget" title="The Route Target value assigned by VSD for this subnet that is used by the BGP-EVPN protocol in VSC">routeTarget</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -3447,59 +3415,6 @@
                 </div>
             </section>
             
-            <section id="attr_multiHomeEnabled" class="filterable" data-filter-keyword="multiHomeEnabled" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>multiHomeEnabled</b>
-                        <span class="type_boolean fixed-text">boolean</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Boolean flag to indicate whether this is a Multi-homed subnet or not.</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">multiHomeEnabled</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
             <section id="attr_name" class="filterable" data-filter-keyword="name" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3896,7 +3811,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Route distinguisher for this subnet that is used by the BGP-EVPN protocol in VSC. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]</p>
+                        <p>The Route Distinguisher value assigned by VSD for this subnet that is used by the BGP-EVPN protocol in VSC</p>
 
                         <hr/>
 
@@ -3951,7 +3866,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Route target for this subnet that is used by the BGP-EVPN protocol in VSC. Supported formats are: [2-byte ASN]:[4-byte value] or [4-byte ASN]:[2-byte value]</p>
+                        <p>The Route Target value assigned by VSD for this subnet that is used by the BGP-EVPN protocol in VSC</p>
 
                         <hr/>
 
