@@ -30,7 +30,13 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             
+                            <li><a data-id="attr_associatedConnectionType" href="#attr_associatedConnectionType" class="fixed-text">associatedConnectionType</a></li>
+                            
                             <li><a data-id="attr_associatedEgressQOSPolicyID" href="#attr_associatedEgressQOSPolicyID" class="fixed-text">associatedEgressQOSPolicyID</a></li>
+                            
+                            <li><a data-id="attr_associatedIngressQOSPolicyID" href="#attr_associatedIngressQOSPolicyID" class="fixed-text">associatedIngressQOSPolicyID</a></li>
+                            
+                            <li><a data-id="attr_associatedUplinkConnectionID" href="#attr_associatedUplinkConnectionID" class="fixed-text">associatedUplinkConnectionID</a></li>
                             
                             <li><a data-id="attr_associatedVSCProfileID" href="#attr_associatedVSCProfileID" class="fixed-text">associatedVSCProfileID</a></li>
                             
@@ -41,6 +47,8 @@
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
+                            
+                            <li><a data-id="attr_isUplink" href="#attr_isUplink" class="fixed-text">isUplink</a></li>
                             
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
@@ -87,7 +95,96 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_associatedConnectionType" title="States the managed object type of the uplink connection associated to this VLAN Template instance.">associatedConnectionType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (BR_CONNECTION | UPLINK_CONNECTION)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_associatedEgressQOSPolicyID" title="ID of the Egress QOS Policy associated with this Vlan.">associatedEgressQOSPolicyID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedIngressQOSPolicyID" title="ID of the Ingress QoS Policy associated with this VLAN Template.">associatedIngressQOSPolicyID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedUplinkConnectionID" title="ID of the uplink connection making use of this VLAN Template instance.">associatedUplinkConnectionID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -131,10 +228,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -274,6 +367,32 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_isUplink" title="Indicates that this VLAN Template should be considered as being used for uplink connection.">isUplink</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_lastUpdatedBy" title="ID of the user who last updated the object.">lastUpdatedBy</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -302,7 +421,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_type" title="This type marks a VLAN for it's utility.">type</a>
+                            <a href="#attr_type" title="This type marks a VLAN for its utility.">type</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -347,7 +466,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_value" title="value of VLAN">value</a>
+                            <a href="#attr_value" title="Value of VLAN">value</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -360,6 +479,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -438,7 +559,7 @@
 
             
             
-            <span class="fixed-text">/<a href="nsporttemplate.html">nsporttemplates</a>/<span class="text-muted">id</span>/vlantemplates</span>
+            <span class="fixed-text">/<a href="porttemplate.html">porttemplates</a>/<span class="text-muted">id</span>/vlantemplates</span>
             
 
             
@@ -467,7 +588,7 @@
 
             
             
-            <span class="fixed-text">/<a href="porttemplate.html">porttemplates</a>/<span class="text-muted">id</span>/vlantemplates</span>
+            <span class="fixed-text">/<a href="nsporttemplate.html">nsporttemplates</a>/<span class="text-muted">id</span>/vlantemplates</span>
             
 
             
@@ -607,7 +728,7 @@
             
 
             
-            <span class="fixed-text">/vlantemplates/<span class="text-muted">id</span>/<a href="brconnections.html">brconnections</a></span>
+            <span class="fixed-text">/vlantemplates/<span class="text-muted">id</span>/<a href="brconnection.html">brconnections</a></span>
             
 
             
@@ -637,6 +758,57 @@
 
         <section id="attributes">
             <h3>Attributes documentation</h3>
+            
+            <section id="attr_associatedConnectionType" class="filterable" data-filter-keyword="associatedConnectionType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedConnectionType</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>States the managed object type of the uplink connection associated to this VLAN Template instance.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">BR_CONNECTION, UPLINK_CONNECTION</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedConnectionType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
             
             <section id="attr_associatedEgressQOSPolicyID" class="filterable" data-filter-keyword="associatedEgressQOSPolicyID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
@@ -687,6 +859,104 @@
                 </div>
             </section>
             
+            <section id="attr_associatedIngressQOSPolicyID" class="filterable" data-filter-keyword="associatedIngressQOSPolicyID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedIngressQOSPolicyID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the Ingress QoS Policy associated with this VLAN Template.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedIngressQOSPolicyID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedUplinkConnectionID" class="filterable" data-filter-keyword="associatedUplinkConnectionID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedUplinkConnectionID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the uplink connection making use of this VLAN Template instance.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedUplinkConnectionID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_associatedVSCProfileID" class="filterable" data-filter-keyword="associatedVSCProfileID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -699,10 +969,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -954,6 +1220,55 @@
                 </div>
             </section>
             
+            <section id="attr_isUplink" class="filterable" data-filter-keyword="isUplink" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>isUplink</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates that this VLAN Template should be considered as being used for uplink connection.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">isUplink</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_lastUpdatedBy" class="filterable" data-filter-keyword="lastUpdatedBy" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1030,7 +1345,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>This type marks a VLAN for it's utility.</p>
+                        <p>This type marks a VLAN for its utility.</p>
 
                         <hr/>
 
@@ -1068,6 +1383,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -1083,7 +1400,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>value of VLAN</p>
+                        <p>Value of VLAN</p>
 
                         <hr/>
 

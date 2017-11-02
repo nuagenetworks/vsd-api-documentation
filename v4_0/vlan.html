@@ -32,7 +32,11 @@
                             
                             <li><a data-id="attr_associatedBGPProfileID" href="#attr_associatedBGPProfileID" class="fixed-text">associatedBGPProfileID</a></li>
                             
+                            <li><a data-id="attr_associatedConnectionType" href="#attr_associatedConnectionType" class="fixed-text">associatedConnectionType</a></li>
+                            
                             <li><a data-id="attr_associatedEgressQOSPolicyID" href="#attr_associatedEgressQOSPolicyID" class="fixed-text">associatedEgressQOSPolicyID</a></li>
+                            
+                            <li><a data-id="attr_associatedIngressQOSPolicyID" href="#attr_associatedIngressQOSPolicyID" class="fixed-text">associatedIngressQOSPolicyID</a></li>
                             
                             <li><a data-id="attr_associatedUplinkConnectionID" href="#attr_associatedUplinkConnectionID" class="fixed-text">associatedUplinkConnectionID</a></li>
                             
@@ -47,6 +51,8 @@
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
                             <li><a data-id="attr_gatewayID" href="#attr_gatewayID" class="fixed-text">gatewayID</a></li>
+                            
+                            <li><a data-id="attr_isUplink" href="#attr_isUplink" class="fixed-text">isUplink</a></li>
                             
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
@@ -125,10 +131,43 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
-     <span class="label label-info"> orderable </span>&nbsp;
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedConnectionType" title="Specifies the type of Connection (uplink, BR) associated to this VLAN instance.">associatedConnectionType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (BR_CONNECTION | UPLINK_CONNECTION)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
     
     
     
@@ -138,6 +177,32 @@
                     <tr>
                         <td class="fixed-text">
                             <a href="#attr_associatedEgressQOSPolicyID" title="ID of the Egress QOS Policy associated with this VLAN.">associatedEgressQOSPolicyID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedIngressQOSPolicyID" title="ID of the Ingress QOS Policy / Tunnel Shaper associated with this VLAN.">associatedIngressQOSPolicyID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -181,10 +246,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -211,10 +272,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -358,7 +415,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_gatewayID" title="The Gateway associated with this  VLAN  . This is a read only attribute">gatewayID</a>
+                            <a href="#attr_gatewayID" title="The Gateway associated with this  VLAN. This is a read only attribute">gatewayID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -371,6 +428,36 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_isUplink" title="Indicates if the VLAN is used as an uplink.">isUplink</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -672,7 +759,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_vportID" title="The Vport associated with this  VLAN  . This is a read only attribute">vportID</a>
+                            <a href="#attr_vportID" title="The Vport associated with this VLAN. This is a read only attribute">vportID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -685,6 +772,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -1193,6 +1282,29 @@
             
 
             
+            <span class="fixed-text">/vlans/<span class="text-muted">id</span>/<a href="statistics.html">statistics</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/vlans/<span class="text-muted">id</span>/<a href="ltestatistics.html">ltestatistics</a></span>
             
 
@@ -1259,10 +1371,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1295,6 +1403,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedBGPProfileID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedConnectionType" class="filterable" data-filter-keyword="associatedConnectionType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedConnectionType</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Specifies the type of Connection (uplink, BR) associated to this VLAN instance.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">BR_CONNECTION, UPLINK_CONNECTION</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedConnectionType</span>
                         </p>
                     </div>
                 </div>
@@ -1349,6 +1508,55 @@
                 </div>
             </section>
             
+            <section id="attr_associatedIngressQOSPolicyID" class="filterable" data-filter-keyword="associatedIngressQOSPolicyID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedIngressQOSPolicyID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the Ingress QOS Policy / Tunnel Shaper associated with this VLAN.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedIngressQOSPolicyID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_associatedUplinkConnectionID" class="filterable" data-filter-keyword="associatedUplinkConnectionID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1361,10 +1569,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1414,10 +1618,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1685,6 +1885,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -1696,7 +1898,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The Gateway associated with this  VLAN  . This is a read only attribute</p>
+                        <p>The Gateway associated with this  VLAN. This is a read only attribute</p>
 
                         <hr/>
 
@@ -1721,6 +1923,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">gatewayID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_isUplink" class="filterable" data-filter-keyword="isUplink" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>isUplink</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates if the VLAN is used as an uplink.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">isUplink</span>
                         </p>
                     </div>
                 </div>
@@ -2203,6 +2456,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -2218,7 +2473,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The Vport associated with this  VLAN  . This is a read only attribute</p>
+                        <p>The Vport associated with this VLAN. This is a read only attribute</p>
 
                         <hr/>
 
