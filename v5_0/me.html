@@ -497,7 +497,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_flowCollectionEnabled" title="Enables flow statistics collection. It is needed for the VSS feature, and requires a valid VSS license. This option requires "statisticsEnabled".">flowCollectionEnabled</a>
+                            <a href="#attr_flowCollectionEnabled" title="Enables flow statistics collection. It is needed for the VSS feature, and requires a valid VSS license. This option requires 'statisticsEnabled'.">flowCollectionEnabled</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_boolean">boolean
@@ -615,7 +615,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_password" title="User password stored as a hash (SHA-1 encrpted)">password</a>
+                            <a href="#attr_password" title="User password in clear text. Password cannot be a single character asterisk (*)">password</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -635,10 +635,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1709,6 +1705,36 @@
     <span class="label label-default">get</span>
     
             
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/me</a>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
         </div>
     </div>
     
@@ -2055,6 +2081,13 @@
     <span class="label label-default">get</span>
     
             
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
         </div>
     </div>
     
@@ -2523,6 +2556,29 @@
     
     
     <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/me</a>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
     
             
         </div>
@@ -3559,7 +3615,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Enables flow statistics collection. It is needed for the VSS feature, and requires a valid VSS license. This option requires "statisticsEnabled".</p>
+                        <p>Enables flow statistics collection. It is needed for the VSS feature, and requires a valid VSS license. This option requires 'statisticsEnabled'.</p>
 
                         <hr/>
 
@@ -3762,10 +3818,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -3773,7 +3825,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>User password stored as a hash (SHA-1 encrpted)</p>
+                        <p>User password in clear text. Password cannot be a single character asterisk (*)</p>
 
                         <hr/>
 
@@ -3790,7 +3842,11 @@
                             
 
                             
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
+                            
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -3947,7 +4003,11 @@
                             
 
                             
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
+                            
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             

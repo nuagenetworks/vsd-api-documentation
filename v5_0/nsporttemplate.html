@@ -93,7 +93,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedEgressQOSPolicyID" title="ID of the Egress QOS Policy associated with this Vlan.">associatedEgressQOSPolicyID</a>
+                            <a href="#attr_associatedEgressQOSPolicyID" title="ID of the Egress QoS Policy associated with this NSG Port Template.">associatedEgressQOSPolicyID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -119,7 +119,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_description" title="A description of the Port">description</a>
+                            <a href="#attr_description" title="A description of the NSG Port Template">description</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -220,7 +220,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_infrastructureProfileID" title="The ID of the infrastructure profile this instance is associated with.">infrastructureProfileID</a>
+                            <a href="#attr_infrastructureProfileID" title="The ID of the infrastructure port profile this Template instance is associated with. (Deprecated in 4.0)">infrastructureProfileID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -234,6 +234,8 @@
                             
     
     
+    
+     <span class="label label-default"> deprecated </span>&nbsp;
     
     
     
@@ -354,6 +356,8 @@
     
     
     
+     <span class="label label-info"> creation only </span>&nbsp;
+    
     
     
      <span class="label label-info"> filterable </span>&nbsp;
@@ -368,7 +372,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_portType" title="Type of the Port.">portType</a>
+                            <a href="#attr_portType" title="Type of the Ports that will be instantiated from this template.">portType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -703,7 +707,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>ID of the Egress QOS Policy associated with this Vlan.</p>
+                        <p>ID of the Egress QoS Policy associated with this NSG Port Template.</p>
 
                         <hr/>
 
@@ -756,7 +760,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>A description of the Port</p>
+                        <p>A description of the NSG Port Template</p>
 
                         <hr/>
 
@@ -905,6 +909,8 @@
     
     
     
+     <span class="label label-default"> deprecated </span>&nbsp;
+    
     
     
     
@@ -915,7 +921,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The ID of the infrastructure profile this instance is associated with.</p>
+                        <p>The ID of the infrastructure port profile this Template instance is associated with. (Deprecated in 4.0)</p>
 
                         <hr/>
 
@@ -1124,6 +1130,8 @@
     
     
     
+     <span class="label label-info"> creation only </span>&nbsp;
+    
     
     
      <span class="label label-info"> filterable </span>&nbsp;
@@ -1196,7 +1204,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Type of the Port.</p>
+                        <p>Type of the Ports that will be instantiated from this template.</p>
 
                         <hr/>
 
@@ -1262,6 +1270,8 @@
                             
 
                             
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">AUTONEGOTIATE</span><br/>
+                            
 
                             
 
@@ -1310,6 +1320,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">0-4094</span><br/>
                             
 
                             

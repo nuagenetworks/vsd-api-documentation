@@ -48,6 +48,8 @@
                             
                             <li><a data-id="attr_gateway" href="#attr_gateway" class="fixed-text">gateway</a></li>
                             
+                            <li><a data-id="attr_installerManaged" href="#attr_installerManaged" class="fixed-text">installerManaged</a></li>
+                            
                             <li><a data-id="attr_interfaceConnectionType" href="#attr_interfaceConnectionType" class="fixed-text">interfaceConnectionType</a></li>
                             
                             <li><a data-id="attr_mode" href="#attr_mode" class="fixed-text">mode</a></li>
@@ -56,6 +58,8 @@
                             
                             <li><a data-id="attr_password" href="#attr_password" class="fixed-text">password</a></li>
                             
+                            <li><a data-id="attr_PATEnabled" href="#attr_PATEnabled" class="fixed-text">PATEnabled</a></li>
+                            
                             <li><a data-id="attr_portName" href="#attr_portName" class="fixed-text">portName</a></li>
                             
                             <li><a data-id="attr_role" href="#attr_role" class="fixed-text">role</a></li>
@@ -63,6 +67,8 @@
                             <li><a data-id="attr_roleOrder" href="#attr_roleOrder" class="fixed-text">roleOrder</a></li>
                             
                             <li><a data-id="attr_secondaryAddress" href="#attr_secondaryAddress" class="fixed-text">secondaryAddress</a></li>
+                            
+                            <li><a data-id="attr_underlayEnabled" href="#attr_underlayEnabled" class="fixed-text">underlayEnabled</a></li>
                             
                             <li><a data-id="attr_uplinkID" href="#attr_uplinkID" class="fixed-text">uplinkID</a></li>
                             
@@ -386,6 +392,36 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_installerManaged" title="Boolean flag to indicate that connection parameters will be configured by the installer onsite. Limited to ConnectionMode: PPPoE">installerManaged</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_interfaceConnectionType" title="The way the interface is connected via the NSG.  This value depends on if the interface internal or external to the NSG.">interfaceConnectionType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -534,6 +570,36 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_PATEnabled" title="Indicates whether PAT is enabled on the underlay for this uplink connection.">PATEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_portName" title="Physical port name this uplink belongs to">portName</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -653,6 +719,36 @@
     
     
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_underlayEnabled" title="Indicated whether route to underlay is enabled on this uplink connection.">underlayEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1467,6 +1563,59 @@
                 </div>
             </section>
             
+            <section id="attr_installerManaged" class="filterable" data-filter-keyword="installerManaged" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>installerManaged</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Boolean flag to indicate that connection parameters will be configured by the installer onsite. Limited to ConnectionMode: PPPoE</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">installerManaged</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_interfaceConnectionType" class="filterable" data-filter-keyword="interfaceConnectionType" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1683,6 +1832,59 @@
                 </div>
             </section>
             
+            <section id="attr_PATEnabled" class="filterable" data-filter-keyword="PATEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>PATEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates whether PAT is enabled on the underlay for this uplink connection.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">true</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">PATEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_portName" class="filterable" data-filter-keyword="portName" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1886,6 +2088,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">secondaryAddress</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_underlayEnabled" class="filterable" data-filter-keyword="underlayEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>underlayEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicated whether route to underlay is enabled on this uplink connection.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">true</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">underlayEnabled</span>
                         </p>
                     </div>
                 </div>

@@ -38,6 +38,14 @@
                             
                             <li><a data-id="attr_assocVCenterID" href="#attr_assocVCenterID" class="fixed-text">assocVCenterID</a></li>
                             
+                            <li><a data-id="attr_avrsEnabled" href="#attr_avrsEnabled" class="fixed-text">avrsEnabled</a></li>
+                            
+                            <li><a data-id="attr_avrsProfile" href="#attr_avrsProfile" class="fixed-text">avrsProfile</a></li>
+                            
+                            <li><a data-id="attr_configuredMetricsPushInterval" href="#attr_configuredMetricsPushInterval" class="fixed-text">configuredMetricsPushInterval</a></li>
+                            
+                            <li><a data-id="attr_cpuCount" href="#attr_cpuCount" class="fixed-text">cpuCount</a></li>
+                            
                             <li><a data-id="attr_customizedScriptURL" href="#attr_customizedScriptURL" class="fixed-text">customizedScriptURL</a></li>
                             
                             <li><a data-id="attr_dataDNS1" href="#attr_dataDNS1" class="fixed-text">dataDNS1</a></li>
@@ -58,6 +66,12 @@
                             
                             <li><a data-id="attr_dhcpRelayServer" href="#attr_dhcpRelayServer" class="fixed-text">dhcpRelayServer</a></li>
                             
+                            <li><a data-id="attr_disableGROOnDatapath" href="#attr_disableGROOnDatapath" class="fixed-text">disableGROOnDatapath</a></li>
+                            
+                            <li><a data-id="attr_disableLROOnDatapath" href="#attr_disableLROOnDatapath" class="fixed-text">disableLROOnDatapath</a></li>
+                            
+                            <li><a data-id="attr_enableVRSResourceReservation" href="#attr_enableVRSResourceReservation" class="fixed-text">enableVRSResourceReservation</a></li>
+                            
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
@@ -69,6 +83,8 @@
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
                             <li><a data-id="attr_managedObjectID" href="#attr_managedObjectID" class="fixed-text">managedObjectID</a></li>
+                            
+                            <li><a data-id="attr_memorySizeInGB" href="#attr_memorySizeInGB" class="fixed-text">memorySizeInGB</a></li>
                             
                             <li><a data-id="attr_metadataServerIP" href="#attr_metadataServerIP" class="fixed-text">metadataServerIP</a></li>
                             
@@ -158,6 +174,8 @@
                             
                             <li><a data-id="attr_portgroupMetadata" href="#attr_portgroupMetadata" class="fixed-text">portgroupMetadata</a></li>
                             
+                            <li><a data-id="attr_primaryDataUplinkUnderlayID" href="#attr_primaryDataUplinkUnderlayID" class="fixed-text">primaryDataUplinkUnderlayID</a></li>
+                            
                             <li><a data-id="attr_primaryNuageController" href="#attr_primaryNuageController" class="fixed-text">primaryNuageController</a></li>
                             
                             <li><a data-id="attr_remoteSyslogServerIP" href="#attr_remoteSyslogServerIP" class="fixed-text">remoteSyslogServerIP</a></li>
@@ -166,7 +184,25 @@
                             
                             <li><a data-id="attr_remoteSyslogServerType" href="#attr_remoteSyslogServerType" class="fixed-text">remoteSyslogServerType</a></li>
                             
+                            <li><a data-id="attr_revertiveControllerEnabled" href="#attr_revertiveControllerEnabled" class="fixed-text">revertiveControllerEnabled</a></li>
+                            
+                            <li><a data-id="attr_revertiveTimer" href="#attr_revertiveTimer" class="fixed-text">revertiveTimer</a></li>
+                            
                             <li><a data-id="attr_scope" href="#attr_scope" class="fixed-text">scope</a></li>
+                            
+                            <li><a data-id="attr_secondaryDataUplinkDHCPEnabled" href="#attr_secondaryDataUplinkDHCPEnabled" class="fixed-text">secondaryDataUplinkDHCPEnabled</a></li>
+                            
+                            <li><a data-id="attr_secondaryDataUplinkEnabled" href="#attr_secondaryDataUplinkEnabled" class="fixed-text">secondaryDataUplinkEnabled</a></li>
+                            
+                            <li><a data-id="attr_secondaryDataUplinkInterface" href="#attr_secondaryDataUplinkInterface" class="fixed-text">secondaryDataUplinkInterface</a></li>
+                            
+                            <li><a data-id="attr_secondaryDataUplinkMTU" href="#attr_secondaryDataUplinkMTU" class="fixed-text">secondaryDataUplinkMTU</a></li>
+                            
+                            <li><a data-id="attr_secondaryDataUplinkPrimaryController" href="#attr_secondaryDataUplinkPrimaryController" class="fixed-text">secondaryDataUplinkPrimaryController</a></li>
+                            
+                            <li><a data-id="attr_secondaryDataUplinkSecondaryController" href="#attr_secondaryDataUplinkSecondaryController" class="fixed-text">secondaryDataUplinkSecondaryController</a></li>
+                            
+                            <li><a data-id="attr_secondaryDataUplinkUnderlayID" href="#attr_secondaryDataUplinkUnderlayID" class="fixed-text">secondaryDataUplinkUnderlayID</a></li>
                             
                             <li><a data-id="attr_secondaryNuageController" href="#attr_secondaryNuageController" class="fixed-text">secondaryNuageController</a></li>
                             
@@ -337,6 +373,130 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_avrsEnabled" title="When enabled, the AVRS functionality will be enabled on the VRS during bootstrapping. This feature requires special AVRS licenses and specific configuration which is described in the product documentation">avrsEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_avrsProfile" title="The AVRS configuration profile that needs to be set up. This profile will configure the AVRS services so that it can support a certain type of performance.">avrsProfile</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (AVRS_25G)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_configuredMetricsPushInterval" title="Configured VRS metrics push interval on VCIN">configuredMetricsPushInterval</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_cpuCount" title="The number of vCPUs that will be assigned to the VRS.">cpuCount</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (DEFAULT_2 | LARGE_6 | MEDIUM_4 | XLARGE_8)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
     
     
     
@@ -624,6 +784,84 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_disableGROOnDatapath" title="Disable GRO on datapath">disableGROOnDatapath</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_disableLROOnDatapath" title="Disable LRO on datapath">disableLROOnDatapath</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_enableVRSResourceReservation" title="Enable resource reservation on the VRS. When this is enabled, all memory and 100% of CPU resources allocated to the VRS will be reserved.">enableVRSResourceReservation</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_entityScope" title="Specify if scope of entity is Data center or Enterprise level">entityScope</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -797,6 +1035,43 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_memorySizeInGB" title="Memory in Gigabytes">memorySizeInGB</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (DEFAULT_4 | LARGE_8 | MEDIUM_6)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
     
     
     
@@ -1959,6 +2234,32 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_primaryDataUplinkUnderlayID" title="Primary data uplink underlay ID">primaryDataUplinkUnderlayID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_primaryNuageController" title="IP address of the primary Controller (VSC)">primaryNuageController</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -2074,10 +2375,250 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_revertiveControllerEnabled" title="Enable revertive controller behaviour. If this is enabled, OVS will make its primary VSC as its master VSC once it is back up.">revertiveControllerEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+     <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_revertiveTimer" title="A timer in seconds indicating after how long OVS should retry to connect to the primary VSC as its master after a failure.">revertiveTimer</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+     <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_scope" title="Cluster in scope or not in scope.">scope</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_secondaryDataUplinkDHCPEnabled" title="Enable DHCP on the secondary data uplink.">secondaryDataUplinkDHCPEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_secondaryDataUplinkEnabled" title="Enable secondary data uplink">secondaryDataUplinkEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+     <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_secondaryDataUplinkInterface" title="Interface to use for the secondary data uplink. This interface can be a normal interface or a VLAN on an existing interface. Please read the VMware integration guide for more details.">secondaryDataUplinkInterface</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_secondaryDataUplinkMTU" title="Secondary data uplink MTU">secondaryDataUplinkMTU</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_secondaryDataUplinkPrimaryController" title="Secondary data uplink primary controller IP">secondaryDataUplinkPrimaryController</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_secondaryDataUplinkSecondaryController" title="Secondary data uplink secondary controller IP">secondaryDataUplinkSecondaryController</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_secondaryDataUplinkUnderlayID" title="Secondary data uplink underlay ID">secondaryDataUplinkUnderlayID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
     
     
     
@@ -3010,6 +3551,208 @@
                 </div>
             </section>
             
+            <section id="attr_avrsEnabled" class="filterable" data-filter-keyword="avrsEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>avrsEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>When enabled, the AVRS functionality will be enabled on the VRS during bootstrapping. This feature requires special AVRS licenses and specific configuration which is described in the product documentation</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">avrsEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_avrsProfile" class="filterable" data-filter-keyword="avrsProfile" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>avrsProfile</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The AVRS configuration profile that needs to be set up. This profile will configure the AVRS services so that it can support a certain type of performance.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">AVRS_25G</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">AVRS_25G</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">avrsProfile</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_configuredMetricsPushInterval" class="filterable" data-filter-keyword="configuredMetricsPushInterval" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>configuredMetricsPushInterval</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Configured VRS metrics push interval on VCIN</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">60</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">10</span><br/>
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">configuredMetricsPushInterval</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_cpuCount" class="filterable" data-filter-keyword="cpuCount" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>cpuCount</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The number of vCPUs that will be assigned to the VRS.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DEFAULT_2, LARGE_6, MEDIUM_4, XLARGE_8</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">DEFAULT_2</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">cpuCount</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_customizedScriptURL" class="filterable" data-filter-keyword="customizedScriptURL" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3504,6 +4247,153 @@
                 </div>
             </section>
             
+            <section id="attr_disableGROOnDatapath" class="filterable" data-filter-keyword="disableGROOnDatapath" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>disableGROOnDatapath</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Disable GRO on datapath</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">disableGROOnDatapath</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_disableLROOnDatapath" class="filterable" data-filter-keyword="disableLROOnDatapath" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>disableLROOnDatapath</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Disable LRO on datapath</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">disableLROOnDatapath</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_enableVRSResourceReservation" class="filterable" data-filter-keyword="enableVRSResourceReservation" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>enableVRSResourceReservation</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Enable resource reservation on the VRS. When this is enabled, all memory and 100% of CPU resources allocated to the VRS will be reserved.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">enableVRSResourceReservation</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_entityScope" class="filterable" data-filter-keyword="entityScope" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3809,6 +4699,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">managedObjectID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_memorySizeInGB" class="filterable" data-filter-keyword="memorySizeInGB" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>memorySizeInGB</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Memory in Gigabytes</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DEFAULT_4, LARGE_8, MEDIUM_6</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">DEFAULT_4</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">memorySizeInGB</span>
                         </p>
                     </div>
                 </div>
@@ -5980,6 +6921,57 @@
                 </div>
             </section>
             
+            <section id="attr_primaryDataUplinkUnderlayID" class="filterable" data-filter-keyword="primaryDataUplinkUnderlayID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>primaryDataUplinkUnderlayID</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Primary data uplink underlay ID</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">0</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">65535</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">primaryDataUplinkUnderlayID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_primaryNuageController" class="filterable" data-filter-keyword="primaryNuageController" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -6178,6 +7170,112 @@
                 </div>
             </section>
             
+            <section id="attr_revertiveControllerEnabled" class="filterable" data-filter-keyword="revertiveControllerEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>revertiveControllerEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+     <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Enable revertive controller behaviour. If this is enabled, OVS will make its primary VSC as its master VSC once it is back up.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">revertiveControllerEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_revertiveTimer" class="filterable" data-filter-keyword="revertiveTimer" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>revertiveTimer</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+     <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>A timer in seconds indicating after how long OVS should retry to connect to the primary VSC as its master after a failure.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">300</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">10</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">7200</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">revertiveTimer</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_scope" class="filterable" data-filter-keyword="scope" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -6220,6 +7318,353 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">scope</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_secondaryDataUplinkDHCPEnabled" class="filterable" data-filter-keyword="secondaryDataUplinkDHCPEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>secondaryDataUplinkDHCPEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Enable DHCP on the secondary data uplink.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">secondaryDataUplinkDHCPEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_secondaryDataUplinkEnabled" class="filterable" data-filter-keyword="secondaryDataUplinkEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>secondaryDataUplinkEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+     <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Enable secondary data uplink</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">secondaryDataUplinkEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_secondaryDataUplinkInterface" class="filterable" data-filter-keyword="secondaryDataUplinkInterface" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>secondaryDataUplinkInterface</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Interface to use for the secondary data uplink. This interface can be a normal interface or a VLAN on an existing interface. Please read the VMware integration guide for more details.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">secondaryDataUplinkInterface</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_secondaryDataUplinkMTU" class="filterable" data-filter-keyword="secondaryDataUplinkMTU" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>secondaryDataUplinkMTU</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Secondary data uplink MTU</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">1500</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">secondaryDataUplinkMTU</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_secondaryDataUplinkPrimaryController" class="filterable" data-filter-keyword="secondaryDataUplinkPrimaryController" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>secondaryDataUplinkPrimaryController</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Secondary data uplink primary controller IP</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">secondaryDataUplinkPrimaryController</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_secondaryDataUplinkSecondaryController" class="filterable" data-filter-keyword="secondaryDataUplinkSecondaryController" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>secondaryDataUplinkSecondaryController</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Secondary data uplink secondary controller IP</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">secondaryDataUplinkSecondaryController</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_secondaryDataUplinkUnderlayID" class="filterable" data-filter-keyword="secondaryDataUplinkUnderlayID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>secondaryDataUplinkUnderlayID</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Secondary data uplink underlay ID</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">1</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">65535</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">secondaryDataUplinkUnderlayID</span>
                         </p>
                     </div>
                 </div>

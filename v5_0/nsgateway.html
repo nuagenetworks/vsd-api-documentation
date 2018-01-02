@@ -40,6 +40,8 @@
                             
                             <li><a data-id="attr_autoDiscGatewayID" href="#attr_autoDiscGatewayID" class="fixed-text">autoDiscGatewayID</a></li>
                             
+                            <li><a data-id="attr_BIOSReleaseDate" href="#attr_BIOSReleaseDate" class="fixed-text">BIOSReleaseDate</a></li>
+                            
                             <li><a data-id="attr_BIOSVersion" href="#attr_BIOSVersion" class="fixed-text">BIOSVersion</a></li>
                             
                             <li><a data-id="attr_bootstrapID" href="#attr_bootstrapID" class="fixed-text">bootstrapID</a></li>
@@ -85,8 +87,6 @@
                             <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
                             
                             <li><a data-id="attr_NATTraversalEnabled" href="#attr_NATTraversalEnabled" class="fixed-text">NATTraversalEnabled</a></li>
-                            
-                            <li><a data-id="attr_networkAcceleration" href="#attr_networkAcceleration" class="fixed-text">networkAcceleration</a></li>
                             
                             <li><a data-id="attr_NSGVersion" href="#attr_NSGVersion" class="fixed-text">NSGVersion</a></li>
                             
@@ -161,7 +161,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedGatewaySecurityID" title="Readonly Id of the associated gateway security object">associatedGatewaySecurityID</a>
+                            <a href="#attr_associatedGatewaySecurityID" title="Read only ID of the associated gateway security object.">associatedGatewaySecurityID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -175,6 +175,8 @@
                             
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -187,7 +189,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedGatewaySecurityProfileID" title="Readonly Id of the associated gateway security profile object">associatedGatewaySecurityProfileID</a>
+                            <a href="#attr_associatedGatewaySecurityProfileID" title="Read only ID of the associated gateway security profile object">associatedGatewaySecurityProfileID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -201,6 +203,8 @@
                             
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -213,7 +217,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedNSGInfoID" title="Readonly Id of the associated nsg info object">associatedNSGInfoID</a>
+                            <a href="#attr_associatedNSGInfoID" title="Read only ID of the associated NSG info object">associatedNSGInfoID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -279,10 +283,42 @@
                             
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
     
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_BIOSReleaseDate" title="Release Date of the NSG BiOS">BIOSReleaseDate</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -462,7 +498,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_controlTrafficCOSValue" title="COS Value for Self Generated Traffic (Control Traffic). Min is 0 and Max is 7">controlTrafficCOSValue</a>
+                            <a href="#attr_controlTrafficCOSValue" title="CoS Value for Self Generated Traffic (Control Traffic). Min is 0 and Max is 7">controlTrafficCOSValue</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -522,7 +558,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_CPUType" title="The NSG Processor Type">CPUType</a>
+                            <a href="#attr_CPUType" title="The NSG Processor Type as reported during bootstrapping.">CPUType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -561,6 +597,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -742,7 +780,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_family" title="The NSG Type">family</a>
+                            <a href="#attr_family" title="The NSG Family type.">family</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -841,6 +879,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -1020,46 +1060,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_networkAcceleration" title="Network Acceleration type to be used when network acceleration is enabled">networkAcceleration</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (NONE | NORMAL | OPTIMAL | PERFORMANCE)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_NSGVersion" title="The NSG Version">NSGVersion</a>
+                            <a href="#attr_NSGVersion" title="The NSG Version (software) as reported during bootstrapping or following an upgrade.">NSGVersion</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -1263,7 +1264,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_productName" title="NSG Product Name">productName</a>
+                            <a href="#attr_productName" title="NSG Product Name as reported during bootstrapping.">productName</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -2400,6 +2401,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -2411,7 +2414,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Readonly Id of the associated gateway security object</p>
+                        <p>Read only ID of the associated gateway security object.</p>
 
                         <hr/>
 
@@ -2449,6 +2452,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -2460,7 +2465,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Readonly Id of the associated gateway security profile object</p>
+                        <p>Read only ID of the associated gateway security profile object</p>
 
                         <hr/>
 
@@ -2509,7 +2514,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Readonly Id of the associated nsg info object</p>
+                        <p>Read only ID of the associated NSG info object</p>
 
                         <hr/>
 
@@ -2596,6 +2601,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -2632,6 +2639,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">autoDiscGatewayID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_BIOSReleaseDate" class="filterable" data-filter-keyword="BIOSReleaseDate" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>BIOSReleaseDate</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Release Date of the NSG BiOS</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">BIOSReleaseDate</span>
                         </p>
                     </div>
                 </div>
@@ -2770,8 +2830,6 @@
 
                             
 
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             
@@ -2913,7 +2971,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>COS Value for Self Generated Traffic (Control Traffic). Min is 0 and Max is 7</p>
+                        <p>CoS Value for Self Generated Traffic (Control Traffic). Min is 0 and Max is 7</p>
 
                         <hr/>
 
@@ -3019,7 +3077,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The NSG Processor Type</p>
+                        <p>The NSG Processor Type as reported during bootstrapping.</p>
 
                         <hr/>
 
@@ -3056,6 +3114,8 @@
                         <span class="type_string fixed-text">string</span>
                         
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -3378,7 +3438,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The NSG Type</p>
+                        <p>The NSG Family type.</p>
 
                         <hr/>
 
@@ -3468,6 +3528,8 @@
                         <span class="type_integer fixed-text">integer</span>
                         
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -3818,57 +3880,6 @@
                 </div>
             </section>
             
-            <section id="attr_networkAcceleration" class="filterable" data-filter-keyword="networkAcceleration" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>networkAcceleration</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Network Acceleration type to be used when network acceleration is enabled</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">NONE, NORMAL, OPTIMAL, PERFORMANCE</span><br/>
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Default value: </b></span><span class="fixed-text">NONE</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">networkAcceleration</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
             <section id="attr_NSGVersion" class="filterable" data-filter-keyword="NSGVersion" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3888,7 +3899,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The NSG Version</p>
+                        <p>The NSG Version (software) as reported during bootstrapping or following an upgrade.</p>
 
                         <hr/>
 
@@ -4190,7 +4201,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>NSG Product Name</p>
+                        <p>NSG Product Name as reported during bootstrapping.</p>
 
                         <hr/>
 

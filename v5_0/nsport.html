@@ -109,7 +109,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedEgressQOSPolicyID" title="ID of the Egress QOS Policy associated with this Vlan.">associatedEgressQOSPolicyID</a>
+                            <a href="#attr_associatedEgressQOSPolicyID" title="ID of the Egress QoS Policy associated with this NSG Port.">associatedEgressQOSPolicyID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -209,10 +209,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -382,7 +378,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_NATTraversal" title="Enum value that states the type of NAT Traversal the NSG instance will use to talk to other NSGs and the Internet.">NATTraversal</a>
+                            <a href="#attr_NATTraversal" title="Enum value that states the type of NAT Traversal the NSG instance will use to talk to other NSGs and the Internet.  (This field is deprecated in 5.0)">NATTraversal</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -421,7 +417,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_permittedAction" title="The permitted  action to USE/EXTEND  this Gateway.">permittedAction</a>
+                            <a href="#attr_permittedAction" title="The permitted action to USE/EXTEND this NSG Port.">permittedAction</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -481,6 +477,8 @@
     
     
     
+    
+     <span class="label label-info"> creation only </span>&nbsp;
     
     
     
@@ -665,10 +663,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1219,7 +1213,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>ID of the Egress QOS Policy associated with this Vlan.</p>
+                        <p>ID of the Egress QoS Policy associated with this NSG Port.</p>
 
                         <hr/>
 
@@ -1365,10 +1359,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1702,7 +1692,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Enum value that states the type of NAT Traversal the NSG instance will use to talk to other NSGs and the Internet.</p>
+                        <p>Enum value that states the type of NAT Traversal the NSG instance will use to talk to other NSGs and the Internet.  (This field is deprecated in 5.0)</p>
 
                         <hr/>
 
@@ -1753,7 +1743,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The permitted  action to USE/EXTEND  this Gateway.</p>
+                        <p>The permitted action to USE/EXTEND this NSG Port.</p>
 
                         <hr/>
 
@@ -1794,6 +1784,8 @@
     
     
     
+    
+     <span class="label label-info"> creation only </span>&nbsp;
     
     
     
@@ -1933,6 +1925,8 @@
                             
 
                             
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">AUTONEGOTIATE</span><br/>
+                            
 
                             
 
@@ -2060,10 +2054,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2240,6 +2230,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">0-4094</span><br/>
                             
 
                             

@@ -107,7 +107,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_consecutiveFailuresCount" title="Consecutive failure count.">consecutiveFailuresCount</a>
+                            <a href="#attr_consecutiveFailuresCount" title="Consecutive failure count.  Supported value is 3.">consecutiveFailuresCount</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -133,7 +133,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_description" title=" Description of the Redundancy Group">description</a>
+                            <a href="#attr_description" title="Description of the Redundancy Group">description</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -312,7 +312,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_gatewayPeer1Name" title="The gateway   configuration owner name in this Redundant Group">gatewayPeer1Name</a>
+                            <a href="#attr_gatewayPeer1Name" title="The name of the authoritative gateway owning the configuration for the Redundant Group">gatewayPeer1Name</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -338,7 +338,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_gatewayPeer2AutodiscoveredGatewayID" title="The Auto Discovered Gateway  peer in this Redundant Group">gatewayPeer2AutodiscoveredGatewayID</a>
+                            <a href="#attr_gatewayPeer2AutodiscoveredGatewayID" title="The Auto Discovered Gateway configuration for the secondary gateway in this Redundant Group.">gatewayPeer2AutodiscoveredGatewayID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -394,7 +394,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_gatewayPeer2Name" title="The gateway peer name in this Redundant Group">gatewayPeer2Name</a>
+                            <a href="#attr_gatewayPeer2Name" title="The secondary gateway peer name in this Redundant Group.">gatewayPeer2Name</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -420,7 +420,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_heartbeatInterval" title="Heartbeat interval in milliseconds to declare the neighbor dead.">heartbeatInterval</a>
+                            <a href="#attr_heartbeatInterval" title="Heartbeat interval in milliseconds to declare the neighbor as dead.">heartbeatInterval</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -532,7 +532,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_permittedAction" title="The permitted  action to USE/EXTEND  this Gateway.">permittedAction</a>
+                            <a href="#attr_permittedAction" title="The permitted action to USE/EXTEND this Gateway.">permittedAction</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -624,7 +624,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_redundancyPortIDs" title="Collections resilient port ids associated with this redundant group.">redundancyPortIDs</a>
+                            <a href="#attr_redundancyPortIDs" title="Collections resilient port IDs associated with this redundant group.">redundancyPortIDs</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_list">list
@@ -650,7 +650,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_redundantGatewayStatus" title="The status of  Redundant Group.">redundantGatewayStatus</a>
+                            <a href="#attr_redundantGatewayStatus" title="The status of the Redundant Group.">redundantGatewayStatus</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -672,6 +672,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -1011,7 +1013,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Consecutive failure count.</p>
+                        <p>Consecutive failure count.  Supported value is 3.</p>
 
                         <hr/>
 
@@ -1068,7 +1070,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p> Description of the Redundancy Group</p>
+                        <p>Description of the Redundancy Group</p>
 
                         <hr/>
 
@@ -1374,7 +1376,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The gateway   configuration owner name in this Redundant Group</p>
+                        <p>The name of the authoritative gateway owning the configuration for the Redundant Group</p>
 
                         <hr/>
 
@@ -1423,7 +1425,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The Auto Discovered Gateway  peer in this Redundant Group</p>
+                        <p>The Auto Discovered Gateway configuration for the secondary gateway in this Redundant Group.</p>
 
                         <hr/>
 
@@ -1525,7 +1527,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The gateway peer name in this Redundant Group</p>
+                        <p>The secondary gateway peer name in this Redundant Group.</p>
 
                         <hr/>
 
@@ -1574,7 +1576,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Heartbeat interval in milliseconds to declare the neighbor dead.</p>
+                        <p>Heartbeat interval in milliseconds to declare the neighbor as dead.</p>
 
                         <hr/>
 
@@ -1788,7 +1790,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The permitted  action to USE/EXTEND  this Gateway.</p>
+                        <p>The permitted action to USE/EXTEND this Gateway.</p>
 
                         <hr/>
 
@@ -1890,7 +1892,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Collections resilient port ids associated with this redundant group.</p>
+                        <p>Collections resilient port IDs associated with this redundant group.</p>
 
                         <hr/>
 
@@ -1902,8 +1904,6 @@
 
                             
 
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             
@@ -1928,6 +1928,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -1939,7 +1941,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The status of  Redundant Group.</p>
+                        <p>The status of the Redundant Group.</p>
 
                         <hr/>
 

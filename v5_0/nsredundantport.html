@@ -107,7 +107,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedEgressQOSPolicyID" title="ID of the Egress QOS Policy associated with this Vlan.">associatedEgressQOSPolicyID</a>
+                            <a href="#attr_associatedEgressQOSPolicyID" title="ID of the Egress QoS Policy associated with this Redundant Port.">associatedEgressQOSPolicyID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -133,7 +133,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_description" title="A description of the Port">description</a>
+                            <a href="#attr_description" title="A description of the Redundant Port instance.">description</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -234,7 +234,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_infrastructureProfileID" title="The ID of the infrastructure profile this instance is associated with.">infrastructureProfileID</a>
+                            <a href="#attr_infrastructureProfileID" title="The ID of the infrastructure port profile this instance is associated with.">infrastructureProfileID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -248,6 +248,8 @@
                             
     
     
+    
+     <span class="label label-default"> deprecated </span>&nbsp;
     
     
     
@@ -314,7 +316,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_name" title="Name of the Port">name</a>
+                            <a href="#attr_name" title="Name of the Redundant Port">name</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -346,7 +348,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_permittedAction" title="The permitted  action to USE/EXTEND  this Gateway.">permittedAction</a>
+                            <a href="#attr_permittedAction" title="The permitted action to USE/EXTEND this Redundant Port.">permittedAction</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -389,7 +391,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_physicalName" title="Identifier of the Port">physicalName</a>
+                            <a href="#attr_physicalName" title="Identifier of the Redundant Port.  The name should be corresponding to the Physical Name of the ports belonging to this redundant instance.">physicalName</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -407,6 +409,8 @@
     
     
     
+     <span class="label label-info"> creation only </span>&nbsp;
+    
     
     
      <span class="label label-info"> filterable </span>&nbsp;
@@ -421,7 +425,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_portPeer1ID" title="The master gateway peer port id.">portPeer1ID</a>
+                            <a href="#attr_portPeer1ID" title="Port ID of the port acting as master component of the redundant port instance.">portPeer1ID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -447,7 +451,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_portPeer2ID" title="The slave gateway peer port id.">portPeer2ID</a>
+                            <a href="#attr_portPeer2ID" title="Port ID of the port acting as slave component of the redundant port instance.">portPeer2ID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -473,7 +477,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_portType" title="Type of the Port.">portType</a>
+                            <a href="#attr_portType" title="Type of the Redundant Port.">portType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -553,7 +557,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_status" title="Status of the port.">status</a>
+                            <a href="#attr_status" title="Status of the redundant port.">status</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -592,7 +596,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_userMnemonic" title="user mnemonic of the Port">userMnemonic</a>
+                            <a href="#attr_userMnemonic" title="User mnemonic of the Redundant Port.">userMnemonic</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -648,7 +652,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_useUserMnemonic" title="determines whether to use user mnemonic of the Port">useUserMnemonic</a>
+                            <a href="#attr_useUserMnemonic" title="Determines whether to use user mnemonic of the Port">useUserMnemonic</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_boolean">boolean
@@ -959,7 +963,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>ID of the Egress QOS Policy associated with this Vlan.</p>
+                        <p>ID of the Egress QoS Policy associated with this Redundant Port.</p>
 
                         <hr/>
 
@@ -1012,7 +1016,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>A description of the Port</p>
+                        <p>A description of the Redundant Port instance.</p>
 
                         <hr/>
 
@@ -1161,6 +1165,8 @@
     
     
     
+     <span class="label label-default"> deprecated </span>&nbsp;
+    
     
     
     
@@ -1171,7 +1177,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The ID of the infrastructure profile this instance is associated with.</p>
+                        <p>The ID of the infrastructure port profile this instance is associated with.</p>
 
                         <hr/>
 
@@ -1330,7 +1336,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Name of the Port</p>
+                        <p>Name of the Redundant Port</p>
 
                         <hr/>
 
@@ -1383,7 +1389,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The permitted  action to USE/EXTEND  this Gateway.</p>
+                        <p>The permitted action to USE/EXTEND this Redundant Port.</p>
 
                         <hr/>
 
@@ -1425,6 +1431,8 @@
     
     
     
+     <span class="label label-info"> creation only </span>&nbsp;
+    
     
     
      <span class="label label-info"> filterable </span>&nbsp;
@@ -1438,7 +1446,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Identifier of the Port</p>
+                        <p>Identifier of the Redundant Port.  The name should be corresponding to the Physical Name of the ports belonging to this redundant instance.</p>
 
                         <hr/>
 
@@ -1491,7 +1499,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The master gateway peer port id.</p>
+                        <p>Port ID of the port acting as master component of the redundant port instance.</p>
 
                         <hr/>
 
@@ -1540,7 +1548,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The slave gateway peer port id.</p>
+                        <p>Port ID of the port acting as slave component of the redundant port instance.</p>
 
                         <hr/>
 
@@ -1595,7 +1603,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Type of the Port.</p>
+                        <p>Type of the Redundant Port.</p>
 
                         <hr/>
 
@@ -1693,7 +1701,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Status of the port.</p>
+                        <p>Status of the redundant port.</p>
 
                         <hr/>
 
@@ -1746,7 +1754,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>user mnemonic of the Port</p>
+                        <p>User mnemonic of the Redundant Port.</p>
 
                         <hr/>
 
@@ -1850,7 +1858,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>determines whether to use user mnemonic of the Port</p>
+                        <p>Determines whether to use user mnemonic of the Port</p>
 
                         <hr/>
 
@@ -1862,8 +1870,6 @@
 
                             
 
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             
@@ -1913,6 +1919,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">0-4094</span><br/>
                             
 
                             

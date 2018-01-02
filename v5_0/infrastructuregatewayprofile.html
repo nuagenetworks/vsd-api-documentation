@@ -112,7 +112,7 @@
 
         <section id="intro">
             <h2>InfrastructureGatewayProfile</h2>
-            <p>Represents Infrastructure Gateway Profile</p>
+            <p>Represents Infrastructure Gateway Profile instance.  This object contains the common parameters for different types of NSGs to perform bootstrapping and have their network infrastructure and services configured before becoming operational.</p>
         </section>
 
         <section id="overview">
@@ -236,7 +236,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_deadTimer" title="ISO 8601 format duration: **P nYnMnD T nHnMnS**. **P** represents the period field and **T** the time field. Period field: **Y** = year, **M** = month, **D** = day. Time field: **H** = hours, **M** = minutes, **S** = seconds. **n** is the value of each field. Because the years and month are units that vary in length, for the time being those are not supported yet.">deadTimer</a>
+                            <a href="#attr_deadTimer" title="ISO 8601 format duration: **PnYnMnD T nHnMnS**. **P** represents the period field and **T** the time field. Period field: **Y** = year, **M** = month, **D** = day. Time field: **H** = hours, **M** = minutes, **S** = seconds. **n** is the value of each field. Because the years and month are units that vary in length, for the time being those are not supported yet.">deadTimer</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -552,6 +552,10 @@
     
     
     
+     <span class="label label-warning"> locally unique </span>&nbsp;
+    
+    
+    
                         </td>
                     </tr>
                     
@@ -583,7 +587,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_NTPServerKeyID" title="Correspond to the key ID on the NTP server that matches the ntpServerKey value.  Valid values are from 1 to 255 as specified by SR-OS and 0 to specify unused (VSD/NSG only).">NTPServerKeyID</a>
+                            <a href="#attr_NTPServerKeyID" title="Corresponds to the key ID on the NTP server that matches the NTPServerKey value.  Valid values are from 1 to 255 as specified by SR-OS and when value 0 is entered, it means that the NTP Key is not used (VSD/NSG only).">NTPServerKeyID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -609,7 +613,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_openFlowAuditTimer" title="Openflow audit timer in sec. Upon the expiry of this timer a set of cleanup operations will be performed">openFlowAuditTimer</a>
+                            <a href="#attr_openFlowAuditTimer" title="Openflow audit timer in seconds. Upon the expiry of this timer a set of cleanup operations will be performed">openFlowAuditTimer</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -754,7 +758,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_statsCollectorPort" title="The port to open by the proxy for stats collector to use">statsCollectorPort</a>
+                            <a href="#attr_statsCollectorPort" title="The port to open by the proxy for the statistics collector to use.">statsCollectorPort</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -780,7 +784,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_systemSyncScheduler" title="Time in a Cron format when configuration update are being applied on the Gateway (NSG).  This property is linked to systemSyncWindow.  Default value is every midnight (0 0 * * *).  Format:  Minutes Hours DayOfMonth Month DayOfWeek">systemSyncScheduler</a>
+                            <a href="#attr_systemSyncScheduler" title="Time, in a Cron format, when configuration updates are being applied on the Gateway (NSG).  This property is linked to systemSyncWindow.  Default value is every midnight (0 0 * * *).  Format:  Minutes Hours DayOfMonth Month DayOfWeek">systemSyncScheduler</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -1075,6 +1079,8 @@
                             
 
                             
+                            <span class="small"><b>Allowed characters: </b></span><span class="fixed-text">255</span><br/>
+                            
 
                             
                             <span class="small"><b>Default value: </b></span><span class="fixed-text">PT7D</span><br/>
@@ -1084,6 +1090,8 @@
                             <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
+                            
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
                             
 
                             
@@ -1177,6 +1185,8 @@
                             
 
                             
+                            <span class="small"><b>Allowed characters: </b></span><span class="fixed-text">255</span><br/>
+                            
 
                             
                             <span class="small"><b>Default value: </b></span><span class="fixed-text">PT7D</span><br/>
@@ -1186,6 +1196,8 @@
                             <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
+                            
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
                             
 
                             
@@ -1272,7 +1284,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>ISO 8601 format duration: **P nYnMnD T nHnMnS**. **P** represents the period field and **T** the time field. Period field: **Y** = year, **M** = month, **D** = day. Time field: **H** = hours, **M** = minutes, **S** = seconds. **n** is the value of each field. Because the years and month are units that vary in length, for the time being those are not supported yet.</p>
+                        <p>ISO 8601 format duration: **PnYnMnD T nHnMnS**. **P** represents the period field and **T** the time field. Period field: **Y** = year, **M** = month, **D** = day. Time field: **H** = hours, **M** = minutes, **S** = seconds. **n** is the value of each field. Because the years and month are units that vary in length, for the time being those are not supported yet.</p>
 
                         <hr/>
 
@@ -1287,7 +1299,11 @@
                             
 
                             
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
+                            
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -1329,6 +1345,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
                             
 
                             
@@ -1646,6 +1664,8 @@
                             
 
                             
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
 
                             
 
@@ -1742,6 +1762,8 @@
                             
 
                             
+                            <span class="small"><b>Allowed characters: </b></span><span class="fixed-text">URL</span><br/>
+                            
 
                             
 
@@ -1783,6 +1805,10 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+     <span class="label label-warning"> locally unique </span>&nbsp;
     
     
     
@@ -1894,7 +1920,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Correspond to the key ID on the NTP server that matches the ntpServerKey value.  Valid values are from 1 to 255 as specified by SR-OS and 0 to specify unused (VSD/NSG only).</p>
+                        <p>Corresponds to the key ID on the NTP server that matches the NTPServerKey value.  Valid values are from 1 to 255 as specified by SR-OS and when value 0 is entered, it means that the NTP Key is not used (VSD/NSG only).</p>
 
                         <hr/>
 
@@ -1943,7 +1969,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Openflow audit timer in sec. Upon the expiry of this timer a set of cleanup operations will be performed</p>
+                        <p>Openflow audit timer in seconds. Upon the expiry of this timer a set of cleanup operations will be performed</p>
 
                         <hr/>
 
@@ -2011,6 +2037,8 @@
                             
 
                             
+                            <span class="small"><b>Allowed characters: </b></span><span class="fixed-text">URL</span><br/>
+                            
 
                             
 
@@ -2063,6 +2091,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">DISABLED</span><br/>
                             
 
                             
@@ -2162,6 +2192,8 @@
                             
 
                             
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">514</span><br/>
+                            
 
                             
 
@@ -2202,7 +2234,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The port to open by the proxy for stats collector to use</p>
+                        <p>The port to open by the proxy for the statistics collector to use.</p>
 
                         <hr/>
 
@@ -2255,7 +2287,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Time in a Cron format when configuration update are being applied on the Gateway (NSG).  This property is linked to systemSyncWindow.  Default value is every midnight (0 0 * * *).  Format:  Minutes Hours DayOfMonth Month DayOfWeek</p>
+                        <p>Time, in a Cron format, when configuration updates are being applied on the Gateway (NSG).  This property is linked to systemSyncWindow.  Default value is every midnight (0 0 * * *).  Format:  Minutes Hours DayOfMonth Month DayOfWeek</p>
 
                         <hr/>
 
@@ -2265,6 +2297,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">0 0 * * *</span><br/>
                             
 
                             
@@ -2319,6 +2353,8 @@
                             
 
                             
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">DOWNLOAD_AND_UPGRADE_AT_WINDOW</span><br/>
+                            
 
                             
 
@@ -2365,6 +2401,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">true</span><br/>
                             
 
                             

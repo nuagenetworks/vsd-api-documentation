@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>DomainFIPAclTemplateEntry API Reference 5.0</title>
+    <title>VirtualFirewallRule API Reference 5.0</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -34,23 +34,17 @@
                             
                             <li><a data-id="attr_action" href="#attr_action" class="fixed-text">action</a></li>
                             
-                            <li><a data-id="attr_actionDetails" href="#attr_actionDetails" class="fixed-text">actionDetails</a></li>
-                            
-                            <li><a data-id="attr_addressOverride" href="#attr_addressOverride" class="fixed-text">addressOverride</a></li>
+                            <li><a data-id="attr_associatedL7ApplicationSignatureID" href="#attr_associatedL7ApplicationSignatureID" class="fixed-text">associatedL7ApplicationSignatureID</a></li>
                             
                             <li><a data-id="attr_associatedLiveEntityID" href="#attr_associatedLiveEntityID" class="fixed-text">associatedLiveEntityID</a></li>
+                            
+                            <li><a data-id="attr_associatedTrafficType" href="#attr_associatedTrafficType" class="fixed-text">associatedTrafficType</a></li>
+                            
+                            <li><a data-id="attr_associatedTrafficTypeID" href="#attr_associatedTrafficTypeID" class="fixed-text">associatedTrafficTypeID</a></li>
                             
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
                             <li><a data-id="attr_destinationPort" href="#attr_destinationPort" class="fixed-text">destinationPort</a></li>
-                            
-                            <li><a data-id="attr_destinationType" href="#attr_destinationType" class="fixed-text">destinationType</a></li>
-                            
-                            <li><a data-id="attr_destinationValue" href="#attr_destinationValue" class="fixed-text">destinationValue</a></li>
-                            
-                            <li><a data-id="attr_destPgId" href="#attr_destPgId" class="fixed-text">destPgId</a></li>
-                            
-                            <li><a data-id="attr_destPgType" href="#attr_destPgType" class="fixed-text">destPgType</a></li>
                             
                             <li><a data-id="attr_domainName" href="#attr_domainName" class="fixed-text">domainName</a></li>
                             
@@ -60,8 +54,6 @@
                             
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
-                            <li><a data-id="attr_etherType" href="#attr_etherType" class="fixed-text">etherType</a></li>
-                            
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
                             <li><a data-id="attr_flowLoggingEnabled" href="#attr_flowLoggingEnabled" class="fixed-text">flowLoggingEnabled</a></li>
@@ -69,8 +61,6 @@
                             <li><a data-id="attr_ICMPCode" href="#attr_ICMPCode" class="fixed-text">ICMPCode</a></li>
                             
                             <li><a data-id="attr_ICMPType" href="#attr_ICMPType" class="fixed-text">ICMPType</a></li>
-                            
-                            <li><a data-id="attr_IPv6AddressOverride" href="#attr_IPv6AddressOverride" class="fixed-text">IPv6AddressOverride</a></li>
                             
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
@@ -84,23 +74,15 @@
                             
                             <li><a data-id="attr_networkType" href="#attr_networkType" class="fixed-text">networkType</a></li>
                             
+                            <li><a data-id="attr_overlayMirrorDestinationID" href="#attr_overlayMirrorDestinationID" class="fixed-text">overlayMirrorDestinationID</a></li>
+                            
                             <li><a data-id="attr_policyState" href="#attr_policyState" class="fixed-text">policyState</a></li>
                             
                             <li><a data-id="attr_priority" href="#attr_priority" class="fixed-text">priority</a></li>
                             
                             <li><a data-id="attr_protocol" href="#attr_protocol" class="fixed-text">protocol</a></li>
                             
-                            <li><a data-id="attr_sourcePgId" href="#attr_sourcePgId" class="fixed-text">sourcePgId</a></li>
-                            
-                            <li><a data-id="attr_sourcePgType" href="#attr_sourcePgType" class="fixed-text">sourcePgType</a></li>
-                            
                             <li><a data-id="attr_sourcePort" href="#attr_sourcePort" class="fixed-text">sourcePort</a></li>
-                            
-                            <li><a data-id="attr_sourceType" href="#attr_sourceType" class="fixed-text">sourceType</a></li>
-                            
-                            <li><a data-id="attr_sourceValue" href="#attr_sourceValue" class="fixed-text">sourceValue</a></li>
-                            
-                            <li><a data-id="attr_stateful" href="#attr_stateful" class="fixed-text">stateful</a></li>
                             
                             <li><a data-id="attr_statsID" href="#attr_statsID" class="fixed-text">statsID</a></li>
                             
@@ -135,8 +117,8 @@
     <div class="container">
 
         <section id="intro">
-            <h2>DomainFIPAclTemplateEntry</h2>
-            <p>Defines the template of Egress Domain ACL Template entries</p>
+            <h2>VirtualFirewallRule</h2>
+            <p>Defines the Virtual Firewall rules</p>
         </section>
 
         <section id="overview">
@@ -145,7 +127,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_ACLTemplateName" title="The name of the parent Template for this acl entry">ACLTemplateName</a>
+                            <a href="#attr_ACLTemplateName" title="The name of the parent template for this rule entry">ACLTemplateName</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -158,8 +140,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
-     <span class="label label-danger"> required </span>&nbsp;
     
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -173,7 +155,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_action" title="The action of the ACL entry DROP or FORWARD or REDIRECT. Action REDIRECT is allowed only for IngressAdvancedForwardingEntry">action</a>
+                            <a href="#attr_action" title="The action of the rule, DROP or FORWARD or REDIRECT. Action REDIRECT is allowed only for IngressAdvancedForwardingEntry Possible values are DROP, FORWARD, REDIRECT, .">action</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -197,61 +179,7 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_actionDetails" title="Type of action to be performed when a ACL match criteria succeeds">actionDetails</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_object">object
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_addressOverride" title="Overrides the source IP for Ingress and destination IP for Egress, MAC entries will use this address as the match criteria.">addressOverride</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
+     <span class="label label-danger"> required </span>&nbsp;
     
     
     
@@ -270,7 +198,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedLiveEntityID" title="ID of the associated live entity">associatedLiveEntityID</a>
+                            <a href="#attr_associatedL7ApplicationSignatureID" title="The UUID of the associated L7 Application Signature">associatedL7ApplicationSignatureID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -288,8 +216,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
     
     
     
@@ -298,7 +224,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_description" title="Description of the ACL entry">description</a>
+                            <a href="#attr_associatedLiveEntityID" title="In the draft mode, the rule entry refers to this LiveEntity. In live mode, this is null.">associatedLiveEntityID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -312,6 +238,8 @@
                             
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -326,37 +254,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_destinationPort" title="The destination port to be matched if protocol is UDP or TCP. Value should be either * or single port number or a port range">destinationPort</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_destinationType" title="Network Type - either PolicyGroup or Network">destinationType</a>
+                            <a href="#attr_associatedTrafficType" title="This property reflects the type of traffic in case a rule entry is created using an L4 Service or L4 Service Group. In case a protocol and port are specified for the ACL entry, this property has to be empty (null). Supported values are L4_SERVICE, L4_SERVICE_GROUP and empty.">associatedTrafficType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -372,9 +270,7 @@
     
     
     
-    
-    
-     (NETWORK | NETWORKPOLICYGROUP | POLICYGROUP)
+     (L4_SERVICE | L4_SERVICE_GROUP)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -385,6 +281,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -393,7 +293,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_destinationValue" title="In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr">destinationValue</a>
+                            <a href="#attr_associatedTrafficTypeID" title="If a traffic type is specified as L4 Service or Service Group, then the associated Id of  Service / Service Group should be specifed here">associatedTrafficTypeID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -411,6 +311,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -419,7 +323,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_destPgId" title="In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr">destPgId</a>
+                            <a href="#attr_description" title="Description of the rule entry">description</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -437,6 +341,8 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
     
     
     
@@ -445,7 +351,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_destPgType" title="In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr">destPgType</a>
+                            <a href="#attr_destinationPort" title="The destination port to be matched if protocol is UDP or TCP. Value should be either * or a single port number or a port range like 1,2.. or 1 - 10">destinationPort</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -463,6 +369,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -471,7 +381,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_domainName" title="The name of the domain/domain template for the aclTemplateNames parent">domainName</a>
+                            <a href="#attr_domainName" title="The name of the domain/domain template for the Rule TemplateName.">domainName</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -517,10 +427,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -529,7 +435,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_enterpriseName" title="The name of the enterprise for the domains parent">enterpriseName</a>
+                            <a href="#attr_enterpriseName" title="The name of the enterprise for the domain's parent">enterpriseName</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -541,8 +447,6 @@
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
-    
-     <span class="label label-danger"> required </span>&nbsp;
     
     
      <span class="label label-warning"> read only </span>&nbsp;
@@ -588,36 +492,6 @@
      <span class="label label-info"> autogenerated </span>&nbsp;
     
     
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_etherType" title="Ether type of the packet to be matched. etherType can be * or a valid hexadecimal value">etherType</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -678,10 +552,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -690,7 +560,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_ICMPCode" title="The ICMP Code when protocol selected is ICMP">ICMPCode</a>
+                            <a href="#attr_ICMPCode" title="The ICMP Code when protocol selected is ICMP.">ICMPCode</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -716,7 +586,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_ICMPType" title="The ICMP Type when protocol selected is ICMP">ICMPType</a>
+                            <a href="#attr_ICMPType" title="The ICMP Type when protocol selected is ICMP.">ICMPType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -734,36 +604,6 @@
     
     
     
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_IPv6AddressOverride" title="Overrides the source IPv6 for Ingress and destination IP for Egress, MAC entries will use this address as the match criteria.">IPv6AddressOverride</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -800,7 +640,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_locationID" title="The ID of the location entity (Subnet/Zone/VportTag)">locationID</a>
+                            <a href="#attr_locationID" title="The ID of the source endpoint (Subnet/Zone/PortGroup/PolicyGroupExpression/NetworkMacro/Internet Policy Group/Enterprise Network)">locationID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -830,110 +670,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_locationType" title="Type of the location entity - ANY or SUBNET or ZONE or VPORTTAG">locationType</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (ANY | POLICYGROUP | REDIRECTIONTARGET | SUBNET | VPORTTAG | ZONE)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_mirrorDestinationID" title="This is the ID of the mirrorDestination entity associated with this entity">mirrorDestinationID</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_networkID" title="The destination network entity that is referenced(subnet/zone/macro)">networkID</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_networkType" title="Type of the source network -    VM_SUBNET or VM_ZONE or VM_DOMAIN or SUBNET or ZONE or ENTERPRISE_NETWORK or PUBLIC_NETWORK or ANY">networkType</a>
+                            <a href="#attr_locationType" title="Type of the source endpoint (Subnet/Zone/PortGroup/PolicyGroupExpression/NetworkMacro/Internet Policy Group/Enterprise Network)">locationType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -961,13 +698,65 @@
     
     
     
+     (ANY | ENTERPRISE_NETWORK | INTERNET_POLICYGROUP | NETWORK_MACRO_GROUP | PGEXPRESSION | POLICYGROUP | SUBNET | ZONE)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+     <span class="label label-danger"> required </span>&nbsp;
     
     
     
     
     
     
-     (ANY | ENDPOINT_DOMAIN | ENDPOINT_SUBNET | ENDPOINT_ZONE | ENTERPRISE_NETWORK | INTERNET_POLICYGROUP | NETWORK_MACRO_GROUP | POLICYGROUP | PUBLIC_NETWORK | SUBNET | ZONE)
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_mirrorDestinationID" title="Destination ID of the mirror destination object.">mirrorDestinationID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_networkID" title="The ID of the destination endpoint (Subnet/Zone/PortGroup/PolicyGroupExpression/NetworkMacro/Internet Policy Group/Enterprise Network)">networkID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -990,7 +779,84 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_policyState" title="State of the policy. ">policyState</a>
+                            <a href="#attr_networkType" title="Type of the destination endpoint (Subnet/Zone/PortGroup/PolicyGroupExpression/NetworkMacro/Internet Policy Group/Enterprise Network)">networkType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (ANY | ENTERPRISE_NETWORK | INTERNET_POLICYGROUP | NETWORK_MACRO_GROUP | PGEXPRESSION | POLICYGROUP | SUBNET | ZONE)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_overlayMirrorDestinationID" title="ID of the overlay mirror destination">overlayMirrorDestinationID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_policyState" title="State of the policy.">policyState</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -1013,6 +879,8 @@
                             
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -1029,7 +897,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_priority" title="The priority of the ACL entry that determines the order of entries">priority</a>
+                            <a href="#attr_priority" title="The priority of the rule entry that determines the order of entries">priority</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -1089,59 +957,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_sourcePgId" title="In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr">sourcePgId</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_sourcePgType" title="In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr">sourcePgType</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_sourcePort" title="Source port to be matched if protocol is UDP or TCP. Value can be either * or single port number or a port range">sourcePort</a>
+                            <a href="#attr_sourcePort" title="Source port to be matched if protocol is UDP or TCP. Value should be either * or a single port number or a port range like 1,2.. or 1 - 10">sourcePort</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -1171,44 +987,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_sourceType" title="Location Type - either PolicyGroup or Network">sourceType</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (NETWORK | NETWORKPOLICYGROUP | POLICYGROUP)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_sourceValue" title="In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr">sourceValue</a>
+                            <a href="#attr_statsID" title="The statsID that is created in the VSD and identifies this Rule Template Entry. This is auto-generated by VSD">statsID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -1222,64 +1001,12 @@
                             
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
     
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_stateful" title="True means that this ACL entry is stateful, so there will be a corresponding rule that will be created by OVS in the network. False means that there is no corresponding rule created by OVS in the network.">stateful</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_boolean">boolean
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_statsID" title="The statsID that is created in the VSD and identifies this ACL Template Entry. This is auto-generated by VSD">statsID</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
+     <span class="label label-info"> autogenerated </span>&nbsp;
     
     
      <span class="label label-info"> filterable </span>&nbsp;
@@ -1312,10 +1039,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1338,7 +1061,7 @@
         <div class="col-xs-7">
 
             
-            <span class="fixed-text">/egressdomainfloatingipaclentrytemplates/<span class="text-muted">id</span></a>
+            <span class="fixed-text">/virtualfirewallrules/<span class="text-muted">id</span></a>
             
         </div>
         <div class="col-xs-5 text-right">
@@ -1355,6 +1078,13 @@
     
     
     <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
     
             
             
@@ -1385,12 +1115,19 @@
 
             
             
-            <span class="fixed-text">/<a href="egressdomainfloatingipacltemplate.html">egressdomainfloatingipacltemplates</a>/<span class="text-muted">id</span>/egressdomainfloatingipaclentrytemplates</span>
+            <span class="fixed-text">/<a href="virtualfirewallpolicy.html">virtualfirewallpolicies</a>/<span class="text-muted">id</span>/virtualfirewallrules</span>
             
 
             
         </div>
         <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-danger">delete</span>
+    
             
             
     
@@ -1404,6 +1141,13 @@
     
     
     <span class="label label-primary">post</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
     
             
         </div>
@@ -1428,7 +1172,7 @@
             
 
             
-            <span class="fixed-text">/egressdomainfloatingipaclentrytemplates/<span class="text-muted">id</span>/<a href="metadata.html">metadatas</a></span>
+            <span class="fixed-text">/virtualfirewallrules/<span class="text-muted">id</span>/<a href="metadata.html">metadatas</a></span>
             
 
             
@@ -1458,7 +1202,7 @@
             
 
             
-            <span class="fixed-text">/egressdomainfloatingipaclentrytemplates/<span class="text-muted">id</span>/<a href="globalmetadata.html">globalmetadatas</a></span>
+            <span class="fixed-text">/virtualfirewallrules/<span class="text-muted">id</span>/<a href="globalmetadata.html">globalmetadatas</a></span>
             
 
             
@@ -1489,6 +1233,52 @@
         </div>
     </div>
     
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/virtualfirewallrules/<span class="text-muted">id</span>/<a href="job.html">jobs</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/virtualfirewallrules/<span class="text-muted">id</span>/<a href="statistics.html">statistics</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
     
     
         </section>
@@ -1503,8 +1293,8 @@
                         <span class="type_string fixed-text">string</span>
                         
     
-     <span class="label label-danger"> required </span>&nbsp;
     
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -1517,7 +1307,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The name of the parent Template for this acl entry</p>
+                        <p>The name of the parent template for this rule entry</p>
 
                         <hr/>
 
@@ -1554,6 +1344,8 @@
                         <span class="type_enum fixed-text">enum</span>
                         
     
+     <span class="label label-danger"> required </span>&nbsp;
+    
     
     
     
@@ -1570,7 +1362,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The action of the ACL entry DROP or FORWARD or REDIRECT. Action REDIRECT is allowed only for IngressAdvancedForwardingEntry</p>
+                        <p>The action of the rule, DROP or FORWARD or REDIRECT. Action REDIRECT is allowed only for IngressAdvancedForwardingEntry Possible values are DROP, FORWARD, REDIRECT, .</p>
 
                         <hr/>
 
@@ -1584,8 +1376,6 @@
 
                             
 
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             
@@ -1602,59 +1392,10 @@
                 </div>
             </section>
             
-            <section id="attr_actionDetails" class="filterable" data-filter-keyword="actionDetails" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_associatedL7ApplicationSignatureID" class="filterable" data-filter-keyword="associatedL7ApplicationSignatureID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>actionDetails</b>
-                        <span class="type_object fixed-text">object</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Type of action to be performed when a ACL match criteria succeeds</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">actionDetails</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_addressOverride" class="filterable" data-filter-keyword="addressOverride" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>addressOverride</b>
+                        <b>associatedL7ApplicationSignatureID</b>
                         <span class="type_string fixed-text">string</span>
                         
     
@@ -1663,10 +1404,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1674,7 +1411,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Overrides the source IP for Ingress and destination IP for Egress, MAC entries will use this address as the match criteria.</p>
+                        <p>The UUID of the associated L7 Application Signature</p>
 
                         <hr/>
 
@@ -1698,7 +1435,7 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">addressOverride</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedL7ApplicationSignatureID</span>
                         </p>
                     </div>
                 </div>
@@ -1712,6 +1449,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -1725,7 +1464,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>ID of the associated live entity</p>
+                        <p>In the draft mode, the rule entry refers to this LiveEntity. In live mode, this is null.</p>
 
                         <hr/>
 
@@ -1755,6 +1494,112 @@
                 </div>
             </section>
             
+            <section id="attr_associatedTrafficType" class="filterable" data-filter-keyword="associatedTrafficType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedTrafficType</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>This property reflects the type of traffic in case a rule entry is created using an L4 Service or L4 Service Group. In case a protocol and port are specified for the ACL entry, this property has to be empty (null). Supported values are L4_SERVICE, L4_SERVICE_GROUP and empty.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">L4_SERVICE, L4_SERVICE_GROUP</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedTrafficType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedTrafficTypeID" class="filterable" data-filter-keyword="associatedTrafficTypeID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedTrafficTypeID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>If a traffic type is specified as L4 Service or Service Group, then the associated Id of  Service / Service Group should be specifed here</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedTrafficTypeID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_description" class="filterable" data-filter-keyword="description" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1776,7 +1621,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Description of the ACL entry</p>
+                        <p>Description of the rule entry</p>
 
                         <hr/>
 
@@ -1794,6 +1639,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -1829,7 +1676,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The destination port to be matched if protocol is UDP or TCP. Value should be either * or single port number or a port range</p>
+                        <p>The destination port to be matched if protocol is UDP or TCP. Value should be either * or a single port number or a port range like 1,2.. or 1 - 10</p>
 
                         <hr/>
 
@@ -1861,204 +1708,6 @@
                 </div>
             </section>
             
-            <section id="attr_destinationType" class="filterable" data-filter-keyword="destinationType" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>destinationType</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Network Type - either PolicyGroup or Network</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">NETWORK, NETWORKPOLICYGROUP, POLICYGROUP</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">destinationType</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_destinationValue" class="filterable" data-filter-keyword="destinationValue" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>destinationValue</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">destinationValue</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_destPgId" class="filterable" data-filter-keyword="destPgId" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>destPgId</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">destPgId</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_destPgType" class="filterable" data-filter-keyword="destPgType" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>destPgType</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">destPgType</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
             <section id="attr_domainName" class="filterable" data-filter-keyword="domainName" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2080,7 +1729,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The name of the domain/domain template for the aclTemplateNames parent</p>
+                        <p>The name of the domain/domain template for the Rule TemplateName.</p>
 
                         <hr/>
 
@@ -2122,10 +1771,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2170,8 +1815,6 @@
                         <span class="type_string fixed-text">string</span>
                         
     
-     <span class="label label-danger"> required </span>&nbsp;
-    
     
      <span class="label label-warning"> read only </span>&nbsp;
     
@@ -2186,7 +1829,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The name of the enterprise for the domains parent</p>
+                        <p>The name of the enterprise for the domain's parent</p>
 
                         <hr/>
 
@@ -2267,59 +1910,6 @@
                 </div>
             </section>
             
-            <section id="attr_etherType" class="filterable" data-filter-keyword="etherType" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>etherType</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Ether type of the packet to be matched. etherType can be * or a valid hexadecimal value</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">etherType</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
             <section id="attr_externalID" class="filterable" data-filter-keyword="externalID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2389,10 +1979,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2411,9 +1997,9 @@
                             
 
                             
-
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
                             
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+
                             
 
                             
@@ -2449,7 +2035,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The ICMP Code when protocol selected is ICMP</p>
+                        <p>The ICMP Code when protocol selected is ICMP.</p>
 
                         <hr/>
 
@@ -2498,7 +2084,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The ICMP Type when protocol selected is ICMP</p>
+                        <p>The ICMP Type when protocol selected is ICMP.</p>
 
                         <hr/>
 
@@ -2523,59 +2109,6 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ICMPType</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_IPv6AddressOverride" class="filterable" data-filter-keyword="IPv6AddressOverride" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>IPv6AddressOverride</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Overrides the source IPv6 for Ingress and destination IP for Egress, MAC entries will use this address as the match criteria.</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">IPv6AddressOverride</span>
                         </p>
                     </div>
                 </div>
@@ -2655,7 +2188,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The ID of the location entity (Subnet/Zone/VportTag)</p>
+                        <p>The ID of the source endpoint (Subnet/Zone/PortGroup/PolicyGroupExpression/NetworkMacro/Internet Policy Group/Enterprise Network)</p>
 
                         <hr/>
 
@@ -2692,6 +2225,8 @@
                         <span class="type_enum fixed-text">enum</span>
                         
     
+     <span class="label label-danger"> required </span>&nbsp;
+    
     
     
     
@@ -2708,22 +2243,20 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Type of the location entity - ANY or SUBNET or ZONE or VPORTTAG</p>
+                        <p>Type of the source endpoint (Subnet/Zone/PortGroup/PolicyGroupExpression/NetworkMacro/Internet Policy Group/Enterprise Network)</p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, POLICYGROUP, REDIRECTIONTARGET, SUBNET, VPORTTAG, ZONE</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENTERPRISE_NETWORK, INTERNET_POLICYGROUP, NETWORK_MACRO_GROUP, PGEXPRESSION, POLICYGROUP, SUBNET, ZONE</span><br/>
                             
 
                             
 
                             
 
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             
@@ -2759,7 +2292,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>This is the ID of the mirrorDestination entity associated with this entity</p>
+                        <p>Destination ID of the mirror destination object.</p>
 
                         <hr/>
 
@@ -2812,7 +2345,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The destination network entity that is referenced(subnet/zone/macro)</p>
+                        <p>The ID of the destination endpoint (Subnet/Zone/PortGroup/PolicyGroupExpression/NetworkMacro/Internet Policy Group/Enterprise Network)</p>
 
                         <hr/>
 
@@ -2865,22 +2398,22 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Type of the source network -    VM_SUBNET or VM_ZONE or VM_DOMAIN or SUBNET or ZONE or ENTERPRISE_NETWORK or PUBLIC_NETWORK or ANY</p>
+                        <p>Type of the destination endpoint (Subnet/Zone/PortGroup/PolicyGroupExpression/NetworkMacro/Internet Policy Group/Enterprise Network)</p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENDPOINT_DOMAIN, ENDPOINT_SUBNET, ENDPOINT_ZONE, ENTERPRISE_NETWORK, INTERNET_POLICYGROUP, NETWORK_MACRO_GROUP, POLICYGROUP, PUBLIC_NETWORK, SUBNET, ZONE</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENTERPRISE_NETWORK, INTERNET_POLICYGROUP, NETWORK_MACRO_GROUP, PGEXPRESSION, POLICYGROUP, SUBNET, ZONE</span><br/>
                             
 
                             
 
                             
-
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">ANY</span><br/>
                             
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+
                             
 
                             
@@ -2897,6 +2430,55 @@
                 </div>
             </section>
             
+            <section id="attr_overlayMirrorDestinationID" class="filterable" data-filter-keyword="overlayMirrorDestinationID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>overlayMirrorDestinationID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the overlay mirror destination</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">overlayMirrorDestinationID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_policyState" class="filterable" data-filter-keyword="policyState" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2904,6 +2486,8 @@
                         <span class="type_enum fixed-text">enum</span>
                         
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -2920,7 +2504,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>State of the policy. </p>
+                        <p>State of the policy.</p>
 
                         <hr/>
 
@@ -2934,8 +2518,6 @@
 
                             
 
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             
@@ -2975,7 +2557,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The priority of the ACL entry that determines the order of entries</p>
+                        <p>The priority of the rule entry that determines the order of entries</p>
 
                         <hr/>
 
@@ -2988,8 +2570,6 @@
                             
 
                             
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
 
                             
 
@@ -2997,6 +2577,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">1000000000</span><br/>
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">priority</span>
@@ -3058,104 +2640,6 @@
                 </div>
             </section>
             
-            <section id="attr_sourcePgId" class="filterable" data-filter-keyword="sourcePgId" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>sourcePgId</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">sourcePgId</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_sourcePgType" class="filterable" data-filter-keyword="sourcePgType" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>sourcePgType</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">sourcePgType</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
             <section id="attr_sourcePort" class="filterable" data-filter-keyword="sourcePort" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3179,7 +2663,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Source port to be matched if protocol is UDP or TCP. Value can be either * or single port number or a port range</p>
+                        <p>Source port to be matched if protocol is UDP or TCP. Value should be either * or a single port number or a port range like 1,2.. or 1 - 10</p>
 
                         <hr/>
 
@@ -3211,157 +2695,6 @@
                 </div>
             </section>
             
-            <section id="attr_sourceType" class="filterable" data-filter-keyword="sourceType" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>sourceType</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Location Type - either PolicyGroup or Network</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">NETWORK, NETWORKPOLICYGROUP, POLICYGROUP</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">sourceType</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_sourceValue" class="filterable" data-filter-keyword="sourceValue" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>sourceValue</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">sourceValue</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_stateful" class="filterable" data-filter-keyword="stateful" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>stateful</b>
-                        <span class="type_boolean fixed-text">boolean</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>True means that this ACL entry is stateful, so there will be a corresponding rule that will be created by OVS in the network. False means that there is no corresponding rule created by OVS in the network.</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">stateful</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
             <section id="attr_statsID" class="filterable" data-filter-keyword="statsID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3370,8 +2703,12 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
     
     
      <span class="label label-info"> filterable </span>&nbsp;
@@ -3385,7 +2722,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The statsID that is created in the VSD and identifies this ACL Template Entry. This is auto-generated by VSD</p>
+                        <p>The statsID that is created in the VSD and identifies this Rule Template Entry. This is auto-generated by VSD</p>
 
                         <hr/>
 
@@ -3427,10 +2764,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -3449,9 +2782,9 @@
                             
 
                             
-
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
                             
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+
                             
 
                             
