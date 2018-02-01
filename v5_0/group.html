@@ -26,6 +26,7 @@
                     <li><a data-id="apiresources" href="#apiresources">API Resource</a></li>
                     <li><a data-id="parents" href="#parents">Parents</a></li>
                     <li><a data-id="children" href="#children">Children</a></li>
+                    <li><a data-id="members" href="#members">Members</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -429,7 +430,11 @@
     
     
     
-     (CMS | CSPOPERATOR | CSPROOT | JMS | ORGADMIN | ORGAPPDESIGNER | ORGNETWORKDESIGNER | ORGUSER | SYSTEM | UNKNOWN | USER)
+    
+    
+    
+    
+     (ADMINOPERATOR | CMS | CSPOPERATOR | CSPROOT | JMS | ORGADMIN | ORGAPPDESIGNER | ORGNETWORKDESIGNER | ORGUSER | SECURITYADMINISTRATOR | SYSTEM | UNKNOWN | USER)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -658,6 +663,28 @@
 
             
             
+            <span class="fixed-text">/<a href="user.html">users</a>/<span class="text-muted">id</span>/groups</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/groups</span>
             
 
@@ -677,28 +704,6 @@
     
     
     <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="user.html">users</a>/<span class="text-muted">id</span>/groups</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
     
             
         </div>
@@ -790,6 +795,42 @@
             
 
             
+            <span class="fixed-text">/groups/<span class="text-muted">id</span>/<a href="eventlog.html">eventlogs</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    
+    
+        </section>
+
+        <section id="members">
+            <h3>Members</h3>
+            
+    
+    
+    
+
+    
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/groups/<span class="text-muted">id</span>/<a href="user.html">users</a></span>
             
 
@@ -809,29 +850,6 @@
     
     
     <span class="label label-success">put</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-
-            
-            <span class="fixed-text">/groups/<span class="text-muted">id</span>/<a href="eventlog.html">eventlogs</a></span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
     
             
         </div>
@@ -1394,7 +1412,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">CMS, CSPOPERATOR, CSPROOT, JMS, ORGADMIN, ORGAPPDESIGNER, ORGNETWORKDESIGNER, ORGUSER, SYSTEM, UNKNOWN, USER</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ADMINOPERATOR, CMS, CSPOPERATOR, CSPROOT, JMS, ORGADMIN, ORGAPPDESIGNER, ORGNETWORKDESIGNER, ORGUSER, SECURITYADMINISTRATOR, SYSTEM, UNKNOWN, USER</span><br/>
                             
 
                             
