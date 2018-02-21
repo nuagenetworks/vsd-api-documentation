@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap API Reference 5.0</title>
+    <title>NSGPatchProfile API Reference 5.0</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -31,21 +31,21 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             
+                            <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
+                            
+                            <li><a data-id="attr_enterpriseID" href="#attr_enterpriseID" class="fixed-text">enterpriseID</a></li>
+                            
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
-                            <li><a data-id="attr_installerID" href="#attr_installerID" class="fixed-text">installerID</a></li>
-                            
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
-                            <li><a data-id="attr_status" href="#attr_status" class="fixed-text">status</a></li>
+                            <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
                             
-                            <li><a data-id="attr_ZFBInfo" href="#attr_ZFBInfo" class="fixed-text">ZFBInfo</a></li>
+                            <li><a data-id="attr_patchTag" href="#attr_patchTag" class="fixed-text">patchTag</a></li>
                             
-                            <li><a data-id="attr_ZFBMatchAttribute" href="#attr_ZFBMatchAttribute" class="fixed-text">ZFBMatchAttribute</a></li>
-                            
-                            <li><a data-id="attr_ZFBMatchValue" href="#attr_ZFBMatchValue" class="fixed-text">ZFBMatchValue</a></li>
+                            <li><a data-id="attr_patchURL" href="#attr_patchURL" class="fixed-text">patchURL</a></li>
                             
                         </ul>
                     </li>
@@ -76,13 +76,69 @@
     <div class="container">
 
         <section id="intro">
-            <h2>Bootstrap</h2>
-            <p>Gateway bootstrap details.</p>
+            <h2>NSGPatchProfile</h2>
+            <p>This profile represents the patch information to be used by an NSG for applying a patch.</p>
         </section>
 
         <section id="overview">
             <h3>Overview</h3>
                 <table class="width: 100%">
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_description" title="A brief description of this patch profile.">description</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_enterpriseID" title="Enterprise/Organisation that this patch profile belongs to.">enterpriseID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
                     
                     <tr>
                         <td class="fixed-text">
@@ -157,32 +213,6 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_installerID" title="The Installer ID">installerID</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
                             <a href="#attr_lastUpdatedBy" title="ID of the user who last updated the object.">lastUpdatedBy</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -211,48 +241,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_status" title="Bootstrap status.">status</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (ACTIVE | CERTIFICATE_SIGNED | INACTIVE | NOTIFICATION_APP_REQ_ACK | NOTIFICATION_APP_REQ_SENT)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_ZFBInfo" title="Base64 Encoded JSON String of NSG ZFB Attribute Value Pairs">ZFBInfo</a>
+                            <a href="#attr_name" title="A unique name identifying this patch profile.">name</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -268,52 +257,7 @@
     
     
     
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_ZFBMatchAttribute" title="Attribute to auto match on">ZFBMatchAttribute</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (HOSTNAME | IP_ADDRESS | MAC_ADDRESS | NONE | NSGATEWAY_ID | SERIAL_NUMBER)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
+     <span class="label label-info"> creation only </span>&nbsp;
     
     
     
@@ -329,7 +273,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_ZFBMatchValue" title="Attribute value to auto match on">ZFBMatchValue</a>
+                            <a href="#attr_patchTag" title="A unique brief name and version of the patch derived from Patch URL.">patchTag</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -343,6 +287,8 @@
                             
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -351,6 +297,34 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_patchURL" title="URL to retrieve the patch bundle for this particular patch.">patchURL</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+     <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
     
     
     
@@ -373,7 +347,7 @@
         <div class="col-xs-7">
 
             
-            <span class="fixed-text">/bootstraps/<span class="text-muted">id</span></a>
+            <span class="fixed-text">/nsgpatchprofiles/<span class="text-muted">id</span></a>
             
         </div>
         <div class="col-xs-5 text-right">
@@ -382,7 +356,21 @@
     
     
     
+    <span class="label label-danger">delete</span>
+    
+            
+            
+    
+    
+    
     <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
     
             
             
@@ -413,7 +401,7 @@
 
             
             
-            <span class="fixed-text">/<a href="nsgateway.html">nsgateways</a>/<span class="text-muted">id</span>/bootstraps</span>
+            <span class="fixed-text">/nsgpatchprofiles</a>
             
 
             
@@ -425,6 +413,13 @@
     
     
     <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
     
             
         </div>
@@ -442,74 +437,7 @@
     
 
     
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-
-            
-            <span class="fixed-text">/bootstraps/<span class="text-muted">id</span>/<a href="metadata.html">metadatas</a></span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-
-            
-            <span class="fixed-text">/bootstraps/<span class="text-muted">id</span>/<a href="globalmetadata.html">globalmetadatas</a></span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-success">put</span>
-    
-            
-        </div>
-    </div>
-    
+    <p>This object has no children.</p>
     
     
         </section>
@@ -529,6 +457,110 @@
 
         <section id="attributes">
             <h3>Attributes documentation</h3>
+            
+            <section id="attr_description" class="filterable" data-filter-keyword="description" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>description</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>A brief description of this patch profile.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">description</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_enterpriseID" class="filterable" data-filter-keyword="enterpriseID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>enterpriseID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Enterprise/Organisation that this patch profile belongs to.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">enterpriseID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
             
             <section id="attr_entityScope" class="filterable" data-filter-keyword="entityScope" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
@@ -638,55 +670,6 @@
                 </div>
             </section>
             
-            <section id="attr_installerID" class="filterable" data-filter-keyword="installerID" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>installerID</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>The Installer ID</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">installerID</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
             <section id="attr_lastUpdatedBy" class="filterable" data-filter-keyword="lastUpdatedBy" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -738,64 +721,17 @@
                 </div>
             </section>
             
-            <section id="attr_status" class="filterable" data-filter-keyword="status" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_name" class="filterable" data-filter-keyword="name" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>status</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Bootstrap status.</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ACTIVE, CERTIFICATE_SIGNED, INACTIVE, NOTIFICATION_APP_REQ_ACK, NOTIFICATION_APP_REQ_SENT</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">status</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_ZFBInfo" class="filterable" data-filter-keyword="ZFBInfo" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>ZFBInfo</b>
+                        <b>name</b>
                         <span class="type_string fixed-text">string</span>
                         
     
     
     
+    
+     <span class="label label-info"> creation only </span>&nbsp;
     
     
     
@@ -810,7 +746,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Base64 Encoded JSON String of NSG ZFB Attribute Value Pairs</p>
+                        <p>A unique name identifying this patch profile.</p>
 
                         <hr/>
 
@@ -827,80 +763,33 @@
                             
 
                             
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
+                            
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ZFBInfo</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">name</span>
                         </p>
                     </div>
                 </div>
             </section>
             
-            <section id="attr_ZFBMatchAttribute" class="filterable" data-filter-keyword="ZFBMatchAttribute" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_patchTag" class="filterable" data-filter-keyword="patchTag" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>ZFBMatchAttribute</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Attribute to auto match on</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">HOSTNAME, IP_ADDRESS, MAC_ADDRESS, NONE, NSGATEWAY_ID, SERIAL_NUMBER</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ZFBMatchAttribute</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_ZFBMatchValue" class="filterable" data-filter-keyword="ZFBMatchValue" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>ZFBMatchValue</b>
+                        <b>patchTag</b>
                         <span class="type_string fixed-text">string</span>
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -916,7 +805,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Attribute value to auto match on</p>
+                        <p>A unique brief name and version of the patch derived from Patch URL.</p>
 
                         <hr/>
 
@@ -933,14 +822,75 @@
                             
 
                             
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
+                            
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ZFBMatchValue</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">patchTag</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_patchURL" class="filterable" data-filter-keyword="patchURL" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>patchURL</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+     <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>URL to retrieve the patch bundle for this particular patch.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+                            <span class="small"><b>Allowed characters: </b></span><span class="fixed-text">URL supported characters.</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">2048</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">patchURL</span>
                         </p>
                     </div>
                 </div>

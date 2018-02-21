@@ -215,7 +215,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_packetCount" title="packet count (part of rate along with probeInterval)">packetCount</a>
+                            <a href="#attr_packetCount" title="packet count (part of rate along with probeInterval). Applicable to Tier2 type.">packetCount</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -245,7 +245,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_probeInterval" title="probe interval (part of rate along with packetCount)">probeInterval</a>
+                            <a href="#attr_probeInterval" title="probe interval (part of rate along with packetCount). Applicable to Tier2 type.">probeInterval</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -318,7 +318,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_timeout" title="number of milliseconds to wait until the probe is timed out">timeout</a>
+                            <a href="#attr_timeout" title="number of milliseconds to wait until the probe is timed out. Applicable to Tier2 type.">timeout</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -583,7 +583,7 @@
                             
 
                             
-                            <span class="small"><b>Default value: </b></span><span class="fixed-text">15</span><br/>
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">5</span><br/>
                             
 
                             
@@ -788,7 +788,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>packet count (part of rate along with probeInterval)</p>
+                        <p>packet count (part of rate along with probeInterval). Applicable to Tier2 type.</p>
 
                         <hr/>
 
@@ -845,7 +845,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>probe interval (part of rate along with packetCount)</p>
+                        <p>probe interval (part of rate along with packetCount). Applicable to Tier2 type.</p>
 
                         <hr/>
 
@@ -959,7 +959,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>number of milliseconds to wait until the probe is timed out</p>
+                        <p>number of milliseconds to wait until the probe is timed out. Applicable to Tier2 type.</p>
 
                         <hr/>
 
@@ -970,7 +970,7 @@
                             
 
                             
-
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">3000</span><br/>
                             
 
                             
@@ -979,6 +979,12 @@
 
                             
 
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1000</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">5000</span><br/>
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">timeout</span>

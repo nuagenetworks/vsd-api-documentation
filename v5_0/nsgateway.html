@@ -95,6 +95,8 @@
                             
                             <li><a data-id="attr_operationStatus" href="#attr_operationStatus" class="fixed-text">operationStatus</a></li>
                             
+                            <li><a data-id="attr_patches" href="#attr_patches" class="fixed-text">patches</a></li>
+                            
                             <li><a data-id="attr_pending" href="#attr_pending" class="fixed-text">pending</a></li>
                             
                             <li><a data-id="attr_permittedAction" href="#attr_permittedAction" class="fixed-text">permittedAction</a></li>
@@ -120,6 +122,8 @@
                             <li><a data-id="attr_templateID" href="#attr_templateID" class="fixed-text">templateID</a></li>
                             
                             <li><a data-id="attr_TPMStatus" href="#attr_TPMStatus" class="fixed-text">TPMStatus</a></li>
+                            
+                            <li><a data-id="attr_TPMVersion" href="#attr_TPMVersion" class="fixed-text">TPMVersion</a></li>
                             
                             <li><a data-id="attr_UUID" href="#attr_UUID" class="fixed-text">UUID</a></li>
                             
@@ -1139,6 +1143,34 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_patches" title="Patches that have been installed on the NSG.">patches</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_pending" title="Indicates that this gateway is pending state or state. When in pending state it cannot be modified from REST.">pending</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -1559,6 +1591,34 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_TPMVersion" title="TPM (Trusted Platform Module) version as reported by the NSG.">TPMVersion</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_UUID" title="The Redhat UUID of the NSG">UUID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -1733,28 +1793,6 @@
 
             
             
-            <span class="fixed-text">/nsgateways</a>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
             <span class="fixed-text">/<a href="nsggroup.html">nsggroups</a>/<span class="text-muted">id</span>/nsgateways</span>
             
 
@@ -1774,6 +1812,28 @@
     
     
     <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/nsgateways</a>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
     
             
         </div>
@@ -4041,6 +4101,57 @@
                 </div>
             </section>
             
+            <section id="attr_patches" class="filterable" data-filter-keyword="patches" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>patches</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Patches that have been installed on the NSG.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">patches</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_pending" class="filterable" data-filter-keyword="pending" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -4705,6 +4816,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">TPMStatus</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_TPMVersion" class="filterable" data-filter-keyword="TPMVersion" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>TPMVersion</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>TPM (Trusted Platform Module) version as reported by the NSG.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">TPMVersion</span>
                         </p>
                     </div>
                 </div>
