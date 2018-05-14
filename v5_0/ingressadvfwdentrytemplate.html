@@ -41,6 +41,8 @@
                             
                             <li><a data-id="attr_associatedApplicationID" href="#attr_associatedApplicationID" class="fixed-text">associatedApplicationID</a></li>
                             
+                            <li><a data-id="attr_associatedForwardingPathListID" href="#attr_associatedForwardingPathListID" class="fixed-text">associatedForwardingPathListID</a></li>
+                            
                             <li><a data-id="attr_associatedLiveEntityID" href="#attr_associatedLiveEntityID" class="fixed-text">associatedLiveEntityID</a></li>
                             
                             <li><a data-id="attr_associatedTrafficType" href="#attr_associatedTrafficType" class="fixed-text">associatedTrafficType</a></li>
@@ -180,7 +182,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_action" title="The action of the ACL entry DROP or FORWARD or REDIRECT. Action REDIRECT is allowed only for IngressAdvancedForwardingEntry Possible values are DROP, FORWARD, REDIRECT, .">action</a>
+                            <a href="#attr_action" title="The action of the ACL entry DROP or FORWARD or REDIRECT or ACTION_LIST. Actions REDIRECT and ACTION_LIST are allowed only for IngressAdvancedForwardingEntry. Possible values are DROP, FORWARD, REDIRECT, ACTION_LIST. If ACTION_LIST is selected in IngressAdvancedForwardingEntry, user will have to attach a ForwardingPathList (list of forwarding action-uplink preference entries) to the ACL.  ">action</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -198,7 +200,9 @@
     
     
     
-     (DROP | FORWARD | REDIRECT)
+    
+    
+     (ACTION_LIST | DROP | FORWARD | REDIRECT)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -295,6 +299,36 @@
                     <tr>
                         <td class="fixed-text">
                             <a href="#attr_associatedApplicationID" title="Associated application UUID.">associatedApplicationID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedForwardingPathListID" title="Associated forwarding path list UUID.">associatedForwardingPathListID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -982,11 +1016,7 @@
     
     
     
-    
-    
-    
-    
-     (ANY | PGEXPRESSION | POLICYGROUP | REDIRECTIONTARGET | SUBNET | VPORTTAG | ZONE)
+     (ANY | PGEXPRESSION | POLICYGROUP | SUBNET | ZONE)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1133,9 +1163,7 @@
     
     
     
-    
-    
-     (ANY | ENDPOINT_DOMAIN | ENDPOINT_SUBNET | ENDPOINT_ZONE | ENTERPRISE_NETWORK | INTERNET_POLICYGROUP | NETWORK_MACRO_GROUP | PGEXPRESSION | POLICYGROUP | PUBLIC_NETWORK | SUBNET | UNDERLAY_INTERNET_POLICYGROUP | ZONE)
+     (ANY | ENDPOINT_DOMAIN | ENDPOINT_SUBNET | ENDPOINT_ZONE | ENTERPRISE_NETWORK | NETWORK_MACRO_GROUP | PGEXPRESSION | POLICYGROUP | PUBLIC_NETWORK | SUBNET | UNDERLAY_INTERNET_POLICYGROUP | ZONE)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1332,6 +1360,8 @@
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
+    
+     <span class="label label-danger"> required </span>&nbsp;
     
     
     
@@ -1793,29 +1823,6 @@
             
 
             
-            <span class="fixed-text">/ingressadvfwdentrytemplates/<span class="text-muted">id</span>/<a href="job.html">jobs</a></span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-
-            
             <span class="fixed-text">/ingressadvfwdentrytemplates/<span class="text-muted">id</span>/<a href="statistics.html">statistics</a></span>
             
 
@@ -1927,22 +1934,20 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The action of the ACL entry DROP or FORWARD or REDIRECT. Action REDIRECT is allowed only for IngressAdvancedForwardingEntry Possible values are DROP, FORWARD, REDIRECT, .</p>
+                        <p>The action of the ACL entry DROP or FORWARD or REDIRECT or ACTION_LIST. Actions REDIRECT and ACTION_LIST are allowed only for IngressAdvancedForwardingEntry. Possible values are DROP, FORWARD, REDIRECT, ACTION_LIST. If ACTION_LIST is selected in IngressAdvancedForwardingEntry, user will have to attach a ForwardingPathList (list of forwarding action-uplink preference entries) to the ACL.  </p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DROP, FORWARD, REDIRECT</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ACTION_LIST, DROP, FORWARD, REDIRECT</span><br/>
                             
 
                             
 
                             
 
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             
@@ -2115,6 +2120,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedApplicationID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedForwardingPathListID" class="filterable" data-filter-keyword="associatedForwardingPathListID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedForwardingPathListID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Associated forwarding path list UUID.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedForwardingPathListID</span>
                         </p>
                     </div>
                 </div>
@@ -3204,7 +3262,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, PGEXPRESSION, POLICYGROUP, REDIRECTIONTARGET, SUBNET, VPORTTAG, ZONE</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, PGEXPRESSION, POLICYGROUP, SUBNET, ZONE</span><br/>
                             
 
                             
@@ -3416,7 +3474,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENDPOINT_DOMAIN, ENDPOINT_SUBNET, ENDPOINT_ZONE, ENTERPRISE_NETWORK, INTERNET_POLICYGROUP, NETWORK_MACRO_GROUP, PGEXPRESSION, POLICYGROUP, PUBLIC_NETWORK, SUBNET, UNDERLAY_INTERNET_POLICYGROUP, ZONE</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENDPOINT_DOMAIN, ENDPOINT_SUBNET, ENDPOINT_ZONE, ENTERPRISE_NETWORK, NETWORK_MACRO_GROUP, PGEXPRESSION, POLICYGROUP, PUBLIC_NETWORK, SUBNET, UNDERLAY_INTERNET_POLICYGROUP, ZONE</span><br/>
                             
 
                             
@@ -3708,6 +3766,8 @@
                         <b>redirectVPortTagID</b>
                         <span class="type_string fixed-text">string</span>
                         
+    
+     <span class="label label-danger"> required </span>&nbsp;
     
     
     

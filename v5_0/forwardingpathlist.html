@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>RedirectionTargetTemplate API Reference 5.0</title>
+    <title>ForwardingPathList API Reference 5.0</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -33,8 +33,6 @@
                             
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
-                            <li><a data-id="attr_endPointType" href="#attr_endPointType" class="fixed-text">endPointType</a></li>
-                            
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
@@ -42,10 +40,6 @@
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
                             <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
-                            
-                            <li><a data-id="attr_redundancyEnabled" href="#attr_redundancyEnabled" class="fixed-text">redundancyEnabled</a></li>
-                            
-                            <li><a data-id="attr_triggerType" href="#attr_triggerType" class="fixed-text">triggerType</a></li>
                             
                         </ul>
                     </li>
@@ -76,8 +70,8 @@
     <div class="container">
 
         <section id="intro">
-            <h2>RedirectionTargetTemplate</h2>
-            <p>Template for a vporttag. It can be created only at the template level and available for all instances.</p>
+            <h2>ForwardingPathList</h2>
+            <p>Forwarding path list is l4 based policy to PAT / IKE to underlay.</p>
         </section>
 
         <section id="overview">
@@ -86,7 +80,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_description" title="Description of this redirection target template">description</a>
+                            <a href="#attr_description" title="Describes the Forwarding Path List">description</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -104,47 +98,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
     
     
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_endPointType" title="VPortTagEndPointType is an enum. It defines the type of header rewrite and forwarding performed by VRS when the endpoint is used as a PBR destination. Possible values are NONE, L3, VIRTUAL_WIRE and NSG_VNF.">endPointType</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (L3 | NONE | NSG_VNF | VIRTUAL_WIRE)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-     <span class="label label-danger"> required </span>&nbsp;
-    
-    
-    
-    
-    
-    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -252,7 +209,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_name" title="Name of this redirection target template">name</a>
+                            <a href="#attr_name" title="Name of the forwarding path list.">name</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -282,67 +239,6 @@
                         </td>
                     </tr>
                     
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_redundancyEnabled" title="Allow/Disallow redundant appliances and VIP">redundancyEnabled</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_boolean">boolean
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_triggerType" title="Trigger type, could be NONE/GARP - THIS IS READONLY">triggerType</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (GARP | NONE)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                        </td>
-                    </tr>
-                    
                 </table>
         </section>
 
@@ -359,7 +255,7 @@
         <div class="col-xs-7">
 
             
-            <span class="fixed-text">/redirectiontargettemplates/<span class="text-muted">id</span></a>
+            <span class="fixed-text">/forwardingpathlists/<span class="text-muted">id</span></a>
             
         </div>
         <div class="col-xs-5 text-right">
@@ -406,36 +302,7 @@
 
             
             
-            <span class="fixed-text">/<a href="l2domaintemplate.html">l2domaintemplates</a>/<span class="text-muted">id</span>/redirectiontargettemplates</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="domaintemplate.html">domaintemplates</a>/<span class="text-muted">id</span>/redirectiontargettemplates</span>
+            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/forwardingpathlists</span>
             
 
             
@@ -478,7 +345,7 @@
             
 
             
-            <span class="fixed-text">/redirectiontargettemplates/<span class="text-muted">id</span>/<a href="metadata.html">metadatas</a></span>
+            <span class="fixed-text">/forwardingpathlists/<span class="text-muted">id</span>/<a href="metadata.html">metadatas</a></span>
             
 
             
@@ -508,7 +375,7 @@
             
 
             
-            <span class="fixed-text">/redirectiontargettemplates/<span class="text-muted">id</span>/<a href="globalmetadata.html">globalmetadatas</a></span>
+            <span class="fixed-text">/forwardingpathlists/<span class="text-muted">id</span>/<a href="globalmetadata.html">globalmetadatas</a></span>
             
 
             
@@ -545,7 +412,7 @@
             
 
             
-            <span class="fixed-text">/redirectiontargettemplates/<span class="text-muted">id</span>/<a href="eventlog.html">eventlogs</a></span>
+            <span class="fixed-text">/forwardingpathlists/<span class="text-muted">id</span>/<a href="forwardingpathlistentry.html">forwardingpathlistentries</a></span>
             
 
             
@@ -557,6 +424,13 @@
     
     
     <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
     
             
         </div>
@@ -594,6 +468,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -601,7 +479,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Description of this redirection target template</p>
+                        <p>Describes the Forwarding Path List</p>
 
                         <hr/>
 
@@ -620,63 +498,14 @@
                             
 
                             
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
 
                             
 
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">description</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_endPointType" class="filterable" data-filter-keyword="endPointType" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>endPointType</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-     <span class="label label-danger"> required </span>&nbsp;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>VPortTagEndPointType is an enum. It defines the type of header rewrite and forwarding performed by VRS when the endpoint is used as a PBR destination. Possible values are NONE, L3, VIRTUAL_WIRE and NSG_VNF.</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">L3, NONE, NSG_VNF, VIRTUAL_WIRE</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">endPointType</span>
                         </p>
                     </div>
                 </div>
@@ -866,7 +695,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Name of this redirection target template</p>
+                        <p>Name of the forwarding path list.</p>
 
                         <hr/>
 
@@ -883,7 +712,11 @@
                             
 
                             
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
+                            
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">64</span><br/>
                             
 
                             
@@ -891,104 +724,6 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">name</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_redundancyEnabled" class="filterable" data-filter-keyword="redundancyEnabled" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>redundancyEnabled</b>
-                        <span class="type_boolean fixed-text">boolean</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Allow/Disallow redundant appliances and VIP</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">redundancyEnabled</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_triggerType" class="filterable" data-filter-keyword="triggerType" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>triggerType</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Trigger type, could be NONE/GARP - THIS IS READONLY</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">GARP, NONE</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">triggerType</span>
                         </p>
                     </div>
                 </div>
