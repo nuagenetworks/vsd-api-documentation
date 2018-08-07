@@ -37,9 +37,15 @@
                             
                             <li><a data-id="attr_flowCollectionEnabled" href="#attr_flowCollectionEnabled" class="fixed-text">flowCollectionEnabled</a></li>
                             
+                            <li><a data-id="attr_googleMapsAPIKey" href="#attr_googleMapsAPIKey" class="fixed-text">googleMapsAPIKey</a></li>
+                            
+                            <li><a data-id="attr_pageSize" href="#attr_pageSize" class="fixed-text">pageSize</a></li>
+                            
                             <li><a data-id="attr_statisticsEnabled" href="#attr_statisticsEnabled" class="fixed-text">statisticsEnabled</a></li>
                             
                             <li><a data-id="attr_statsTSDBServerAddress" href="#attr_statsTSDBServerAddress" class="fixed-text">statsTSDBServerAddress</a></li>
+                            
+                            <li><a data-id="attr_VSSFeatureEnabled" href="#attr_VSSFeatureEnabled" class="fixed-text">VSSFeatureEnabled</a></li>
                             
                             <li><a data-id="attr_VSSStatsInterval" href="#attr_VSSStatsInterval" class="fixed-text">VSSStatsInterval</a></li>
                             
@@ -160,6 +166,62 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_googleMapsAPIKey" title="Google Maps API Key used to display maps on Nuage UI applications">googleMapsAPIKey</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_pageSize" title="Result size for queries">pageSize</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_statisticsEnabled" title="This flag is used to indicate if statistics is enabled in the system. CSProot is expected to activate this through the enable statistics script.">statisticsEnabled</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -199,6 +261,34 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_VSSFeatureEnabled" title="Flag to indicate if VSS feature is enabled.">VSSFeatureEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -484,6 +574,110 @@
                 </div>
             </section>
             
+            <section id="attr_googleMapsAPIKey" class="filterable" data-filter-keyword="googleMapsAPIKey" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>googleMapsAPIKey</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Google Maps API Key used to display maps on Nuage UI applications</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">googleMapsAPIKey</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_pageSize" class="filterable" data-filter-keyword="pageSize" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>pageSize</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Result size for queries</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">pageSize</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_statisticsEnabled" class="filterable" data-filter-keyword="statisticsEnabled" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -575,6 +769,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">statsTSDBServerAddress</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_VSSFeatureEnabled" class="filterable" data-filter-keyword="VSSFeatureEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>VSSFeatureEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Flag to indicate if VSS feature is enabled.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">VSSFeatureEnabled</span>
                         </p>
                     </div>
                 </div>

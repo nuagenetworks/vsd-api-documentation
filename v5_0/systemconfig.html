@@ -111,6 +111,8 @@
                             
                             <li><a data-id="attr_globalMACAddress" href="#attr_globalMACAddress" class="fixed-text">globalMACAddress</a></li>
                             
+                            <li><a data-id="attr_googleMapsAPIKey" href="#attr_googleMapsAPIKey" class="fixed-text">googleMapsAPIKey</a></li>
+                            
                             <li><a data-id="attr_groupKeyDefaultSeedGenerationInterval" href="#attr_groupKeyDefaultSeedGenerationInterval" class="fixed-text">groupKeyDefaultSeedGenerationInterval</a></li>
                             
                             <li><a data-id="attr_groupKeyDefaultSeedLifetime" href="#attr_groupKeyDefaultSeedLifetime" class="fixed-text">groupKeyDefaultSeedLifetime</a></li>
@@ -148,6 +150,8 @@
                             <li><a data-id="attr_groupKeyMinimumSEKLifetime" href="#attr_groupKeyMinimumSEKLifetime" class="fixed-text">groupKeyMinimumSEKLifetime</a></li>
                             
                             <li><a data-id="attr_groupKeyMinimumTrafficEncryptionKeyLifetime" href="#attr_groupKeyMinimumTrafficEncryptionKeyLifetime" class="fixed-text">groupKeyMinimumTrafficEncryptionKeyLifetime</a></li>
+                            
+                            <li><a data-id="attr_importedSaaSApplicationsVersion" href="#attr_importedSaaSApplicationsVersion" class="fixed-text">importedSaaSApplicationsVersion</a></li>
                             
                             <li><a data-id="attr_inactiveTimeout" href="#attr_inactiveTimeout" class="fixed-text">inactiveTimeout</a></li>
                             
@@ -212,6 +216,8 @@
                             <li><a data-id="attr_RTPublicNetworkUpperLimit" href="#attr_RTPublicNetworkUpperLimit" class="fixed-text">RTPublicNetworkUpperLimit</a></li>
                             
                             <li><a data-id="attr_RTUpperLimit" href="#attr_RTUpperLimit" class="fixed-text">RTUpperLimit</a></li>
+                            
+                            <li><a data-id="attr_SaaSApplicationsPublishDate" href="#attr_SaaSApplicationsPublishDate" class="fixed-text">SaaSApplicationsPublishDate</a></li>
                             
                             <li><a data-id="attr_serviceIDUpperLimit" href="#attr_serviceIDUpperLimit" class="fixed-text">serviceIDUpperLimit</a></li>
                             
@@ -865,7 +871,9 @@
     
     
     
-     (DC_DEFAULT | GRE | VXLAN)
+    
+    
+     (DC_DEFAULT | GRE | VLAN | VXLAN)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1461,6 +1469,32 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_googleMapsAPIKey" title="Google Maps API Key used to display maps on Nuage UI applications">googleMapsAPIKey</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_groupKeyDefaultSeedGenerationInterval" title="Group Key Encryption Profile Default Seed Generation Interval">groupKeyDefaultSeedGenerationInterval</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -2034,6 +2068,38 @@
     
     
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_importedSaaSApplicationsVersion" title="Version of the current imported SaaS Application Type Master List.">importedSaaSApplicationsVersion</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2880,6 +2946,38 @@
     
     
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_SaaSApplicationsPublishDate" title="Determines the time that saas applications were imported in VSD.">SaaSApplicationsPublishDate</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -5342,7 +5440,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DC_DEFAULT, GRE, VXLAN</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DC_DEFAULT, GRE, VLAN, VXLAN</span><br/>
                             
 
                             
@@ -6464,6 +6562,57 @@
                 </div>
             </section>
             
+            <section id="attr_googleMapsAPIKey" class="filterable" data-filter-keyword="googleMapsAPIKey" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>googleMapsAPIKey</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Google Maps API Key used to display maps on Nuage UI applications</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">googleMapsAPIKey</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_groupKeyDefaultSeedGenerationInterval" class="filterable" data-filter-keyword="groupKeyDefaultSeedGenerationInterval" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -7378,6 +7527,61 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">groupKeyMinimumTrafficEncryptionKeyLifetime</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_importedSaaSApplicationsVersion" class="filterable" data-filter-keyword="importedSaaSApplicationsVersion" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>importedSaaSApplicationsVersion</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Version of the current imported SaaS Application Type Master List.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">importedSaaSApplicationsVersion</span>
                         </p>
                     </div>
                 </div>
@@ -9025,6 +9229,59 @@
                 </div>
             </section>
             
+            <section id="attr_SaaSApplicationsPublishDate" class="filterable" data-filter-keyword="SaaSApplicationsPublishDate" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>SaaSApplicationsPublishDate</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Determines the time that saas applications were imported in VSD.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">SaaSApplicationsPublishDate</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_serviceIDUpperLimit" class="filterable" data-filter-keyword="serviceIDUpperLimit" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -10242,7 +10499,11 @@
                             
 
                             
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">60</span><br/>
+                            
 
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">604800</span><br/>
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">twoFactorCodeExpiry</span>

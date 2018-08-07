@@ -287,7 +287,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedTrafficType" title="This property reflects the type of traffic in case an ACL entry is created using an L4 Service or L4 Service Group. In case a protocol and port are specified for the ACL entry, this property has to be empty (null). Supported values are L4_SERVICE, L4_SERVICE_GROUP and empty.">associatedTrafficType</a>
+                            <a href="#attr_associatedTrafficType" title="This property reflects the type of traffic in case an ACL entry is created using an Service or Service Group. In case a protocol and port are specified for the ACL entry, this property has to be empty (null). Supported values are L4_SERVICE, L4_SERVICE_GROUP and empty.">associatedTrafficType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -326,7 +326,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedTrafficTypeID" title="If a traffic type is specified as L4 Service or Service Group, then the associated Id of  Service / Service Group should be specifed here">associatedTrafficTypeID</a>
+                            <a href="#attr_associatedTrafficTypeID" title="If a traffic type is specified as Service or Service Group, then the associated Id of  Service / Service Group should be specifed here">associatedTrafficTypeID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -912,7 +912,9 @@
     
     
     
-     (ANY | ENDPOINT_DOMAIN | ENDPOINT_SUBNET | ENDPOINT_ZONE | ENTERPRISE_NETWORK | NETWORK_MACRO_GROUP | PGEXPRESSION | POLICYGROUP | PUBLIC_NETWORK | SUBNET | UNDERLAY_INTERNET_POLICYGROUP | ZONE)
+    
+    
+     (ANY | ENDPOINT_DOMAIN | ENDPOINT_SUBNET | ENDPOINT_ZONE | ENTERPRISE_NETWORK | NETWORK_MACRO_GROUP | PGEXPRESSION | POLICYGROUP | PUBLIC_NETWORK | SAAS_APPLICATION_GROUP | SUBNET | UNDERLAY_INTERNET_POLICYGROUP | ZONE)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1245,7 +1247,7 @@
 
             
             
-            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/ingressaclentrytemplates</span>
+            <span class="fixed-text">/<a href="mirrordestination.html">mirrordestinations</a>/<span class="text-muted">id</span>/ingressaclentrytemplates</span>
             
 
             
@@ -1257,13 +1259,6 @@
     
     
     <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
     
             
         </div>
@@ -1296,7 +1291,7 @@
 
             
             
-            <span class="fixed-text">/<a href="mirrordestination.html">mirrordestinations</a>/<span class="text-muted">id</span>/ingressaclentrytemplates</span>
+            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/ingressaclentrytemplates</span>
             
 
             
@@ -1308,6 +1303,13 @@
     
     
     <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
     
             
         </div>
@@ -1803,7 +1805,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>This property reflects the type of traffic in case an ACL entry is created using an L4 Service or L4 Service Group. In case a protocol and port are specified for the ACL entry, this property has to be empty (null). Supported values are L4_SERVICE, L4_SERVICE_GROUP and empty.</p>
+                        <p>This property reflects the type of traffic in case an ACL entry is created using an Service or Service Group. In case a protocol and port are specified for the ACL entry, this property has to be empty (null). Supported values are L4_SERVICE, L4_SERVICE_GROUP and empty.</p>
 
                         <hr/>
 
@@ -1856,7 +1858,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>If a traffic type is specified as L4 Service or Service Group, then the associated Id of  Service / Service Group should be specifed here</p>
+                        <p>If a traffic type is specified as Service or Service Group, then the associated Id of  Service / Service Group should be specifed here</p>
 
                         <hr/>
 
@@ -2805,7 +2807,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENDPOINT_DOMAIN, ENDPOINT_SUBNET, ENDPOINT_ZONE, ENTERPRISE_NETWORK, NETWORK_MACRO_GROUP, PGEXPRESSION, POLICYGROUP, PUBLIC_NETWORK, SUBNET, UNDERLAY_INTERNET_POLICYGROUP, ZONE</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENDPOINT_DOMAIN, ENDPOINT_SUBNET, ENDPOINT_ZONE, ENTERPRISE_NETWORK, NETWORK_MACRO_GROUP, PGEXPRESSION, POLICYGROUP, PUBLIC_NETWORK, SAAS_APPLICATION_GROUP, SUBNET, UNDERLAY_INTERNET_POLICYGROUP, ZONE</span><br/>
                             
 
                             

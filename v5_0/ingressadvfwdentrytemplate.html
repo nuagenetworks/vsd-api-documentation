@@ -57,6 +57,8 @@
                             
                             <li><a data-id="attr_DSCP" href="#attr_DSCP" class="fixed-text">DSCP</a></li>
                             
+                            <li><a data-id="attr_DSCPRemarking" href="#attr_DSCPRemarking" class="fixed-text">DSCPRemarking</a></li>
+                            
                             <li><a data-id="attr_enterpriseName" href="#attr_enterpriseName" class="fixed-text">enterpriseName</a></li>
                             
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
@@ -182,7 +184,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_action" title="The action of the ACL entry DROP or FORWARD or REDIRECT or ACTION_LIST. Actions REDIRECT and ACTION_LIST are allowed only for IngressAdvancedForwardingEntry. Possible values are DROP, FORWARD, REDIRECT, ACTION_LIST. If ACTION_LIST is selected in IngressAdvancedForwardingEntry, user will have to attach a ForwardingPathList (list of forwarding action-uplink preference entries) to the ACL.  ">action</a>
+                            <a href="#attr_action" title="The action of the ACL entry DROP or FORWARD or REDIRECT or FORWARDING_PATH_LIST. Actions REDIRECT and FORWARDING_PATH_LIST are allowed only for IngressAdvancedForwardingEntry. Possible values are DROP, FORWARD, REDIRECT, FORWARDING_PATH_LIST. If FORWARDING_PATH_LIST is selected in IngressAdvancedForwardingEntry, user will have to attach a ForwardingPathList (list of forwarding action-uplink preference entries) to the ACL.  ">action</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -202,7 +204,7 @@
     
     
     
-     (ACTION_LIST | DROP | FORWARD | REDIRECT)
+     (DROP | FORWARD | FORWARDING_PATH_LIST | REDIRECT)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -386,7 +388,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedTrafficType" title="This property reflects the type of traffic in case an ACL entry is created using an L4 Service or L4 Service Group. In case a protocol and port are specified for the ACL entry, this property has to be empty (null). Supported values are L4_SERVICE, L4_SERVICE_GROUP and empty.">associatedTrafficType</a>
+                            <a href="#attr_associatedTrafficType" title="This property reflects the type of traffic in case an ACL entry is created using an Service or Service Group. In case a protocol and port are specified for the ACL entry, this property has to be empty (null). Supported values are L4_SERVICE, L4_SERVICE_GROUP and empty.">associatedTrafficType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -425,7 +427,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedTrafficTypeID" title="If a traffic type is specified as L4 Service or Service Group, then the associated Id of  Service / Service Group should be specifed here">associatedTrafficTypeID</a>
+                            <a href="#attr_associatedTrafficTypeID" title="If a traffic type is specified as Service or Service Group, then the associated Id of  Service / Service Group should be specifed here">associatedTrafficTypeID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -555,6 +557,36 @@
                             
     
      <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_DSCPRemarking" title="Remarking value for the DSCP field in IP header of customer packet.DSCP value range from enumeration of 65 values: NONE, 0, 1, ..., 63">DSCPRemarking</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
     
     
     
@@ -1163,7 +1195,9 @@
     
     
     
-     (ANY | ENDPOINT_DOMAIN | ENDPOINT_SUBNET | ENDPOINT_ZONE | ENTERPRISE_NETWORK | NETWORK_MACRO_GROUP | PGEXPRESSION | POLICYGROUP | PUBLIC_NETWORK | SUBNET | UNDERLAY_INTERNET_POLICYGROUP | ZONE)
+    
+    
+     (ANY | ENDPOINT_DOMAIN | ENDPOINT_SUBNET | ENDPOINT_ZONE | ENTERPRISE_NETWORK | NETWORK_MACRO_GROUP | PGEXPRESSION | POLICYGROUP | PUBLIC_NETWORK | SAAS_APPLICATION_GROUP | SUBNET | UNDERLAY_INTERNET_POLICYGROUP | ZONE)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1647,7 +1681,7 @@
 
             
             
-            <span class="fixed-text">/<a href="vport.html">vports</a>/<span class="text-muted">id</span>/ingressadvfwdentrytemplates</span>
+            <span class="fixed-text">/<a href="mirrordestination.html">mirrordestinations</a>/<span class="text-muted">id</span>/ingressadvfwdentrytemplates</span>
             
 
             
@@ -1669,7 +1703,7 @@
 
             
             
-            <span class="fixed-text">/<a href="mirrordestination.html">mirrordestinations</a>/<span class="text-muted">id</span>/ingressadvfwdentrytemplates</span>
+            <span class="fixed-text">/<a href="vport.html">vports</a>/<span class="text-muted">id</span>/ingressadvfwdentrytemplates</span>
             
 
             
@@ -1934,14 +1968,14 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The action of the ACL entry DROP or FORWARD or REDIRECT or ACTION_LIST. Actions REDIRECT and ACTION_LIST are allowed only for IngressAdvancedForwardingEntry. Possible values are DROP, FORWARD, REDIRECT, ACTION_LIST. If ACTION_LIST is selected in IngressAdvancedForwardingEntry, user will have to attach a ForwardingPathList (list of forwarding action-uplink preference entries) to the ACL.  </p>
+                        <p>The action of the ACL entry DROP or FORWARD or REDIRECT or FORWARDING_PATH_LIST. Actions REDIRECT and FORWARDING_PATH_LIST are allowed only for IngressAdvancedForwardingEntry. Possible values are DROP, FORWARD, REDIRECT, FORWARDING_PATH_LIST. If FORWARDING_PATH_LIST is selected in IngressAdvancedForwardingEntry, user will have to attach a ForwardingPathList (list of forwarding action-uplink preference entries) to the ACL.  </p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ACTION_LIST, DROP, FORWARD, REDIRECT</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DROP, FORWARD, FORWARDING_PATH_LIST, REDIRECT</span><br/>
                             
 
                             
@@ -2252,7 +2286,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>This property reflects the type of traffic in case an ACL entry is created using an L4 Service or L4 Service Group. In case a protocol and port are specified for the ACL entry, this property has to be empty (null). Supported values are L4_SERVICE, L4_SERVICE_GROUP and empty.</p>
+                        <p>This property reflects the type of traffic in case an ACL entry is created using an Service or Service Group. In case a protocol and port are specified for the ACL entry, this property has to be empty (null). Supported values are L4_SERVICE, L4_SERVICE_GROUP and empty.</p>
 
                         <hr/>
 
@@ -2305,7 +2339,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>If a traffic type is specified as L4 Service or Service Group, then the associated Id of  Service / Service Group should be specifed here</p>
+                        <p>If a traffic type is specified as Service or Service Group, then the associated Id of  Service / Service Group should be specifed here</p>
 
                         <hr/>
 
@@ -2542,6 +2576,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">DSCP</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_DSCPRemarking" class="filterable" data-filter-keyword="DSCPRemarking" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>DSCPRemarking</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Remarking value for the DSCP field in IP header of customer packet.DSCP value range from enumeration of 65 values: NONE, 0, 1, ..., 63</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">DSCPRemarking</span>
                         </p>
                     </div>
                 </div>
@@ -3474,7 +3559,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENDPOINT_DOMAIN, ENDPOINT_SUBNET, ENDPOINT_ZONE, ENTERPRISE_NETWORK, NETWORK_MACRO_GROUP, PGEXPRESSION, POLICYGROUP, PUBLIC_NETWORK, SUBNET, UNDERLAY_INTERNET_POLICYGROUP, ZONE</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENDPOINT_DOMAIN, ENDPOINT_SUBNET, ENDPOINT_ZONE, ENTERPRISE_NETWORK, NETWORK_MACRO_GROUP, PGEXPRESSION, POLICYGROUP, PUBLIC_NETWORK, SAAS_APPLICATION_GROUP, SUBNET, UNDERLAY_INTERNET_POLICYGROUP, ZONE</span><br/>
                             
 
                             

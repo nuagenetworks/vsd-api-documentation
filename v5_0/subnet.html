@@ -101,6 +101,8 @@
                             
                             <li><a data-id="attr_splitSubnet" href="#attr_splitSubnet" class="fixed-text">splitSubnet</a></li>
                             
+                            <li><a data-id="attr_subnetVLANID" href="#attr_subnetVLANID" class="fixed-text">subnetVLANID</a></li>
+                            
                             <li><a data-id="attr_templateID" href="#attr_templateID" class="fixed-text">templateID</a></li>
                             
                             <li><a data-id="attr_underlay" href="#attr_underlay" class="fixed-text">underlay</a></li>
@@ -192,6 +194,8 @@
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
+    
+     <span class="label label-danger"> required </span>&nbsp;
     
     
     
@@ -991,6 +995,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+     <span class="label label-danger"> required </span>&nbsp;
+    
     
     
     
@@ -1294,6 +1300,36 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_subnetVLANID" title="Determines the VLANID for this associated Subnet.">subnetVLANID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_templateID" title="The ID of the subnet template that this subnet object was derived from">templateID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -1333,6 +1369,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -1593,6 +1631,28 @@
 
             
             
+            <span class="fixed-text">/<a href="patmapper.html">patmappers</a>/<span class="text-muted">id</span>/subnets</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/subnets</span>
             
 
@@ -1638,28 +1698,6 @@
             
             
             <span class="fixed-text">/<a href="nsgateway.html">nsgateways</a>/<span class="text-muted">id</span>/subnets</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="patmapper.html">patmappers</a>/<span class="text-muted">id</span>/subnets</span>
             
 
             
@@ -2432,6 +2470,8 @@
                         <b>address</b>
                         <span class="type_string fixed-text">string</span>
                         
+    
+     <span class="label label-danger"> required </span>&nbsp;
     
     
     
@@ -3701,6 +3741,8 @@
                         <span class="type_string fixed-text">string</span>
                         
     
+     <span class="label label-danger"> required </span>&nbsp;
+    
     
     
     
@@ -4220,6 +4262,61 @@
                 </div>
             </section>
             
+            <section id="attr_subnetVLANID" class="filterable" data-filter-keyword="subnetVLANID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>subnetVLANID</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Determines the VLANID for this associated Subnet.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">4096</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">subnetVLANID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_templateID" class="filterable" data-filter-keyword="templateID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -4276,6 +4373,8 @@
                         <span class="type_boolean fixed-text">boolean</span>
                         
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     

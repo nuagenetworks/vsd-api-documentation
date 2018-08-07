@@ -41,11 +41,15 @@
                             
                             <li><a data-id="attr_gatewayPeer1AutodiscoveredGatewayID" href="#attr_gatewayPeer1AutodiscoveredGatewayID" class="fixed-text">gatewayPeer1AutodiscoveredGatewayID</a></li>
                             
+                            <li><a data-id="attr_gatewayPeer1Connected" href="#attr_gatewayPeer1Connected" class="fixed-text">gatewayPeer1Connected</a></li>
+                            
                             <li><a data-id="attr_gatewayPeer1ID" href="#attr_gatewayPeer1ID" class="fixed-text">gatewayPeer1ID</a></li>
                             
                             <li><a data-id="attr_gatewayPeer1Name" href="#attr_gatewayPeer1Name" class="fixed-text">gatewayPeer1Name</a></li>
                             
                             <li><a data-id="attr_gatewayPeer2AutodiscoveredGatewayID" href="#attr_gatewayPeer2AutodiscoveredGatewayID" class="fixed-text">gatewayPeer2AutodiscoveredGatewayID</a></li>
+                            
+                            <li><a data-id="attr_gatewayPeer2Connected" href="#attr_gatewayPeer2Connected" class="fixed-text">gatewayPeer2Connected</a></li>
                             
                             <li><a data-id="attr_gatewayPeer2ID" href="#attr_gatewayPeer2ID" class="fixed-text">gatewayPeer2ID</a></li>
                             
@@ -145,6 +149,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -255,6 +261,34 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_gatewayPeer1Connected" title="Indicates status of the authoritative  gateway of this Redundancy Group.">gatewayPeer1Connected</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_gatewayPeer1ID" title="The gateway configuration owner in this Redundant Group. when Redundant Group is deleted this gateway will recieve vport associations ">gatewayPeer1ID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -320,6 +354,34 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_gatewayPeer2Connected" title="Indicates status of the secondary gateway of this Redundancy Group.">gatewayPeer2Connected</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -488,7 +550,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_personality" title="derived personality of the Redundancy Group - VSG,VRSG,NSG,OTHER Possible values are VSG, VSA, VRSG, DC7X50, NSG, HARDWARE_VTEP, OTHER, .">personality</a>
+                            <a href="#attr_personality" title="derived personality of the Redundancy Group - VSG,VRSG,NSG,OTHER Possible values are VSG, VSA, VRSG, VDFG, DC7X50, NSG, HARDWARE_VTEP, OTHER, .">personality</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -524,7 +586,11 @@
     
     
     
-     (DC7X50 | HARDWARE_VTEP | NSG | NSGBR | NSGDUC | NUAGE_210_WBX_32_Q | NUAGE_210_WBX_48_S | OTHER | VRSB | VRSG | VSA | VSG)
+    
+    
+    
+    
+     (DC7X50 | HARDWARE_VTEP | NETCONF_7X50 | NSG | NSGBR | NSGDUC | NUAGE_210_WBX_32_Q | NUAGE_210_WBX_48_S | OTHER | VDFG | VRSB | VRSG | VSA | VSG)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -745,6 +811,119 @@
             
 
             
+            <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="l2domain.html">l2domains</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="macfilterprofile.html">macfilterprofiles</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="sapegressqosprofile.html">sapegressqosprofiles</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="sapingressqosprofile.html">sapingressqosprofiles</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="gateway.html">gateways</a></span>
             
 
@@ -764,6 +943,59 @@
     
     
     <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="gatewayredundantport.html">gatewayredundantports</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="deploymentfailure.html">deploymentfailures</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
     
             
         </div>
@@ -865,6 +1097,36 @@
             
 
             
+            <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="egressprofile.html">egressprofiles</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="alarm.html">alarms</a></span>
             
 
@@ -925,6 +1187,36 @@
             
 
             
+            <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="ingressprofile.html">ingressprofiles</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="enterprisepermission.html">enterprisepermissions</a></span>
             
 
@@ -955,7 +1247,97 @@
             
 
             
+            <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="job.html">jobs</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="port.html">ports</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="ipfilterprofile.html">ipfilterprofiles</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/redundancygroups/<span class="text-muted">id</span>/<a href="ipv6filterprofile.html">ipv6filterprofiles</a></span>
             
 
             
@@ -1121,6 +1503,8 @@
                         <span class="type_string fixed-text">string</span>
                         
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -1320,6 +1704,57 @@
                 </div>
             </section>
             
+            <section id="attr_gatewayPeer1Connected" class="filterable" data-filter-keyword="gatewayPeer1Connected" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>gatewayPeer1Connected</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates status of the authoritative  gateway of this Redundancy Group.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">gatewayPeer1Connected</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_gatewayPeer1ID" class="filterable" data-filter-keyword="gatewayPeer1ID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1462,6 +1897,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">gatewayPeer2AutodiscoveredGatewayID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_gatewayPeer2Connected" class="filterable" data-filter-keyword="gatewayPeer2Connected" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>gatewayPeer2Connected</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates status of the secondary gateway of this Redundancy Group.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">gatewayPeer2Connected</span>
                         </p>
                     </div>
                 </div>
@@ -1749,14 +2235,14 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>derived personality of the Redundancy Group - VSG,VRSG,NSG,OTHER Possible values are VSG, VSA, VRSG, DC7X50, NSG, HARDWARE_VTEP, OTHER, .</p>
+                        <p>derived personality of the Redundancy Group - VSG,VRSG,NSG,OTHER Possible values are VSG, VSA, VRSG, VDFG, DC7X50, NSG, HARDWARE_VTEP, OTHER, .</p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DC7X50, HARDWARE_VTEP, NSG, NSGBR, NSGDUC, NUAGE_210_WBX_32_Q, NUAGE_210_WBX_48_S, OTHER, VRSB, VRSG, VSA, VSG</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DC7X50, HARDWARE_VTEP, NETCONF_7X50, NSG, NSGBR, NSGDUC, NUAGE_210_WBX_32_Q, NUAGE_210_WBX_48_S, OTHER, VDFG, VRSB, VRSG, VSA, VSG</span><br/>
                             
 
                             

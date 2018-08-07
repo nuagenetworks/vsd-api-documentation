@@ -39,6 +39,8 @@
                             
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
+                            <li><a data-id="attr_infrastructureProfileID" href="#attr_infrastructureProfileID" class="fixed-text">infrastructureProfileID</a></li>
+                            
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
                             <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
@@ -75,7 +77,7 @@
 
         <section id="intro">
             <h2>GatewayTemplate</h2>
-            <p>Represents Gateway Template object.</p>
+            <p>A gateway is your point of exit to an external network. It can be a physical or a virtual device. Gateways are templatable. You can attach gateway's VLANs to any existing host or bridge VPorts.</p>
         </section>
 
         <section id="overview">
@@ -127,6 +129,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -203,6 +207,36 @@
     
     
      <span class="label label-warning"> locally unique </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_infrastructureProfileID" title="The ID of the associated Infrastructure Gateway Profile tied to this instance of a Gateway Template.">infrastructureProfileID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -303,7 +337,15 @@
     
     
     
-     (DC7X50 | HARDWARE_VTEP | NSG | NUAGE_210_WBX_32_Q | NUAGE_210_WBX_48_S | OTHER | VRSB | VRSG | VSA | VSG)
+    
+    
+    
+    
+    
+    
+    
+    
+     (DC7X50 | EVDF | EVDFB | HARDWARE_VTEP | NETCONF_7X50 | NSG | NUAGE_210_WBX_32_Q | NUAGE_210_WBX_48_S | OTHER | VDFG | VRSB | VRSG | VSA | VSG)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -311,8 +353,6 @@
     
      <span class="label label-danger"> required </span>&nbsp;
     
-    
-     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -639,6 +679,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -788,6 +830,59 @@
                 </div>
             </section>
             
+            <section id="attr_infrastructureProfileID" class="filterable" data-filter-keyword="infrastructureProfileID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>infrastructureProfileID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The ID of the associated Infrastructure Gateway Profile tied to this instance of a Gateway Template.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">infrastructureProfileID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_lastUpdatedBy" class="filterable" data-filter-keyword="lastUpdatedBy" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -908,8 +1003,6 @@
      <span class="label label-danger"> required </span>&nbsp;
     
     
-     <span class="label label-warning"> read only </span>&nbsp;
-    
     
     
      <span class="label label-info"> creation only </span>&nbsp;
@@ -934,7 +1027,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DC7X50, HARDWARE_VTEP, NSG, NUAGE_210_WBX_32_Q, NUAGE_210_WBX_48_S, OTHER, VRSB, VRSG, VSA, VSG</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DC7X50, EVDF, EVDFB, HARDWARE_VTEP, NETCONF_7X50, NSG, NUAGE_210_WBX_32_Q, NUAGE_210_WBX_48_S, OTHER, VDFG, VRSB, VRSG, VSA, VSG</span><br/>
                             
 
                             

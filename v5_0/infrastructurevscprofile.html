@@ -31,6 +31,8 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             
+                            <li><a data-id="attr_addressFamily" href="#attr_addressFamily" class="fixed-text">addressFamily</a></li>
+                            
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
                             <li><a data-id="attr_enterpriseID" href="#attr_enterpriseID" class="fixed-text">enterpriseID</a></li>
@@ -41,6 +43,8 @@
                             
                             <li><a data-id="attr_firstController" href="#attr_firstController" class="fixed-text">firstController</a></li>
                             
+                            <li><a data-id="attr_firstControllerV6" href="#attr_firstControllerV6" class="fixed-text">firstControllerV6</a></li>
+                            
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
                             <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
@@ -48,6 +52,8 @@
                             <li><a data-id="attr_probeInterval" href="#attr_probeInterval" class="fixed-text">probeInterval</a></li>
                             
                             <li><a data-id="attr_secondController" href="#attr_secondController" class="fixed-text">secondController</a></li>
+                            
+                            <li><a data-id="attr_secondControllerV6" href="#attr_secondControllerV6" class="fixed-text">secondControllerV6</a></li>
                             
                         </ul>
                     </li>
@@ -79,12 +85,53 @@
 
         <section id="intro">
             <h2>InfrastructureVscProfile</h2>
-            <p>Represents an Infrastructure VSC Profile.</p>
+            <p>Infrastructure VSC Profiles identify a set of controllers which will be used to connect bootstrapped NSGs.</p>
         </section>
 
         <section id="overview">
             <h3>Overview</h3>
                 <table class="width: 100%">
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_addressFamily" title="The type of IP address used in the identification of the active and standby controllers.">addressFamily</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (DUALSTACK | IPV4 | IPV6)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
                     
                     <tr>
                         <td class="fixed-text">
@@ -245,6 +292,36 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_firstControllerV6" title="First VSC Controller: IPv6 address of the first VSC system NSG instances associated to this profile will be reaching for.">firstControllerV6</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_lastUpdatedBy" title="ID of the user who last updated the object.">lastUpdatedBy</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -332,6 +409,36 @@
                     <tr>
                         <td class="fixed-text">
                             <a href="#attr_secondController" title="Second VSC Controller :  IP Address of the secondary VSC system NSG instances associated to this profile will be reaching for.">secondController</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_secondControllerV6" title="Second VSC Controller:  IPv6 address of the secondary VSC system NSG instances associated to this profile will be reaching for.">secondControllerV6</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -545,6 +652,61 @@
 
         <section id="attributes">
             <h3>Attributes documentation</h3>
+            
+            <section id="attr_addressFamily" class="filterable" data-filter-keyword="addressFamily" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>addressFamily</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The type of IP address used in the identification of the active and standby controllers.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DUALSTACK, IPV4, IPV6</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">IPV4</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">addressFamily</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
             
             <section id="attr_description" class="filterable" data-filter-keyword="description" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
@@ -813,6 +975,61 @@
                 </div>
             </section>
             
+            <section id="attr_firstControllerV6" class="filterable" data-filter-keyword="firstControllerV6" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>firstControllerV6</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>First VSC Controller: IPv6 address of the first VSC system NSG instances associated to this profile will be reaching for.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">ipv6</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">firstControllerV6</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_lastUpdatedBy" class="filterable" data-filter-keyword="lastUpdatedBy" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1026,6 +1243,61 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">secondController</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_secondControllerV6" class="filterable" data-filter-keyword="secondControllerV6" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>secondControllerV6</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Second VSC Controller:  IPv6 address of the secondary VSC system NSG instances associated to this profile will be reaching for.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">ipv6</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">secondControllerV6</span>
                         </p>
                     </div>
                 </div>

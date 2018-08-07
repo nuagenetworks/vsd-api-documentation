@@ -73,6 +73,8 @@
                             
                             <li><a data-id="attr_family" href="#attr_family" class="fixed-text">family</a></li>
                             
+                            <li><a data-id="attr_gatewayConnected" href="#attr_gatewayConnected" class="fixed-text">gatewayConnected</a></li>
+                            
                             <li><a data-id="attr_inheritedSSHServiceState" href="#attr_inheritedSSHServiceState" class="fixed-text">inheritedSSHServiceState</a></li>
                             
                             <li><a data-id="attr_lastConfigurationReloadTimestamp" href="#attr_lastConfigurationReloadTimestamp" class="fixed-text">lastConfigurationReloadTimestamp</a></li>
@@ -129,6 +131,10 @@
                             
                             <li><a data-id="attr_UUID" href="#attr_UUID" class="fixed-text">UUID</a></li>
                             
+                            <li><a data-id="attr_ZFBMatchAttribute" href="#attr_ZFBMatchAttribute" class="fixed-text">ZFBMatchAttribute</a></li>
+                            
+                            <li><a data-id="attr_ZFBMatchValue" href="#attr_ZFBMatchValue" class="fixed-text">ZFBMatchValue</a></li>
+                            
                         </ul>
                     </li>
                 </ul>
@@ -159,7 +165,7 @@
 
         <section id="intro">
             <h2>NSGateway</h2>
-            <p>Represents a Network Service Gateway.</p>
+            <p>Network Services Gateways are a policy enforcement end-points responsible for the delivery of networking services. NSG access ports/VLANs may be attached to existing host or bridge VPorts.</p>
         </section>
 
         <section id="overview">
@@ -237,6 +243,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -358,7 +366,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_bootstrapID" title="The bootstrap details associated with this NSGateway. NOTE: this is a read only property, it can only be set during creation of an NSG">bootstrapID</a>
+                            <a href="#attr_bootstrapID" title="The bootstrap details associated with this NSGateway. NOTE: This is a read only property, it can only be set during creation of an NSG.">bootstrapID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -372,6 +380,8 @@
                             
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -384,7 +394,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_bootstrapStatus" title="The bootstrap status of this NSGateway. NOTE: this is a read only property">bootstrapStatus</a>
+                            <a href="#attr_bootstrapStatus" title="The bootstrap status of this NSGateway. NOTE: This is a read only property.">bootstrapStatus</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -412,6 +422,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -702,6 +714,8 @@
                             
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -815,12 +829,42 @@
     
     
     
-     (ANY | NSG_AMI | NSG_C | NSG_E | NSG_E200 | NSG_E300 | NSG_V | NSG_X | NSG_X200)
+    
+    
+     (ANY | NSG_AMI | NSG_AZ | NSG_C | NSG_E | NSG_E200 | NSG_E300 | NSG_V | NSG_X | NSG_X200)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_gatewayConnected" title="Indicates status of this gateway">gatewayConnected</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -966,6 +1010,8 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -1374,6 +1420,8 @@
                             
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -1674,6 +1722,81 @@
     
     
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_ZFBMatchAttribute" title="The Zero Factor Bootstrapping (ZFB) Attribute that should be used to match the gateway on when it tries to bootstrap.">ZFBMatchAttribute</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (HOSTNAME | IP_ADDRESS | MAC_ADDRESS | NONE | NSGATEWAY_ID | SERIAL_NUMBER | UUID)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_ZFBMatchValue" title="The Zero Factor Bootstrapping (ZFB) value that needs to match with the gateway during the bootstrap attempt. This value needs to match with the ZFB Match Attribute.">ZFBMatchValue</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2354,6 +2477,29 @@
             
 
             
+            <span class="fixed-text">/nsgateways/<span class="text-muted">id</span>/<a href="nsgatewayssummary.html">nsgatewayssummaries</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/nsgateways/<span class="text-muted">id</span>/<a href="nsginfo.html">nsginfos</a></span>
             
 
@@ -2614,6 +2760,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -2865,6 +3013,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -2876,7 +3026,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The bootstrap details associated with this NSGateway. NOTE: this is a read only property, it can only be set during creation of an NSG</p>
+                        <p>The bootstrap details associated with this NSGateway. NOTE: This is a read only property, it can only be set during creation of an NSG.</p>
 
                         <hr/>
 
@@ -2914,6 +3064,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -2925,7 +3077,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The bootstrap status of this NSGateway. NOTE: this is a read only property</p>
+                        <p>The bootstrap status of this NSGateway. NOTE: This is a read only property.</p>
 
                         <hr/>
 
@@ -3379,6 +3531,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -3554,7 +3708,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, NSG_AMI, NSG_C, NSG_E, NSG_E200, NSG_E300, NSG_V, NSG_X, NSG_X200</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, NSG_AMI, NSG_AZ, NSG_C, NSG_E, NSG_E200, NSG_E300, NSG_V, NSG_X, NSG_X200</span><br/>
                             
 
                             
@@ -3572,6 +3726,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">family</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_gatewayConnected" class="filterable" data-filter-keyword="gatewayConnected" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>gatewayConnected</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates status of this gateway</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">gatewayConnected</span>
                         </p>
                     </div>
                 </div>
@@ -3788,6 +3993,8 @@
                         <span class="type_string fixed-text">string</span>
                         
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -4454,6 +4661,8 @@
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
+    
     
     
     
@@ -5006,6 +5215,110 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">UUID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_ZFBMatchAttribute" class="filterable" data-filter-keyword="ZFBMatchAttribute" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>ZFBMatchAttribute</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The Zero Factor Bootstrapping (ZFB) Attribute that should be used to match the gateway on when it tries to bootstrap.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">HOSTNAME, IP_ADDRESS, MAC_ADDRESS, NONE, NSGATEWAY_ID, SERIAL_NUMBER, UUID</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">NONE</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ZFBMatchAttribute</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_ZFBMatchValue" class="filterable" data-filter-keyword="ZFBMatchValue" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>ZFBMatchValue</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The Zero Factor Bootstrapping (ZFB) value that needs to match with the gateway during the bootstrap attempt. This value needs to match with the ZFB Match Attribute.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ZFBMatchValue</span>
                         </p>
                     </div>
                 </div>
