@@ -65,6 +65,8 @@
                             
                             <li><a data-id="attr_NSGVersion" href="#attr_NSGVersion" class="fixed-text">NSGVersion</a></li>
                             
+                            <li><a data-id="attr_registrationURL" href="#attr_registrationURL" class="fixed-text">registrationURL</a></li>
+                            
                             <li><a data-id="attr_serialNumber" href="#attr_serialNumber" class="fixed-text">serialNumber</a></li>
                             
                             <li><a data-id="attr_SKU" href="#attr_SKU" class="fixed-text">SKU</a></li>
@@ -200,6 +202,8 @@
     
     
     
+    
+     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -414,7 +418,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_family" title="NSG Type">family</a>
+                            <a href="#attr_family" title="Gateway Type">family</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -440,7 +444,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_hostname" title="hostname of the NSG">hostname</a>
+                            <a href="#attr_hostname" title="Hostname of the gateway bootstrapped using ZFB.">hostname</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -466,7 +470,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_IPAddress" title="IP Address of the NSG">IPAddress</a>
+                            <a href="#attr_IPAddress" title="IP Address of the gateway being bootstrapped using ZFB.">IPAddress</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -492,7 +496,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_lastConnectedTime" title="the time in which the last GET was made from the NSG">lastConnectedTime</a>
+                            <a href="#attr_lastConnectedTime" title="The time in which the last GET was made from the gateway.">lastConnectedTime</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_time">time
@@ -604,7 +608,35 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_serialNumber" title="The NSG's Serial Number">serialNumber</a>
+                            <a href="#attr_registrationURL" title="Registration URL to be used for a gateway to be bootstrapped using ZFB.">registrationURL</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_serialNumber" title="The gateway's Serial Number.">serialNumber</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -630,7 +662,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_SKU" title="The part number of the NSG">SKU</a>
+                            <a href="#attr_SKU" title="The part number of the gateway being bootstrapped through ZFB.">SKU</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -811,7 +843,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_ZFBRequestRetryTimer" title="ZFB Request retry timer on NSG. Set from System Config">ZFBRequestRetryTimer</a>
+                            <a href="#attr_ZFBRequestRetryTimer" title="ZFB Request retry timer on the gateway. Set on VSD's System Config panel.">ZFBRequestRetryTimer</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -1185,6 +1217,8 @@
     
     
     
+    
+     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -1601,7 +1635,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>NSG Type</p>
+                        <p>Gateway Type</p>
 
                         <hr/>
 
@@ -1650,7 +1684,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>hostname of the NSG</p>
+                        <p>Hostname of the gateway bootstrapped using ZFB.</p>
 
                         <hr/>
 
@@ -1699,7 +1733,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>IP Address of the NSG</p>
+                        <p>IP Address of the gateway being bootstrapped using ZFB.</p>
 
                         <hr/>
 
@@ -1754,7 +1788,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>the time in which the last GET was made from the NSG</p>
+                        <p>The time in which the last GET was made from the gateway.</p>
 
                         <hr/>
 
@@ -1931,6 +1965,57 @@
                 </div>
             </section>
             
+            <section id="attr_registrationURL" class="filterable" data-filter-keyword="registrationURL" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>registrationURL</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Registration URL to be used for a gateway to be bootstrapped using ZFB.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">registrationURL</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_serialNumber" class="filterable" data-filter-keyword="serialNumber" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1950,7 +2035,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The NSG's Serial Number</p>
+                        <p>The gateway's Serial Number.</p>
 
                         <hr/>
 
@@ -1999,7 +2084,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The part number of the NSG</p>
+                        <p>The part number of the gateway being bootstrapped through ZFB.</p>
 
                         <hr/>
 
@@ -2303,7 +2388,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>ZFB Request retry timer on NSG. Set from System Config</p>
+                        <p>ZFB Request retry timer on the gateway. Set on VSD's System Config panel.</p>
 
                         <hr/>
 

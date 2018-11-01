@@ -33,6 +33,8 @@
                             
                             <li><a data-id="attr_associatedGatewaySecurityID" href="#attr_associatedGatewaySecurityID" class="fixed-text">associatedGatewaySecurityID</a></li>
                             
+                            <li><a data-id="attr_associatedGatewaySecurityProfileID" href="#attr_associatedGatewaySecurityProfileID" class="fixed-text">associatedGatewaySecurityProfileID</a></li>
+                            
                             <li><a data-id="attr_associatedNetconfProfileID" href="#attr_associatedNetconfProfileID" class="fixed-text">associatedNetconfProfileID</a></li>
                             
                             <li><a data-id="attr_associatedNSGInfoID" href="#attr_associatedNSGInfoID" class="fixed-text">associatedNSGInfoID</a></li>
@@ -76,6 +78,8 @@
                             <li><a data-id="attr_managementID" href="#attr_managementID" class="fixed-text">managementID</a></li>
                             
                             <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
+                            
+                            <li><a data-id="attr_patches" href="#attr_patches" class="fixed-text">patches</a></li>
                             
                             <li><a data-id="attr_peer" href="#attr_peer" class="fixed-text">peer</a></li>
                             
@@ -172,6 +176,34 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_associatedGatewaySecurityProfileID" title="Readonly Id of the associated gateway security profile object">associatedGatewaySecurityProfileID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_associatedNetconfProfileID" title="UUID of the Netconf Profile associated to this gateway.">associatedNetconfProfileID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -190,10 +222,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -434,8 +462,6 @@
      <span class="label label-info"> creation only </span>&nbsp;
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -851,6 +877,34 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_patches" title="Patches that have been installed on the NSG">patches</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
     
     
     
@@ -1289,8 +1343,6 @@
     
     
     
-     <span class="label label-info"> orderable </span>&nbsp;
-    
     
     
                         </td>
@@ -1316,8 +1368,6 @@
     
     
     
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1445,6 +1495,28 @@
 
             
             
+            <span class="fixed-text">/<a href="l2domain.html">l2domains</a>/<span class="text-muted">id</span>/gateways</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/gateways</span>
             
 
@@ -1481,6 +1553,29 @@
     
 
     
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="l2domain.html">l2domains</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
     
     <div class="row bordered-row">
         <div class="col-xs-7">
@@ -1557,7 +1652,7 @@
             
 
             
-            <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="patnatpool.html">patnatpools</a></span>
+            <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="gatewaysecurity.html">gatewaysecurities</a></span>
             
 
             
@@ -1569,13 +1664,6 @@
     
     
     <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-success">put</span>
     
             
         </div>
@@ -1790,6 +1878,29 @@
             
 
             
+            <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="infraconfig.html">infraconfig</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="ingressprofile.html">ingressprofiles</a></span>
             
 
@@ -1926,6 +2037,29 @@
             
 
             
+            <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="bootstrapactivation.html">bootstrapactivations</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="port.html">ports</a></span>
             
 
@@ -2002,29 +2136,6 @@
             
 
             
-            <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="nsginfo.html">nsginfos</a></span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-
-            
             <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="eventlog.html">eventlogs</a></span>
             
 
@@ -2054,7 +2165,37 @@
     
 
     
-    <p>This object has no members.</p>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="patnatpool.html">patnatpools</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
     
     
         </section>
@@ -2113,6 +2254,57 @@
                 </div>
             </section>
             
+            <section id="attr_associatedGatewaySecurityProfileID" class="filterable" data-filter-keyword="associatedGatewaySecurityProfileID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedGatewaySecurityProfileID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Readonly Id of the associated gateway security profile object</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedGatewaySecurityProfileID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_associatedNetconfProfileID" class="filterable" data-filter-keyword="associatedNetconfProfileID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2125,10 +2317,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2540,8 +2728,6 @@
      <span class="label label-info"> creation only </span>&nbsp;
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -3191,8 +3377,6 @@
                             
 
                             
-                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
-                            
 
                             
                             <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
@@ -3262,6 +3446,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">name</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_patches" class="filterable" data-filter-keyword="patches" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>patches</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Patches that have been installed on the NSG</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">patches</span>
                         </p>
                     </div>
                 </div>
@@ -3906,8 +4141,6 @@
     
     
     
-     <span class="label label-info"> orderable </span>&nbsp;
-    
     
     
                     </div>
@@ -3958,8 +4191,6 @@
     
     
     
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     

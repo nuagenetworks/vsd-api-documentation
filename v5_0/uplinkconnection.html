@@ -53,6 +53,10 @@
                             
                             <li><a data-id="attr_downloadRateLimit" href="#attr_downloadRateLimit" class="fixed-text">downloadRateLimit</a></li>
                             
+                            <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
+                            
+                            <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
+                            
                             <li><a data-id="attr_gateway" href="#attr_gateway" class="fixed-text">gateway</a></li>
                             
                             <li><a data-id="attr_gatewayV6" href="#attr_gatewayV6" class="fixed-text">gatewayV6</a></li>
@@ -62,6 +66,8 @@
                             <li><a data-id="attr_installerManaged" href="#attr_installerManaged" class="fixed-text">installerManaged</a></li>
                             
                             <li><a data-id="attr_interfaceConnectionType" href="#attr_interfaceConnectionType" class="fixed-text">interfaceConnectionType</a></li>
+                            
+                            <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
                             <li><a data-id="attr_mode" href="#attr_mode" class="fixed-text">mode</a></li>
                             
@@ -81,11 +87,13 @@
                             
                             <li><a data-id="attr_underlayEnabled" href="#attr_underlayEnabled" class="fixed-text">underlayEnabled</a></li>
                             
+                            <li><a data-id="attr_underlayID" href="#attr_underlayID" class="fixed-text">underlayID</a></li>
+                            
                             <li><a data-id="attr_uplinkID" href="#attr_uplinkID" class="fixed-text">uplinkID</a></li>
                             
                             <li><a data-id="attr_username" href="#attr_username" class="fixed-text">username</a></li>
                             
-                            <li><a data-id="attr_vlanId" href="#attr_vlanId" class="fixed-text">vlanId</a></li>
+                            <li><a data-id="attr_vlan" href="#attr_vlan" class="fixed-text">vlan</a></li>
                             
                         </ul>
                     </li>
@@ -117,7 +125,7 @@
 
         <section id="intro">
             <h2>UplinkConnection</h2>
-            <p>None</p>
+            <p>Configuration of VNS Gateway uplinks</p>
         </section>
 
         <section id="overview">
@@ -179,10 +187,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -276,10 +280,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -306,10 +306,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -336,10 +332,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -366,10 +358,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -378,7 +366,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_DNSAddress" title="DNS server address">DNSAddress</a>
+                            <a href="#attr_DNSAddress" title="DNS server address.">DNSAddress</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -404,7 +392,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_DNSAddressV6" title="IPv6 DNS server address">DNSAddressV6</a>
+                            <a href="#attr_DNSAddressV6" title="IPv6 DNS server address.">DNSAddressV6</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -430,7 +418,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_downloadRateLimit" title="Download rate limit for this uplink in Mbits/sec.">downloadRateLimit</a>
+                            <a href="#attr_downloadRateLimit" title="Download rate limit for this uplink in Mb/s.">downloadRateLimit</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_float">float
@@ -448,10 +436,77 @@
     
     
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_entityScope" title="Specify if scope of entity is Data center or Enterprise level">entityScope</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (ENTERPRISE | GLOBAL)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_externalID" title="External object ID. Used for integration with third party systems">externalID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
      <span class="label label-info"> filterable </span>&nbsp;
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+     <span class="label label-warning"> locally unique </span>&nbsp;
     
     
     
@@ -603,10 +658,34 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
-     <span class="label label-info"> orderable </span>&nbsp;
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_lastUpdatedBy" title="ID of the user who last updated the object.">lastUpdatedBy</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
     
     
     
@@ -660,7 +739,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_netmask" title="Subnet mask">netmask</a>
+                            <a href="#attr_netmask" title="Subnet mask of the uplink connection if mode is set to Static.">netmask</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -704,10 +783,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -746,7 +821,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_portName" title="Physical port name this uplink belongs to">portName</a>
+                            <a href="#attr_portName" title="Physical port name this uplink belongs to.">portName</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -822,7 +897,7 @@
                             <a href="#attr_roleOrder" title="Role order: Primary 1, Primary 2, Secondary 3. Note: Order will be calculated when all uplink connections fetched for gateway">roleOrder</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
+                            <span class="type_integer">integer
     
     
     
@@ -903,6 +978,32 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_underlayID" title="Underlay Identifier of underlay associated with this uplink.">underlayID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_uplinkID" title="ID that unqiuely identifies the uplink.">uplinkID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -924,8 +1025,6 @@
      <span class="label label-info"> filterable </span>&nbsp;
     
     
-     <span class="label label-info"> orderable </span>&nbsp;
-    
     
     
                         </td>
@@ -933,7 +1032,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_username" title="PPPoE username">username</a>
+                            <a href="#attr_username" title="PPPoE username if uplink mode is set to PPPoE.">username</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -951,10 +1050,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -963,10 +1058,10 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_vlanId" title="The tag of the uplink's parent VLAN">vlanId</a>
+                            <a href="#attr_vlan" title="VLAN Id of this uplink">vlan</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
+                            <span class="type_integer">integer
     
     
     
@@ -976,8 +1071,6 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
-    
-     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -1073,6 +1166,13 @@
     <span class="label label-primary">post</span>
     
             
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
         </div>
     </div>
     
@@ -1146,7 +1246,7 @@
             
 
             
-            <span class="fixed-text">/uplinkconnections/<span class="text-muted">id</span>/<a href="bfdsession.html">bfdsessions</a></span>
+            <span class="fixed-text">/uplinkconnections/<span class="text-muted">id</span>/<a href="metadata.html">metadatas</a></span>
             
 
             
@@ -1176,7 +1276,7 @@
             
 
             
-            <span class="fixed-text">/uplinkconnections/<span class="text-muted">id</span>/<a href="underlay.html">underlays</a></span>
+            <span class="fixed-text">/uplinkconnections/<span class="text-muted">id</span>/<a href="bfdsession.html">bfdsessions</a></span>
             
 
             
@@ -1188,6 +1288,57 @@
     
     
     <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/uplinkconnections/<span class="text-muted">id</span>/<a href="globalmetadata.html">globalmetadatas</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
     
             
         </div>
@@ -1218,6 +1369,13 @@
     
     
     <span class="label label-primary">post</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
     
             
         </div>
@@ -1281,7 +1439,7 @@
                             
 
                             
-                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">64</span><br/>
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -1306,10 +1464,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1465,10 +1619,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1518,10 +1668,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1571,10 +1717,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1624,10 +1766,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1684,7 +1822,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>DNS server address</p>
+                        <p>DNS server address.</p>
 
                         <hr/>
 
@@ -1702,6 +1840,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -1733,7 +1873,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>IPv6 DNS server address</p>
+                        <p>IPv6 DNS server address.</p>
 
                         <hr/>
 
@@ -1777,10 +1917,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1788,7 +1924,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Download rate limit for this uplink in Mbits/sec.</p>
+                        <p>Download rate limit for this uplink in Mb/s.</p>
 
                         <hr/>
 
@@ -1799,7 +1935,7 @@
                             
 
                             
-                            <span class="small"><b>Default value: </b></span><span class="fixed-text">8</span><br/>
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">8.0</span><br/>
                             
 
                             
@@ -1817,6 +1953,114 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">downloadRateLimit</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_entityScope" class="filterable" data-filter-keyword="entityScope" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>entityScope</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Specify if scope of entity is Data center or Enterprise level</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ENTERPRISE, GLOBAL</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">entityScope</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_externalID" class="filterable" data-filter-keyword="externalID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>externalID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+     <span class="label label-warning"> locally unique </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>External object ID. Used for integration with third party systems</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">externalID</span>
                         </p>
                     </div>
                 </div>
@@ -1859,6 +2103,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -2038,10 +2284,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2076,6 +2318,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">interfaceConnectionType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_lastUpdatedBy" class="filterable" data-filter-keyword="lastUpdatedBy" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>lastUpdatedBy</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the user who last updated the object.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">lastUpdatedBy</span>
                         </p>
                     </div>
                 </div>
@@ -2155,7 +2448,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Subnet mask</p>
+                        <p>Subnet mask of the uplink connection if mode is set to Static.</p>
 
                         <hr/>
 
@@ -2173,6 +2466,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -2197,10 +2492,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2226,6 +2517,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -2312,7 +2605,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Physical port name this uplink belongs to</p>
+                        <p>Physical port name this uplink belongs to.</p>
 
                         <hr/>
 
@@ -2401,7 +2694,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
                         <b>roleOrder</b>
-                        <span class="type_string fixed-text">string</span>
+                        <span class="type_integer fixed-text">integer</span>
                         
     
     
@@ -2486,7 +2779,7 @@
                             
 
                             
-                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">64</span><br/>
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -2552,6 +2845,53 @@
                 </div>
             </section>
             
+            <section id="attr_underlayID" class="filterable" data-filter-keyword="underlayID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>underlayID</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Underlay Identifier of underlay associated with this uplink.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">underlayID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_uplinkID" class="filterable" data-filter-keyword="uplinkID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2566,8 +2906,6 @@
     
      <span class="label label-info"> filterable </span>&nbsp;
     
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2596,8 +2934,6 @@
                             
 
                             
-                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1</span><br/>
-                            
 
                             
                             <span class="small"><b>Max value: </b></span><span class="fixed-text">65535</span><br/>
@@ -2621,10 +2957,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2632,7 +2964,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>PPPoE username</p>
+                        <p>PPPoE username if uplink mode is set to PPPoE.</p>
 
                         <hr/>
 
@@ -2650,6 +2982,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -2662,15 +2996,13 @@
                 </div>
             </section>
             
-            <section id="attr_vlanId" class="filterable" data-filter-keyword="vlanId" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_vlan" class="filterable" data-filter-keyword="vlan" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>vlanId</b>
-                        <span class="type_string fixed-text">string</span>
+                        <b>vlan</b>
+                        <span class="type_integer fixed-text">integer</span>
                         
     
-    
-     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -2683,7 +3015,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The tag of the uplink's parent VLAN</p>
+                        <p>VLAN Id of this uplink</p>
 
                         <hr/>
 
@@ -2696,8 +3028,6 @@
                             
 
                             
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
 
                             
 
@@ -2707,7 +3037,7 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">vlanId</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">vlan</span>
                         </p>
                     </div>
                 </div>

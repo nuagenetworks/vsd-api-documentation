@@ -140,7 +140,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_BFDTimer" title="Timer for Bidirectional Forwarding Detection. (min = 200, max = 100,000) Unit is milliseconds.">BFDTimer</a>
+                            <a href="#attr_BFDTimer" title="Timer for Bidirectional Forwarding Detection in milliseconds.">BFDTimer</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -283,6 +283,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -352,6 +356,42 @@
 
             
             
+            <span class="fixed-text">/<a href="brconnection.html">brconnections</a>/<span class="text-muted">id</span>/bfdsessions</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="uplinkconnection.html">uplinkconnections</a>/<span class="text-muted">id</span>/bfdsessions</span>
             
 
@@ -373,33 +413,11 @@
     <span class="label label-primary">post</span>
     
             
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="brconnection.html">brconnections</a>/<span class="text-muted">id</span>/bfdsessions</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
             
     
     
     
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
+    <span class="label label-success">put</span>
     
             
         </div>
@@ -547,6 +565,8 @@
                             
 
                             
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">64</span><br/>
+                            
 
                             
 
@@ -630,7 +650,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Timer for Bidirectional Forwarding Detection. (min = 200, max = 100,000) Unit is milliseconds.</p>
+                        <p>Timer for Bidirectional Forwarding Detection in milliseconds.</p>
 
                         <hr/>
 
@@ -651,7 +671,7 @@
                             
 
                             
-                            <span class="small"><b>Min value: </b></span><span class="fixed-text">200</span><br/>
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">10</span><br/>
                             
 
                             
@@ -835,6 +855,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     

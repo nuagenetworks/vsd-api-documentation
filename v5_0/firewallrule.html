@@ -37,27 +37,17 @@
                             
                             <li><a data-id="attr_addressOverride" href="#attr_addressOverride" class="fixed-text">addressOverride</a></li>
                             
-                            <li><a data-id="attr_associatedApplicationID" href="#attr_associatedApplicationID" class="fixed-text">associatedApplicationID</a></li>
-                            
-                            <li><a data-id="attr_associatedApplicationObjectID" href="#attr_associatedApplicationObjectID" class="fixed-text">associatedApplicationObjectID</a></li>
-                            
                             <li><a data-id="attr_associatedfirewallACLID" href="#attr_associatedfirewallACLID" class="fixed-text">associatedfirewallACLID</a></li>
+                            
+                            <li><a data-id="attr_associatedLiveTemplateID" href="#attr_associatedLiveTemplateID" class="fixed-text">associatedLiveTemplateID</a></li>
+                            
+                            <li><a data-id="attr_associatedTrafficType" href="#attr_associatedTrafficType" class="fixed-text">associatedTrafficType</a></li>
+                            
+                            <li><a data-id="attr_associatedTrafficTypeID" href="#attr_associatedTrafficTypeID" class="fixed-text">associatedTrafficTypeID</a></li>
                             
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
-                            <li><a data-id="attr_destinationIpv6Value" href="#attr_destinationIpv6Value" class="fixed-text">destinationIpv6Value</a></li>
-                            
                             <li><a data-id="attr_destinationPort" href="#attr_destinationPort" class="fixed-text">destinationPort</a></li>
-                            
-                            <li><a data-id="attr_destinationType" href="#attr_destinationType" class="fixed-text">destinationType</a></li>
-                            
-                            <li><a data-id="attr_destinationValue" href="#attr_destinationValue" class="fixed-text">destinationValue</a></li>
-                            
-                            <li><a data-id="attr_destNetwork" href="#attr_destNetwork" class="fixed-text">destNetwork</a></li>
-                            
-                            <li><a data-id="attr_destPgId" href="#attr_destPgId" class="fixed-text">destPgId</a></li>
-                            
-                            <li><a data-id="attr_destPgType" href="#attr_destPgType" class="fixed-text">destPgType</a></li>
                             
                             <li><a data-id="attr_domainName" href="#attr_domainName" class="fixed-text">domainName</a></li>
                             
@@ -65,7 +55,11 @@
                             
                             <li><a data-id="attr_enterpriseName" href="#attr_enterpriseName" class="fixed-text">enterpriseName</a></li>
                             
+                            <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
+                            
                             <li><a data-id="attr_etherType" href="#attr_etherType" class="fixed-text">etherType</a></li>
+                            
+                            <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
                             <li><a data-id="attr_flowLoggingEnabled" href="#attr_flowLoggingEnabled" class="fixed-text">flowLoggingEnabled</a></li>
                             
@@ -74,6 +68,8 @@
                             <li><a data-id="attr_ICMPType" href="#attr_ICMPType" class="fixed-text">ICMPType</a></li>
                             
                             <li><a data-id="attr_IPv6AddressOverride" href="#attr_IPv6AddressOverride" class="fixed-text">IPv6AddressOverride</a></li>
+                            
+                            <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
                             <li><a data-id="attr_locationID" href="#attr_locationID" class="fixed-text">locationID</a></li>
                             
@@ -87,19 +83,9 @@
                             
                             <li><a data-id="attr_priority" href="#attr_priority" class="fixed-text">priority</a></li>
                             
-                            <li><a data-id="attr_sourceIpv6Value" href="#attr_sourceIpv6Value" class="fixed-text">sourceIpv6Value</a></li>
-                            
-                            <li><a data-id="attr_sourceNetwork" href="#attr_sourceNetwork" class="fixed-text">sourceNetwork</a></li>
-                            
-                            <li><a data-id="attr_sourcePgId" href="#attr_sourcePgId" class="fixed-text">sourcePgId</a></li>
-                            
-                            <li><a data-id="attr_sourcePgType" href="#attr_sourcePgType" class="fixed-text">sourcePgType</a></li>
+                            <li><a data-id="attr_protocol" href="#attr_protocol" class="fixed-text">protocol</a></li>
                             
                             <li><a data-id="attr_sourcePort" href="#attr_sourcePort" class="fixed-text">sourcePort</a></li>
-                            
-                            <li><a data-id="attr_sourceType" href="#attr_sourceType" class="fixed-text">sourceType</a></li>
-                            
-                            <li><a data-id="attr_sourceValue" href="#attr_sourceValue" class="fixed-text">sourceValue</a></li>
                             
                             <li><a data-id="attr_stateful" href="#attr_stateful" class="fixed-text">stateful</a></li>
                             
@@ -164,10 +150,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -194,7 +176,9 @@
     
     
     
-     (DROP  | FORWARD  | REDIRECT)
+    
+    
+     (DROP | FORWARD | FORWARDING_PATH_LIST | REDIRECT)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -247,66 +231,6 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedApplicationID" title="The associated application ID">associatedApplicationID</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_associatedApplicationObjectID" title="The associated application object ID">associatedApplicationObjectID</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
                             <a href="#attr_associatedfirewallACLID" title="Associated Firewall Acl ID">associatedfirewallACLID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -325,10 +249,101 @@
     
     
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedLiveTemplateID" title="In the draft mode, the ACL entity refers to this live entity parent. In non-drafted mode, this is null">associatedLiveTemplateID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedTrafficType" title="The associated Traffic type. L4 Service / L4 Service Group">associatedTrafficType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (L4_SERVICE | L4_SERVICE_GROUP)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
      <span class="label label-info"> filterable </span>&nbsp;
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedTrafficTypeID" title="The associated Traffic Type ID">associatedTrafficTypeID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
     
     
     
@@ -358,38 +373,6 @@
      <span class="label label-info"> filterable </span>&nbsp;
     
     
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_destinationIpv6Value" title="destination IPV6 address">destinationIpv6Value</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
     
     
                         </td>
@@ -398,169 +381,6 @@
                     <tr>
                         <td class="fixed-text">
                             <a href="#attr_destinationPort" title="The destination port to be matched if protocol is UDP or TCP. Value should be either * or single port number or a port range">destinationPort</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_destinationType" title="Network Type - either PolicyGroup or Network">destinationType</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (MACROGROUP | NETWORK | NETWORKPOLICYGROUP | POLICYGROUP)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_destinationValue" title="In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr">destinationValue</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_destNetwork" title="Destination network - available in version 1.0 api">destNetwork</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_destPgId" title="In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr">destPgId</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_destPgType" title="In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr">destPgType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -608,10 +428,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -668,10 +484,43 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
-     <span class="label label-info"> orderable </span>&nbsp;
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_entityScope" title="Specify if scope of entity is Data center or Enterprise level">entityScope</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (ENTERPRISE | GLOBAL)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
     
     
     
@@ -702,6 +551,40 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_externalID" title="External object ID. Used for integration with third party systems">externalID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+     <span class="label label-warning"> locally unique </span>&nbsp;
     
     
     
@@ -758,10 +641,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -788,10 +667,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -822,6 +697,34 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_lastUpdatedBy" title="ID of the user who last updated the object.">lastUpdatedBy</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
     
     
     
@@ -925,10 +828,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1029,7 +928,7 @@
                             <a href="#attr_priority" title="The priority of the ACL entry that determines the order of entries">priority</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
+                            <span class="type_integer">integer
     
     
     
@@ -1056,97 +955,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_sourceIpv6Value" title="source IPV6 address">sourceIpv6Value</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_sourceNetwork" title="Source network - available in version 1.0 api">sourceNetwork</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_sourcePgId" title="In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr">sourcePgId</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_sourcePgType" title="in case of PG this will be its EVPNBGPCommunity String, incase of network itdomainfip will be network cidr">sourcePgType</a>
+                            <a href="#attr_protocol" title="Protocol number that must be matched">protocol</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -1177,79 +986,6 @@
                     <tr>
                         <td class="fixed-text">
                             <a href="#attr_sourcePort" title="Source port to be matched if protocol is UDP or TCP. Value can be either * or single port number or a port range">sourcePort</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_sourceType" title="Location Type - either PolicyGroup or Network">sourceType</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (MACROGROUP | NETWORK | NETWORKPOLICYGROUP | POLICYGROUP)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_sourceValue" title="In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr">sourceValue</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -1488,7 +1224,74 @@
     
 
     
-    <p>This object has no children.</p>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/firewallrules/<span class="text-muted">id</span>/<a href="metadata.html">metadatas</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/firewallrules/<span class="text-muted">id</span>/<a href="globalmetadata.html">globalmetadatas</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
     
     
         </section>
@@ -1521,10 +1324,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1592,7 +1391,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DROP , FORWARD , REDIRECT</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DROP, FORWARD, FORWARDING_PATH_LIST, REDIRECT</span><br/>
                             
 
                             
@@ -1668,112 +1467,6 @@
                 </div>
             </section>
             
-            <section id="attr_associatedApplicationID" class="filterable" data-filter-keyword="associatedApplicationID" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>associatedApplicationID</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>The associated application ID</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedApplicationID</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_associatedApplicationObjectID" class="filterable" data-filter-keyword="associatedApplicationObjectID" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>associatedApplicationObjectID</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>The associated application object ID</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedApplicationObjectID</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
             <section id="attr_associatedfirewallACLID" class="filterable" data-filter-keyword="associatedfirewallACLID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1786,10 +1479,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1827,6 +1516,161 @@
                 </div>
             </section>
             
+            <section id="attr_associatedLiveTemplateID" class="filterable" data-filter-keyword="associatedLiveTemplateID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedLiveTemplateID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>In the draft mode, the ACL entity refers to this live entity parent. In non-drafted mode, this is null</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedLiveTemplateID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedTrafficType" class="filterable" data-filter-keyword="associatedTrafficType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedTrafficType</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The associated Traffic type. L4 Service / L4 Service Group</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">L4_SERVICE, L4_SERVICE_GROUP</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedTrafficType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedTrafficTypeID" class="filterable" data-filter-keyword="associatedTrafficTypeID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedTrafficTypeID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The associated Traffic Type ID</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedTrafficTypeID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_description" class="filterable" data-filter-keyword="description" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1841,8 +1685,6 @@
     
      <span class="label label-info"> filterable </span>&nbsp;
     
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1875,59 +1717,6 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">description</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_destinationIpv6Value" class="filterable" data-filter-keyword="destinationIpv6Value" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>destinationIpv6Value</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>destination IPV6 address</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">destinationIpv6Value</span>
                         </p>
                     </div>
                 </div>
@@ -1988,271 +1777,6 @@
                 </div>
             </section>
             
-            <section id="attr_destinationType" class="filterable" data-filter-keyword="destinationType" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>destinationType</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Network Type - either PolicyGroup or Network</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">MACROGROUP, NETWORK, NETWORKPOLICYGROUP, POLICYGROUP</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">destinationType</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_destinationValue" class="filterable" data-filter-keyword="destinationValue" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>destinationValue</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">destinationValue</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_destNetwork" class="filterable" data-filter-keyword="destNetwork" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>destNetwork</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Destination network - available in version 1.0 api</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">destNetwork</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_destPgId" class="filterable" data-filter-keyword="destPgId" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>destPgId</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">destPgId</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_destPgType" class="filterable" data-filter-keyword="destPgType" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>destPgType</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">destPgType</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
             <section id="attr_domainName" class="filterable" data-filter-keyword="domainName" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2265,10 +1789,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2371,10 +1891,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2407,6 +1923,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">enterpriseName</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_entityScope" class="filterable" data-filter-keyword="entityScope" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>entityScope</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Specify if scope of entity is Data center or Enterprise level</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ENTERPRISE, GLOBAL</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">entityScope</span>
                         </p>
                     </div>
                 </div>
@@ -2460,6 +2027,63 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">etherType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_externalID" class="filterable" data-filter-keyword="externalID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>externalID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+     <span class="label label-warning"> locally unique </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>External object ID. Used for integration with third party systems</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">externalID</span>
                         </p>
                     </div>
                 </div>
@@ -2528,10 +2152,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2581,10 +2201,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2670,6 +2286,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">IPv6AddressOverride</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_lastUpdatedBy" class="filterable" data-filter-keyword="lastUpdatedBy" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>lastUpdatedBy</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the user who last updated the object.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">lastUpdatedBy</span>
                         </p>
                     </div>
                 </div>
@@ -2793,10 +2460,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2944,7 +2607,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
                         <b>priority</b>
-                        <span class="type_string fixed-text">string</span>
+                        <span class="type_integer fixed-text">integer</span>
                         
     
     
@@ -2993,10 +2656,10 @@
                 </div>
             </section>
             
-            <section id="attr_sourceIpv6Value" class="filterable" data-filter-keyword="sourceIpv6Value" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_protocol" class="filterable" data-filter-keyword="protocol" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>sourceIpv6Value</b>
+                        <b>protocol</b>
                         <span class="type_string fixed-text">string</span>
                         
     
@@ -3016,7 +2679,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>source IPV6 address</p>
+                        <p>Protocol number that must be matched</p>
 
                         <hr/>
 
@@ -3040,166 +2703,7 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">sourceIpv6Value</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_sourceNetwork" class="filterable" data-filter-keyword="sourceNetwork" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>sourceNetwork</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Source network - available in version 1.0 api</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">sourceNetwork</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_sourcePgId" class="filterable" data-filter-keyword="sourcePgId" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>sourcePgId</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">sourcePgId</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_sourcePgType" class="filterable" data-filter-keyword="sourcePgType" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>sourcePgType</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>in case of PG this will be its EVPNBGPCommunity String, incase of network itdomainfip will be network cidr</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">sourcePgType</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">protocol</span>
                         </p>
                     </div>
                 </div>
@@ -3255,112 +2759,6 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">sourcePort</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_sourceType" class="filterable" data-filter-keyword="sourceType" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>sourceType</b>
-                        <span class="type_enum fixed-text">enum</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Location Type - either PolicyGroup or Network</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">MACROGROUP, NETWORK, NETWORKPOLICYGROUP, POLICYGROUP</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">sourceType</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_sourceValue" class="filterable" data-filter-keyword="sourceValue" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>sourceValue</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>In case of PG this will be its EVPNBGPCommunity String, incase of network it will be network cidr</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">sourceValue</span>
                         </p>
                     </div>
                 </div>

@@ -31,6 +31,12 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             
+                            <li><a data-id="attr_AARApplicationReleaseDate" href="#attr_AARApplicationReleaseDate" class="fixed-text">AARApplicationReleaseDate</a></li>
+                            
+                            <li><a data-id="attr_AARApplicationVersion" href="#attr_AARApplicationVersion" class="fixed-text">AARApplicationVersion</a></li>
+                            
+                            <li><a data-id="attr_associatedEntityType" href="#attr_associatedEntityType" class="fixed-text">associatedEntityType</a></li>
+                            
                             <li><a data-id="attr_associatedNSGatewayID" href="#attr_associatedNSGatewayID" class="fixed-text">associatedNSGatewayID</a></li>
                             
                             <li><a data-id="attr_BIOSReleaseDate" href="#attr_BIOSReleaseDate" class="fixed-text">BIOSReleaseDate</a></li>
@@ -51,7 +57,7 @@
                             
                             <li><a data-id="attr_NSGVersion" href="#attr_NSGVersion" class="fixed-text">NSGVersion</a></li>
                             
-                            <li><a data-id="attr_patches" href="#attr_patches" class="fixed-text">patches</a></li>
+                            <li><a data-id="attr_patchesDetail" href="#attr_patchesDetail" class="fixed-text">patchesDetail</a></li>
                             
                             <li><a data-id="attr_productName" href="#attr_productName" class="fixed-text">productName</a></li>
                             
@@ -101,6 +107,100 @@
         <section id="overview">
             <h3>Overview</h3>
                 <table class="width: 100%">
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_AARApplicationReleaseDate" title="Release Date of the AAR Application">AARApplicationReleaseDate</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_AARApplicationVersion" title="The AAR Application Version">AARApplicationVersion</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedEntityType" title="Object type of the associated entity.">associatedEntityType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+    
+    
+                        </td>
+                    </tr>
                     
                     <tr>
                         <td class="fixed-text">
@@ -331,7 +431,9 @@
     
     
     
-     (ANY | NSG_AMI | NSG_C | NSG_DOCKER | NSG_E | NSG_E200 | NSG_E300 | NSG_V | NSG_X | NSG_X200)
+    
+    
+     (ANY | NSG_AMI | NSG_AZ | NSG_C | NSG_DOCKER | NSG_E | NSG_E200 | NSG_E300 | NSG_V | NSG_X | NSG_X200)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -344,6 +446,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -440,7 +546,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_patches" title="Patches that have been installed on the NSG.">patches</a>
+                            <a href="#attr_patchesDetail" title="Base64 Encoded JSON String of the extra details pertaining to each successfully installed patch">patchesDetail</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -454,12 +560,14 @@
                             
     
     
-     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
     
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -564,27 +672,14 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_TPMStatus" title="TPM status as reported by the NSG during bootstrapping.  This informate indicates if TPM is being used in securing the private key/certificate of an NSG.">TPMStatus</a>
+                            <a href="#attr_TPMStatus" title="TPM status code as reported by the NSG during bootstrapping. This informate indicates if TPM is being used in securing the private key/certificate of an NSG. Possible values are 0(Unknown), 1(Enabled_Not_Operational), 2(Enabled_Operational), 3(Disabled).">TPMStatus</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
+                            <span class="type_integer">integer
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (DISABLED | ENABLED_NOT_OPERATIONAL | ENABLED_OPERATIONAL | UNKNOWN)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -727,28 +822,6 @@
 
             
             
-            <span class="fixed-text">/<a href="gateway.html">gateways</a>/<span class="text-muted">id</span>/nsginfos</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
             <span class="fixed-text">/<a href="nsgateway.html">nsgateways</a>/<span class="text-muted">id</span>/nsginfos</span>
             
 
@@ -798,6 +871,169 @@
 
         <section id="attributes">
             <h3>Attributes documentation</h3>
+            
+            <section id="attr_AARApplicationReleaseDate" class="filterable" data-filter-keyword="AARApplicationReleaseDate" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>AARApplicationReleaseDate</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Release Date of the AAR Application</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">AARApplicationReleaseDate</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_AARApplicationVersion" class="filterable" data-filter-keyword="AARApplicationVersion" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>AARApplicationVersion</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The AAR Application Version</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">AARApplicationVersion</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedEntityType" class="filterable" data-filter-keyword="associatedEntityType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedEntityType</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Object type of the associated entity.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedEntityType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
             
             <section id="attr_associatedNSGatewayID" class="filterable" data-filter-keyword="associatedNSGatewayID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
@@ -1139,6 +1375,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1153,7 +1393,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, NSG_AMI, NSG_C, NSG_DOCKER, NSG_E, NSG_E200, NSG_E300, NSG_V, NSG_X, NSG_X200</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, NSG_AMI, NSG_AZ, NSG_C, NSG_DOCKER, NSG_E, NSG_E200, NSG_E300, NSG_V, NSG_X, NSG_X200</span><br/>
                             
 
                             
@@ -1333,20 +1573,22 @@
                 </div>
             </section>
             
-            <section id="attr_patches" class="filterable" data-filter-keyword="patches" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_patchesDetail" class="filterable" data-filter-keyword="patchesDetail" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>patches</b>
+                        <b>patchesDetail</b>
                         <span class="type_string fixed-text">string</span>
                         
     
     
-     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
     
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1354,7 +1596,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Patches that have been installed on the NSG.</p>
+                        <p>Base64 Encoded JSON String of the extra details pertaining to each successfully installed patch</p>
 
                         <hr/>
 
@@ -1373,14 +1615,12 @@
                             
 
                             
-                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">1023</span><br/>
-                            
 
                             
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">patches</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">patchesDetail</span>
                         </p>
                     </div>
                 </div>
@@ -1555,7 +1795,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
                         <b>TPMStatus</b>
-                        <span class="type_enum fixed-text">enum</span>
+                        <span class="type_integer fixed-text">integer</span>
                         
     
     
@@ -1576,14 +1816,12 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>TPM status as reported by the NSG during bootstrapping.  This informate indicates if TPM is being used in securing the private key/certificate of an NSG.</p>
+                        <p>TPM status code as reported by the NSG during bootstrapping. This informate indicates if TPM is being used in securing the private key/certificate of an NSG. Possible values are 0(Unknown), 1(Enabled_Not_Operational), 2(Enabled_Operational), 3(Disabled).</p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DISABLED, ENABLED_NOT_OPERATIONAL, ENABLED_OPERATIONAL, UNKNOWN</span><br/>
                             
 
                             

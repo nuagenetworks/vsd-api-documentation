@@ -53,6 +53,8 @@
                             
                             <li><a data-id="attr_peerAS" href="#attr_peerAS" class="fixed-text">peerAS</a></li>
                             
+                            <li><a data-id="attr_peerConfiguration" href="#attr_peerConfiguration" class="fixed-text">peerConfiguration</a></li>
+                            
                             <li><a data-id="attr_peerIP" href="#attr_peerIP" class="fixed-text">peerIP</a></li>
                             
                             <li><a data-id="attr_session" href="#attr_session" class="fixed-text">session</a></li>
@@ -87,7 +89,7 @@
 
         <section id="intro">
             <h2>BGPNeighbor</h2>
-            <p>None</p>
+            <p>Virtual Cloud Services (VCS) in the data center BGP PE-CE is configured at vport level . Network Service Gateways (NSG) BGP is configured at subnet level.</p>
         </section>
 
         <section id="overview">
@@ -334,10 +336,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -364,10 +362,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -408,7 +402,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_peerAS" title="Local autonomous system to be used when establishing a session with the remote peer if it is different from the global BGP router autonomous system number.">peerAS</a>
+                            <a href="#attr_peerAS" title="Autonomous System (AS) value to be used when establishing a session with the remote peer if it is different from the global BGP router autonomous system number.">peerAS</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -432,6 +426,32 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_peerConfiguration" title="BGP Peer session configuration and default policies.">peerConfiguration</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
     
     
     
@@ -557,6 +577,28 @@
 
             
             
+            <span class="fixed-text">/bgpneighbors</a>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="vport.html">vports</a>/<span class="text-muted">id</span>/bgpneighbors</span>
             
 
@@ -634,28 +676,6 @@
     
     
     <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/bgpneighbors</a>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
     
             
         </div>
@@ -1134,10 +1154,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1189,10 +1205,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1314,7 +1326,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Local autonomous system to be used when establishing a session with the remote peer if it is different from the global BGP router autonomous system number.</p>
+                        <p>Autonomous System (AS) value to be used when establishing a session with the remote peer if it is different from the global BGP router autonomous system number.</p>
 
                         <hr/>
 
@@ -1341,6 +1353,53 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">peerAS</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_peerConfiguration" class="filterable" data-filter-keyword="peerConfiguration" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>peerConfiguration</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>BGP Peer session configuration and default policies.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">peerConfiguration</span>
                         </p>
                     </div>
                 </div>

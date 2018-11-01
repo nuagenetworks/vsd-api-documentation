@@ -39,6 +39,8 @@
                             
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
+                            <li><a data-id="attr_entityState" href="#attr_entityState" class="fixed-text">entityState</a></li>
+                            
                             <li><a data-id="attr_EVPNCommunityTag" href="#attr_EVPNCommunityTag" class="fixed-text">EVPNCommunityTag</a></li>
                             
                             <li><a data-id="attr_external" href="#attr_external" class="fixed-text">external</a></li>
@@ -112,10 +114,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -215,6 +213,41 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_entityState" title="Intermediate State of L2 Domain.">entityState</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (MARKED_FOR_DELETION | UNDER_CONSTRUCTION)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_EVPNCommunityTag" title="Assigned by VSD. An extended community or other similar BGP attribute to the specific EVPN / IP-VPN NLRI where the VM or network macro is being advertised.">EVPNCommunityTag</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -233,6 +266,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -539,6 +576,28 @@
 
             
             
+            <span class="fixed-text">/policygroups</a>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="vport.html">vports</a>/<span class="text-muted">id</span>/policygroups</span>
             
 
@@ -709,28 +768,6 @@
         </div>
     </div>
     
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/policygroups</a>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
     
     
         </section>
@@ -853,6 +890,29 @@
             
 
             
+            <span class="fixed-text">/policygroups/<span class="text-muted">id</span>/<a href="policygroupcategory.html">policygroupcategories</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/policygroups/<span class="text-muted">id</span>/<a href="vport.html">vports</a></span>
             
 
@@ -896,10 +956,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1088,6 +1144,55 @@
                 </div>
             </section>
             
+            <section id="attr_entityState" class="filterable" data-filter-keyword="entityState" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>entityState</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Intermediate State of L2 Domain.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">MARKED_FOR_DELETION, UNDER_CONSTRUCTION</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">entityState</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_EVPNCommunityTag" class="filterable" data-filter-keyword="EVPNCommunityTag" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1100,6 +1205,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1124,7 +1233,11 @@
                             
 
                             
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
+                            
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             

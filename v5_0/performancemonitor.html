@@ -33,8 +33,6 @@
                             
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
-                            <li><a data-id="attr_destinationTargetList" href="#attr_destinationTargetList" class="fixed-text">destinationTargetList</a></li>
-                            
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
@@ -56,8 +54,6 @@
                             <li><a data-id="attr_readOnly" href="#attr_readOnly" class="fixed-text">readOnly</a></li>
                             
                             <li><a data-id="attr_serviceClass" href="#attr_serviceClass" class="fixed-text">serviceClass</a></li>
-                            
-                            <li><a data-id="attr_timeout" href="#attr_timeout" class="fixed-text">timeout</a></li>
                             
                         </ul>
                     </li>
@@ -120,32 +116,6 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_destinationTargetList" title="List of targets for IKE performance monitor probes">destinationTargetList</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_list">list
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
     
     
     
@@ -462,6 +432,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -513,32 +487,6 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_timeout" title="number of milliseconds to wait until the probe is timed out">timeout</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_integer">integer
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
     
     
     
@@ -608,35 +556,6 @@
 
             
             
-            <span class="fixed-text">/<a href="ikegatewayconnection.html">ikegatewayconnections</a>/<span class="text-muted">id</span>/performancemonitors</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-success">put</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
             <span class="fixed-text">/performancemonitors</a>
             
 
@@ -656,6 +575,35 @@
     
     
     <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="ikegatewayconnection.html">ikegatewayconnections</a>/<span class="text-muted">id</span>/performancemonitors</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
     
             
         </div>
@@ -723,6 +671,13 @@
     <span class="label label-default">get</span>
     
             
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
         </div>
     </div>
     
@@ -757,36 +712,6 @@
     
     
     <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-
-            
-            <span class="fixed-text">/performancemonitors/<span class="text-muted">id</span>/<a href="nsgateway.html">nsgateways</a></span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-success">put</span>
     
             
         </div>
@@ -849,53 +774,6 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">description</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_destinationTargetList" class="filterable" data-filter-keyword="destinationTargetList" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>destinationTargetList</b>
-                        <span class="type_list fixed-text">list</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>List of targets for IKE performance monitor probes</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">destinationTargetList</span>
                         </p>
                     </div>
                 </div>
@@ -1412,6 +1290,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1499,59 +1381,6 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">serviceClass</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_timeout" class="filterable" data-filter-keyword="timeout" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>timeout</b>
-                        <span class="type_integer fixed-text">integer</span>
-                        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>number of milliseconds to wait until the probe is timed out</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Default value: </b></span><span class="fixed-text">1000</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1000</span><br/>
-                            
-
-                            
-                            <span class="small"><b>Max value: </b></span><span class="fixed-text">5000</span><br/>
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">timeout</span>
                         </p>
                     </div>
                 </div>

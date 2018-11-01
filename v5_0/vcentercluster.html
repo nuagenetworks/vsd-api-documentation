@@ -31,9 +31,13 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             
+                            <li><a data-id="attr_agencyMoid" href="#attr_agencyMoid" class="fixed-text">agencyMoid</a></li>
+                            
                             <li><a data-id="attr_allowDataDHCP" href="#attr_allowDataDHCP" class="fixed-text">allowDataDHCP</a></li>
                             
                             <li><a data-id="attr_allowMgmtDHCP" href="#attr_allowMgmtDHCP" class="fixed-text">allowMgmtDHCP</a></li>
+                            
+                            <li><a data-id="attr_ARPReply" href="#attr_ARPReply" class="fixed-text">ARPReply</a></li>
                             
                             <li><a data-id="attr_assocVCenterDataCenterID" href="#attr_assocVCenterDataCenterID" class="fixed-text">assocVCenterDataCenterID</a></li>
                             
@@ -280,6 +284,34 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_agencyMoid" title="cluster in scope or not in scope">agencyMoid</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_allowDataDHCP" title="Whether to get the Data IP for the VRS VM from DHCP or statically">allowDataDHCP</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -307,6 +339,32 @@
                     <tr>
                         <td class="fixed-text">
                             <a href="#attr_allowMgmtDHCP" title="Whether to get the management IP for the VRS VM from DHCP or statically.">allowMgmtDHCP</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_ARPReply" title="Whether ARP Reply is enabled/disabled">ARPReply</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_boolean">boolean
@@ -686,10 +744,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1067,8 +1121,6 @@
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -2205,10 +2257,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2321,8 +2369,6 @@
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -2503,7 +2549,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_scope" title="Cluster in scope or not in scope.">scope</a>
+                            <a href="#attr_scope" title="Specifies if this cluster is in scope or not in scope.">scope</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_boolean">boolean
@@ -2730,8 +2776,6 @@
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -3466,6 +3510,57 @@
         <section id="attributes">
             <h3>Attributes documentation</h3>
             
+            <section id="attr_agencyMoid" class="filterable" data-filter-keyword="agencyMoid" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>agencyMoid</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>cluster in scope or not in scope</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">agencyMoid</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_allowDataDHCP" class="filterable" data-filter-keyword="allowDataDHCP" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3557,6 +3652,53 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">allowMgmtDHCP</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_ARPReply" class="filterable" data-filter-keyword="ARPReply" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>ARPReply</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Whether ARP Reply is enabled/disabled</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ARPReply</span>
                         </p>
                     </div>
                 </div>
@@ -4172,10 +4314,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -4828,8 +4966,6 @@
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -6944,10 +7080,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -7147,8 +7279,6 @@
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -7512,7 +7642,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Cluster in scope or not in scope.</p>
+                        <p>Specifies if this cluster is in scope or not in scope.</p>
 
                         <hr/>
 
@@ -7898,8 +8028,6 @@
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
     

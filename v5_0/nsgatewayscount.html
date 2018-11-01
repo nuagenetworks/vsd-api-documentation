@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SPATSourcesPool API Reference 5.0</title>
+    <title>NSGatewaysCount API Reference 5.0</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -31,17 +31,15 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             
-                            <li><a data-id="attr_addressList" href="#attr_addressList" class="fixed-text">addressList</a></li>
+                            <li><a data-id="attr_activeNSGCount" href="#attr_activeNSGCount" class="fixed-text">activeNSGCount</a></li>
+                            
+                            <li><a data-id="attr_alarmedNSGCount" href="#attr_alarmedNSGCount" class="fixed-text">alarmedNSGCount</a></li>
                             
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
-                            <li><a data-id="attr_family" href="#attr_family" class="fixed-text">family</a></li>
-                            
-                            <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
-                            
-                            <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
+                            <li><a data-id="attr_inactiveNSGCount" href="#attr_inactiveNSGCount" class="fixed-text">inactiveNSGCount</a></li>
                             
                         </ul>
                     </li>
@@ -72,8 +70,8 @@
     <div class="container">
 
         <section id="intro">
-            <h2>SPATSourcesPool</h2>
-            <p>The list of source IPs from the provider domain to be SPATed.</p>
+            <h2>NSGatewaysCount</h2>
+            <p>NSGateway count is a summary object per enterprise which contains the counts of inactive and NSGs by alarm severity. This object is used in Application Aware Routing (AAR) visualization</p>
         </section>
 
         <section id="overview">
@@ -82,10 +80,10 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_addressList" title="The collection of IP addresses that will SPATed in the customer domain.">addressList</a>
+                            <a href="#attr_activeNSGCount" title="Number of Network Service Gateways in an enterprise whose bootstrap status is ACTIVE">activeNSGCount</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_list">list
+                            <span class="type_integer">integer
     
     
     
@@ -95,6 +93,36 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_alarmedNSGCount" title="An embedded object containing three attributes: critical, major, healthy - number of NSGs with CRITICAL alarm severity, manumber of NSGs with MAJOR alarm severity, number of NSGs that have no CRITICAL or MAJOR alarms">alarmedNSGCount</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_object">object
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -179,45 +207,10 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_family" title="The IP address family. Supported IPV4 for the time being.">family</a>
+                            <a href="#attr_inactiveNSGCount" title="Number of Network Service Gateways in an enterprise whose bootstrap status is not ACTIVE">inactiveNSGCount</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_enum">enum
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     (IPV4)
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-     <span class="label label-info"> creation only </span>&nbsp;
-    
-    
-    
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_lastUpdatedBy" title="ID of the user who last updated the object.">lastUpdatedBy</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
+                            <span class="type_integer">integer
     
     
     
@@ -228,42 +221,12 @@
                             
     
     
-    
-    
-    
-     <span class="label label-info"> autogenerated </span>&nbsp;
-    
-    
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_name" title="The name for this address pool">name</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -286,7 +249,7 @@
         <div class="col-xs-7">
 
             
-            <span class="fixed-text">/spatsourcespools/<span class="text-muted">id</span></a>
+            <span class="fixed-text">/nsgatewayscounts/<span class="text-muted">id</span></a>
             
         </div>
         <div class="col-xs-5 text-right">
@@ -333,7 +296,7 @@
 
             
             
-            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/spatsourcespools</span>
+            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/nsgatewayscounts</span>
             
 
             
@@ -345,20 +308,6 @@
     
     
     <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-success">put</span>
     
             
         </div>
@@ -383,7 +332,7 @@
             
 
             
-            <span class="fixed-text">/spatsourcespools/<span class="text-muted">id</span>/<a href="metadata.html">metadatas</a></span>
+            <span class="fixed-text">/nsgatewayscounts/<span class="text-muted">id</span>/<a href="metadata.html">metadatas</a></span>
             
 
             
@@ -413,7 +362,7 @@
             
 
             
-            <span class="fixed-text">/spatsourcespools/<span class="text-muted">id</span>/<a href="globalmetadata.html">globalmetadatas</a></span>
+            <span class="fixed-text">/nsgatewayscounts/<span class="text-muted">id</span>/<a href="globalmetadata.html">globalmetadatas</a></span>
             
 
             
@@ -464,13 +413,15 @@
         <section id="attributes">
             <h3>Attributes documentation</h3>
             
-            <section id="attr_addressList" class="filterable" data-filter-keyword="addressList" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_activeNSGCount" class="filterable" data-filter-keyword="activeNSGCount" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>addressList</b>
-                        <span class="type_list fixed-text">list</span>
+                        <b>activeNSGCount</b>
+                        <span class="type_integer fixed-text">integer</span>
                         
     
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -483,7 +434,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The collection of IP addresses that will SPATed in the customer domain.</p>
+                        <p>Number of Network Service Gateways in an enterprise whose bootstrap status is ACTIVE</p>
 
                         <hr/>
 
@@ -505,7 +456,56 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">addressList</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">activeNSGCount</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_alarmedNSGCount" class="filterable" data-filter-keyword="alarmedNSGCount" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>alarmedNSGCount</b>
+                        <span class="type_object fixed-text">object</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>An embedded object containing three attributes: critical, major, healthy - number of NSGs with CRITICAL alarm severity, manumber of NSGs with MAJOR alarm severity, number of NSGs that have no CRITICAL or MAJOR alarms</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">alarmedNSGCount</span>
                         </p>
                     </div>
                 </div>
@@ -619,17 +619,17 @@
                 </div>
             </section>
             
-            <section id="attr_family" class="filterable" data-filter-keyword="family" style="padding-top: 60px; margin-top: -60px;">
+            <section id="attr_inactiveNSGCount" class="filterable" data-filter-keyword="inactiveNSGCount" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
-                        <b>family</b>
-                        <span class="type_enum fixed-text">enum</span>
+                        <b>inactiveNSGCount</b>
+                        <span class="type_integer fixed-text">integer</span>
                         
     
     
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
-     <span class="label label-info"> creation only </span>&nbsp;
     
     
     
@@ -640,58 +640,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The IP address family. Supported IPV4 for the time being.</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">IPV4</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">family</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_lastUpdatedBy" class="filterable" data-filter-keyword="lastUpdatedBy" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>lastUpdatedBy</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-     <span class="label label-info"> autogenerated </span>&nbsp;
-    
-    
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>ID of the user who last updated the object.</p>
+                        <p>Number of Network Service Gateways in an enterprise whose bootstrap status is not ACTIVE</p>
 
                         <hr/>
 
@@ -704,8 +653,6 @@
                             
 
                             
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
 
                             
 
@@ -715,60 +662,7 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">lastUpdatedBy</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_name" class="filterable" data-filter-keyword="name" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>name</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>The name for this address pool</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Default value: </b></span><span class="fixed-text">IPV4</span><br/>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">name</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">inactiveNSGCount</span>
                         </p>
                     </div>
                 </div>

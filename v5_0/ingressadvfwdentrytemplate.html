@@ -45,6 +45,8 @@
                             
                             <li><a data-id="attr_associatedLiveEntityID" href="#attr_associatedLiveEntityID" class="fixed-text">associatedLiveEntityID</a></li>
                             
+                            <li><a data-id="attr_associatedLiveTemplateID" href="#attr_associatedLiveTemplateID" class="fixed-text">associatedLiveTemplateID</a></li>
+                            
                             <li><a data-id="attr_associatedTrafficType" href="#attr_associatedTrafficType" class="fixed-text">associatedTrafficType</a></li>
                             
                             <li><a data-id="attr_associatedTrafficTypeID" href="#attr_associatedTrafficTypeID" class="fixed-text">associatedTrafficTypeID</a></li>
@@ -88,8 +90,6 @@
                             <li><a data-id="attr_locationType" href="#attr_locationType" class="fixed-text">locationType</a></li>
                             
                             <li><a data-id="attr_mirrorDestinationID" href="#attr_mirrorDestinationID" class="fixed-text">mirrorDestinationID</a></li>
-                            
-                            <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
                             
                             <li><a data-id="attr_networkID" href="#attr_networkID" class="fixed-text">networkID</a></li>
                             
@@ -318,10 +318,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -348,10 +344,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -379,6 +371,34 @@
     
     
      <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedLiveTemplateID" title="In the draft mode, the ACL entity refers to this live entity parent. In non-drafted mode, this is null">associatedLiveTemplateID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
     
     
     
@@ -445,10 +465,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -816,10 +832,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -931,6 +943,8 @@
      <span class="label label-info"> filterable </span>&nbsp;
     
     
+     <span class="label label-info"> orderable </span>&nbsp;
+    
     
     
                         </td>
@@ -956,10 +970,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1091,36 +1101,6 @@
     
     
     
-    
-    
-    
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="fixed-text">
-                            <a href="#attr_name" title="Name of the entity.">name</a>
-                        </td>
-                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
-    
-    
-    
-    
-    </span>
-                        </td>
-                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
-                            
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1394,8 +1374,6 @@
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
-    
-     <span class="label label-danger"> required </span>&nbsp;
     
     
     
@@ -1681,6 +1659,28 @@
 
             
             
+            <span class="fixed-text">/ingressadvfwdentrytemplates</a>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="mirrordestination.html">mirrordestinations</a>/<span class="text-muted">id</span>/ingressadvfwdentrytemplates</span>
             
 
@@ -1704,28 +1704,6 @@
             
             
             <span class="fixed-text">/<a href="vport.html">vports</a>/<span class="text-muted">id</span>/ingressadvfwdentrytemplates</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/ingressadvfwdentrytemplates</a>
             
 
             
@@ -2118,10 +2096,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2148,6 +2122,8 @@
                             
 
                             
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
 
                             
 
@@ -2171,10 +2147,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2200,6 +2172,8 @@
 
                             
 
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -2258,6 +2232,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedLiveEntityID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedLiveTemplateID" class="filterable" data-filter-keyword="associatedLiveTemplateID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedLiveTemplateID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>In the draft mode, the ACL entity refers to this live entity parent. In non-drafted mode, this is null</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedLiveTemplateID</span>
                         </p>
                     </div>
                 </div>
@@ -2328,10 +2353,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2913,10 +2934,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -3122,6 +3139,8 @@
      <span class="label label-info"> filterable </span>&nbsp;
     
     
+     <span class="label label-info"> orderable </span>&nbsp;
+    
     
     
                     </div>
@@ -3170,10 +3189,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -3414,63 +3429,6 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">mirrorDestinationID</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="attr_name" class="filterable" data-filter-keyword="name" style="padding-top: 60px; margin-top: -60px;">
-                <div class="panel panel-default">
-                    <div class="panel-heading fixed-text">
-                        <b>name</b>
-                        <span class="type_string fixed-text">string</span>
-                        
-    
-    
-    
-    
-    
-    
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
-    
-    
-    
-                    </div>
-
-                    <div class="panel-body">
-                        <h5><b>Discussion</b></h5>
-                        <p>Name of the entity.</p>
-
-                        <hr/>
-
-                        <h5><b>Charateristics</b></h5>
-                        <p>
-                            
-
-                            
-
-                            
-
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
-
-                            
-                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
-                            
-
-                            
-                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
-                            
-
-                            
-
-                            
-
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">name</span>
                         </p>
                     </div>
                 </div>
@@ -3851,8 +3809,6 @@
                         <b>redirectVPortTagID</b>
                         <span class="type_string fixed-text">string</span>
                         
-    
-     <span class="label label-danger"> required </span>&nbsp;
     
     
     
