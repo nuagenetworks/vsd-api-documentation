@@ -17,8 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">VSD API Documentation 5.0</a>
-
+                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><span class="navbar-brand">5.0</span>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -101,12 +100,14 @@
                         </ul>
                     </li>
                 </ul>
+                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
+                -->
             </div>
         </div>
     </nav>
@@ -114,9 +115,51 @@
     <div class="container" id="content">
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="pspatmaps" id="pspatmaps" href="pspatmap.html" title="API reference for pspatmap">pspatmaps </a>
+                    <a class="filterable" data-filter-keyword="bfdsessions" id="bfdsessions" href="bfdsession.html" title="API reference for bfdsession">bfdsessions </a>
                     <br>
-                        <small>Reserved provider SPAT IPs to be used to SPAT a collection of provider private IPs in customer domain.</small>
+                        <small>Represents the Bidirectional Forwarding Detection session that can be configured on an uplink/BR connection.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="connectionendpoints" id="connectionendpoints" href="connectionendpoint.html" title="API reference for connectionendpoint">connectionendpoints </a>
+                    <br>
+                        <small>SSH (Secure Shell) is used to provide secure remote console access to NSGs deployed in branch locations. For additional security, you may restrict SSH access from specific host(s) by providing a list of source IP addresses.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="csnatpools" id="csnatpools" href="csnatpool.html" title="API reference for csnatpool">csnatpools </a>
+                    <br>
+                        <small>Customer Alias IP range to be used in provider domain. This pool is used to map customer private IPs from customer domain to customer public IPs in provider domain.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ctranslationmaps" id="ctranslationmaps" href="ctranslationmap.html" title="API reference for ctranslationmap">ctranslationmaps </a>
+                    <br>
+                        <small>1:1 mapping of customer private IPs in customer domain to customer alias (public) IPs in provider domain and N:1 mapping to customer alias SPAT IP in the provider domain.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="customproperties" id="customproperties" href="customproperty.html" title="API reference for customproperty">customproperties </a>
+                    <br>
+                        <small>Developed in the context of the Uplink Connection on the NSG, this API could be used for other types of objects. It is used as a collection of name-value (or key-value) pairs for custom attributes that could be used to enrich existing class instances.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="deploymentfailures" id="deploymentfailures" href="deploymentfailure.html" title="API reference for deploymentfailure">deploymentfailures </a>
+                    <br>
+                        <small>A deployment failure represents a deployment operation initiated by the VSD that resulted in a failure.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ducgroupbindings" id="ducgroupbindings" href="ducgroupbinding.html" title="API reference for ducgroupbinding">ducgroupbindings </a>
+                    <br>
+                        <small>No description available</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -128,20 +171,6 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="nexthops" id="nexthops" href="nexthop.html" title="API reference for nexthop">nexthops </a>
-                    <br>
-                        <small>This represents a /32 IPv4 address as the next-hop. In the future can be a /128 IPv6 address.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="overlaymanagementsubnetprofiles" id="overlaymanagementsubnetprofiles" href="overlaymanagementsubnetprofile.html" title="API reference for overlaymanagementsubnetprofile">overlaymanagementsubnetprofiles </a>
-                    <br>
-                        <small>The Overlay Management Subnet profile that maps to a DNA subnet and contains the syslog destinations. Where DNS means Do Not Advertise (Advertise=False)</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="firewallacls" id="firewallacls" href="firewallacl.html" title="API reference for firewallacl">firewallacls </a>
                     <br>
                         <small>No description available</small>
@@ -149,16 +178,9 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="patches" id="patches" href="patch.html" title="API reference for patch">patches </a>
+                    <a class="filterable" data-filter-keyword="firewallrules" id="firewallrules" href="firewallrule.html" title="API reference for firewallrule">firewallrules </a>
                     <br>
-                        <small>This entity defines a patch installed somewhere (ie. NSG Patch)</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="nsggroups" id="nsggroups" href="nsggroup.html" title="API reference for nsggroup">nsggroups </a>
-                    <br>
-                        <small>A logical group of NSG and NSG-BR instances that can be used to assign NSG-UBRs to all NSGs in the group, to provide connectivity to NSGs in disjoint underlays.</small>
+                        <small>No description available</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -177,107 +199,23 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="deploymentfailures" id="deploymentfailures" href="deploymentfailure.html" title="API reference for deploymentfailure">deploymentfailures </a>
+                    <a class="filterable" data-filter-keyword="networkperformancemeasurements" id="networkperformancemeasurements" href="networkperformancemeasurement.html" title="API reference for networkperformancemeasurement">networkperformancemeasurements </a>
                     <br>
-                        <small>A deployment failure represents a deployment operation initiated by the VSD that resulted in a failure.</small>
+                        <small>Network Performance Measurement is a container for group of applications and monitor scopes</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="connectionendpoints" id="connectionendpoints" href="connectionendpoint.html" title="API reference for connectionendpoint">connectionendpoints </a>
+                    <a class="filterable" data-filter-keyword="nexthops" id="nexthops" href="nexthop.html" title="API reference for nexthop">nexthops </a>
                     <br>
-                        <small>SSH (Secure Shell) is used to provide secure remote console access to NSGs deployed in branch locations. For additional security, you may restrict SSH access from specific host(s) by providing a list of source IP addresses.</small>
+                        <small>This represents a /32 IPv4 address as the next-hop. In the future can be a /128 IPv6 address.</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="trunks" id="trunks" href="trunk.html" title="API reference for trunk">trunks </a>
+                    <a class="filterable" data-filter-keyword="nsggroups" id="nsggroups" href="nsggroup.html" title="API reference for nsggroup">nsggroups </a>
                     <br>
-                        <small>A trunk is used to attach multiple vPorts to a single NIC on a VM. These sub-vPorts are separated by a segmentation identifier (currently the VLAN ID) so the attached VM can distinguish between traffic on the sub-vPorts.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="policyentries" id="policyentries" href="policyentry.html" title="API reference for policyentry">policyentries </a>
-                    <br>
-                        <small>No description available</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="underlays" id="underlays" href="underlay.html" title="API reference for underlay">underlays </a>
-                    <br>
-                        <small>Underlays identify the transport networks that provide connectivity between NSGs, e.g. the Internet or a carrier MPLS VPN. The modelling of an underlay is required when using multiple disjoint underlays that are interconnected via one or more NSG-UBRs. The underlay object is used at the NSG Control uplink and at the NSG-UBR Underlay uplink. If no underlays are defined a default underlay is used.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="bfdsessions" id="bfdsessions" href="bfdsession.html" title="API reference for bfdsession">bfdsessions </a>
-                    <br>
-                        <small>Represents the Bidirectional Forwarding Detection session that can be configured on an uplink/BR connection.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="sshkeys" id="sshkeys" href="sshkey.html" title="API reference for sshkey">sshkeys </a>
-                    <br>
-                        <small>SSH (Secure Shell) is used to provide secure remote console access to NSGs deployed in branch locations. When key-based authentication is in use, the SSH keys represent the list of public keys that are authorized to open an SSH connection with the username set at the Access Profile level.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="customproperties" id="customproperties" href="customproperty.html" title="API reference for customproperty">customproperties </a>
-                    <br>
-                        <small>Developed in the context of the Uplink Connection on the NSG, this API could be used for other types of objects. It is used as a collection of name-value (or key-value) pairs for custom attributes that could be used to enrich existing class instances.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="policyobjectgroups" id="policyobjectgroups" href="policyobjectgroup.html" title="API reference for policyobjectgroup">policyobjectgroups </a>
-                    <br>
-                        <small>Policy Object Groups are a collection of existing Network Services Gateways. These groups can be used in routing policies for domain links.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="syslogdestinations" id="syslogdestinations" href="syslogdestination.html" title="API reference for syslogdestination">syslogdestinations </a>
-                    <br>
-                        <small>Syslog Destination provides the definition for a Syslog Server Destination</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ptranslationmaps" id="ptranslationmaps" href="ptranslationmap.html" title="API reference for ptranslationmap">ptranslationmaps </a>
-                    <br>
-                        <small>1:1 mappings of private IPs in provider domain to the provider  alias (public) IPs in customer domain and N:1 mappings of a collection of provider private IPs to a provider alias IP into the customer domain.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="csnatpools" id="csnatpools" href="csnatpool.html" title="API reference for csnatpool">csnatpools </a>
-                    <br>
-                        <small>Customer Alias IP range to be used in provider domain. This pool is used to map customer private IPs from customer domain to customer public IPs in provider domain.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="saasapplicationgroups" id="saasapplicationgroups" href="saasapplicationgroup.html" title="API reference for saasapplicationgroup">saasapplicationgroups </a>
-                    <br>
-                        <small>Collection of SaaS Application Types.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ducgroupbindings" id="ducgroupbindings" href="ducgroupbinding.html" title="API reference for ducgroupbinding">ducgroupbindings </a>
-                    <br>
-                        <small>No description available</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="policystatements" id="policystatements" href="policystatement.html" title="API reference for policystatement">policystatements </a>
-                    <br>
-                        <small>No description available</small>
+                        <small>A logical group of NSG and NSG-BR instances that can be used to assign NSG-UBRs to all NSGs in the group, to provide connectivity to NSGs in disjoint underlays.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -289,23 +227,44 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ctranslationmaps" id="ctranslationmaps" href="ctranslationmap.html" title="API reference for ctranslationmap">ctranslationmaps </a>
-                    <br>
-                        <small>1:1 mapping of customer private IPs in customer domain to customer alias (public) IPs in provider domain and N:1 mapping to customer alias SPAT IP in the provider domain.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="spatsourcespools" id="spatsourcespools" href="spatsourcespool.html" title="API reference for spatsourcespool">spatsourcespools </a>
-                    <br>
-                        <small>The list of source IPs from the provider domain to be SPATed.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="overlaymanagementprofiles" id="overlaymanagementprofiles" href="overlaymanagementprofile.html" title="API reference for overlaymanagementprofile">overlaymanagementprofiles </a>
                     <br>
                         <small>Overlay Management Profiles link a DNA Subnet used for management traffic and other objects such as Syslog Destinations</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="overlaymanagementsubnetprofiles" id="overlaymanagementsubnetprofiles" href="overlaymanagementsubnetprofile.html" title="API reference for overlaymanagementsubnetprofile">overlaymanagementsubnetprofiles </a>
+                    <br>
+                        <small>The Overlay Management Subnet profile that maps to a DNA subnet and contains the syslog destinations. Where DNS means Do Not Advertise (Advertise=False)</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="patches" id="patches" href="patch.html" title="API reference for patch">patches </a>
+                    <br>
+                        <small>This entity defines a patch installed somewhere (ie. NSG Patch)</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="policyentries" id="policyentries" href="policyentry.html" title="API reference for policyentry">policyentries </a>
+                    <br>
+                        <small>No description available</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="policyobjectgroups" id="policyobjectgroups" href="policyobjectgroup.html" title="API reference for policyobjectgroup">policyobjectgroups </a>
+                    <br>
+                        <small>Policy Object Groups are a collection of existing Network Services Gateways. These groups can be used in routing policies for domain links.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="policystatements" id="policystatements" href="policystatement.html" title="API reference for policystatement">policystatements </a>
+                    <br>
+                        <small>No description available</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -317,16 +276,58 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="firewallrules" id="firewallrules" href="firewallrule.html" title="API reference for firewallrule">firewallrules </a>
+                    <a class="filterable" data-filter-keyword="pspatmaps" id="pspatmaps" href="pspatmap.html" title="API reference for pspatmap">pspatmaps </a>
                     <br>
-                        <small>No description available</small>
+                        <small>Reserved provider SPAT IPs to be used to SPAT a collection of provider private IPs in customer domain.</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="networkperformancemeasurements" id="networkperformancemeasurements" href="networkperformancemeasurement.html" title="API reference for networkperformancemeasurement">networkperformancemeasurements </a>
+                    <a class="filterable" data-filter-keyword="ptranslationmaps" id="ptranslationmaps" href="ptranslationmap.html" title="API reference for ptranslationmap">ptranslationmaps </a>
                     <br>
-                        <small>Network Performance Measurement is a container for group of applications and monitor scopes</small>
+                        <small>1:1 mappings of private IPs in provider domain to the provider  alias (public) IPs in customer domain and N:1 mappings of a collection of provider private IPs to a provider alias IP into the customer domain.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="saasapplicationgroups" id="saasapplicationgroups" href="saasapplicationgroup.html" title="API reference for saasapplicationgroup">saasapplicationgroups </a>
+                    <br>
+                        <small>Collection of SaaS Application Types.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="spatsourcespools" id="spatsourcespools" href="spatsourcespool.html" title="API reference for spatsourcespool">spatsourcespools </a>
+                    <br>
+                        <small>The list of source IPs from the provider domain to be SPATed.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="sshkeys" id="sshkeys" href="sshkey.html" title="API reference for sshkey">sshkeys </a>
+                    <br>
+                        <small>SSH (Secure Shell) is used to provide secure remote console access to NSGs deployed in branch locations. When key-based authentication is in use, the SSH keys represent the list of public keys that are authorized to open an SSH connection with the username set at the Access Profile level.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="syslogdestinations" id="syslogdestinations" href="syslogdestination.html" title="API reference for syslogdestination">syslogdestinations </a>
+                    <br>
+                        <small>Syslog Destination provides the definition for a Syslog Server Destination</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="trunks" id="trunks" href="trunk.html" title="API reference for trunk">trunks </a>
+                    <br>
+                        <small>A trunk is used to attach multiple vPorts to a single NIC on a VM. These sub-vPorts are separated by a segmentation identifier (currently the VLAN ID) so the attached VM can distinguish between traffic on the sub-vPorts.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="underlays" id="underlays" href="underlay.html" title="API reference for underlay">underlays </a>
+                    <br>
+                        <small>Underlays identify the transport networks that provide connectivity between NSGs, e.g. the Internet or a carrier MPLS VPN. The modelling of an underlay is required when using multiple disjoint underlays that are interconnected via one or more NSG-UBRs. The underlay object is used at the NSG Control uplink and at the NSG-UBR Underlay uplink. If no underlays are defined a default underlay is used.</small>
                 </div>
             </div>
                 <section id="section-alarm">
@@ -362,16 +363,16 @@
                 <h3>bgp</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="bgpprofiles" id="bgpprofiles" href="bgpprofile.html" title="API reference for bgpprofile">bgpprofiles </a>
+                    <a class="filterable" data-filter-keyword="bgpneighbors" id="bgpneighbors" href="bgpneighbor.html" title="API reference for bgpneighbor">bgpneighbors </a>
                     <br>
-                        <small>Definitions for default import/export routing policies and dampening profiles</small>
+                        <small>Virtual Cloud Services (VCS) in the data center BGP PE-CE is configured at vport level . Network Service Gateways (NSG) BGP is configured at subnet level.</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="bgpneighbors" id="bgpneighbors" href="bgpneighbor.html" title="API reference for bgpneighbor">bgpneighbors </a>
+                    <a class="filterable" data-filter-keyword="bgpprofiles" id="bgpprofiles" href="bgpprofile.html" title="API reference for bgpprofile">bgpprofiles </a>
                     <br>
-                        <small>Virtual Cloud Services (VCS) in the data center BGP PE-CE is configured at vport level . Network Service Gateways (NSG) BGP is configured at subnet level.</small>
+                        <small>Definitions for default import/export routing policies and dampening profiles</small>
                 </div>
             </div>
                     </section>
@@ -409,6 +410,13 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="globalmetadatas" id="globalmetadatas" href="globalmetadata.html" title="API reference for globalmetadata">globalmetadatas </a>
+                    <br>
+                        <small>Metadata associated to a entity.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="metadatas" id="metadatas" href="metadata.html" title="API reference for metadata">metadatas </a>
                     <br>
                         <small>Metadata contains user-defined data that can be attached to any VSD object. The value of a metadata can be interpreted by various external systems for any needs. Local Metadata are directly created under an object.</small>
@@ -419,13 +427,6 @@
                     <a class="filterable" data-filter-keyword="sites" id="sites" href="site.html" title="API reference for site">sites </a>
                     <br>
                         <small>Remote Site info.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="globalmetadatas" id="globalmetadatas" href="globalmetadata.html" title="API reference for globalmetadata">globalmetadatas </a>
-                    <br>
-                        <small>Metadata associated to a entity.</small>
                 </div>
             </div>
                     </section>
@@ -441,16 +442,16 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="containers" id="containers" href="container.html" title="API reference for container">containers </a>
+                    <a class="filterable" data-filter-keyword="containerresync" id="containerresync" href="containerresync.html" title="API reference for containerresync">containerresync </a>
                     <br>
-                        <small>API that can retrieve the containers associated with a domain, zone or subnet for mediation created containers for REST created  containers you need to set the additional proxy user header in http request : X-Nuage-ProxyUservalue of the header has to be either :1) enterpriseName@UserName (example : Alcatel Lucent@bob), or 2) external ID of user in VSD, typically is UUID generally decided by the CMS tool in questionUser needs to have CMS privileges to use proxy user header.</small>
+                        <small>Provide information about the state of a container resync request.</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="containerresync" id="containerresync" href="containerresync.html" title="API reference for containerresync">containerresync </a>
+                    <a class="filterable" data-filter-keyword="containers" id="containers" href="container.html" title="API reference for container">containers </a>
                     <br>
-                        <small>Provide information about the state of a container resync request.</small>
+                        <small>API that can retrieve the containers associated with a domain, zone or subnet for mediation created containers for REST created  containers you need to set the additional proxy user header in http request : X-Nuage-ProxyUservalue of the header has to be either :1) enterpriseName@UserName (example : Alcatel Lucent@bob), or 2) external ID of user in VSD, typically is UUID generally decided by the CMS tool in questionUser needs to have CMS privileges to use proxy user header.</small>
                 </div>
             </div>
                     </section>
@@ -470,93 +471,9 @@
                 <h3>gateway</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="redundancygroups" id="redundancygroups" href="redundancygroup.html" title="API reference for redundancygroup">redundancygroups </a>
-                    <br>
-                        <small>Represents Redundant Group formed by two Gateways.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="autodiscoveredgateways" id="autodiscoveredgateways" href="autodiscoveredgateway.html" title="API reference for autodiscoveredgateway">autodiscoveredgateways </a>
-                    <br>
-                        <small>Represents Auto discovered Gateway.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="overlayaddresspools" id="overlayaddresspools" href="overlayaddresspool.html" title="API reference for overlayaddresspool">overlayaddresspools </a>
-                    <br>
-                        <small>The address pool the public IP of the PAT/NAT entries belong too.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="services" id="services" href="service.html" title="API reference for service">services </a>
-                    <br>
-                        <small>Represents a WAN Service Object.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="gatewayredundantports" id="gatewayredundantports" href="gatewayredundantport.html" title="API reference for gatewayredundantport">gatewayredundantports </a>
-                    <br>
-                        <small>Represents a redundant Port under a particular gateway object or redundant group object.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="patipentries" id="patipentries" href="patipentry.html" title="API reference for patipentry">patipentries </a>
-                    <br>
-                        <small>missing documentation.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="bootstrapactivations" id="bootstrapactivations" href="bootstrapactivation.html" title="API reference for bootstrapactivation">bootstrapactivations </a>
-                    <br>
-                        <small>NSG Gateway initiated Bootstrap Activation</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="patnatpools" id="patnatpools" href="patnatpool.html" title="API reference for patnatpool">patnatpools </a>
-                    <br>
-                        <small>Address Translation Pools are a range of externally routable IP addresses. User or application traffic is translated prior to being forwarded across the network.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="nsredundantports" id="nsredundantports" href="nsredundantport.html" title="API reference for nsredundantport">nsredundantports </a>
-                    <br>
-                        <small>Represents a Port under a particular gateway object or redundant group object.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="addressmaps" id="addressmaps" href="addressmap.html" title="API reference for addressmap">addressmaps </a>
                     <br>
                         <small>Defines an address mapping between a private IP and a port with a public IP address and port.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="overlaypatnatentries" id="overlaypatnatentries" href="overlaypatnatentry.html" title="API reference for overlaypatnatentry">overlaypatnatentries </a>
-                    <br>
-                        <small>No description available</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ports" id="ports" href="port.html" title="API reference for port">ports </a>
-                    <br>
-                        <small>A port represents specific connection point of a gateway. It can be used for internal networking, like an uplink connection or a management network. It can also be used for domain's access.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="gatewaytemplates" id="gatewaytemplates" href="gatewaytemplate.html" title="API reference for gatewaytemplate">gatewaytemplates </a>
-                    <br>
-                        <small>A gateway is your point of exit to an external network. It can be a physical or a virtual device. Gateways are templatable. You can attach gateway's VLANs to any existing host or bridge VPorts.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -568,51 +485,23 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vlans" id="vlans" href="vlan.html" title="API reference for vlan">vlans </a>
+                    <a class="filterable" data-filter-keyword="allredundancygroups" id="allredundancygroups" href="allredundancygroup.html" title="API reference for allredundancygroup">allredundancygroups </a>
                     <br>
-                        <small>VLANs are Virtual Local Area Networks. They allow to differentiate several traffic flows inside a single Port. A VLAN with a value set to 0 can be used to tell the system to not use any tagging.</small>
+                        <small>A read only API to get all redundancy gateway objects in the VSD environment. Use the ID field to then actually manage the redundancy gateway using the redundancy gateway API entity.</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="enterprisepermissions" id="enterprisepermissions" href="enterprisepermission.html" title="API reference for enterprisepermission">enterprisepermissions </a>
+                    <a class="filterable" data-filter-keyword="autodiscoveredgateways" id="autodiscoveredgateways" href="autodiscoveredgateway.html" title="API reference for autodiscoveredgateway">autodiscoveredgateways </a>
                     <br>
-                        <small>Represents Enterprise Permission for a CSP entity.</small>
+                        <small>Represents Auto discovered Gateway.</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vsgredundantports" id="vsgredundantports" href="vsgredundantport.html" title="API reference for vsgredundantport">vsgredundantports </a>
+                    <a class="filterable" data-filter-keyword="bootstrapactivations" id="bootstrapactivations" href="bootstrapactivation.html" title="API reference for bootstrapactivation">bootstrapactivations </a>
                     <br>
-                        <small>Represents a redundant Port under a particular gateway object or redundant group object.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="natmapentries" id="natmapentries" href="natmapentry.html" title="API reference for natmapentry">natmapentries </a>
-                    <br>
-                        <small>Defines a MAP between the private ip and public ip.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="gateways" id="gateways" href="gateway.html" title="API reference for gateway">gateways </a>
-                    <br>
-                        <small>Represents Gateway object.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="locations" id="locations" href="location.html" title="API reference for location">locations </a>
-                    <br>
-                        <small>Gateway location details.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="porttemplates" id="porttemplates" href="porttemplate.html" title="API reference for porttemplate">porttemplates </a>
-                    <br>
-                        <small>Represents a Port Template object under a given gateway template object.</small>
+                        <small>NSG Gateway initiated Bootstrap Activation</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -624,7 +513,77 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="portmappings" id="portmappings" href="portmapping.html" title="API reference for portmapping">portmappings </a>
+                    <a class="filterable" data-filter-keyword="enterprisepermissions" id="enterprisepermissions" href="enterprisepermission.html" title="API reference for enterprisepermission">enterprisepermissions </a>
+                    <br>
+                        <small>Represents Enterprise Permission for a CSP entity.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="gatewayredundantports" id="gatewayredundantports" href="gatewayredundantport.html" title="API reference for gatewayredundantport">gatewayredundantports </a>
+                    <br>
+                        <small>Represents a redundant Port under a particular gateway object or redundant group object.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="gateways" id="gateways" href="gateway.html" title="API reference for gateway">gateways </a>
+                    <br>
+                        <small>Represents Gateway object.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="gatewaytemplates" id="gatewaytemplates" href="gatewaytemplate.html" title="API reference for gatewaytemplate">gatewaytemplates </a>
+                    <br>
+                        <small>A gateway is your point of exit to an external network. It can be a physical or a virtual device. Gateways are templatable. You can attach gateway's VLANs to any existing host or bridge VPorts.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="infraconfig" id="infraconfig" href="infraconfig.html" title="API reference for infraconfig">infraconfig </a>
+                    <br>
+                        <small>Represents Infrastructure Config</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="locations" id="locations" href="location.html" title="API reference for location">locations </a>
+                    <br>
+                        <small>Gateway location details.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="natmapentries" id="natmapentries" href="natmapentry.html" title="API reference for natmapentry">natmapentries </a>
+                    <br>
+                        <small>Defines a MAP between the private ip and public ip.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="nsredundantports" id="nsredundantports" href="nsredundantport.html" title="API reference for nsredundantport">nsredundantports </a>
+                    <br>
+                        <small>Represents a Port under a particular gateway object or redundant group object.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="overlayaddresspools" id="overlayaddresspools" href="overlayaddresspool.html" title="API reference for overlayaddresspool">overlayaddresspools </a>
+                    <br>
+                        <small>The address pool the public IP of the PAT/NAT entries belong too.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="overlaypatnatentries" id="overlaypatnatentries" href="overlaypatnatentry.html" title="API reference for overlaypatnatentry">overlaypatnatentries </a>
+                    <br>
+                        <small>No description available</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="patipentries" id="patipentries" href="patipentry.html" title="API reference for patipentry">patipentries </a>
                     <br>
                         <small>missing documentation.</small>
                 </div>
@@ -638,16 +597,51 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="allredundancygroups" id="allredundancygroups" href="allredundancygroup.html" title="API reference for allredundancygroup">allredundancygroups </a>
+                    <a class="filterable" data-filter-keyword="patnatpools" id="patnatpools" href="patnatpool.html" title="API reference for patnatpool">patnatpools </a>
                     <br>
-                        <small>A read only API to get all redundancy gateway objects in the VSD environment. Use the ID field to then actually manage the redundancy gateway using the redundancy gateway API entity.</small>
+                        <small>Address Translation Pools are a range of externally routable IP addresses. User or application traffic is translated prior to being forwarded across the network.</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="infraconfig" id="infraconfig" href="infraconfig.html" title="API reference for infraconfig">infraconfig </a>
+                    <a class="filterable" data-filter-keyword="portmappings" id="portmappings" href="portmapping.html" title="API reference for portmapping">portmappings </a>
                     <br>
-                        <small>Represents Infrastructure Config</small>
+                        <small>missing documentation.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ports" id="ports" href="port.html" title="API reference for port">ports </a>
+                    <br>
+                        <small>A port represents specific connection point of a gateway. It can be used for internal networking, like an uplink connection or a management network. It can also be used for domain's access.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="porttemplates" id="porttemplates" href="porttemplate.html" title="API reference for porttemplate">porttemplates </a>
+                    <br>
+                        <small>Represents a Port Template object under a given gateway template object.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="redundancygroups" id="redundancygroups" href="redundancygroup.html" title="API reference for redundancygroup">redundancygroups </a>
+                    <br>
+                        <small>Represents Redundant Group formed by two Gateways.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="services" id="services" href="service.html" title="API reference for service">services </a>
+                    <br>
+                        <small>Represents a WAN Service Object.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vlans" id="vlans" href="vlan.html" title="API reference for vlan">vlans </a>
+                    <br>
+                        <small>VLANs are Virtual Local Area Networks. They allow to differentiate several traffic flows inside a single Port. A VLAN with a value set to 0 can be used to tell the system to not use any tagging.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -657,52 +651,17 @@
                         <small>Represents VLAN Template under a Port Template object.</small>
                 </div>
             </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vsgredundantports" id="vsgredundantports" href="vsgredundantport.html" title="API reference for vsgredundantport">vsgredundantports </a>
+                    <br>
+                        <small>Represents a redundant Port under a particular gateway object or redundant group object.</small>
+                </div>
+            </div>
                     </section>
                 
                 <section id="section-ike">
                 <h3>ike</h3>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ikepsks" id="ikepsks" href="ikepsk.html" title="API reference for ikepsk">ikepsks </a>
-                    <br>
-                        <small>Shared secret used during the authentication phase of IKE protocol.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ikegatewayprofiles" id="ikegatewayprofiles" href="ikegatewayprofile.html" title="API reference for ikegatewayprofile">ikegatewayprofiles </a>
-                    <br>
-                        <small>Define attributes of the remote IKE gateway.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ikesubnets" id="ikesubnets" href="ikesubnet.html" title="API reference for ikesubnet">ikesubnets </a>
-                    <br>
-                        <small>Represents an IKE Subnet (remote side)</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ikegatewayconnections" id="ikegatewayconnections" href="ikegatewayconnection.html" title="API reference for ikegatewayconnection">ikegatewayconnections </a>
-                    <br>
-                        <small>Set the attributes like NSG role, authentication method etc for establishing IKE security association with remote gateway.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ikegatewayconfig" id="ikegatewayconfig" href="ikegatewayconfig.html" title="API reference for ikegatewayconfig">ikegatewayconfig </a>
-                    <br>
-                        <small>Represents an IKE Gateway Configuration Object</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ikegateways" id="ikegateways" href="ikegateway.html" title="API reference for ikegateway">ikegateways </a>
-                    <br>
-                        <small>Represents an IKE Gateway</small>
-                </div>
-            </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="ikecertificates" id="ikecertificates" href="ikecertificate.html" title="API reference for ikecertificate">ikecertificates </a>
@@ -717,10 +676,66 @@
                         <small>Represents an IKE Profile</small>
                 </div>
             </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ikegatewayconfig" id="ikegatewayconfig" href="ikegatewayconfig.html" title="API reference for ikegatewayconfig">ikegatewayconfig </a>
+                    <br>
+                        <small>Represents an IKE Gateway Configuration Object</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ikegatewayconnections" id="ikegatewayconnections" href="ikegatewayconnection.html" title="API reference for ikegatewayconnection">ikegatewayconnections </a>
+                    <br>
+                        <small>Set the attributes like NSG role, authentication method etc for establishing IKE security association with remote gateway.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ikegatewayprofiles" id="ikegatewayprofiles" href="ikegatewayprofile.html" title="API reference for ikegatewayprofile">ikegatewayprofiles </a>
+                    <br>
+                        <small>Define attributes of the remote IKE gateway.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ikegateways" id="ikegateways" href="ikegateway.html" title="API reference for ikegateway">ikegateways </a>
+                    <br>
+                        <small>Represents an IKE Gateway</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ikepsks" id="ikepsks" href="ikepsk.html" title="API reference for ikepsk">ikepsks </a>
+                    <br>
+                        <small>Shared secret used during the authentication phase of IKE protocol.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ikesubnets" id="ikesubnets" href="ikesubnet.html" title="API reference for ikesubnet">ikesubnets </a>
+                    <br>
+                        <small>Represents an IKE Subnet (remote side)</small>
+                </div>
+            </div>
                     </section>
                 
                 <section id="section-infrastructure">
                 <h3>infrastructure</h3>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="None" id="None" href="None.html" title="API reference for None">None </a>
+                    <br>
+                        <small>An object representing the progress of gateway image download</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="infrastructureaccessprofiles" id="infrastructureaccessprofiles" href="infrastructureaccessprofile.html" title="API reference for infrastructureaccessprofile">infrastructureaccessprofiles </a>
+                    <br>
+                        <small>Infrastructure Access Profiles identify a set of NSG template level platform attributes specifically related to user and access control, inherited by gateways as they are instantiated.</small>
+                </div>
+            </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="infrastructuregatewayprofiles" id="infrastructuregatewayprofiles" href="infrastructuregatewayprofile.html" title="API reference for infrastructuregatewayprofile">infrastructuregatewayprofiles </a>
@@ -751,20 +766,6 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="infrastructureaccessprofiles" id="infrastructureaccessprofiles" href="infrastructureaccessprofile.html" title="API reference for infrastructureaccessprofile">infrastructureaccessprofiles </a>
-                    <br>
-                        <small>Infrastructure Access Profiles identify a set of NSG template level platform attributes specifically related to user and access control, inherited by gateways as they are instantiated.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="None" id="None" href="None.html" title="API reference for None">None </a>
-                    <br>
-                        <small>An object representing the progress of gateway image download</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="nsgupgradeprofiles" id="nsgupgradeprofiles" href="nsgupgradeprofile.html" title="API reference for nsgupgradeprofile">nsgupgradeprofiles </a>
                     <br>
                         <small>An NSG Upgrade Profile contains upgrade information that can be given to an NSG Instance.  The profile contains details on where the NSG can retrieve the image to upgrade to, and some criteria related to when the upgrade is to happen once the NSG device has received the information for upgrading.</small>
@@ -774,6 +775,13 @@
                 
                 <section id="section-ipsec">
                 <h3>ipsec</h3>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="enterprisesecureddatas" id="enterprisesecureddatas" href="enterprisesecureddata.html" title="API reference for enterprisesecureddata">enterprisesecureddatas </a>
+                    <br>
+                        <small>This object represents the secured data object under the enterprise</small>
+                </div>
+            </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="enterprisesecurities" id="enterprisesecurities" href="enterprisesecurity.html" title="API reference for enterprisesecurity">enterprisesecurities </a>
@@ -786,13 +794,6 @@
                     <a class="filterable" data-filter-keyword="gatewaysecureddatas" id="gatewaysecureddatas" href="gatewaysecureddata.html" title="API reference for gatewaysecureddata">gatewaysecureddatas </a>
                     <br>
                         <small>This object represents the secured data object under the gateway</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="enterprisesecureddatas" id="enterprisesecureddatas" href="enterprisesecureddata.html" title="API reference for enterprisesecureddata">enterprisesecureddatas </a>
-                    <br>
-                        <small>This object represents the secured data object under the enterprise</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -826,16 +827,16 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="keyservermonitorencryptedseeds" id="keyservermonitorencryptedseeds" href="keyservermonitorencryptedseed.html" title="API reference for keyservermonitorencryptedseed">keyservermonitorencryptedseeds </a>
+                    <a class="filterable" data-filter-keyword="keyservermembers" id="keyservermembers" href="keyservermember.html" title="API reference for keyservermember">keyservermembers </a>
                     <br>
-                        <small>Represents a Keyserver Monitor Encrypted Seed Snapshot.</small>
+                        <small>Represents a KeyServer</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="keyservermonitorseeds" id="keyservermonitorseeds" href="keyservermonitorseed.html" title="API reference for keyservermonitorseed">keyservermonitorseeds </a>
+                    <a class="filterable" data-filter-keyword="keyservermonitorencryptedseeds" id="keyservermonitorencryptedseeds" href="keyservermonitorencryptedseed.html" title="API reference for keyservermonitorencryptedseed">keyservermonitorencryptedseeds </a>
                     <br>
-                        <small>Represents a Keyserver Monitor Seed Snapshot.</small>
+                        <small>Represents a Keyserver Monitor Encrypted Seed Snapshot.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -847,9 +848,9 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="keyservermembers" id="keyservermembers" href="keyservermember.html" title="API reference for keyservermember">keyservermembers </a>
+                    <a class="filterable" data-filter-keyword="keyservermonitorseeds" id="keyservermonitorseeds" href="keyservermonitorseed.html" title="API reference for keyservermonitorseed">keyservermonitorseeds </a>
                     <br>
-                        <small>Represents a KeyServer</small>
+                        <small>Represents a Keyserver Monitor Seed Snapshot.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -865,16 +866,16 @@
                 <h3>licensemgmt</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="licensestatus" id="licensestatus" href="licensestatus.html" title="API reference for licensestatus">licensestatus </a>
+                    <a class="filterable" data-filter-keyword="licenses" id="licenses" href="license.html" title="API reference for license">licenses </a>
                     <br>
-                        <small>No description available</small>
+                        <small>Enables retrieval/modification and creation of license files. Most of the attributes are retrieved from the encrypted license. The create API simply provides the encrypted license that is in base64 format.</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="licenses" id="licenses" href="license.html" title="API reference for license">licenses </a>
+                    <a class="filterable" data-filter-keyword="licensestatus" id="licensestatus" href="licensestatus.html" title="API reference for licensestatus">licensestatus </a>
                     <br>
-                        <small>Enables retrieval/modification and creation of license files. Most of the attributes are retrieved from the encrypted license. The create API simply provides the encrypted license that is in base64 format.</small>
+                        <small>No description available</small>
                 </div>
             </div>
                     </section>
@@ -894,23 +895,23 @@
                 <h3>netconfdcgw</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="egressprofiles" id="egressprofiles" href="egressprofile.html" title="API reference for egressprofile">egressprofiles </a>
+                    <br>
+                        <small>An Egress Profile represents an aggregation of IP, MAC and egress QoS profiles that are applied on a VPort instance.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ingressprofiles" id="ingressprofiles" href="ingressprofile.html" title="API reference for ingressprofile">ingressprofiles </a>
+                    <br>
+                        <small>An Ingress Profile represents an aggregation of IP, MAC and ingress QoS profiles that are applied on a VPort instance.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="ipfilterprofiles" id="ipfilterprofiles" href="ipfilterprofile.html" title="API reference for ipfilterprofile">ipfilterprofiles </a>
                     <br>
                         <small>7x50 IP Filter profile</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="sapegressqosprofiles" id="sapegressqosprofiles" href="sapegressqosprofile.html" title="API reference for sapegressqosprofile">sapegressqosprofiles </a>
-                    <br>
-                        <small>7x50 SAP Egress QoS profile</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="macfilterprofiles" id="macfilterprofiles" href="macfilterprofile.html" title="API reference for macfilterprofile">macfilterprofiles </a>
-                    <br>
-                        <small>7x50 MAC Filter profile</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -922,9 +923,16 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="egressprofiles" id="egressprofiles" href="egressprofile.html" title="API reference for egressprofile">egressprofiles </a>
+                    <a class="filterable" data-filter-keyword="macfilterprofiles" id="macfilterprofiles" href="macfilterprofile.html" title="API reference for macfilterprofile">macfilterprofiles </a>
                     <br>
-                        <small>An Egress Profile represents an aggregation of IP, MAC and egress QoS profiles that are applied on a VPort instance.</small>
+                        <small>7x50 MAC Filter profile</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="sapegressqosprofiles" id="sapegressqosprofiles" href="sapegressqosprofile.html" title="API reference for sapegressqosprofile">sapegressqosprofiles </a>
+                    <br>
+                        <small>7x50 SAP Egress QoS profile</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -934,134 +942,15 @@
                         <small>7x50 SAP Ingress QoS profile</small>
                 </div>
             </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ingressprofiles" id="ingressprofiles" href="ingressprofile.html" title="API reference for ingressprofile">ingressprofiles </a>
-                    <br>
-                        <small>An Ingress Profile represents an aggregation of IP, MAC and ingress QoS profiles that are applied on a VPort instance.</small>
-                </div>
-            </div>
                     </section>
                 
                 <section id="section-network">
                 <h3>network</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="sharednetworkresources" id="sharednetworkresources" href="sharednetworkresource.html" title="API reference for sharednetworkresource">sharednetworkresources </a>
+                    <a class="filterable" data-filter-keyword="addressranges" id="addressranges" href="addressrange.html" title="API reference for addressrange">addressranges </a>
                     <br>
-                        <small>This defines shared infrastructure resources that are created by user with CSPROOT role. These resources can be used by all the enterprises in the data center for various purposes. Examples of  shared resources are public subnet, floating subnet, public L2 domain.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="multicastchannelmaps" id="multicastchannelmaps" href="multicastchannelmap.html" title="API reference for multicastchannelmap">multicastchannelmaps </a>
-                    <br>
-                        <small>Multicast channel maps define the available multicast groups that can be joined by VMs belonging to enterprises to which the maps have been assigned to. A map can contain one or more ranges defining the available channels. Ranges are non overlapping within a single map.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="zones" id="zones" href="zone.html" title="API reference for zone">zones </a>
-                    <br>
-                        <small>The zone is a collection of subnets attached to a domain. The zone concept enables the definition of policies for collections of subnets.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="routingpolicies" id="routingpolicies" href="routingpolicy.html" title="API reference for routingpolicy">routingpolicies </a>
-                    <br>
-                        <small>Pre-defined sets of attributes used in policy match conditions: prefix lists, entries, damping profiles, etc.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="enterprisenetworks" id="enterprisenetworks" href="enterprisenetwork.html" title="API reference for enterprisenetwork">enterprisenetworks </a>
-                    <br>
-                        <small>Network Macros are organization wide defined macros that can be used as a destination of a policy rule. For instance, you can create a network that represents your internal Intranet access, and use it as a destination of a policy rule to drop any packet that is coming from a particular port. Macros can now be created under SaaS Application Types. SaaS Application Types can then be associated to a SaaS Application Group which can be used as a destination of a policy rule.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ipreservations" id="ipreservations" href="ipreservation.html" title="API reference for ipreservation">ipreservations </a>
-                    <br>
-                        <small>You can reserve and allocate IP addresess according to the host MAC address</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="subnettemplates" id="subnettemplates" href="subnettemplate.html" title="API reference for subnettemplate">subnettemplates </a>
-                    <br>
-                        <small>As domain and zone objects, subnet objects are created in VSD as derived by templates. This object describes the subnet template.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="networklayout" id="networklayout" href="networklayout.html" title="API reference for networklayout">networklayout </a>
-                    <br>
-                        <small>This API defines the AS number that should be used in the data center as well as the IP address of the route reflector.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="proxyarpfilters" id="proxyarpfilters" href="proxyarpfilter.html" title="API reference for proxyarpfilter">proxyarpfilters </a>
-                    <br>
-                        <small>Proxy ARP filters represent black-list of address ranges for NSG acting as ARP proxy</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="subnets" id="subnets" href="subnet.html" title="API reference for subnet">subnets </a>
-                    <br>
-                        <small>This is the definition of a subnet associated with a Zone.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="zonetemplates" id="zonetemplates" href="zonetemplate.html" title="API reference for zonetemplate">zonetemplates </a>
-                    <br>
-                        <small>As in domains and subnets, zones are derived from templates. This object provides the definition of the template.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="l2domaintemplates" id="l2domaintemplates" href="l2domaintemplate.html" title="API reference for l2domaintemplate">l2domaintemplates </a>
-                    <br>
-                        <small>An L2 Domain is a distributed logical switch that enables L2 communication. An L2 Domain template is a model that can be instantiated as often as required, thereby creating real, functioning L2 Domains.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="staticroutes" id="staticroutes" href="staticroute.html" title="API reference for staticroute">staticroutes </a>
-                    <br>
-                        <small>Static routes allow end users to define how traffic is routed through the dVRS in addition to the routes learned by VSC through VM activation. By using static routes, end users can define for example that all traffic with a destination address towards a specific subnet must be forwarded to a specific VM attached in the dVRS and this VM could be a firewall</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="multicastranges" id="multicastranges" href="multicastrange.html" title="API reference for multicastrange">multicastranges </a>
-                    <br>
-                        <small>A multicast channel range defines a set of multicast groups that will be allowed to be joined. They act as a set of "white-list" addresses that a VM will be allowed to join. A multicast channel map requires at least one range defined to be of use. Ranges within the same channel map must be non-overlapping between each other. Groups not covered by a range won't be joinable from the VMs.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="networkmacrogroups" id="networkmacrogroups" href="networkmacrogroup.html" title="API reference for networkmacrogroup">networkmacrogroups </a>
-                    <br>
-                        <small>Network Macro Groups are a collection of existing Network Macros. These groups can be used in Security Policies in order to create rules that matches multiple Network Macros.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="domains" id="domains" href="domain.html" title="API reference for domain">domains </a>
-                    <br>
-                        <small>This object is used to manipulate domain state. A domain corresponds to a distributed Virtual Router and Switch.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ospfinterfaces" id="ospfinterfaces" href="ospfinterface.html" title="API reference for ospfinterface">ospfinterfaces </a>
-                    <br>
-                        <small>The OSPF interface represents the connection of a router to the OSPF network. The OSPF interface defines the protocol metrics and security parameters for OSPF traffic on a V-Port on the specified subnet. An OSPF interface can exist in only one OSPF area.</small>
+                        <small>Address ranges are used for dynamic IP address allocation within the subnet. Multiple address ranges may be used to support non-contiuous IP address ranges. VMs and hosts without static IP addresses assigned will receive an address within the available ranges. </small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1073,20 +962,6 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="l2domains" id="l2domains" href="l2domain.html" title="API reference for l2domain">l2domains </a>
-                    <br>
-                        <small>This is the definition of a l2 domain associated with a Enterprise.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ospfinstances" id="ospfinstances" href="ospfinstance.html" title="API reference for ospfinstance">ospfinstances </a>
-                    <br>
-                        <small>The OSPF instance is the highest hierarchical OSPF configuration object in a domain. The OSPF instance allows you to assign global import and export routing policies for OSPF traffic in the domain. </small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="dhcpoptions" id="dhcpoptions" href="dhcpoption.html" title="API reference for dhcpoption">dhcpoptions </a>
                     <br>
                         <small>Allows the definition of one or more DHCP options that will be provided to all VMs that are associated with a given domain. DHCP options are provided as Type- Length-Value (TLV). There is no validation by VSD on whether these options are valid or not. It is up to the user to guarantee that the options make sense for their application.</small>
@@ -1094,23 +969,9 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="uplinkroutedistinguishers" id="uplinkroutedistinguishers" href="uplinkroutedistinguisher.html" title="API reference for uplinkroutedistinguisher">uplinkroutedistinguishers </a>
+                    <a class="filterable" data-filter-keyword="domains" id="domains" href="domain.html" title="API reference for domain">domains </a>
                     <br>
-                        <small>Represents a network port uplink route distinguisher value.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="publicnetworks" id="publicnetworks" href="publicnetwork.html" title="API reference for publicnetwork">publicnetworks </a>
-                    <br>
-                        <small>Similar to the enterprise macros, the public network macro allows an administrator of an enterprise to define range of subnets that can be used by users in the ACL definition.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="addressranges" id="addressranges" href="addressrange.html" title="API reference for addressrange">addressranges </a>
-                    <br>
-                        <small>Address ranges are used for dynamic IP address allocation within the subnet. Multiple address ranges may be used to support non-contiuous IP address ranges. VMs and hosts without static IP addresses assigned will receive an address within the available ranges. </small>
+                        <small>This object is used to manipulate domain state. A domain corresponds to a distributed Virtual Router and Switch.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1122,6 +983,13 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="enterprisenetworks" id="enterprisenetworks" href="enterprisenetwork.html" title="API reference for enterprisenetwork">enterprisenetworks </a>
+                    <br>
+                        <small>Network Macros are organization wide defined macros that can be used as a destination of a policy rule. For instance, you can create a network that represents your internal Intranet access, and use it as a destination of a policy rule to drop any packet that is coming from a particular port. Macros can now be created under SaaS Application Types. SaaS Application Types can then be associated to a SaaS Application Group which can be used as a destination of a policy rule.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="floatingips" id="floatingips" href="floatingip.html" title="API reference for floatingip">floatingips </a>
                     <br>
                         <small>Floating IP that is associated to a Domain. This floating IP could be used in the VM interface for NAT functionality.</small>
@@ -1129,9 +997,30 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vpnconnections" id="vpnconnections" href="vpnconnection.html" title="API reference for vpnconnection">vpnconnections </a>
+                    <a class="filterable" data-filter-keyword="ipreservations" id="ipreservations" href="ipreservation.html" title="API reference for ipreservation">ipreservations </a>
                     <br>
-                        <small>Attaching this object to a WAN Service allows to extend its connectivity to and from external resources defined on your Data Center Edge Gateway.</small>
+                        <small>You can reserve and allocate IP addresess according to the host MAC address</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="l2domains" id="l2domains" href="l2domain.html" title="API reference for l2domain">l2domains </a>
+                    <br>
+                        <small>This is the definition of a l2 domain associated with a Enterprise.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="l2domaintemplates" id="l2domaintemplates" href="l2domaintemplate.html" title="API reference for l2domaintemplate">l2domaintemplates </a>
+                    <br>
+                        <small>An L2 Domain is a distributed logical switch that enables L2 communication. An L2 Domain template is a model that can be instantiated as often as required, thereby creating real, functioning L2 Domains.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="multicastchannelmaps" id="multicastchannelmaps" href="multicastchannelmap.html" title="API reference for multicastchannelmap">multicastchannelmaps </a>
+                    <br>
+                        <small>Multicast channel maps define the available multicast groups that can be joined by VMs belonging to enterprises to which the maps have been assigned to. A map can contain one or more ranges defining the available channels. Ranges are non overlapping within a single map.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1143,9 +1032,23 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="uplinkconnections" id="uplinkconnections" href="uplinkconnection.html" title="API reference for uplinkconnection">uplinkconnections </a>
+                    <a class="filterable" data-filter-keyword="multicastranges" id="multicastranges" href="multicastrange.html" title="API reference for multicastrange">multicastranges </a>
                     <br>
-                        <small>Configuration of VNS Gateway uplinks</small>
+                        <small>A multicast channel range defines a set of multicast groups that will be allowed to be joined. They act as a set of "white-list" addresses that a VM will be allowed to join. A multicast channel map requires at least one range defined to be of use. Ranges within the same channel map must be non-overlapping between each other. Groups not covered by a range won't be joinable from the VMs.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="networklayout" id="networklayout" href="networklayout.html" title="API reference for networklayout">networklayout </a>
+                    <br>
+                        <small>This API defines the AS number that should be used in the data center as well as the IP address of the route reflector.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="networkmacrogroups" id="networkmacrogroups" href="networkmacrogroup.html" title="API reference for networkmacrogroup">networkmacrogroups </a>
+                    <br>
+                        <small>Network Macro Groups are a collection of existing Network Macros. These groups can be used in Security Policies in order to create rules that matches multiple Network Macros.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1155,50 +1058,113 @@
                         <small>OSPF relies on the concept of logical areas. The use of areas enables the hiding of topology information between areas whilst still providing reachability. Each router in the area shares the same routing tables, which simplifies the network topology and helps to optimize the route calculation algorithm. </small>
                 </div>
             </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ospfinstances" id="ospfinstances" href="ospfinstance.html" title="API reference for ospfinstance">ospfinstances </a>
+                    <br>
+                        <small>The OSPF instance is the highest hierarchical OSPF configuration object in a domain. The OSPF instance allows you to assign global import and export routing policies for OSPF traffic in the domain. </small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ospfinterfaces" id="ospfinterfaces" href="ospfinterface.html" title="API reference for ospfinterface">ospfinterfaces </a>
+                    <br>
+                        <small>The OSPF interface represents the connection of a router to the OSPF network. The OSPF interface defines the protocol metrics and security parameters for OSPF traffic on a V-Port on the specified subnet. An OSPF interface can exist in only one OSPF area.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="proxyarpfilters" id="proxyarpfilters" href="proxyarpfilter.html" title="API reference for proxyarpfilter">proxyarpfilters </a>
+                    <br>
+                        <small>Proxy ARP filters represent black-list of address ranges for NSG acting as ARP proxy</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="publicnetworks" id="publicnetworks" href="publicnetwork.html" title="API reference for publicnetwork">publicnetworks </a>
+                    <br>
+                        <small>Similar to the enterprise macros, the public network macro allows an administrator of an enterprise to define range of subnets that can be used by users in the ACL definition.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="routingpolicies" id="routingpolicies" href="routingpolicy.html" title="API reference for routingpolicy">routingpolicies </a>
+                    <br>
+                        <small>Pre-defined sets of attributes used in policy match conditions: prefix lists, entries, damping profiles, etc.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="sharednetworkresources" id="sharednetworkresources" href="sharednetworkresource.html" title="API reference for sharednetworkresource">sharednetworkresources </a>
+                    <br>
+                        <small>This defines shared infrastructure resources that are created by user with CSPROOT role. These resources can be used by all the enterprises in the data center for various purposes. Examples of  shared resources are public subnet, floating subnet, public L2 domain.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="staticroutes" id="staticroutes" href="staticroute.html" title="API reference for staticroute">staticroutes </a>
+                    <br>
+                        <small>Static routes allow end users to define how traffic is routed through the dVRS in addition to the routes learned by VSC through VM activation. By using static routes, end users can define for example that all traffic with a destination address towards a specific subnet must be forwarded to a specific VM attached in the dVRS and this VM could be a firewall</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="subnets" id="subnets" href="subnet.html" title="API reference for subnet">subnets </a>
+                    <br>
+                        <small>This is the definition of a subnet associated with a Zone.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="subnettemplates" id="subnettemplates" href="subnettemplate.html" title="API reference for subnettemplate">subnettemplates </a>
+                    <br>
+                        <small>As domain and zone objects, subnet objects are created in VSD as derived by templates. This object describes the subnet template.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="uplinkconnections" id="uplinkconnections" href="uplinkconnection.html" title="API reference for uplinkconnection">uplinkconnections </a>
+                    <br>
+                        <small>Configuration of VNS Gateway uplinks</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="uplinkroutedistinguishers" id="uplinkroutedistinguishers" href="uplinkroutedistinguisher.html" title="API reference for uplinkroutedistinguisher">uplinkroutedistinguishers </a>
+                    <br>
+                        <small>Represents a network port uplink route distinguisher value.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vpnconnections" id="vpnconnections" href="vpnconnection.html" title="API reference for vpnconnection">vpnconnections </a>
+                    <br>
+                        <small>Attaching this object to a WAN Service allows to extend its connectivity to and from external resources defined on your Data Center Edge Gateway.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="zones" id="zones" href="zone.html" title="API reference for zone">zones </a>
+                    <br>
+                        <small>The zone is a collection of subnets attached to a domain. The zone concept enables the definition of policies for collections of subnets.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="zonetemplates" id="zonetemplates" href="zonetemplate.html" title="API reference for zonetemplate">zonetemplates </a>
+                    <br>
+                        <small>As in domains and subnets, zones are derived from templates. This object provides the definition of the template.</small>
+                </div>
+            </div>
                     </section>
                 
                 <section id="section-nsg">
                 <h3>nsg</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ssidconnections" id="ssidconnections" href="ssidconnection.html" title="API reference for ssidconnection">ssidconnections </a>
+                    <a class="filterable" data-filter-keyword="captiveportalprofiles" id="captiveportalprofiles" href="captiveportalprofile.html" title="API reference for captiveportalprofile">captiveportalprofiles </a>
                     <br>
-                        <small>An SSID Connection instance represents an SSID defined on a WiFi interface. One SSID Connection is required per SSID created on a WiFi Card/Port.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="lteinformations" id="lteinformations" href="lteinformation.html" title="API reference for lteinformation">lteinformations </a>
-                    <br>
-                        <small>Contains information about the LTE dongle plugged in USB port on NSG. This would have information like - Modem Manufacturer, Model Number, Subscriber Number, Operator etc. This information could vary from vendor to vendor.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="zfbrequests" id="zfbrequests" href="zfbrequest.html" title="API reference for zfbrequest">zfbrequests </a>
-                    <br>
-                        <small>Pending requests reflect Network Services Gateways that have initiated request for bootstrapping. Requests can be assigned or matched to continue the bootstrapping process</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="nsporttemplates" id="nsporttemplates" href="nsporttemplate.html" title="API reference for nsporttemplate">nsporttemplates </a>
-                    <br>
-                        <small>Represents Port Template object under a given gateway template object.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="shuntlinks" id="shuntlinks" href="shuntlink.html" title="API reference for shuntlink">shuntlinks </a>
-                    <br>
-                        <small>A shunt link represents an alliance of uplink interface resources between two NSGs belonging to a Redundant Group.  An operator specifies which network port-VLAN from each NSG peers to be considered as shunted together so that control uplinks from each NSG may be used by the other.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="portinfos" id="portinfos" href="portinfo.html" title="API reference for portinfo">portinfos </a>
-                    <br>
-                        <small>This API provides a list of monitoring ports and a list of configured ports for a NSG</small>
+                        <small>Object representing a Wireless Access Captive Portal Profile which can be associated with SSID entities from which end users may be presented with instructions and condition of use when connecting to an open wireless access point.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1210,23 +1176,16 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="lteinformations" id="lteinformations" href="lteinformation.html" title="API reference for lteinformation">lteinformations </a>
+                    <br>
+                        <small>Contains information about the LTE dongle plugged in USB port on NSG. This would have information like - Modem Manufacturer, Model Number, Subscriber Number, Operator etc. This information could vary from vendor to vendor.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="nsgateways" id="nsgateways" href="nsgateway.html" title="API reference for nsgateway">nsgateways </a>
                     <br>
                         <small>Network Services Gateways are a policy enforcement end-points responsible for the delivery of networking services. NSG access ports/VLANs may be attached to existing host or bridge VPorts.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="nsgatewaytemplates" id="nsgatewaytemplates" href="nsgatewaytemplate.html" title="API reference for nsgatewaytemplate">nsgatewaytemplates </a>
-                    <br>
-                        <small>Represents a Network Service Gateway Template.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="zfbautoassignments" id="zfbautoassignments" href="zfbautoassignment.html" title="API reference for zfbautoassignment">zfbautoassignments </a>
-                    <br>
-                        <small>Pre-created matching criteria that allows CSPRoot to auto-assign incoming auto-bootstrapping requests to an Enterprise should a match occur.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1238,27 +1197,6 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="nsgatewayssummaries" id="nsgatewayssummaries" href="nsgatewayssummary.html" title="API reference for nsgatewayssummary">nsgatewayssummaries </a>
-                    <br>
-                        <small>Summary information such as alarm counts, location, version, boostrap status for Network Services Gateway</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="nsgredundancygroups" id="nsgredundancygroups" href="nsgredundancygroup.html" title="API reference for nsgredundancygroup">nsgredundancygroups </a>
-                    <br>
-                        <small>Represents Redundant Group formed by two VNS Gateways.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="captiveportalprofiles" id="captiveportalprofiles" href="captiveportalprofile.html" title="API reference for captiveportalprofile">captiveportalprofiles </a>
-                    <br>
-                        <small>Object representing a Wireless Access Captive Portal Profile which can be associated with SSID entities from which end users may be presented with instructions and condition of use when connecting to an open wireless access point.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="nsgatewaysmonitors" id="nsgatewaysmonitors" href="nsgatewaysmonitor.html" title="API reference for nsgatewaysmonitor">nsgatewaysmonitors </a>
                     <br>
                         <small>This API can be used to gather read-only information about an NSG, including information on its state, system metrics, alarm counts, location and version. It is a single view of the full data available for an NSG.</small>
@@ -1266,9 +1204,16 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="wirelessports" id="wirelessports" href="wirelessport.html" title="API reference for wirelessport">wirelessports </a>
+                    <a class="filterable" data-filter-keyword="nsgatewayssummaries" id="nsgatewayssummaries" href="nsgatewayssummary.html" title="API reference for nsgatewayssummary">nsgatewayssummaries </a>
                     <br>
-                        <small>Represents a Wireless (WiFi) interface configured on a Network Service Gateway (NSG) instance. The WirelessPort instance may map to a physical WiFi card or a WiFi port.</small>
+                        <small>Summary information such as alarm counts, location, version, boostrap status for Network Services Gateway</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="nsgatewaytemplates" id="nsgatewaytemplates" href="nsgatewaytemplate.html" title="API reference for nsgatewaytemplate">nsgatewaytemplates </a>
+                    <br>
+                        <small>Represents a Network Service Gateway Template.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1280,9 +1225,65 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="nsgredundancygroups" id="nsgredundancygroups" href="nsgredundancygroup.html" title="API reference for nsgredundancygroup">nsgredundancygroups </a>
+                    <br>
+                        <small>Represents Redundant Group formed by two VNS Gateways.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="nsports" id="nsports" href="nsport.html" title="API reference for nsport">nsports </a>
                     <br>
                         <small>Represents a Port of a particular NS Gateway object.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="nsporttemplates" id="nsporttemplates" href="nsporttemplate.html" title="API reference for nsporttemplate">nsporttemplates </a>
+                    <br>
+                        <small>Represents Port Template object under a given gateway template object.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="portinfos" id="portinfos" href="portinfo.html" title="API reference for portinfo">portinfos </a>
+                    <br>
+                        <small>This API provides a list of monitoring ports and a list of configured ports for a NSG</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="shuntlinks" id="shuntlinks" href="shuntlink.html" title="API reference for shuntlink">shuntlinks </a>
+                    <br>
+                        <small>A shunt link represents an alliance of uplink interface resources between two NSGs belonging to a Redundant Group.  An operator specifies which network port-VLAN from each NSG peers to be considered as shunted together so that control uplinks from each NSG may be used by the other.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ssidconnections" id="ssidconnections" href="ssidconnection.html" title="API reference for ssidconnection">ssidconnections </a>
+                    <br>
+                        <small>An SSID Connection instance represents an SSID defined on a WiFi interface. One SSID Connection is required per SSID created on a WiFi Card/Port.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="wirelessports" id="wirelessports" href="wirelessport.html" title="API reference for wirelessport">wirelessports </a>
+                    <br>
+                        <small>Represents a Wireless (WiFi) interface configured on a Network Service Gateway (NSG) instance. The WirelessPort instance may map to a physical WiFi card or a WiFi port.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="zfbautoassignments" id="zfbautoassignments" href="zfbautoassignment.html" title="API reference for zfbautoassignment">zfbautoassignments </a>
+                    <br>
+                        <small>Pre-created matching criteria that allows CSPRoot to auto-assign incoming auto-bootstrapping requests to an Enterprise should a match occur.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="zfbrequests" id="zfbrequests" href="zfbrequest.html" title="API reference for zfbrequest">zfbrequests </a>
+                    <br>
+                        <small>Pending requests reflect Network Services Gateways that have initiated request for bootstrapping. Requests can be assigned or matched to continue the bootstrapping process</small>
                 </div>
             </div>
                     </section>
@@ -1302,13 +1303,6 @@
                 <h3>perfrouting</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="applications" id="applications" href="application.html" title="API reference for application">applications </a>
-                    <br>
-                        <small>represents a application with L4/L7 classification</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="applicationbindings" id="applicationbindings" href="applicationbinding.html" title="API reference for applicationbinding">applicationbindings </a>
                     <br>
                         <small>Association of Applications in a priority order to an Application Performance Management Group. Priorities may be explicitly defined or auto-generated. Applications with higher priorities (lower numeric values) are evaluated first when classifying traffic.</small>
@@ -1316,9 +1310,9 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="networkperformancebindings" id="networkperformancebindings" href="networkperformancebinding.html" title="API reference for networkperformancebinding">networkperformancebindings </a>
+                    <a class="filterable" data-filter-keyword="applicationperformancemanagementbindings" id="applicationperformancemanagementbindings" href="applicationperformancemanagementbinding.html" title="API reference for applicationperformancemanagementbinding">applicationperformancemanagementbindings </a>
                     <br>
-                        <small>Association of Network Performance Measurement policies enable the measurement of path SLA metrics between NSGs in the domain.</small>
+                        <small>Association object for maintaining the priority of AppliationGroup(s) associated to a Domain</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1330,9 +1324,23 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="applications" id="applications" href="application.html" title="API reference for application">applications </a>
+                    <br>
+                        <small>represents a application with L4/L7 classification</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="l7applicationsignatures" id="l7applicationsignatures" href="l7applicationsignature.html" title="API reference for l7applicationsignature">l7applicationsignatures </a>
                     <br>
                         <small>Layer 7 ApplicationType , these are auto created as part of VSD bringup</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="networkperformancebindings" id="networkperformancebindings" href="networkperformancebinding.html" title="API reference for networkperformancebinding">networkperformancebindings </a>
+                    <br>
+                        <small>Association of Network Performance Measurement policies enable the measurement of path SLA metrics between NSGs in the domain.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1342,71 +1350,22 @@
                         <small>To enable the network performance monitoring between NSGs in an NSG Group and NSG-UBRs in an NSG-UBR Group. </small>
                 </div>
             </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="applicationperformancemanagementbindings" id="applicationperformancemanagementbindings" href="applicationperformancemanagementbinding.html" title="API reference for applicationperformancemanagementbinding">applicationperformancemanagementbindings </a>
-                    <br>
-                        <small>Association object for maintaining the priority of AppliationGroup(s) associated to a Domain</small>
-                </div>
-            </div>
                     </section>
                 
                 <section id="section-policy">
                 <h3>policy</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="dscpforwardingclasstables" id="dscpforwardingclasstables" href="dscpforwardingclasstable.html" title="API reference for dscpforwardingclasstable">dscpforwardingclasstables </a>
-                    <br>
-                        <small>DSCP Mapping Tables define a list of mappings from customer's DSCP markings to Forwarding Classes. They can be referenced in QoS policies.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="l4servicegroups" id="l4servicegroups" href="l4servicegroup.html" title="API reference for l4servicegroup">l4servicegroups </a>
-                    <br>
-                        <small>Service Group is a set of Services that can be used in ACLs.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="saasapplicationtypes" id="saasapplicationtypes" href="saasapplicationtype.html" title="API reference for saasapplicationtype">saasapplicationtypes </a>
-                    <br>
-                        <small>SaaS applications like office365 with the published list of IPs and/or URLs for creating firewall rules for IT admins.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="forwardingpathlists" id="forwardingpathlists" href="forwardingpathlist.html" title="API reference for forwardingpathlist">forwardingpathlists </a>
-                    <br>
-                        <small>Forwarding path list is l4 based policy to PAT / IKE to underlay.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="forwardingpathlistentries" id="forwardingpathlistentries" href="forwardingpathlistentry.html" title="API reference for forwardingpathlistentry">forwardingpathlistentries </a>
-                    <br>
-                        <small>Forwarding path list entry to be associated with forwarding path list for l4 based policy to PAT / IKE to underlay.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="egressdomainfloatingipacltemplates" id="egressdomainfloatingipacltemplates" href="egressdomainfloatingipacltemplate.html" title="API reference for egressdomainfloatingipacltemplate">egressdomainfloatingipacltemplates </a>
-                    <br>
-                        <small>Defines the template for an Domain Floating IP ACL</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="l4services" id="l4services" href="l4service.html" title="API reference for l4service">l4services </a>
-                    <br>
-                        <small>Service is a port range and protocol combination that can be used in ACLs</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="dscpforwardingclassmappings" id="dscpforwardingclassmappings" href="dscpforwardingclassmapping.html" title="API reference for dscpforwardingclassmapping">dscpforwardingclassmappings </a>
                     <br>
                         <small>Provides the definition of a single DSCP to a Forwarding class mapping that is part of a Table used in QoS policies.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="dscpforwardingclasstables" id="dscpforwardingclasstables" href="dscpforwardingclasstable.html" title="API reference for dscpforwardingclasstable">dscpforwardingclasstables </a>
+                    <br>
+                        <small>DSCP Mapping Tables define a list of mappings from customer's DSCP markings to Forwarding Classes. They can be referenced in QoS policies.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1418,9 +1377,51 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="egressdomainfloatingipacltemplates" id="egressdomainfloatingipacltemplates" href="egressdomainfloatingipacltemplate.html" title="API reference for egressdomainfloatingipacltemplate">egressdomainfloatingipacltemplates </a>
+                    <br>
+                        <small>Defines the template for an Domain Floating IP ACL</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="forwardingpathlistentries" id="forwardingpathlistentries" href="forwardingpathlistentry.html" title="API reference for forwardingpathlistentry">forwardingpathlistentries </a>
+                    <br>
+                        <small>Forwarding path list entry to be associated with forwarding path list for l4 based policy to PAT / IKE to underlay.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="forwardingpathlists" id="forwardingpathlists" href="forwardingpathlist.html" title="API reference for forwardingpathlist">forwardingpathlists </a>
+                    <br>
+                        <small>Forwarding path list is l4 based policy to PAT / IKE to underlay.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="l4servicegroups" id="l4servicegroups" href="l4servicegroup.html" title="API reference for l4servicegroup">l4servicegroups </a>
+                    <br>
+                        <small>Service Group is a set of Services that can be used in ACLs.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="l4services" id="l4services" href="l4service.html" title="API reference for l4service">l4services </a>
+                    <br>
+                        <small>Service is a port range and protocol combination that can be used in ACLs</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="policydecisions" id="policydecisions" href="policydecision.html" title="API reference for policydecision">policydecisions </a>
                     <br>
                         <small>This object is a read only object that provides the policy decisions for a particular VM interface.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="saasapplicationtypes" id="saasapplicationtypes" href="saasapplicationtype.html" title="API reference for saasapplicationtype">saasapplicationtypes </a>
+                    <br>
+                        <small>SaaS applications like office365 with the published list of IPs and/or URLs for creating firewall rules for IT admins.</small>
                 </div>
             </div>
                     </section>
@@ -1429,42 +1430,7 @@
                 <h3>policy/acl</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ingressadvfwdentrytemplates" id="ingressadvfwdentrytemplates" href="ingressadvfwdentrytemplate.html" title="API reference for ingressadvfwdentrytemplate">ingressadvfwdentrytemplates </a>
-                    <br>
-                        <small>Security Policy Entries defines what action to take for a particular type of traffic, based on its origin and its destination, its protocol, EtherType, eventual ports, DSCP value and other information.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="egressadvfwdentrytemplates" id="egressadvfwdentrytemplates" href="egressadvfwdentrytemplate.html" title="API reference for egressadvfwdentrytemplate">egressadvfwdentrytemplates </a>
-                    <br>
-                        <small>Egress forwarding policy rules define what action to take for a particular type of traffic, based on its origin, destination, protocol, EtherType, ports, DSCP value and other information. Supported actions are to redirect traffic, change the forwarding class of the traffic or to allow traffic to pass untouched.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="egressaclentrytemplates" id="egressaclentrytemplates" href="egressaclentrytemplate.html" title="API reference for egressaclentrytemplate">egressaclentrytemplates </a>
-                    <br>
-                        <small>Security Policy Entries defines what action to take for a particular type of traffic, based on its origin and its destination, its protocol, EtherType, eventual ports, DSCP value and other information.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="egressadvfwdtemplates" id="egressadvfwdtemplates" href="egressadvfwdtemplate.html" title="API reference for egressadvfwdtemplate">egressadvfwdtemplates </a>
-                    <br>
-                        <small>Create a table for egress forwarding policy rules. These include flow redirect rules and forwarding class override rules.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ingressadvfwdtemplates" id="ingressadvfwdtemplates" href="ingressadvfwdtemplate.html" title="API reference for ingressadvfwdtemplate">ingressadvfwdtemplates </a>
-                    <br>
-                        <small>Create a table for ingress forwarding policy rules. These include flow redirect rules and forwarding class override rules.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ingressaclentrytemplates" id="ingressaclentrytemplates" href="ingressaclentrytemplate.html" title="API reference for ingressaclentrytemplate">ingressaclentrytemplates </a>
                     <br>
                         <small>Security Policy Entries defines what action to take for a particular type of traffic, based on its origin and its destination, its protocol, EtherType, eventual ports, DSCP value and other information.</small>
                 </div>
@@ -1478,9 +1444,44 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="egressadvfwdentrytemplates" id="egressadvfwdentrytemplates" href="egressadvfwdentrytemplate.html" title="API reference for egressadvfwdentrytemplate">egressadvfwdentrytemplates </a>
+                    <br>
+                        <small>Egress forwarding policy rules define what action to take for a particular type of traffic, based on its origin, destination, protocol, EtherType, ports, DSCP value and other information. Supported actions are to redirect traffic, change the forwarding class of the traffic or to allow traffic to pass untouched.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="egressadvfwdtemplates" id="egressadvfwdtemplates" href="egressadvfwdtemplate.html" title="API reference for egressadvfwdtemplate">egressadvfwdtemplates </a>
+                    <br>
+                        <small>Create a table for egress forwarding policy rules. These include flow redirect rules and forwarding class override rules.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ingressaclentrytemplates" id="ingressaclentrytemplates" href="ingressaclentrytemplate.html" title="API reference for ingressaclentrytemplate">ingressaclentrytemplates </a>
+                    <br>
+                        <small>Security Policy Entries defines what action to take for a particular type of traffic, based on its origin and its destination, its protocol, EtherType, eventual ports, DSCP value and other information.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="ingressacltemplates" id="ingressacltemplates" href="ingressacltemplate.html" title="API reference for ingressacltemplate">ingressacltemplates </a>
                     <br>
                         <small>An ingress security policy is a set of rules defining how network traffic is treated within a domain. Ingress Security Policies control traffic flowing into the network.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ingressadvfwdentrytemplates" id="ingressadvfwdentrytemplates" href="ingressadvfwdentrytemplate.html" title="API reference for ingressadvfwdentrytemplate">ingressadvfwdentrytemplates </a>
+                    <br>
+                        <small>Security Policy Entries defines what action to take for a particular type of traffic, based on its origin and its destination, its protocol, EtherType, eventual ports, DSCP value and other information.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ingressadvfwdtemplates" id="ingressadvfwdtemplates" href="ingressadvfwdtemplate.html" title="API reference for ingressadvfwdtemplate">ingressadvfwdtemplates </a>
+                    <br>
+                        <small>Create a table for ingress forwarding policy rules. These include flow redirect rules and forwarding class override rules.</small>
                 </div>
             </div>
                     </section>
@@ -1492,6 +1493,13 @@
                     <a class="filterable" data-filter-keyword="cosremarkingpolicies" id="cosremarkingpolicies" href="cosremarkingpolicy.html" title="API reference for cosremarkingpolicy">cosremarkingpolicies </a>
                     <br>
                         <small>Provides the definition of a single Forwarding class to CoS mapping that is part of a COS Remarking Policy Table used in QoS policies.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="cosremarkingpolicytables" id="cosremarkingpolicytables" href="cosremarkingpolicytable.html" title="API reference for cosremarkingpolicytable">cosremarkingpolicytables </a>
+                    <br>
+                        <small>Provides the definition of a table that holds multiple FC to Dot1p mappings . Used in Egress QoS policies.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1508,29 +1516,15 @@
                         <small>Provides the definition of a table that holds multiple Forwarding class to  DSCP  mappings. Used in Egress QoS policies.</small>
                 </div>
             </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="cosremarkingpolicytables" id="cosremarkingpolicytables" href="cosremarkingpolicytable.html" title="API reference for cosremarkingpolicytable">cosremarkingpolicytables </a>
-                    <br>
-                        <small>Provides the definition of a table that holds multiple FC to Dot1p mappings . Used in Egress QoS policies.</small>
-                </div>
-            </div>
                     </section>
                 
                 <section id="section-policy/qos">
                 <h3>policy/qos</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="qos" id="qos" href="qos.html" title="API reference for qos">qos </a>
+                    <a class="filterable" data-filter-keyword="egressqospolicies" id="egressqospolicies" href="egressqospolicy.html" title="API reference for egressqospolicy">egressqospolicies </a>
                     <br>
-                        <small>QoS policies enable you to classify and limit network traffic.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ratelimiters" id="ratelimiters" href="ratelimiter.html" title="API reference for ratelimiter">ratelimiters </a>
-                    <br>
-                        <small>Set of traffic management parameters describing a desired traffic profile. Rate-limiters are used by QoS policies to enforce per Class of Server rate-conformance.</small>
+                        <small>An Egress QoS Policy is a policy that groups rate-limiting profiles, traffic directionality and classifiers to govern the rate of traffic being sent or received by an end-host or application.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1542,6 +1536,13 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="qos" id="qos" href="qos.html" title="API reference for qos">qos </a>
+                    <br>
+                        <small>QoS policies enable you to classify and limit network traffic.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="qospolicers" id="qospolicers" href="qospolicer.html" title="API reference for qospolicer">qospolicers </a>
                     <br>
                         <small>QoS Policer ensures that traffic adheres to the stipulated QoS defined in your network. Contains Rate and Burst configurations and can be associated to VLANs.</small>
@@ -1549,9 +1550,9 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="egressqospolicies" id="egressqospolicies" href="egressqospolicy.html" title="API reference for egressqospolicy">egressqospolicies </a>
+                    <a class="filterable" data-filter-keyword="ratelimiters" id="ratelimiters" href="ratelimiter.html" title="API reference for ratelimiter">ratelimiters </a>
                     <br>
-                        <small>An Egress QoS Policy is a policy that groups rate-limiting profiles, traffic directionality and classifiers to govern the rate of traffic being sent or received by an end-host or application.</small>
+                        <small>Set of traffic management parameters describing a desired traffic profile. Rate-limiters are used by QoS policies to enforce per Class of Server rate-conformance.</small>
                 </div>
             </div>
                     </section>
@@ -1560,43 +1561,22 @@
                 <h3>policy/urlfiltering</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="tiers" id="tiers" href="tier.html" title="API reference for tier">tiers </a>
+                    <a class="filterable" data-filter-keyword="destinationurls" id="destinationurls" href="destinationurl.html" title="API reference for destinationurl">destinationurls </a>
                     <br>
-                        <small>When the customer creates an HTTP probe, VSD will automatically create Tier1 and Tier2 under it with default properties.</small>
+                        <small>destination URL under tier</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="destinationurls" id="destinationurls" href="destinationurl.html" title="API reference for destinationurl">destinationurls </a>
+                    <a class="filterable" data-filter-keyword="tiers" id="tiers" href="tier.html" title="API reference for tier">tiers </a>
                     <br>
-                        <small>destination URL under tier</small>
+                        <small>When the customer creates an HTTP probe, VSD will automatically create Tier1 and Tier2 under it with default properties.</small>
                 </div>
             </div>
                     </section>
                 
                 <section id="section-stats">
                 <h3>stats</h3>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="tcas" id="tcas" href="tca.html" title="API reference for tca">tcas </a>
-                    <br>
-                        <small>Provides the definition of the Threshold Control Alarms.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="statisticspolicies" id="statisticspolicies" href="statisticspolicy.html" title="API reference for statisticspolicy">statisticspolicies </a>
-                    <br>
-                        <small>Defines the frequency of statistics collection associated with an object.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="statistics" id="statistics" href="statistics.html" title="API reference for statistics">statistics </a>
-                    <br>
-                        <small>Retrieves the statistics for a particular domain, zone, subnet, or VM.</small>
-                </div>
-            </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="bulkstatistics" id="bulkstatistics" href="bulkstatistics.html" title="API reference for bulkstatistics">bulkstatistics </a>
@@ -1613,9 +1593,30 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="statistics" id="statistics" href="statistics.html" title="API reference for statistics">statistics </a>
+                    <br>
+                        <small>Retrieves the statistics for a particular domain, zone, subnet, or VM.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="statisticscollector" id="statisticscollector" href="statisticscollector.html" title="API reference for statisticscollector">statisticscollector </a>
                     <br>
                         <small>Identifies the IP address of the stats collector entity that must be used.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="statisticspolicies" id="statisticspolicies" href="statisticspolicy.html" title="API reference for statisticspolicy">statisticspolicies </a>
+                    <br>
+                        <small>Defines the frequency of statistics collection associated with an object.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="tcas" id="tcas" href="tca.html" title="API reference for tca">tcas </a>
+                    <br>
+                        <small>Provides the definition of the Threshold Control Alarms.</small>
                 </div>
             </div>
                     </section>
@@ -1638,44 +1639,9 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vsps" id="vsps" href="vsp.html" title="API reference for vsp">vsps </a>
-                    <br>
-                        <small>System Monitoring details for VSP.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vscs" id="vscs" href="vsc.html" title="API reference for vsc">vscs </a>
-                    <br>
-                        <small>System Monitoring details for VSC.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vrss" id="vrss" href="vrs.html" title="API reference for vrs">vrss </a>
-                    <br>
-                        <small>System Monitoring details for VRS connected to VSC or HSC</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="hscs" id="hscs" href="hsc.html" title="API reference for hsc">hscs </a>
                     <br>
                         <small>System Monitoring details for hardware service controllers.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="multinicvports" id="multinicvports" href="multinicvport.html" title="API reference for multinicvport">multinicvports </a>
-                    <br>
-                        <small>Encapsulates the Multi NIC VPort information for system monitoring entity.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vsds" id="vsds" href="vsd.html" title="API reference for vsd">vsds </a>
-                    <br>
-                        <small>System Monitoring details for VSD. This is deprecated and no longer provided through the Nuage API. This information can now be gathered through the Monit API.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1690,6 +1656,41 @@
                     <a class="filterable" data-filter-keyword="monitorscopes" id="monitorscopes" href="monitorscope.html" title="API reference for monitorscope">monitorscopes </a>
                     <br>
                         <small>Monitoring Scope bound Performance monitors to either ALL or a sub-set of NSGs. Scope is defined by selecting NSGs that should execute Performance Monitors. </small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="multinicvports" id="multinicvports" href="multinicvport.html" title="API reference for multinicvport">multinicvports </a>
+                    <br>
+                        <small>Encapsulates the Multi NIC VPort information for system monitoring entity.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vrss" id="vrss" href="vrs.html" title="API reference for vrs">vrss </a>
+                    <br>
+                        <small>System Monitoring details for VRS connected to VSC or HSC</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vscs" id="vscs" href="vsc.html" title="API reference for vsc">vscs </a>
+                    <br>
+                        <small>System Monitoring details for VSC.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vsds" id="vsds" href="vsd.html" title="API reference for vsd">vsds </a>
+                    <br>
+                        <small>System Monitoring details for VSD. This is deprecated and no longer provided through the Nuage API. This information can now be gathered through the Monit API.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vsps" id="vsps" href="vsp.html" title="API reference for vsp">vsps </a>
+                    <br>
+                        <small>System Monitoring details for VSP.</small>
                 </div>
             </div>
                     </section>
@@ -1709,51 +1710,9 @@
                 <h3>usermgmt</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="permissions" id="permissions" href="permission.html" title="API reference for permission">permissions </a>
-                    <br>
-                        <small>User groups that are granted permissions for objects such as domains, zones, and subnets can see and manipulate everything within the object.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="me" id="me" href="me.html" title="API reference for me">me </a>
-                    <br>
-                        <small>Object that identifies the user functions</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="avatars" id="avatars" href="avatar.html" title="API reference for avatar">avatars </a>
                     <br>
                         <small>Avatar</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="ldapconfigurations" id="ldapconfigurations" href="ldapconfiguration.html" title="API reference for ldapconfiguration">ldapconfigurations </a>
-                    <br>
-                        <small>Configuration of LDAP parameters associated with an enterprise. This will enable authentication through an external LDAP server for this enterprise.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="users" id="users" href="user.html" title="API reference for user">users </a>
-                    <br>
-                        <small>Users represent people of your organization. A user can be placed into a group and this group can have some permissions to add VMs into a domain for instance.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="groups" id="groups" href="group.html" title="API reference for group">groups </a>
-                    <br>
-                        <small>Identifies a group within an enterprise</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="usercontexts" id="usercontexts" href="usercontext.html" title="API reference for usercontext">usercontexts </a>
-                    <br>
-                        <small>This defines a proxy class to expose some of the configuration parameters which are required by UI</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1770,22 +1729,64 @@
                         <small>Definition of the enterprise object. This is the top level object that represents an enterprise.</small>
                 </div>
             </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="groups" id="groups" href="group.html" title="API reference for group">groups </a>
+                    <br>
+                        <small>Identifies a group within an enterprise</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="ldapconfigurations" id="ldapconfigurations" href="ldapconfiguration.html" title="API reference for ldapconfiguration">ldapconfigurations </a>
+                    <br>
+                        <small>Configuration of LDAP parameters associated with an enterprise. This will enable authentication through an external LDAP server for this enterprise.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="me" id="me" href="me.html" title="API reference for me">me </a>
+                    <br>
+                        <small>Object that identifies the user functions</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="permissions" id="permissions" href="permission.html" title="API reference for permission">permissions </a>
+                    <br>
+                        <small>User groups that are granted permissions for objects such as domains, zones, and subnets can see and manipulate everything within the object.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="usercontexts" id="usercontexts" href="usercontext.html" title="API reference for usercontext">usercontexts </a>
+                    <br>
+                        <small>This defines a proxy class to expose some of the configuration parameters which are required by UI</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="users" id="users" href="user.html" title="API reference for user">users </a>
+                    <br>
+                        <small>Users represent people of your organization. A user can be placed into a group and this group can have some permissions to add VMs into a domain for instance.</small>
+                </div>
+            </div>
                     </section>
                 
                 <section id="section-virtualfirewall">
                 <h3>virtualfirewall</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="virtualfirewallrules" id="virtualfirewallrules" href="virtualfirewallrule.html" title="API reference for virtualfirewallrule">virtualfirewallrules </a>
+                    <a class="filterable" data-filter-keyword="virtualfirewallpolicies" id="virtualfirewallpolicies" href="virtualfirewallpolicy.html" title="API reference for virtualfirewallpolicy">virtualfirewallpolicies </a>
                     <br>
-                        <small>Virtual firewall rules define intent based security policy entries to control traffic between source/destinations in the network. Virtual firewall rules are inherently stateful and are enforced as Ingress/Egress stateful ACLs in Nuage policy enforcement points</small>
+                        <small>Defines the template for a Virtual Firewall Policy that helps to group a set of rules either based on functions or actions </small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="virtualfirewallpolicies" id="virtualfirewallpolicies" href="virtualfirewallpolicy.html" title="API reference for virtualfirewallpolicy">virtualfirewallpolicies </a>
+                    <a class="filterable" data-filter-keyword="virtualfirewallrules" id="virtualfirewallrules" href="virtualfirewallrule.html" title="API reference for virtualfirewallrule">virtualfirewallrules </a>
                     <br>
-                        <small>Defines the template for a Virtual Firewall Policy that helps to group a set of rules either based on functions or actions </small>
+                        <small>Virtual firewall rules define intent based security policy entries to control traffic between source/destinations in the network. Virtual firewall rules are inherently stateful and are enforced as Ingress/Egress stateful ACLs in Nuage policy enforcement points</small>
                 </div>
             </div>
                     </section>
@@ -1797,6 +1798,13 @@
                     <a class="filterable" data-filter-keyword="diskstats" id="diskstats" href="diskstat.html" title="API reference for diskstat">diskstats </a>
                     <br>
                         <small>Encapsulates the disk usage metrics for system monitor entity.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="resync" id="resync" href="resync.html" title="API reference for resync">resync </a>
+                    <br>
+                        <small>Provide information about the state of a VM resync request.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1813,73 +1821,10 @@
                         <small>API that can retrieve the VMs associated with a domain, zone or subnet for mediation created VM's for REST created  VM's you need to set the additional proxy user header in http request : X-Nuage-ProxyUservalue of the header has to be either :1) enterpriseName@UserName (example : Alcatel Lucent@bob), or 2) external ID of user in VSD, typically is UUID generally decided by the CMS tool in questionUser needs to have CMS privileges to use proxy user header.</small>
                 </div>
             </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="resync" id="resync" href="resync.html" title="API reference for resync">resync </a>
-                    <br>
-                        <small>Provide information about the state of a VM resync request.</small>
-                </div>
-            </div>
                     </section>
                 
                 <section id="section-vmware">
                 <h3>vmware</h3>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="eamconfigs" id="eamconfigs" href="eamconfig.html" title="API reference for eamconfig">eamconfigs </a>
-                    <br>
-                        <small>The EAM solution configuration.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vrsconfigs" id="vrsconfigs" href="vrsconfig.html" title="API reference for vrsconfig">vrsconfigs </a>
-                    <br>
-                        <small>Default VRS Configuration parameters</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vrsmetrics" id="vrsmetrics" href="vrsmetrics.html" title="API reference for vrsmetrics">vrsmetrics </a>
-                    <br>
-                        <small>No description available</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vcenterclusters" id="vcenterclusters" href="vcentercluster.html" title="API reference for vcentercluster">vcenterclusters </a>
-                    <br>
-                        <small>VCenter Clusters.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vcenterhypervisors" id="vcenterhypervisors" href="vcenterhypervisor.html" title="API reference for vcenterhypervisor">vcenterhypervisors </a>
-                    <br>
-                        <small>Host or Hypervisors.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vcenterdatacenters" id="vcenterdatacenters" href="vcenterdatacenter.html" title="API reference for vcenterdatacenter">vcenterdatacenters </a>
-                    <br>
-                        <small>VCenter DataCenters.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vrsredeploymentpolicies" id="vrsredeploymentpolicies" href="vrsredeploymentpolicy.html" title="API reference for vrsredeploymentpolicy">vrsredeploymentpolicies </a>
-                    <br>
-                        <small>No description available</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vcenters" id="vcenters" href="vcenter.html" title="API reference for vcenter">vcenters </a>
-                    <br>
-                        <small>Represents a VCenter.</small>
-                </div>
-            </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="autodiscoveredclusters" id="autodiscoveredclusters" href="autodiscoveredcluster.html" title="API reference for autodiscoveredcluster">autodiscoveredclusters </a>
@@ -1903,9 +1848,65 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="eamconfigs" id="eamconfigs" href="eamconfig.html" title="API reference for eamconfig">eamconfigs </a>
+                    <br>
+                        <small>The EAM solution configuration.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vcenterclusters" id="vcenterclusters" href="vcentercluster.html" title="API reference for vcentercluster">vcenterclusters </a>
+                    <br>
+                        <small>VCenter Clusters.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vcenterdatacenters" id="vcenterdatacenters" href="vcenterdatacenter.html" title="API reference for vcenterdatacenter">vcenterdatacenters </a>
+                    <br>
+                        <small>VCenter DataCenters.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vcenterhypervisors" id="vcenterhypervisors" href="vcenterhypervisor.html" title="API reference for vcenterhypervisor">vcenterhypervisors </a>
+                    <br>
+                        <small>Host or Hypervisors.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vcenters" id="vcenters" href="vcenter.html" title="API reference for vcenter">vcenters </a>
+                    <br>
+                        <small>Represents a VCenter.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="vrsaddressranges" id="vrsaddressranges" href="vrsaddressrange.html" title="API reference for vrsaddressrange">vrsaddressranges </a>
                     <br>
                         <small>This is the definition of a Address Range associated with a VRS.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vrsconfigs" id="vrsconfigs" href="vrsconfig.html" title="API reference for vrsconfig">vrsconfigs </a>
+                    <br>
+                        <small>Default VRS Configuration parameters</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vrsmetrics" id="vrsmetrics" href="vrsmetrics.html" title="API reference for vrsmetrics">vrsmetrics </a>
+                    <br>
+                        <small>No description available</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vrsredeploymentpolicies" id="vrsredeploymentpolicies" href="vrsredeploymentpolicy.html" title="API reference for vrsredeploymentpolicy">vrsredeploymentpolicies </a>
+                    <br>
+                        <small>No description available</small>
                 </div>
             </div>
                     </section>
@@ -1914,16 +1915,16 @@
                 <h3>vnf</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vnfdescriptors" id="vnfdescriptors" href="vnfdescriptor.html" title="API reference for vnfdescriptor">vnfdescriptors </a>
+                    <a class="filterable" data-filter-keyword="vnfcatalogs" id="vnfcatalogs" href="vnfcatalog.html" title="API reference for vnfcatalog">vnfcatalogs </a>
                     <br>
-                        <small>The behavioral and deployment information of a VNF is defined in the VNF descriptor template. The template is based on the libvirt domain XML and is on-boarded in a VNF catalog. The resource requirements for CPU, memory and storage are defined in this screen and the rest of the template is inherited from the VNF Metadata object.</small>
+                        <small>Represents VNF Catalog</small>
                 </div>
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vnfinterfaces" id="vnfinterfaces" href="vnfinterface.html" title="API reference for vnfinterface">vnfinterfaces </a>
+                    <a class="filterable" data-filter-keyword="vnfdescriptors" id="vnfdescriptors" href="vnfdescriptor.html" title="API reference for vnfdescriptor">vnfdescriptors </a>
                     <br>
-                        <small>Represent VNF interface, This can not be created directly, it will be generated from VNF Interface Descriptor when VNF instance is created.</small>
+                        <small>The behavioral and deployment information of a VNF is defined in the VNF descriptor template. The template is based on the libvirt domain XML and is on-boarded in a VNF catalog. The resource requirements for CPU, memory and storage are defined in this screen and the rest of the template is inherited from the VNF Metadata object.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1942,16 +1943,9 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vnfthresholdpolicies" id="vnfthresholdpolicies" href="vnfthresholdpolicy.html" title="API reference for vnfthresholdpolicy">vnfthresholdpolicies </a>
+                    <a class="filterable" data-filter-keyword="vnfinterfaces" id="vnfinterfaces" href="vnfinterface.html" title="API reference for vnfinterface">vnfinterfaces </a>
                     <br>
-                        <small>VNF Threshold Policy represents thresholds for resources consumed by VNF instance running on NS Gateway and action to be taken when resource utilization crosses configured thresholds.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vnfcatalogs" id="vnfcatalogs" href="vnfcatalog.html" title="API reference for vnfcatalog">vnfcatalogs </a>
-                    <br>
-                        <small>Represents VNF Catalog</small>
+                        <small>Represent VNF interface, This can not be created directly, it will be generated from VNF Interface Descriptor when VNF instance is created.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -1968,64 +1962,22 @@
                         <small>Instantiation of a VNF on a specified Network Services Gateway that has the resources to manage a VNF.</small>
                 </div>
             </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vnfthresholdpolicies" id="vnfthresholdpolicies" href="vnfthresholdpolicy.html" title="API reference for vnfthresholdpolicy">vnfthresholdpolicies </a>
+                    <br>
+                        <small>VNF Threshold Policy represents thresholds for resources consumed by VNF instance running on NS Gateway and action to be taken when resource utilization crosses configured thresholds.</small>
+                </div>
+            </div>
                     </section>
                 
                 <section id="section-vport">
                 <h3>vport</h3>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="overlaymirrordestinations" id="overlaymirrordestinations" href="overlaymirrordestination.html" title="API reference for overlaymirrordestination">overlaymirrordestinations </a>
+                    <a class="filterable" data-filter-keyword="brconnections" id="brconnections" href="brconnection.html" title="API reference for brconnection">brconnections </a>
                     <br>
-                        <small>Overlay mirror destinations are pointed to by advanced forwarding policies as the destination for redirected traffic. Targets can be of two types, L3 or virtual wire. For L3 targets a virtual IP should be provided as it allows the system to track among which of the end-points belonging to the overlay mirror destination is the active one. For this type of redirect the packet's destination MAC address is changed to match that of the Virtual IP. For virtual-wire redirection targets, the packets are untouched and forwarded directly to the end-point.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="virtualips" id="virtualips" href="virtualip.html" title="API reference for virtualip">virtualips </a>
-                    <br>
-                        <small>Virtual IPs are IP addresses owned by one or more vports that can move among those vports. VSP will track the owner of a virtual IP and steer traffic accordingly. Virtual IPs can be used as next-hops for static routes and other re-direction purposes.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="redirectiontargettemplates" id="redirectiontargettemplates" href="redirectiontargettemplate.html" title="API reference for redirectiontargettemplate">redirectiontargettemplates </a>
-                    <br>
-                        <small>Template for a vporttag. It can be created only at the template level and available for all instances.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="redirectiontargets" id="redirectiontargets" href="redirectiontarget.html" title="API reference for redirectiontarget">redirectiontargets </a>
-                    <br>
-                        <small>Redirection targets are pointed to by advanced forwarding policies as the destination for redirected traffic. Targets can be of two types, L3 or virtual wire. For L3 targets a virtual IP should be provided as it allows the system to track among which of the end-points belonging to the redirection target is the active one. For this type of redirect the packet's destination MAC address is changed to match that of the Virtual IP. For virtual-wire redirection targets, the packets are untouched and forwarded directly to the end-point.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="mirrordestinations" id="mirrordestinations" href="mirrordestination.html" title="API reference for mirrordestination">mirrordestinations </a>
-                    <br>
-                        <small>Mirror Destinations are underlay-reachable IP addresses to which the mirrored traffic will be sent. On the server identified by the IP, a tool like Wireshark can be used to capture and analyse the traffic going through a VPort. The mirrored traffic is sent to the collector using GRE encapsulation.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vports" id="vports" href="vport.html" title="API reference for vport">vports </a>
-                    <br>
-                        <small>VPorts are a new level in the domain hierarchy, intended to provide more granular configuration than at subnet, and also support a split workflow, where the vPort is configured and associated with a VM port (or gateway port) before the port exists.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="policygroupcategories" id="policygroupcategories" href="policygroupcategory.html" title="API reference for policygroupcategory">policygroupcategories </a>
-                    <br>
-                        <small>Policy Group Categories are used to group Policy Group tags of similar type (e.g., Application, App-Tier, Location etc.) to provide additional context for flow visualization and analytics</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="overlaymirrordestinationtemplates" id="overlaymirrordestinationtemplates" href="overlaymirrordestinationtemplate.html" title="API reference for overlaymirrordestinationtemplate">overlaymirrordestinationtemplates </a>
-                    <br>
-                        <small>Overlay mirror destinations are pointed to by advanced forwarding policies as the destination for redirected traffic. Targets can be of two types, L3 or virtual wire. For L3 targets a virtual IP should be provided as it allows the system to track among which of the end-points belonging to the overlay mirror destination is the active one. For this type of redirect the packet's destination MAC address is changed to match that of the Virtual IP. For virtual-wire redirection targets, the packets are untouched and forwarded directly to the end-point.</small>
+                        <small>Configuration of VNS Gateway Border Router connection</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -2037,9 +1989,9 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="pgexpressions" id="pgexpressions" href="pgexpression.html" title="API reference for pgexpression">pgexpressions </a>
+                    <a class="filterable" data-filter-keyword="demarcationservices" id="demarcationservices" href="demarcationservice.html" title="API reference for demarcationservice">demarcationservices </a>
                     <br>
-                        <small>Policy Group Expression is an expression consisting of policy groups defined at Domain or L2 Domain Instance.</small>
+                        <small>Demarcation services provide the interconnection between the datacenter networks and the Wide Area Network.</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -2051,6 +2003,34 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="mirrordestinations" id="mirrordestinations" href="mirrordestination.html" title="API reference for mirrordestination">mirrordestinations </a>
+                    <br>
+                        <small>Mirror Destinations are underlay-reachable IP addresses to which the mirrored traffic will be sent. On the server identified by the IP, a tool like Wireshark can be used to capture and analyse the traffic going through a VPort. The mirrored traffic is sent to the collector using GRE encapsulation.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="overlaymirrordestinations" id="overlaymirrordestinations" href="overlaymirrordestination.html" title="API reference for overlaymirrordestination">overlaymirrordestinations </a>
+                    <br>
+                        <small>Overlay mirror destinations are pointed to by advanced forwarding policies as the destination for redirected traffic. Targets can be of two types, L3 or virtual wire. For L3 targets a virtual IP should be provided as it allows the system to track among which of the end-points belonging to the overlay mirror destination is the active one. For this type of redirect the packet's destination MAC address is changed to match that of the Virtual IP. For virtual-wire redirection targets, the packets are untouched and forwarded directly to the end-point.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="overlaymirrordestinationtemplates" id="overlaymirrordestinationtemplates" href="overlaymirrordestinationtemplate.html" title="API reference for overlaymirrordestinationtemplate">overlaymirrordestinationtemplates </a>
+                    <br>
+                        <small>Overlay mirror destinations are pointed to by advanced forwarding policies as the destination for redirected traffic. Targets can be of two types, L3 or virtual wire. For L3 targets a virtual IP should be provided as it allows the system to track among which of the end-points belonging to the overlay mirror destination is the active one. For this type of redirect the packet's destination MAC address is changed to match that of the Virtual IP. For virtual-wire redirection targets, the packets are untouched and forwarded directly to the end-point.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="pgexpressions" id="pgexpressions" href="pgexpression.html" title="API reference for pgexpression">pgexpressions </a>
+                    <br>
+                        <small>Policy Group Expression is an expression consisting of policy groups defined at Domain or L2 Domain Instance.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
                     <a class="filterable" data-filter-keyword="pgexpressiontemplates" id="pgexpressiontemplates" href="pgexpressiontemplate.html" title="API reference for pgexpressiontemplate">pgexpressiontemplates </a>
                     <br>
                         <small>Policy Group Expression Template is an expression consisting of policy groups defined at Domain Template or L2 Domain Template</small>
@@ -2058,23 +2038,9 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="vportmirrors" id="vportmirrors" href="vportmirror.html" title="API reference for vportmirror">vportmirrors </a>
+                    <a class="filterable" data-filter-keyword="policygroupcategories" id="policygroupcategories" href="policygroupcategory.html" title="API reference for policygroupcategory">policygroupcategories </a>
                     <br>
-                        <small>VPort Mirror represents the relationship between a vport and a mirror destination.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="policygrouptemplates" id="policygrouptemplates" href="policygrouptemplate.html" title="API reference for policygrouptemplate">policygrouptemplates </a>
-                    <br>
-                        <small>PolicyGroupTemplate represents the template of a policy group object. PolicyGroup is group of vports on which a user can policies like ACL, QoS, etc.</small>
-                </div>
-            </div>
-            <div class="row bordered-row">
-                <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="brconnections" id="brconnections" href="brconnection.html" title="API reference for brconnection">brconnections </a>
-                    <br>
-                        <small>Configuration of VNS Gateway Border Router connection</small>
+                        <small>Policy Group Categories are used to group Policy Group tags of similar type (e.g., Application, App-Tier, Location etc.) to provide additional context for flow visualization and analytics</small>
                 </div>
             </div>
             <div class="row bordered-row">
@@ -2086,9 +2052,44 @@
             </div>
             <div class="row bordered-row">
                 <div class="col-xs-12">
-                    <a class="filterable" data-filter-keyword="demarcationservices" id="demarcationservices" href="demarcationservice.html" title="API reference for demarcationservice">demarcationservices </a>
+                    <a class="filterable" data-filter-keyword="policygrouptemplates" id="policygrouptemplates" href="policygrouptemplate.html" title="API reference for policygrouptemplate">policygrouptemplates </a>
                     <br>
-                        <small>Demarcation services provide the interconnection between the datacenter networks and the Wide Area Network.</small>
+                        <small>PolicyGroupTemplate represents the template of a policy group object. PolicyGroup is group of vports on which a user can policies like ACL, QoS, etc.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="redirectiontargets" id="redirectiontargets" href="redirectiontarget.html" title="API reference for redirectiontarget">redirectiontargets </a>
+                    <br>
+                        <small>Redirection targets are pointed to by advanced forwarding policies as the destination for redirected traffic. Targets can be of two types, L3 or virtual wire. For L3 targets a virtual IP should be provided as it allows the system to track among which of the end-points belonging to the redirection target is the active one. For this type of redirect the packet's destination MAC address is changed to match that of the Virtual IP. For virtual-wire redirection targets, the packets are untouched and forwarded directly to the end-point.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="redirectiontargettemplates" id="redirectiontargettemplates" href="redirectiontargettemplate.html" title="API reference for redirectiontargettemplate">redirectiontargettemplates </a>
+                    <br>
+                        <small>Template for a vporttag. It can be created only at the template level and available for all instances.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="virtualips" id="virtualips" href="virtualip.html" title="API reference for virtualip">virtualips </a>
+                    <br>
+                        <small>Virtual IPs are IP addresses owned by one or more vports that can move among those vports. VSP will track the owner of a virtual IP and steer traffic accordingly. Virtual IPs can be used as next-hops for static routes and other re-direction purposes.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vportmirrors" id="vportmirrors" href="vportmirror.html" title="API reference for vportmirror">vportmirrors </a>
+                    <br>
+                        <small>VPort Mirror represents the relationship between a vport and a mirror destination.</small>
+                </div>
+            </div>
+            <div class="row bordered-row">
+                <div class="col-xs-12">
+                    <a class="filterable" data-filter-keyword="vports" id="vports" href="vport.html" title="API reference for vport">vports </a>
+                    <br>
+                        <small>VPorts are a new level in the domain hierarchy, intended to provide more granular configuration than at subnet, and also support a split workflow, where the vPort is configured and associated with a VM port (or gateway port) before the port exists.</small>
                 </div>
             </div>
                     </section>
