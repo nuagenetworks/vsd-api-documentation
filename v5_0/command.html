@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">5.0</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 5.0</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -57,6 +57,8 @@
                             
                             <li><a data-id="attr_override" href="#attr_override" class="fixed-text">override</a></li>
                             
+                            <li><a data-id="attr_progress" href="#attr_progress" class="fixed-text">progress</a></li>
+                            
                             <li><a data-id="attr_status" href="#attr_status" class="fixed-text">status</a></li>
                             
                             <li><a data-id="attr_summary" href="#attr_summary" class="fixed-text">summary</a></li>
@@ -64,14 +66,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -523,6 +523,34 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_progress" title="JSON string detailing the progress of the command execution on Gateway.">progress</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_status" title="The status of the Command from a VSD perspective.">status</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -547,7 +575,9 @@
     
     
     
-     (ABANDONED | COMPLETED | FAILED | RUNNING | STARTED | UNKNOWN)
+    
+    
+     (ABANDONED | COMPLETED | FAILED | RUNNING | SKIPPED | STARTED | UNKNOWN)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1456,6 +1486,59 @@
                 </div>
             </section>
             
+            <section id="attr_progress" class="filterable" data-filter-keyword="progress" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>progress</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>JSON string detailing the progress of the command execution on Gateway.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">1023</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">progress</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_status" class="filterable" data-filter-keyword="status" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1490,7 +1573,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ABANDONED, COMPLETED, FAILED, RUNNING, STARTED, UNKNOWN</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ABANDONED, COMPLETED, FAILED, RUNNING, SKIPPED, STARTED, UNKNOWN</span><br/>
                             
 
                             

@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">5.0</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 5.0</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -32,6 +32,8 @@
                         <ul class="dropdown-menu" role="menu">
                             
                             <li><a data-id="attr_advertiseCriteria" href="#attr_advertiseCriteria" class="fixed-text">advertiseCriteria</a></li>
+                            
+                            <li><a data-id="attr_aggregateFlowsEnabled" href="#attr_aggregateFlowsEnabled" class="fixed-text">aggregateFlowsEnabled</a></li>
                             
                             <li><a data-id="attr_associatedBGPProfileID" href="#attr_associatedBGPProfileID" class="fixed-text">associatedBGPProfileID</a></li>
                             
@@ -81,6 +83,8 @@
                             
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
+                            <li><a data-id="attr_externalLabel" href="#attr_externalLabel" class="fixed-text">externalLabel</a></li>
+                            
                             <li><a data-id="attr_FIPIgnoreDefaultRoute" href="#attr_FIPIgnoreDefaultRoute" class="fixed-text">FIPIgnoreDefaultRoute</a></li>
                             
                             <li><a data-id="attr_FIPUnderlay" href="#attr_FIPUnderlay" class="fixed-text">FIPUnderlay</a></li>
@@ -129,17 +133,17 @@
                             
                             <li><a data-id="attr_uplinkPreference" href="#attr_uplinkPreference" class="fixed-text">uplinkPreference</a></li>
                             
+                            <li><a data-id="attr_VXLANECMPEnabled" href="#attr_VXLANECMPEnabled" class="fixed-text">VXLANECMPEnabled</a></li>
+                            
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -203,6 +207,36 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_aggregateFlowsEnabled" title="Flag to enable aggregate flows on this domain.">aggregateFlowsEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_associatedBGPProfileID" title="None">associatedBGPProfileID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -220,8 +254,6 @@
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -326,8 +358,6 @@
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -521,6 +551,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -747,7 +781,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_encryption" title="Determines whether IPSEC is enabled Possible values are ENABLED, DISABLED, .">encryption</a>
+                            <a href="#attr_encryption" title="Determines whether IPSEC is enabled Possible values are ENABLED, DISABLED.">encryption</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -907,6 +941,36 @@
     
     
      <span class="label label-warning"> locally unique </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_externalLabel" title="External label given to Domain">externalLabel</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1303,7 +1367,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_PATEnabled" title="Indicates whether PAT is enabled for the subnets in this domain - ENABLED/DISABLED Possible values are INHERITED, ENABLED, DISABLED, .">PATEnabled</a>
+                            <a href="#attr_PATEnabled" title="Indicates whether PAT is enabled for the subnets in this domain - ENABLED/DISABLED Possible values are ENABLED, DISABLED.">PATEnabled</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -1653,9 +1717,7 @@
     
     
     
-    
-    
-     (DISABLED | ENABLED | INHERITED)
+     (DISABLED | ENABLED)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1711,6 +1773,38 @@
     
     
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_VXLANECMPEnabled" title="Determines whether VXLAN-ECMP are enabled on this domain.">VXLANECMPEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+     <span class="label label-info"> creation only </span>&nbsp;
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1853,6 +1947,28 @@
 
             
             
+            <span class="fixed-text">/<a href="gateway.html">gateways</a>/<span class="text-muted">id</span>/domains</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="domaintemplate.html">domaintemplates</a>/<span class="text-muted">id</span>/domains</span>
             
 
@@ -1974,6 +2090,29 @@
     
     
     <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/domains/<span class="text-muted">id</span>/<a href="deploymentfailure.html">deploymentfailures</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
     
             
         </div>
@@ -3406,6 +3545,59 @@
                 </div>
             </section>
             
+            <section id="attr_aggregateFlowsEnabled" class="filterable" data-filter-keyword="aggregateFlowsEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>aggregateFlowsEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Flag to enable aggregate flows on this domain.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">aggregateFlowsEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_associatedBGPProfileID" class="filterable" data-filter-keyword="associatedBGPProfileID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3417,8 +3609,6 @@
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -3615,8 +3805,6 @@
     
     
     
-    
-     <span class="label label-info"> filterable </span>&nbsp;
     
     
     
@@ -3977,6 +4165,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -4402,7 +4594,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Determines whether IPSEC is enabled Possible values are ENABLED, DISABLED, .</p>
+                        <p>Determines whether IPSEC is enabled Possible values are ENABLED, DISABLED.</p>
 
                         <hr/>
 
@@ -4415,9 +4607,9 @@
                             
 
                             
-
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">DISABLED</span><br/>
                             
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+
                             
 
                             
@@ -4641,6 +4833,63 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">externalID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_externalLabel" class="filterable" data-filter-keyword="externalLabel" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>externalLabel</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>External label given to Domain</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Min lenght: </b></span><span class="fixed-text">1</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">32</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">externalLabel</span>
                         </p>
                     </div>
                 </div>
@@ -5303,7 +5552,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Indicates whether PAT is enabled for the subnets in this domain - ENABLED/DISABLED Possible values are INHERITED, ENABLED, DISABLED, .</p>
+                        <p>Indicates whether PAT is enabled for the subnets in this domain - ENABLED/DISABLED Possible values are ENABLED, DISABLED.</p>
 
                         <hr/>
 
@@ -5316,9 +5565,9 @@
                             
 
                             
-
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">DISABLED</span><br/>
                             
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+
                             
 
                             
@@ -5832,11 +6081,13 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DISABLED, ENABLED, INHERITED</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DISABLED, ENABLED</span><br/>
                             
 
                             
 
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">DISABLED</span><br/>
                             
 
                             
@@ -5901,6 +6152,61 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">uplinkPreference</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_VXLANECMPEnabled" class="filterable" data-filter-keyword="VXLANECMPEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>VXLANECMPEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+     <span class="label label-info"> creation only </span>&nbsp;
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Determines whether VXLAN-ECMP are enabled on this domain.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">VXLANECMPEnabled</span>
                         </p>
                     </div>
                 </div>

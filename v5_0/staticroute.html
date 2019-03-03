@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">5.0</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 5.0</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -33,9 +33,13 @@
                             
                             <li><a data-id="attr_address" href="#attr_address" class="fixed-text">address</a></li>
                             
+                            <li><a data-id="attr_associatedGatewayIDs" href="#attr_associatedGatewayIDs" class="fixed-text">associatedGatewayIDs</a></li>
+                            
                             <li><a data-id="attr_associatedSubnetID" href="#attr_associatedSubnetID" class="fixed-text">associatedSubnetID</a></li>
                             
                             <li><a data-id="attr_BFDEnabled" href="#attr_BFDEnabled" class="fixed-text">BFDEnabled</a></li>
+                            
+                            <li><a data-id="attr_blackHoleEnabled" href="#attr_blackHoleEnabled" class="fixed-text">blackHoleEnabled</a></li>
                             
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
@@ -58,14 +62,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -128,6 +130,32 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_associatedGatewayIDs" title="List of associated gateway IDs for static route, returned as a JSON list of strings">associatedGatewayIDs</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_list">list
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_associatedSubnetID" title="UUID of Do Not Advertise Subnet">associatedSubnetID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -174,6 +202,38 @@
     
      <span class="label label-info"> filterable </span>&nbsp;
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_blackHoleEnabled" title="Indicates if this is a black hole static route. Applicable only when the static route type is 'NETCONF'.">blackHoleEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+     <span class="label label-info"> creation only </span>&nbsp;
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -462,7 +522,9 @@
     
     
     
-     (EXIT_DOMAIN | OVERLAY | OVERLAY_ADDRESS_TRANSLATION)
+    
+    
+     (EXIT_DOMAIN | NETCONF | OVERLAY | OVERLAY_ADDRESS_TRANSLATION)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -615,6 +677,28 @@
 
             
             
+            <span class="fixed-text">/<a href="vminterface.html">vminterfaces</a>/<span class="text-muted">id</span>/staticroutes</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/staticroutes</span>
             
 
@@ -634,28 +718,6 @@
     
     
     <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="vminterface.html">vminterfaces</a>/<span class="text-muted">id</span>/staticroutes</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
     
             
         </div>
@@ -724,6 +786,36 @@
     
 
     
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/staticroutes/<span class="text-muted">id</span>/<a href="deploymentfailure.html">deploymentfailures</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
     
     <div class="row bordered-row">
         <div class="col-xs-7">
@@ -890,6 +982,53 @@
                 </div>
             </section>
             
+            <section id="attr_associatedGatewayIDs" class="filterable" data-filter-keyword="associatedGatewayIDs" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedGatewayIDs</b>
+                        <span class="type_list fixed-text">list</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>List of associated gateway IDs for static route, returned as a JSON list of strings</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedGatewayIDs</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_associatedSubnetID" class="filterable" data-filter-keyword="associatedSubnetID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -985,6 +1124,61 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">BFDEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_blackHoleEnabled" class="filterable" data-filter-keyword="blackHoleEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>blackHoleEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+     <span class="label label-info"> creation only </span>&nbsp;
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates if this is a black hole static route. Applicable only when the static route type is 'NETCONF'.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">blackHoleEnabled</span>
                         </p>
                     </div>
                 </div>
@@ -1448,7 +1642,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">EXIT_DOMAIN, OVERLAY, OVERLAY_ADDRESS_TRANSLATION</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">EXIT_DOMAIN, NETCONF, OVERLAY, OVERLAY_ADDRESS_TRANSLATION</span><br/>
                             
 
                             

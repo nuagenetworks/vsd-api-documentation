@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">5.0</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 5.0</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -49,6 +49,8 @@
                             
                             <li><a data-id="attr_statisticsEnabled" href="#attr_statisticsEnabled" class="fixed-text">statisticsEnabled</a></li>
                             
+                            <li><a data-id="attr_statsDatabaseProxy" href="#attr_statsDatabaseProxy" class="fixed-text">statsDatabaseProxy</a></li>
+                            
                             <li><a data-id="attr_statsTSDBServerAddress" href="#attr_statsTSDBServerAddress" class="fixed-text">statsTSDBServerAddress</a></li>
                             
                             <li><a data-id="attr_VSSFeatureEnabled" href="#attr_VSSFeatureEnabled" class="fixed-text">VSSFeatureEnabled</a></li>
@@ -58,14 +60,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -371,7 +371,35 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_statsTSDBServerAddress" title="ip address(es) of the elastic machine">statsTSDBServerAddress</a>
+                            <a href="#attr_statsDatabaseProxy" title="The location of a public proxy to statistics database server in <FQDN>:<PORT> format.">statsDatabaseProxy</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_statsTSDBServerAddress" title="IP address(es) of the elastic machine">statsTSDBServerAddress</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -1095,6 +1123,57 @@
                 </div>
             </section>
             
+            <section id="attr_statsDatabaseProxy" class="filterable" data-filter-keyword="statsDatabaseProxy" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>statsDatabaseProxy</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The location of a public proxy to statistics database server in <FQDN>:<PORT> format.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">statsDatabaseProxy</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_statsTSDBServerAddress" class="filterable" data-filter-keyword="statsTSDBServerAddress" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1118,7 +1197,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>ip address(es) of the elastic machine</p>
+                        <p>IP address(es) of the elastic machine</p>
 
                         <hr/>
 

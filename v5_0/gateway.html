@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">5.0</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 5.0</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -65,6 +65,8 @@
                             
                             <li><a data-id="attr_gatewayConnected" href="#attr_gatewayConnected" class="fixed-text">gatewayConnected</a></li>
                             
+                            <li><a data-id="attr_gatewayModel" href="#attr_gatewayModel" class="fixed-text">gatewayModel</a></li>
+                            
                             <li><a data-id="attr_gatewayVersion" href="#attr_gatewayVersion" class="fixed-text">gatewayVersion</a></li>
                             
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
@@ -103,6 +105,8 @@
                             
                             <li><a data-id="attr_UUID" href="#attr_UUID" class="fixed-text">UUID</a></li>
                             
+                            <li><a data-id="attr_vendor" href="#attr_vendor" class="fixed-text">vendor</a></li>
+                            
                             <li><a data-id="attr_vtep" href="#attr_vtep" class="fixed-text">vtep</a></li>
                             
                             <li><a data-id="attr_ZFBMatchAttribute" href="#attr_ZFBMatchAttribute" class="fixed-text">ZFBMatchAttribute</a></li>
@@ -112,14 +116,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -685,6 +687,34 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_gatewayModel" title="The model string of the gateway. Applicable to netconf managed gateways">gatewayModel</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_gatewayVersion" title="The Gateway Software Version as reported during bootstrapping.">gatewayVersion</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -1056,7 +1086,7 @@
     
     
     
-     (DC7X50 | EVDF | EVDFB | HARDWARE_VTEP | NETCONF_7X50 | NSG | NUAGE_210_WBX_32_Q | NUAGE_210_WBX_48_S | OTHER | VDFG | VRSB | VRSG | VSA | VSG)
+     (DC7X50 | EVDF | EVDFB | HARDWARE_VTEP | NETCONF_7X50 | NETCONF_THIRDPARTY_HW_VTEP | NUAGE_210_WBX_32_Q | NUAGE_210_WBX_48_S | OTHER | VDFG | VRSB | VRSG | VSA | VSG)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1259,6 +1289,41 @@
     
     
     
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_vendor" title="The vendor of the gateway. Applicable to netconf managed gateways">vendor</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (CISCO)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -2016,6 +2081,29 @@
             
 
             
+            <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="domain.html">domains</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="bootstrap.html">bootstraps</a></span>
             
 
@@ -2116,6 +2204,29 @@
 
             
             <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="ipv6filterprofile.html">ipv6filterprofiles</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/gateways/<span class="text-muted">id</span>/<a href="subnet.html">subnets</a></span>
             
 
             
@@ -3084,6 +3195,59 @@
                 </div>
             </section>
             
+            <section id="attr_gatewayModel" class="filterable" data-filter-keyword="gatewayModel" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>gatewayModel</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The model string of the gateway. Applicable to netconf managed gateways</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">gatewayModel</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_gatewayVersion" class="filterable" data-filter-keyword="gatewayVersion" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3691,7 +3855,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DC7X50, EVDF, EVDFB, HARDWARE_VTEP, NETCONF_7X50, NSG, NUAGE_210_WBX_32_Q, NUAGE_210_WBX_48_S, OTHER, VDFG, VRSB, VRSG, VSA, VSG</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DC7X50, EVDF, EVDFB, HARDWARE_VTEP, NETCONF_7X50, NETCONF_THIRDPARTY_HW_VTEP, NUAGE_210_WBX_32_Q, NUAGE_210_WBX_48_S, OTHER, VDFG, VRSB, VRSG, VSA, VSG</span><br/>
                             
 
                             
@@ -4070,6 +4234,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">UUID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_vendor" class="filterable" data-filter-keyword="vendor" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>vendor</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The vendor of the gateway. Applicable to netconf managed gateways</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">CISCO</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">vendor</span>
                         </p>
                     </div>
                 </div>

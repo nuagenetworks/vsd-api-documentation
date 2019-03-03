@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">5.0</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 5.0</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -38,6 +38,8 @@
                             <li><a data-id="attr_associatedSharedNetworkResourceID" href="#attr_associatedSharedNetworkResourceID" class="fixed-text">associatedSharedNetworkResourceID</a></li>
                             
                             <li><a data-id="attr_associatedUnderlayID" href="#attr_associatedUnderlayID" class="fixed-text">associatedUnderlayID</a></li>
+                            
+                            <li><a data-id="attr_customerID" href="#attr_customerID" class="fixed-text">customerID</a></li>
                             
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
@@ -60,6 +62,8 @@
                             <li><a data-id="attr_gateway" href="#attr_gateway" class="fixed-text">gateway</a></li>
                             
                             <li><a data-id="attr_gatewayMACAddress" href="#attr_gatewayMACAddress" class="fixed-text">gatewayMACAddress</a></li>
+                            
+                            <li><a data-id="attr_ingressReplicationEnabled" href="#attr_ingressReplicationEnabled" class="fixed-text">ingressReplicationEnabled</a></li>
                             
                             <li><a data-id="attr_IPType" href="#attr_IPType" class="fixed-text">IPType</a></li>
                             
@@ -97,17 +101,17 @@
                             
                             <li><a data-id="attr_vnId" href="#attr_vnId" class="fixed-text">vnId</a></li>
                             
+                            <li><a data-id="attr_VXLANECMPEnabled" href="#attr_VXLANECMPEnabled" class="fixed-text">VXLANECMPEnabled</a></li>
+                            
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -238,7 +242,31 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_customerID" title="CustomerID that is used by NETCONF MANAGER to identify this enterprise. This can be configured by root user.">customerID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
     
     
     
@@ -607,6 +635,36 @@
     
     
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_ingressReplicationEnabled" title="Enables ingress replication for the VNI.">ingressReplicationEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1187,6 +1245,36 @@
     
     
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_VXLANECMPEnabled" title="Determines whether VXLAN-ECMP are enabled on this domain.">VXLANECMPEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+     <span class="label label-info"> creation only </span>&nbsp;
+    
+    
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2728,8 +2816,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
     
     
     
@@ -2762,6 +2848,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedUnderlayID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_customerID" class="filterable" data-filter-keyword="customerID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>customerID</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>CustomerID that is used by NETCONF MANAGER to identify this enterprise. This can be configured by root user.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">10000</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">2147483647</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">customerID</span>
                         </p>
                     </div>
                 </div>
@@ -3341,6 +3478,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">gatewayMACAddress</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_ingressReplicationEnabled" class="filterable" data-filter-keyword="ingressReplicationEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>ingressReplicationEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Enables ingress replication for the VNI.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">ingressReplicationEnabled</span>
                         </p>
                     </div>
                 </div>
@@ -4287,6 +4477,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">vnId</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_VXLANECMPEnabled" class="filterable" data-filter-keyword="VXLANECMPEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>VXLANECMPEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+     <span class="label label-info"> creation only </span>&nbsp;
+    
+    
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Determines whether VXLAN-ECMP are enabled on this domain.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">VXLANECMPEnabled</span>
                         </p>
                     </div>
                 </div>

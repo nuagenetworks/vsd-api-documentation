@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">5.0</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 5.0</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -68,14 +68,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -352,7 +350,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_metric" title="The metric associated with the TCA.">metric</a>
+                            <a href="#attr_metric" title="The metric associated with the TCA. The following enum values have been deprecated and will be removed in the next major release 6.0: ADDRESS_MAP_EGRESS_BYTE_CNT, ADDRESS_MAP_EGRESS_PKT_CNT, ADDRESS_MAP_INGRESS_BYTE_CNT, ADDRESS_MAP_INGRESS_PKT_CNT, CONNECTION_TYPE, EGRESS_BYTE_COUNT, EGRESS_PACKET_COUNT, INGRESS_BYTE_COUNT, INGRESS_PACKET_COUNT, Q0_BYTES, Q0_DROPPED, Q0_PKT_COUNT, Q10_BYTES, Q10_DROPPED, Q10_PKT_COUNT, Q1_BYTES, Q1_DROPPED, Q1_PKT_COUNT, Q2_BYTES, Q2_DROPPED, Q2_PKT_COUNT, Q3_BYTES, Q3_DROPPED, Q3_PKT_COUNT, Q4_BYTES, Q4_DROPPED, Q4_PKT_COUNT, RX_BYTES, RX_DROPPED, RX_ERRORS, RX_PKT_COUNT, TCP_SYN_EVENT_COUNT, TX_BYTES, TX_DROPPED, TX_ERRORS, TX_PKT_COUNT">metric</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -488,7 +486,9 @@
     
     
     
-     (ACL_DENY_EVENT_COUNT | ADDRESS_MAP_EGRESS_BYTE_CNT | ADDRESS_MAP_EGRESS_PKT_CNT | ADDRESS_MAP_INGRESS_BYTE_CNT | ADDRESS_MAP_INGRESS_PKT_CNT | ANTI_SPOOF_EVENT_COUNT | BYTES_IN | BYTES_OUT | CONNECTION_TYPE | EGRESS_BYTE_COUNT | EGRESS_PACKET_COUNT | FIP_PRE_RATE_LIMIT_BYTES | FIP_PRE_RATE_LIMIT_PACKETS | FIP_RATE_LIMIT_DROPPED_BYTES | FIP_RATE_LIMIT_DROPPED_PACKETS | INGRESS_BYTE_COUNT | INGRESS_PACKET_COUNT | L7_BYTES_IN | L7_BYTES_OUT | L7_PACKETS_IN | L7_PACKETS_OUT | PACKETS_DROPPED_BY_RATE_LIMIT | PACKETS_IN | PACKETS_IN_DROPPED | PACKETS_IN_ERROR | PACKETS_OUT | PACKETS_OUT_DROPPED | PACKETS_OUT_ERROR | Q0_BYTES | Q0_DROPPED | Q0_PKT_COUNT | Q10_BYTES | Q10_DROPPED | Q10_PKT_COUNT | Q1_BYTES | Q1_DROPPED | Q1_PKT_COUNT | Q2_BYTES | Q2_DROPPED | Q2_PKT_COUNT | Q3_BYTES | Q3_DROPPED | Q3_PKT_COUNT | Q4_BYTES | Q4_DROPPED | Q4_PKT_COUNT | RX_BYTES | RX_DROPPED | RX_ERRORS | RX_PKT_COUNT | TCP_FLAG_ACK_IN | TCP_FLAG_NULL_IN | TCP_FLAG_NULL_OUT | TCP_FLAG_RST_IN | TCP_FLAG_RST_OUT | TCP_FLAG_SYN_IN | TCP_FLAG_SYN_OUT | TCP_SYN_EVENT_COUNT | TX_BYTES | TX_DROPPED | TX_ERRORS | TX_PKT_COUNT)
+    
+    
+     (ACL_DENY_EVENT_COUNT | ADDRESS_MAP_EGRESS_BYTE_CNT | ADDRESS_MAP_EGRESS_PKT_CNT | ADDRESS_MAP_INGRESS_BYTE_CNT | ADDRESS_MAP_INGRESS_PKT_CNT | ANTI_SPOOF_EVENT_COUNT | BYTES_IN | BYTES_OUT | CONNECTION_TYPE | EGRESS_BYTE_COUNT | EGRESS_PACKET_COUNT | FIP_PRE_RATE_LIMIT_BYTES | FIP_PRE_RATE_LIMIT_PACKETS | FIP_RATE_LIMIT_DROPPED_BYTES | FIP_RATE_LIMIT_DROPPED_PACKETS | INGRESS_BYTE_COUNT | INGRESS_PACKET_COUNT | L7_BYTES_IN | L7_BYTES_OUT | L7_PACKETS_IN | L7_PACKETS_OUT | PACKETS_DROPPED_BY_RATE_LIMIT | PACKETS_IN | PACKETS_IN_DROPPED | PACKETS_IN_ERROR | PACKETS_OUT | PACKETS_OUT_DROPPED | PACKETS_OUT_ERROR | Q0_BYTES | Q0_DROPPED | Q0_PKT_COUNT | Q10_BYTES | Q10_DROPPED | Q10_PKT_COUNT | Q1_BYTES | Q1_DROPPED | Q1_PKT_COUNT | Q2_BYTES | Q2_DROPPED | Q2_PKT_COUNT | Q3_BYTES | Q3_DROPPED | Q3_PKT_COUNT | Q4_BYTES | Q4_DROPPED | Q4_PKT_COUNT | RX_BYTES | RX_DROPPED | RX_ERRORS | RX_PKT_COUNT | TCP_FLAG_ACK_IN | TCP_FLAG_ACK_OUT | TCP_FLAG_NULL_IN | TCP_FLAG_NULL_OUT | TCP_FLAG_RST_IN | TCP_FLAG_RST_OUT | TCP_FLAG_SYN_IN | TCP_FLAG_SYN_OUT | TCP_SYN_EVENT_COUNT | TX_BYTES | TX_DROPPED | TX_ERRORS | TX_PKT_COUNT)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -888,35 +888,6 @@
 
             
             
-            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/tcas</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
             <span class="fixed-text">/<a href="vport.html">vports</a>/<span class="text-muted">id</span>/tcas</span>
             
 
@@ -1009,6 +980,35 @@
     
     
     <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/tcas</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
     
             
         </div>
@@ -1655,14 +1655,14 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The metric associated with the TCA.</p>
+                        <p>The metric associated with the TCA. The following enum values have been deprecated and will be removed in the next major release 6.0: ADDRESS_MAP_EGRESS_BYTE_CNT, ADDRESS_MAP_EGRESS_PKT_CNT, ADDRESS_MAP_INGRESS_BYTE_CNT, ADDRESS_MAP_INGRESS_PKT_CNT, CONNECTION_TYPE, EGRESS_BYTE_COUNT, EGRESS_PACKET_COUNT, INGRESS_BYTE_COUNT, INGRESS_PACKET_COUNT, Q0_BYTES, Q0_DROPPED, Q0_PKT_COUNT, Q10_BYTES, Q10_DROPPED, Q10_PKT_COUNT, Q1_BYTES, Q1_DROPPED, Q1_PKT_COUNT, Q2_BYTES, Q2_DROPPED, Q2_PKT_COUNT, Q3_BYTES, Q3_DROPPED, Q3_PKT_COUNT, Q4_BYTES, Q4_DROPPED, Q4_PKT_COUNT, RX_BYTES, RX_DROPPED, RX_ERRORS, RX_PKT_COUNT, TCP_SYN_EVENT_COUNT, TX_BYTES, TX_DROPPED, TX_ERRORS, TX_PKT_COUNT</p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ACL_DENY_EVENT_COUNT, ADDRESS_MAP_EGRESS_BYTE_CNT, ADDRESS_MAP_EGRESS_PKT_CNT, ADDRESS_MAP_INGRESS_BYTE_CNT, ADDRESS_MAP_INGRESS_PKT_CNT, ANTI_SPOOF_EVENT_COUNT, BYTES_IN, BYTES_OUT, CONNECTION_TYPE, EGRESS_BYTE_COUNT, EGRESS_PACKET_COUNT, FIP_PRE_RATE_LIMIT_BYTES, FIP_PRE_RATE_LIMIT_PACKETS, FIP_RATE_LIMIT_DROPPED_BYTES, FIP_RATE_LIMIT_DROPPED_PACKETS, INGRESS_BYTE_COUNT, INGRESS_PACKET_COUNT, L7_BYTES_IN, L7_BYTES_OUT, L7_PACKETS_IN, L7_PACKETS_OUT, PACKETS_DROPPED_BY_RATE_LIMIT, PACKETS_IN, PACKETS_IN_DROPPED, PACKETS_IN_ERROR, PACKETS_OUT, PACKETS_OUT_DROPPED, PACKETS_OUT_ERROR, Q0_BYTES, Q0_DROPPED, Q0_PKT_COUNT, Q10_BYTES, Q10_DROPPED, Q10_PKT_COUNT, Q1_BYTES, Q1_DROPPED, Q1_PKT_COUNT, Q2_BYTES, Q2_DROPPED, Q2_PKT_COUNT, Q3_BYTES, Q3_DROPPED, Q3_PKT_COUNT, Q4_BYTES, Q4_DROPPED, Q4_PKT_COUNT, RX_BYTES, RX_DROPPED, RX_ERRORS, RX_PKT_COUNT, TCP_FLAG_ACK_IN, TCP_FLAG_NULL_IN, TCP_FLAG_NULL_OUT, TCP_FLAG_RST_IN, TCP_FLAG_RST_OUT, TCP_FLAG_SYN_IN, TCP_FLAG_SYN_OUT, TCP_SYN_EVENT_COUNT, TX_BYTES, TX_DROPPED, TX_ERRORS, TX_PKT_COUNT</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ACL_DENY_EVENT_COUNT, ADDRESS_MAP_EGRESS_BYTE_CNT, ADDRESS_MAP_EGRESS_PKT_CNT, ADDRESS_MAP_INGRESS_BYTE_CNT, ADDRESS_MAP_INGRESS_PKT_CNT, ANTI_SPOOF_EVENT_COUNT, BYTES_IN, BYTES_OUT, CONNECTION_TYPE, EGRESS_BYTE_COUNT, EGRESS_PACKET_COUNT, FIP_PRE_RATE_LIMIT_BYTES, FIP_PRE_RATE_LIMIT_PACKETS, FIP_RATE_LIMIT_DROPPED_BYTES, FIP_RATE_LIMIT_DROPPED_PACKETS, INGRESS_BYTE_COUNT, INGRESS_PACKET_COUNT, L7_BYTES_IN, L7_BYTES_OUT, L7_PACKETS_IN, L7_PACKETS_OUT, PACKETS_DROPPED_BY_RATE_LIMIT, PACKETS_IN, PACKETS_IN_DROPPED, PACKETS_IN_ERROR, PACKETS_OUT, PACKETS_OUT_DROPPED, PACKETS_OUT_ERROR, Q0_BYTES, Q0_DROPPED, Q0_PKT_COUNT, Q10_BYTES, Q10_DROPPED, Q10_PKT_COUNT, Q1_BYTES, Q1_DROPPED, Q1_PKT_COUNT, Q2_BYTES, Q2_DROPPED, Q2_PKT_COUNT, Q3_BYTES, Q3_DROPPED, Q3_PKT_COUNT, Q4_BYTES, Q4_DROPPED, Q4_PKT_COUNT, RX_BYTES, RX_DROPPED, RX_ERRORS, RX_PKT_COUNT, TCP_FLAG_ACK_IN, TCP_FLAG_ACK_OUT, TCP_FLAG_NULL_IN, TCP_FLAG_NULL_OUT, TCP_FLAG_RST_IN, TCP_FLAG_RST_OUT, TCP_FLAG_SYN_IN, TCP_FLAG_SYN_OUT, TCP_SYN_EVENT_COUNT, TX_BYTES, TX_DROPPED, TX_ERRORS, TX_PKT_COUNT</span><br/>
                             
 
                             

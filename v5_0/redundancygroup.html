@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">5.0</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 5.0</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -70,14 +70,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -291,7 +289,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_gatewayPeer1ID" title="The gateway configuration owner in this Redundant Group. when Redundant Group is deleted this gateway will recieve vport associations ">gatewayPeer1ID</a>
+                            <a href="#attr_gatewayPeer1ID" title="The gateway configuration owner in this Redundant Group.  When Redundant Group is deleted this gateway will receive vPort associated to the group.">gatewayPeer1ID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -303,6 +301,8 @@
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
+    
+     <span class="label label-danger"> required </span>&nbsp;
     
     
     
@@ -317,7 +317,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_gatewayPeer1Name" title="The gateway   configuration owner name in this Redundant Group">gatewayPeer1Name</a>
+                            <a href="#attr_gatewayPeer1Name" title="The name of the authoritative gateway of the redundant group.">gatewayPeer1Name</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -409,6 +409,8 @@
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
+    
+     <span class="label label-danger"> required </span>&nbsp;
     
     
     
@@ -588,11 +590,7 @@
     
     
     
-    
-    
-    
-    
-     (DC7X50 | HARDWARE_VTEP | NETCONF_7X50 | NSG | NSGBR | NSGDUC | NUAGE_210_WBX_32_Q | NUAGE_210_WBX_48_S | OTHER | VDFG | VRSB | VRSG | VSA | VSG)
+     (DC7X50 | HARDWARE_VTEP | NETCONF_7X50 | NETCONF_THIRDPARTY_HW_VTEP | NUAGE_210_WBX_32_Q | NUAGE_210_WBX_48_S | OTHER | VDFG | VRSB | VRSG | VSA | VSG)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1751,6 +1749,8 @@
                         <span class="type_string fixed-text">string</span>
                         
     
+     <span class="label label-danger"> required </span>&nbsp;
+    
     
     
     
@@ -1763,7 +1763,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The gateway configuration owner in this Redundant Group. when Redundant Group is deleted this gateway will recieve vport associations </p>
+                        <p>The gateway configuration owner in this Redundant Group.  When Redundant Group is deleted this gateway will receive vPort associated to the group.</p>
 
                         <hr/>
 
@@ -1812,7 +1812,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The gateway   configuration owner name in this Redundant Group</p>
+                        <p>The name of the authoritative gateway of the redundant group.</p>
 
                         <hr/>
 
@@ -1948,6 +1948,8 @@
                         <b>gatewayPeer2ID</b>
                         <span class="type_string fixed-text">string</span>
                         
+    
+     <span class="label label-danger"> required </span>&nbsp;
     
     
     
@@ -2231,15 +2233,13 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DC7X50, HARDWARE_VTEP, NETCONF_7X50, NSG, NSGBR, NSGDUC, NUAGE_210_WBX_32_Q, NUAGE_210_WBX_48_S, OTHER, VDFG, VRSB, VRSG, VSA, VSG</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DC7X50, HARDWARE_VTEP, NETCONF_7X50, NETCONF_THIRDPARTY_HW_VTEP, NUAGE_210_WBX_32_Q, NUAGE_210_WBX_48_S, OTHER, VDFG, VRSB, VRSG, VSA, VSG</span><br/>
                             
 
                             
 
                             
 
-                            
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
                             
 
                             

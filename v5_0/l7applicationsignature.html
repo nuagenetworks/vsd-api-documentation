@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">5.0</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 5.0</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -63,19 +63,19 @@
                             
                             <li><a data-id="attr_signatureIndex" href="#attr_signatureIndex" class="fixed-text">signatureIndex</a></li>
                             
+                            <li><a data-id="attr_signatureVersion" href="#attr_signatureVersion" class="fixed-text">signatureVersion</a></li>
+                            
                             <li><a data-id="attr_softwareFlags" href="#attr_softwareFlags" class="fixed-text">softwareFlags</a></li>
                             
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -184,6 +184,8 @@
     
      <span class="label label-warning"> read only </span>&nbsp;
     
+    
+     <span class="label label-default"> deprecated </span>&nbsp;
     
     
     
@@ -611,6 +613,38 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_signatureVersion" title="The AAR application version where this signature was last updated.">signatureVersion</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_softwareFlags" title="Software flags received from Procera for every signature.">softwareFlags</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -972,6 +1006,8 @@
     
      <span class="label label-warning"> read only </span>&nbsp;
     
+    
+     <span class="label label-default"> deprecated </span>&nbsp;
     
     
     
@@ -1719,6 +1755,61 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">signatureIndex</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_signatureVersion" class="filterable" data-filter-keyword="signatureVersion" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>signatureVersion</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The AAR application version where this signature was last updated.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">signatureVersion</span>
                         </p>
                     </div>
                 </div>
