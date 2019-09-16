@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VNFInterface API Reference 5.0</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbarmain">
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbarmain">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">5.0</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">5.0.2</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a data-id="intro" href="#intro">Top</a></li>
+                    <li><a data-id="overview" href="#overview">Overview</a></li>
+                    <li><a data-id="apiresources" href="#apiresources">API Resource</a></li>
+                    <li><a data-id="parents" href="#parents">Parents</a></li>
+                    <li><a data-id="children" href="#children">Children</a></li>
+                    <li><a data-id="members" href="#members">Members</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Attributes <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            
+                            <li><a data-id="attr_attachedNetworkID" href="#attr_attachedNetworkID" class="fixed-text">attachedNetworkID</a></li>
+                            
+                            <li><a data-id="attr_attachedNetworkType" href="#attr_attachedNetworkType" class="fixed-text">attachedNetworkType</a></li>
+                            
+                            <li><a data-id="attr_domainID" href="#attr_domainID" class="fixed-text">domainID</a></li>
+                            
+                            <li><a data-id="attr_domainName" href="#attr_domainName" class="fixed-text">domainName</a></li>
+                            
+                            <li><a data-id="attr_gateway" href="#attr_gateway" class="fixed-text">gateway</a></li>
+                            
+                            <li><a data-id="attr_IPAddress" href="#attr_IPAddress" class="fixed-text">IPAddress</a></li>
+                            
+                            <li><a data-id="attr_isManagementInterface" href="#attr_isManagementInterface" class="fixed-text">isManagementInterface</a></li>
+                            
+                            <li><a data-id="attr_MAC" href="#attr_MAC" class="fixed-text">MAC</a></li>
+                            
+                            <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
+                            
+                            <li><a data-id="attr_netmask" href="#attr_netmask" class="fixed-text">netmask</a></li>
+                            
+                            <li><a data-id="attr_networkName" href="#attr_networkName" class="fixed-text">networkName</a></li>
+                            
+                            <li><a data-id="attr_policyDecisionID" href="#attr_policyDecisionID" class="fixed-text">policyDecisionID</a></li>
+                            
+                            <li><a data-id="attr_VNFUUID" href="#attr_VNFUUID" class="fixed-text">VNFUUID</a></li>
+                            
+                            <li><a data-id="attr_VPortID" href="#attr_VPortID" class="fixed-text">VPortID</a></li>
+                            
+                            <li><a data-id="attr_VPortName" href="#attr_VPortName" class="fixed-text">VPortName</a></li>
+                            
+                            <li><a data-id="attr_zoneID" href="#attr_zoneID" class="fixed-text">zoneID</a></li>
+                            
+                            <li><a data-id="attr_zoneName" href="#attr_zoneName" class="fixed-text">zoneName</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <!--
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group dropdown">
+                        <input type="text" class="form-control" placeholder="Search" id="searchfield">
+                        <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
+                    </div>
+                </form>
+                -->
+            </div>
+        </div>
+    </nav>
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+    <div class="container">
+
+        <section id="intro">
+            <h2>VNFInterface</h2>
+            <p>Represent VNF interface, This can not be created directly, it will be generated from VNF Interface Descriptor when VNF instance is created.</p>
+        </section>
+
+        <section id="overview">
+            <h3>Overview</h3>
+                <table class="width: 100%">
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_attachedNetworkID" title="ID of the Subnet that the interface is attached to">attachedNetworkID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_attachedNetworkType" title="network type that the interface is attached to">attachedNetworkType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (L2DOMAIN | SUBNET)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_domainID" title="ID of the domain that the interface is attached to">domainID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_domainName" title="Name of the domain that the interface is attached to">domainName</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_gateway" title="Gateway of the subnet that the interface is connected to">gateway</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_IPAddress" title="IP address of the  interface">IPAddress</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_isManagementInterface" title="Indicates if this is a management interface">isManagementInterface</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_MAC" title="MAC address of the  interface">MAC</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_name" title="Device name associated with this interface">name</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_netmask" title="Netmask of the subnet that the interface is attached to">netmask</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_networkName" title="Name of the network that the interface is attached to">networkName</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_policyDecisionID" title="The policy decision ID for this particular interface">policyDecisionID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_VNFUUID" title="UUID of the associated VNF">VNFUUID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_VPortID" title="ID of the vport that the interface is attached to">VPortID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_VPortName" title="Name of the vport that the interface is attached to">VPortName</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_zoneID" title="ID of the zone that the interface is attached to">zoneID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_zoneName" title="Name of the zone that the VM is attached to">zoneName</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                </table>
+        </section>
+
+        <section id="apiresources">
+            <h3>API Resource</h3>
+            
+    
+    
+    
+
+    
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            <span class="fixed-text">/vnfinterfaces/<span class="text-muted">id</span></a>
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
+    
+    
+        </section>
+
+        <section id="parents">
+            <h3>Parents</h3>
+            
+    
+    
+    
+
+    
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="vport.html">vports</a>/<span class="text-muted">id</span>/vnfinterfaces</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="vnf.html">vnfs</a>/<span class="text-muted">id</span>/vnfinterfaces</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    
+    
+        </section>
+
+        <section id="children">
+            <h3>Children</h3>
+            
+    
+    
+    
+
+    
+    <p>This object has no children.</p>
+    
+    
+        </section>
+
+        <section id="members">
+            <h3>Members</h3>
+            
+    
+    
+    
+
+    
+    <p>This object has no members.</p>
+    
+    
+        </section>
+
+        <section id="attributes">
+            <h3>Attributes documentation</h3>
+            
+            <section id="attr_attachedNetworkID" class="filterable" data-filter-keyword="attachedNetworkID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>attachedNetworkID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the Subnet that the interface is attached to</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">attachedNetworkID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_attachedNetworkType" class="filterable" data-filter-keyword="attachedNetworkType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>attachedNetworkType</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>network type that the interface is attached to</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">L2DOMAIN, SUBNET</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">attachedNetworkType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_domainID" class="filterable" data-filter-keyword="domainID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>domainID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the domain that the interface is attached to</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">domainID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_domainName" class="filterable" data-filter-keyword="domainName" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>domainName</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Name of the domain that the interface is attached to</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">domainName</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_gateway" class="filterable" data-filter-keyword="gateway" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>gateway</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Gateway of the subnet that the interface is connected to</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">gateway</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_IPAddress" class="filterable" data-filter-keyword="IPAddress" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>IPAddress</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>IP address of the  interface</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">IPAddress</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_isManagementInterface" class="filterable" data-filter-keyword="isManagementInterface" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>isManagementInterface</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates if this is a management interface</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">isManagementInterface</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_MAC" class="filterable" data-filter-keyword="MAC" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>MAC</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>MAC address of the  interface</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">MAC</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_name" class="filterable" data-filter-keyword="name" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>name</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Device name associated with this interface</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">name</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_netmask" class="filterable" data-filter-keyword="netmask" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>netmask</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Netmask of the subnet that the interface is attached to</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">netmask</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_networkName" class="filterable" data-filter-keyword="networkName" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>networkName</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Name of the network that the interface is attached to</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">networkName</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_policyDecisionID" class="filterable" data-filter-keyword="policyDecisionID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>policyDecisionID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The policy decision ID for this particular interface</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">policyDecisionID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_VNFUUID" class="filterable" data-filter-keyword="VNFUUID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>VNFUUID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>UUID of the associated VNF</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">VNFUUID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_VPortID" class="filterable" data-filter-keyword="VPortID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>VPortID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the vport that the interface is attached to</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">VPortID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_VPortName" class="filterable" data-filter-keyword="VPortName" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>VPortName</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Name of the vport that the interface is attached to</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">VPortName</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_zoneID" class="filterable" data-filter-keyword="zoneID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>zoneID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the zone that the interface is attached to</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">zoneID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_zoneName" class="filterable" data-filter-keyword="zoneName" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>zoneName</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Name of the zone that the VM is attached to</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">zoneName</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/search.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            initialize_search("attr_");
+            initialize_scrollspy();
+        });
+    </script>
+
+</body>
+</html>
