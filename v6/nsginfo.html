@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">6</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 6</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -100,14 +100,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -222,8 +220,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
     
     
     
@@ -327,11 +323,26 @@
                             <a href="#attr_bootstrapStatus" title="The bootstrap status of the NSG from which the infomation was collected.">bootstrapStatus</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
+                            <span class="type_enum">enum
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (ACTIVE | CERTIFICATE_SIGNED | INACTIVE | NOTIFICATION_APP_REQ_ACK | NOTIFICATION_APP_REQ_SENT)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -348,6 +359,8 @@
     
      <span class="label label-info"> filterable </span>&nbsp;
     
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -475,7 +488,7 @@
                             <a href="#attr_cmdLastUpdatedDate" title="Time stamp when the command was last updated.">cmdLastUpdatedDate</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
-                            <span class="type_string">string
+                            <span class="type_time">time
     
     
     
@@ -956,10 +969,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -1485,8 +1494,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
     
     
     
@@ -1691,7 +1698,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
                         <b>bootstrapStatus</b>
-                        <span class="type_string fixed-text">string</span>
+                        <span class="type_enum fixed-text">enum</span>
                         
     
     
@@ -1706,6 +1713,8 @@
      <span class="label label-info"> filterable </span>&nbsp;
     
     
+     <span class="label label-info"> orderable </span>&nbsp;
+    
     
     
                     </div>
@@ -1719,13 +1728,13 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ACTIVE, CERTIFICATE_SIGNED, INACTIVE, NOTIFICATION_APP_REQ_ACK, NOTIFICATION_APP_REQ_SENT</span><br/>
                             
 
                             
 
                             
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+
                             
 
                             
@@ -1956,7 +1965,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
                         <b>cmdLastUpdatedDate</b>
-                        <span class="type_string fixed-text">string</span>
+                        <span class="type_time fixed-text">time</span>
                         
     
     
@@ -1990,13 +1999,9 @@
                             
 
                             
-                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
-                            
 
                             
 
-                            
-                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
                             
 
                             
@@ -2679,10 +2684,6 @@
     
     
     
-     <span class="label label-info"> filterable </span>&nbsp;
-    
-    
-     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
