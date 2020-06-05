@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">6</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 6</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -55,6 +55,8 @@
                             
                             <li><a data-id="attr_bootstrapStatus" href="#attr_bootstrapStatus" class="fixed-text">bootstrapStatus</a></li>
                             
+                            <li><a data-id="attr_certValidityDays" href="#attr_certValidityDays" class="fixed-text">certValidityDays</a></li>
+                            
                             <li><a data-id="attr_configurationReloadState" href="#attr_configurationReloadState" class="fixed-text">configurationReloadState</a></li>
                             
                             <li><a data-id="attr_configurationStatus" href="#attr_configurationStatus" class="fixed-text">configurationStatus</a></li>
@@ -64,6 +66,8 @@
                             <li><a data-id="attr_controlTrafficCOSValue" href="#attr_controlTrafficCOSValue" class="fixed-text">controlTrafficCOSValue</a></li>
                             
                             <li><a data-id="attr_controlTrafficDSCPValue" href="#attr_controlTrafficDSCPValue" class="fixed-text">controlTrafficDSCPValue</a></li>
+                            
+                            <li><a data-id="attr_CPUCoreAllocation" href="#attr_CPUCoreAllocation" class="fixed-text">CPUCoreAllocation</a></li>
                             
                             <li><a data-id="attr_CPUType" href="#attr_CPUType" class="fixed-text">CPUType</a></li>
                             
@@ -90,6 +94,8 @@
                             <li><a data-id="attr_gatewayConfigVersion" href="#attr_gatewayConfigVersion" class="fixed-text">gatewayConfigVersion</a></li>
                             
                             <li><a data-id="attr_gatewayConnected" href="#attr_gatewayConnected" class="fixed-text">gatewayConnected</a></li>
+                            
+                            <li><a data-id="attr_hugePageSetting" href="#attr_hugePageSetting" class="fixed-text">hugePageSetting</a></li>
                             
                             <li><a data-id="attr_inheritedSSHServiceState" href="#attr_inheritedSSHServiceState" class="fixed-text">inheritedSSHServiceState</a></li>
                             
@@ -141,6 +147,8 @@
                             
                             <li><a data-id="attr_templateID" href="#attr_templateID" class="fixed-text">templateID</a></li>
                             
+                            <li><a data-id="attr_threatPreventionEnabled" href="#attr_threatPreventionEnabled" class="fixed-text">threatPreventionEnabled</a></li>
+                            
                             <li><a data-id="attr_TPMStatus" href="#attr_TPMStatus" class="fixed-text">TPMStatus</a></li>
                             
                             <li><a data-id="attr_TPMVersion" href="#attr_TPMVersion" class="fixed-text">TPMVersion</a></li>
@@ -158,14 +166,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -543,6 +549,36 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_certValidityDays" title="The number of days for which the NSG's certificate is valid.">certValidityDays</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_configurationReloadState" title="Status resulting from a manually triggered configuration reload operation on an NSG.  This value only reflects the state for a manual action requested by the operator, not the automatic periodic configuration reload triggered by the NSG itself.">configurationReloadState</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -712,6 +748,34 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_CPUCoreAllocation" title="Current CPU allocation for network accelerated gateways.  Displays total number of cores and those isolated.">CPUCoreAllocation</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
     
     
     
@@ -1122,6 +1186,34 @@
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_hugePageSetting" title="The size and number of huge pages for an NSG that is running in network accelerated mode.  Hugepage values states the portion of memory reserved for network accelerated services.">hugePageSetting</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
     
     
     
@@ -1918,6 +2010,36 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_threatPreventionEnabled" title="Indicates if Threat Prevention capability enabled on NSG.">threatPreventionEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_TPMStatus" title="TPM Status of the NSG based on the information received by the device during bootstrapping or upgrade.">TPMStatus</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -2206,36 +2328,7 @@
 
             
             
-            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/nsgateways</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="nsgredundancygroup.html">nsgredundancygroups</a>/<span class="text-muted">id</span>/nsgateways</span>
+            <span class="fixed-text">/<a href="ducgroup.html">ducgroups</a>/<span class="text-muted">id</span>/nsgateways</span>
             
 
             
@@ -2264,7 +2357,36 @@
 
             
             
-            <span class="fixed-text">/<a href="ducgroup.html">ducgroups</a>/<span class="text-muted">id</span>/nsgateways</span>
+            <span class="fixed-text">/nsgateways</a>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="policyobjectgroup.html">policyobjectgroups</a>/<span class="text-muted">id</span>/nsgateways</span>
             
 
             
@@ -2322,7 +2444,7 @@
 
             
             
-            <span class="fixed-text">/<a href="policyobjectgroup.html">policyobjectgroups</a>/<span class="text-muted">id</span>/nsgateways</span>
+            <span class="fixed-text">/<a href="nsgredundancygroup.html">nsgredundancygroups</a>/<span class="text-muted">id</span>/nsgateways</span>
             
 
             
@@ -2351,7 +2473,7 @@
 
             
             
-            <span class="fixed-text">/nsgateways</a>
+            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/nsgateways</span>
             
 
             
@@ -2500,6 +2622,29 @@
             
 
             
+            <span class="fixed-text">/nsgateways/<span class="text-muted">id</span>/<a href="threatpreventioninfo.html">threatpreventioninfos</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
             <span class="fixed-text">/nsgateways/<span class="text-muted">id</span>/<a href="wirelessport.html">wirelessports</a></span>
             
 
@@ -2586,6 +2731,36 @@
     
     
     <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+
+            
+            <span class="fixed-text">/nsgateways/<span class="text-muted">id</span>/<a href="underlaytest.html">underlaytests</a></span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
     
             
         </div>
@@ -3657,6 +3832,59 @@
                 </div>
             </section>
             
+            <section id="attr_certValidityDays" class="filterable" data-filter-keyword="certValidityDays" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>certValidityDays</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The number of days for which the NSG's certificate is valid.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">2147483647</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">certValidityDays</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_configurationReloadState" class="filterable" data-filter-keyword="configurationReloadState" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3919,6 +4147,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">controlTrafficDSCPValue</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_CPUCoreAllocation" class="filterable" data-filter-keyword="CPUCoreAllocation" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>CPUCoreAllocation</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Current CPU allocation for network accelerated gateways.  Displays total number of cores and those isolated.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">CPUCoreAllocation</span>
                         </p>
                     </div>
                 </div>
@@ -4588,6 +4869,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">gatewayConnected</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_hugePageSetting" class="filterable" data-filter-keyword="hugePageSetting" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>hugePageSetting</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The size and number of huge pages for an NSG that is running in network accelerated mode.  Hugepage values states the portion of memory reserved for network accelerated services.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">hugePageSetting</span>
                         </p>
                     </div>
                 </div>
@@ -5877,6 +6211,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">templateID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_threatPreventionEnabled" class="filterable" data-filter-keyword="threatPreventionEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>threatPreventionEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates if Threat Prevention capability enabled on NSG.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">threatPreventionEnabled</span>
                         </p>
                     </div>
                 </div>

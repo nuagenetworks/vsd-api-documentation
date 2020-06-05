@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">6</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 6</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -38,6 +38,8 @@
                             <li><a data-id="attr_country" href="#attr_country" class="fixed-text">country</a></li>
                             
                             <li><a data-id="attr_criticalAlarmsCount" href="#attr_criticalAlarmsCount" class="fixed-text">criticalAlarmsCount</a></li>
+                            
+                            <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
                             <li><a data-id="attr_embeddedMetadata" href="#attr_embeddedMetadata" class="fixed-text">embeddedMetadata</a></li>
                             
@@ -69,7 +71,11 @@
                             
                             <li><a data-id="attr_NSGVersion" href="#attr_NSGVersion" class="fixed-text">NSGVersion</a></li>
                             
+                            <li><a data-id="attr_personality" href="#attr_personality" class="fixed-text">personality</a></li>
+                            
                             <li><a data-id="attr_redundantGroupID" href="#attr_redundantGroupID" class="fixed-text">redundantGroupID</a></li>
+                            
+                            <li><a data-id="attr_redundantGroupName" href="#attr_redundantGroupName" class="fixed-text">redundantGroupName</a></li>
                             
                             <li><a data-id="attr_state" href="#attr_state" class="fixed-text">state</a></li>
                             
@@ -80,14 +86,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -248,6 +252,36 @@
     
     
      <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_description" title="A description of the NSG">description</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
     
     
     
@@ -742,7 +776,82 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_personality" title="Personality of the corresponding Network Services Gateway">personality</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (NSG | NSGBR | NSGDUC)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_redundantGroupID" title="The ID of the Redundant Group which has this gateway">redundantGroupID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_redundantGroupName" title="The Name of the Redundant Group which has this gateway">redundantGroupName</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -917,7 +1026,7 @@
 
             
             
-            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/nsgatewayssummaries</span>
+            <span class="fixed-text">/<a href="aggregateddomain.html">aggregateddomains</a>/<span class="text-muted">id</span>/nsgatewayssummaries</span>
             
 
             
@@ -1005,7 +1114,7 @@
 
             
             
-            <span class="fixed-text">/<a href="aggregateddomain.html">aggregateddomains</a>/<span class="text-muted">id</span>/nsgatewayssummaries</span>
+            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/nsgatewayssummaries</span>
             
 
             
@@ -1335,6 +1444,61 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">criticalAlarmsCount</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_description" class="filterable" data-filter-keyword="description" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>description</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>A description of the NSG</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">description</span>
                         </p>
                     </div>
                 </div>
@@ -2139,6 +2303,61 @@
                 </div>
             </section>
             
+            <section id="attr_personality" class="filterable" data-filter-keyword="personality" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>personality</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Personality of the corresponding Network Services Gateway</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">NSG, NSGBR, NSGDUC</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">personality</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_redundantGroupID" class="filterable" data-filter-keyword="redundantGroupID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2191,6 +2410,61 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">redundantGroupID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_redundantGroupName" class="filterable" data-filter-keyword="redundantGroupName" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>redundantGroupName</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The Name of the Redundant Group which has this gateway</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">redundantGroupName</span>
                         </p>
                     </div>
                 </div>

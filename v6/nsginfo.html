@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">6</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 6</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -45,6 +45,10 @@
                             
                             <li><a data-id="attr_bootstrapStatus" href="#attr_bootstrapStatus" class="fixed-text">bootstrapStatus</a></li>
                             
+                            <li><a data-id="attr_CACertificate" href="#attr_CACertificate" class="fixed-text">CACertificate</a></li>
+                            
+                            <li><a data-id="attr_certificate" href="#attr_certificate" class="fixed-text">certificate</a></li>
+                            
                             <li><a data-id="attr_cmdDetailedStatus" href="#attr_cmdDetailedStatus" class="fixed-text">cmdDetailedStatus</a></li>
                             
                             <li><a data-id="attr_cmdDetailedStatusCode" href="#attr_cmdDetailedStatusCode" class="fixed-text">cmdDetailedStatusCode</a></li>
@@ -59,6 +63,8 @@
                             
                             <li><a data-id="attr_cmdType" href="#attr_cmdType" class="fixed-text">cmdType</a></li>
                             
+                            <li><a data-id="attr_CPUCoreAllocation" href="#attr_CPUCoreAllocation" class="fixed-text">CPUCoreAllocation</a></li>
+                            
                             <li><a data-id="attr_CPUType" href="#attr_CPUType" class="fixed-text">CPUType</a></li>
                             
                             <li><a data-id="attr_enterpriseID" href="#attr_enterpriseID" class="fixed-text">enterpriseID</a></li>
@@ -70,6 +76,8 @@
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
                             <li><a data-id="attr_family" href="#attr_family" class="fixed-text">family</a></li>
+                            
+                            <li><a data-id="attr_hugePageSetting" href="#attr_hugePageSetting" class="fixed-text">hugePageSetting</a></li>
                             
                             <li><a data-id="attr_libraries" href="#attr_libraries" class="fixed-text">libraries</a></li>
                             
@@ -100,14 +108,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -129,7 +135,7 @@
 
         <section id="intro">
             <h2>NSGInfo</h2>
-            <p>Device information coming from the NSG</p>
+            <p>Device information coming from the NSG.  That includes the hardware type of the NSG (CPU, memory, family), the version of BIOS, build information, and software application packages installed.</p>
         </section>
 
         <section id="overview">
@@ -363,6 +369,58 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_CACertificate" title="The certficate metadata of NSG's certificate authority.">CACertificate</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_object">object
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_certificate" title="The certificate metadata of NSG's current certficate.">certificate</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_object">object
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
     
     
     
@@ -611,6 +669,38 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_CPUCoreAllocation" title="Current CPU allocation for network accelerated gateways.  Displays total number of cores and those isolated.">CPUCoreAllocation</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_CPUType" title="The NSG Processor Type based on information extracted during bootstrapping.  This may refer to a type of processor manufactured by Intel, ARM, AMD, Cyrix, VIA, or others.">CPUType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -809,6 +899,38 @@
     
     
      (ANY | NSG_AMI | NSG_AZ | NSG_C | NSG_DOCKER | NSG_E | NSG_E200 | NSG_E300 | NSG_V | NSG_X | NSG_X200)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_hugePageSetting" title="The size and number of huge pages for an NSG that is running in network accelerated mode.  Hugepage values states the portion of memory reserved for network accelerated services.">hugePageSetting</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1753,6 +1875,100 @@
                 </div>
             </section>
             
+            <section id="attr_CACertificate" class="filterable" data-filter-keyword="CACertificate" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>CACertificate</b>
+                        <span class="type_object fixed-text">object</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The certficate metadata of NSG's certificate authority.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">CACertificate</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_certificate" class="filterable" data-filter-keyword="certificate" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>certificate</b>
+                        <span class="type_object fixed-text">object</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The certificate metadata of NSG's current certficate.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">certificate</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_cmdDetailedStatus" class="filterable" data-filter-keyword="cmdDetailedStatus" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2126,6 +2342,63 @@
                 </div>
             </section>
             
+            <section id="attr_CPUCoreAllocation" class="filterable" data-filter-keyword="CPUCoreAllocation" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>CPUCoreAllocation</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Current CPU allocation for network accelerated gateways.  Displays total number of cores and those isolated.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">CPUCoreAllocation</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_CPUType" class="filterable" data-filter-keyword="CPUType" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2453,6 +2726,63 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">family</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_hugePageSetting" class="filterable" data-filter-keyword="hugePageSetting" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>hugePageSetting</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The size and number of huge pages for an NSG that is running in network accelerated mode.  Hugepage values states the portion of memory reserved for network accelerated services.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">hugePageSetting</span>
                         </p>
                     </div>
                 </div>

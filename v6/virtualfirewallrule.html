@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">6</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 6</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -69,6 +69,8 @@
                             
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
+                            <li><a data-id="attr_failsafeDatapath" href="#attr_failsafeDatapath" class="fixed-text">failsafeDatapath</a></li>
+                            
                             <li><a data-id="attr_flowLoggingEnabled" href="#attr_flowLoggingEnabled" class="fixed-text">flowLoggingEnabled</a></li>
                             
                             <li><a data-id="attr_ICMPCode" href="#attr_ICMPCode" class="fixed-text">ICMPCode</a></li>
@@ -79,11 +81,17 @@
                             
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
+                            <li><a data-id="attr_locationEntityType" href="#attr_locationEntityType" class="fixed-text">locationEntityType</a></li>
+                            
                             <li><a data-id="attr_locationID" href="#attr_locationID" class="fixed-text">locationID</a></li>
                             
                             <li><a data-id="attr_locationType" href="#attr_locationType" class="fixed-text">locationType</a></li>
                             
+                            <li><a data-id="attr_mirrorDestinationGroupID" href="#attr_mirrorDestinationGroupID" class="fixed-text">mirrorDestinationGroupID</a></li>
+                            
                             <li><a data-id="attr_mirrorDestinationID" href="#attr_mirrorDestinationID" class="fixed-text">mirrorDestinationID</a></li>
+                            
+                            <li><a data-id="attr_networkEntityType" href="#attr_networkEntityType" class="fixed-text">networkEntityType</a></li>
                             
                             <li><a data-id="attr_networkID" href="#attr_networkID" class="fixed-text">networkID</a></li>
                             
@@ -105,6 +113,8 @@
                             
                             <li><a data-id="attr_statsLoggingEnabled" href="#attr_statsLoggingEnabled" class="fixed-text">statsLoggingEnabled</a></li>
                             
+                            <li><a data-id="attr_type" href="#attr_type" class="fixed-text">type</a></li>
+                            
                             <li><a data-id="attr_webFilterID" href="#attr_webFilterID" class="fixed-text">webFilterID</a></li>
                             
                             <li><a data-id="attr_webFilterType" href="#attr_webFilterType" class="fixed-text">webFilterType</a></li>
@@ -112,14 +122,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -729,6 +737,45 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_failsafeDatapath" title="Backup datapath option if VNF/VM is down">failsafeDatapath</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (FAIL_TO_BLOCK | FAIL_TO_WIRE)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_flowLoggingEnabled" title="Is flow logging enabled for this particular template">flowLoggingEnabled</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -869,6 +916,65 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_locationEntityType" title="Indicates whether the Location Entity of ACL Entry was derived from a L2/L3 Domain template or instance. Possible Values: ENTERPRISENETWORK, NETWORKMACROGROUP, PGEXPRESSION, PGEXPRESSIONTEMPLATE, POLICYGROUP, POLICYGROUPTEMPLATE, PUBLICNETWORK, REDIRECTIONTARGET, REDIRECTIONTARGETTEMPLATE, SUBNET, SUBNETTEMPLATE, ZONE, ZONETEMPLATE.">locationEntityType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (ENTERPRISENETWORK | NETWORKMACROGROUP | PGEXPRESSION | PGEXPRESSIONTEMPLATE | POLICYGROUP | POLICYGROUPTEMPLATE | PUBLICNETWORK | REDIRECTIONTARGET | REDIRECTIONTARGETTEMPLATE | SUBNET | SUBNETTEMPLATE | ZONE | ZONETEMPLATE)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_locationID" title="The ID of the source endpoint (Subnet/Zone/PortGroup/PolicyGroupExpression/NetworkMacro/Internet Policy Group/Enterprise Network)">locationID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -952,6 +1058,32 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_mirrorDestinationGroupID" title="ID of the associated Mirror Destination Group.">mirrorDestinationGroupID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_mirrorDestinationID" title="Destination ID of the mirror destination object.">mirrorDestinationID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -965,6 +1097,63 @@
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
                             
     
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_networkEntityType" title="Indicates whether the Network Entity of ACL Entry was derived from a L2/L3 Domain template or instance. Possible Values: ENTERPRISENETWORK, NETWORKMACROGROUP, PGEXPRESSION, PGEXPRESSIONTEMPLATE, POLICYGROUP, POLICYGROUPTEMPLATE, PUBLICNETWORK, SAASAPPLICATIONGROUP, SUBNET, SUBNETTEMPLATE, ZONE, ZONETEMPLATE.">networkEntityType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (ENTERPRISENETWORK | NETWORKMACROGROUP | PGEXPRESSION | PGEXPRESSIONTEMPLATE | POLICYGROUP | POLICYGROUPTEMPLATE | PUBLICNETWORK | SAASAPPLICATIONGROUP | SUBNET | SUBNETTEMPLATE | ZONE | ZONETEMPLATE)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
     
     
     
@@ -1036,7 +1225,7 @@
     
     
     
-     (ANY | ENTERPRISE_NETWORK | INTERNET_POLICYGROUP | NETWORK_MACRO_GROUP | PGEXPRESSION | POLICYGROUP | SUBNET | ZONE)
+     (ANY | ENTERPRISE_NETWORK | NETWORK_MACRO_GROUP | PGEXPRESSION | POLICYGROUP | SUBNET | UNDERLAY_INTERNET_POLICYGROUP | ZONE)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1310,6 +1499,43 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_type" title="Virtual Firewall Rule Type">type</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (THREAT_PREVENTION)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_webFilterID" title="ID of web filter">webFilterID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -1438,29 +1664,7 @@
 
             
             
-            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/virtualfirewallrules</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="l2domain.html">l2domains</a>/<span class="text-muted">id</span>/virtualfirewallrules</span>
+            <span class="fixed-text">/<a href="aggregateddomain.html">aggregateddomains</a>/<span class="text-muted">id</span>/virtualfirewallrules</span>
             
 
             
@@ -1504,7 +1708,29 @@
 
             
             
-            <span class="fixed-text">/<a href="aggregateddomain.html">aggregateddomains</a>/<span class="text-muted">id</span>/virtualfirewallrules</span>
+            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/virtualfirewallrules</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="l2domain.html">l2domains</a>/<span class="text-muted">id</span>/virtualfirewallrules</span>
             
 
             
@@ -2643,6 +2869,59 @@
                 </div>
             </section>
             
+            <section id="attr_failsafeDatapath" class="filterable" data-filter-keyword="failsafeDatapath" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>failsafeDatapath</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Backup datapath option if VNF/VM is down</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">FAIL_TO_BLOCK, FAIL_TO_WIRE</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">failsafeDatapath</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_flowLoggingEnabled" class="filterable" data-filter-keyword="flowLoggingEnabled" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2898,6 +3177,57 @@
                 </div>
             </section>
             
+            <section id="attr_locationEntityType" class="filterable" data-filter-keyword="locationEntityType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>locationEntityType</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates whether the Location Entity of ACL Entry was derived from a L2/L3 Domain template or instance. Possible Values: ENTERPRISENETWORK, NETWORKMACROGROUP, PGEXPRESSION, PGEXPRESSIONTEMPLATE, POLICYGROUP, POLICYGROUPTEMPLATE, PUBLICNETWORK, REDIRECTIONTARGET, REDIRECTIONTARGETTEMPLATE, SUBNET, SUBNETTEMPLATE, ZONE, ZONETEMPLATE.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ENTERPRISENETWORK, NETWORKMACROGROUP, PGEXPRESSION, PGEXPRESSIONTEMPLATE, POLICYGROUP, POLICYGROUPTEMPLATE, PUBLICNETWORK, REDIRECTIONTARGET, REDIRECTIONTARGETTEMPLATE, SUBNET, SUBNETTEMPLATE, ZONE, ZONETEMPLATE</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">locationEntityType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_locationID" class="filterable" data-filter-keyword="locationID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3006,6 +3336,57 @@
                 </div>
             </section>
             
+            <section id="attr_mirrorDestinationGroupID" class="filterable" data-filter-keyword="mirrorDestinationGroupID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>mirrorDestinationGroupID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the associated Mirror Destination Group.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max lenght: </b></span><span class="fixed-text">255</span><br/>
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">mirrorDestinationGroupID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_mirrorDestinationID" class="filterable" data-filter-keyword="mirrorDestinationID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -3050,6 +3431,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">mirrorDestinationID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_networkEntityType" class="filterable" data-filter-keyword="networkEntityType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>networkEntityType</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates whether the Network Entity of ACL Entry was derived from a L2/L3 Domain template or instance. Possible Values: ENTERPRISENETWORK, NETWORKMACROGROUP, PGEXPRESSION, PGEXPRESSIONTEMPLATE, POLICYGROUP, POLICYGROUPTEMPLATE, PUBLICNETWORK, SAASAPPLICATIONGROUP, SUBNET, SUBNETTEMPLATE, ZONE, ZONETEMPLATE.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ENTERPRISENETWORK, NETWORKMACROGROUP, PGEXPRESSION, PGEXPRESSIONTEMPLATE, POLICYGROUP, POLICYGROUPTEMPLATE, PUBLICNETWORK, SAASAPPLICATIONGROUP, SUBNET, SUBNETTEMPLATE, ZONE, ZONETEMPLATE</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">networkEntityType</span>
                         </p>
                     </div>
                 </div>
@@ -3138,7 +3570,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENTERPRISE_NETWORK, INTERNET_POLICYGROUP, NETWORK_MACRO_GROUP, PGEXPRESSION, POLICYGROUP, SUBNET, ZONE</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ANY, ENTERPRISE_NETWORK, NETWORK_MACRO_GROUP, PGEXPRESSION, POLICYGROUP, SUBNET, UNDERLAY_INTERNET_POLICYGROUP, ZONE</span><br/>
                             
 
                             
@@ -3586,6 +4018,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">statsLoggingEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_type" class="filterable" data-filter-keyword="type" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>type</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Virtual Firewall Rule Type</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">THREAT_PREVENTION</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">type</span>
                         </p>
                     </div>
                 </div>
