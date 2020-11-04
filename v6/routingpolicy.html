@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">6</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 6</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -32,6 +32,8 @@
                         <ul class="dropdown-menu" role="menu">
                             
                             <li><a data-id="attr_contentType" href="#attr_contentType" class="fixed-text">contentType</a></li>
+                            
+                            <li><a data-id="attr_CustomerID" href="#attr_CustomerID" class="fixed-text">CustomerID</a></li>
                             
                             <li><a data-id="attr_defaultAction" href="#attr_defaultAction" class="fixed-text">defaultAction</a></li>
                             
@@ -52,14 +54,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -106,7 +106,9 @@
     
     
     
-     (DEFAULT | NETCONF_7X50)
+    
+    
+     (DEFAULT | NETCONF_7X50 | SR_LINUX)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -123,6 +125,34 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_CustomerID" title="The customer ID given to parent enterprise. This is used by Netconf/Config manager.">CustomerID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
     
     
     
@@ -457,36 +487,7 @@
 
             
             
-            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/routingpolicies</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/routingpolicies</span>
+            <span class="fixed-text">/<a href="aggregateddomain.html">aggregateddomains</a>/<span class="text-muted">id</span>/routingpolicies</span>
             
 
             
@@ -537,7 +538,58 @@
 
             
             
-            <span class="fixed-text">/<a href="aggregateddomain.html">aggregateddomains</a>/<span class="text-muted">id</span>/routingpolicies</span>
+            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/routingpolicies</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="gateway.html">gateways</a>/<span class="text-muted">id</span>/routingpolicies</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="enterprise.html">enterprises</a>/<span class="text-muted">id</span>/routingpolicies</span>
             
 
             
@@ -737,7 +789,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DEFAULT, NETCONF_7X50</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DEFAULT, NETCONF_7X50, SR_LINUX</span><br/>
                             
 
                             
@@ -757,6 +809,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">contentType</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_CustomerID" class="filterable" data-filter-keyword="CustomerID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>CustomerID</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The customer ID given to parent enterprise. This is used by Netconf/Config manager.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">2147483647</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">CustomerID</span>
                         </p>
                     </div>
                 </div>

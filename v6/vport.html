@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">VSD API Documentation</a><span class="navbar-brand"> &gt; </span><a class="navbar-brand" href="index.html">6</a>
+                <a class="navbar-brand" href="index.html">VSD API Documentation 6</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -65,6 +65,8 @@
                             
                             <li><a data-id="attr_color" href="#attr_color" class="fixed-text">color</a></li>
                             
+                            <li><a data-id="attr_creationDate" href="#attr_creationDate" class="fixed-text">creationDate</a></li>
+                            
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
                             <li><a data-id="attr_domainID" href="#attr_domainID" class="fixed-text">domainID</a></li>
@@ -81,9 +83,15 @@
                             
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
+                            <li><a data-id="attr_esGroupVPortInfos" href="#attr_esGroupVPortInfos" class="fixed-text">esGroupVPortInfos</a></li>
+                            
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
                             <li><a data-id="attr_FIPIgnoreDefaultRoute" href="#attr_FIPIgnoreDefaultRoute" class="fixed-text">FIPIgnoreDefaultRoute</a></li>
+                            
+                            <li><a data-id="attr_flowCount" href="#attr_flowCount" class="fixed-text">flowCount</a></li>
+                            
+                            <li><a data-id="attr_flowLimitEnabled" href="#attr_flowLimitEnabled" class="fixed-text">flowLimitEnabled</a></li>
                             
                             <li><a data-id="attr_gatewayMACMoveRole" href="#attr_gatewayMACMoveRole" class="fixed-text">gatewayMACMoveRole</a></li>
                             
@@ -95,6 +103,8 @@
                             
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
+                            <li><a data-id="attr_lastUpdatedDate" href="#attr_lastUpdatedDate" class="fixed-text">lastUpdatedDate</a></li>
+                            
                             <li><a data-id="attr_multicast" href="#attr_multicast" class="fixed-text">multicast</a></li>
                             
                             <li><a data-id="attr_multiNICVPortID" href="#attr_multiNICVPortID" class="fixed-text">multiNICVPortID</a></li>
@@ -102,6 +112,8 @@
                             <li><a data-id="attr_name" href="#attr_name" class="fixed-text">name</a></li>
                             
                             <li><a data-id="attr_operationalState" href="#attr_operationalState" class="fixed-text">operationalState</a></li>
+                            
+                            <li><a data-id="attr_owner" href="#attr_owner" class="fixed-text">owner</a></li>
                             
                             <li><a data-id="attr_peerOperationalState" href="#attr_peerOperationalState" class="fixed-text">peerOperationalState</a></li>
                             
@@ -130,14 +142,12 @@
                         </ul>
                     </li>
                 </ul>
-                <!--
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group dropdown">
                         <input type="text" class="form-control" placeholder="Search" id="searchfield">
                         <ul class="dropdown-menu dropdown-menu-left" role="menu" id="searchresult" style="display: none"></ul>
                     </div>
                 </form>
-                -->
             </div>
         </div>
     </nav>
@@ -321,7 +331,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_associatedFloatingIPID" title="Id of Floating IP address associated to this vport">associatedFloatingIPID</a>
+                            <a href="#attr_associatedFloatingIPID" title="Id of Floating IP address associated to this VPort">associatedFloatingIPID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -429,7 +439,9 @@
     
     
     
-     (DC7X50 | EVDF | EVDFB | HARDWARE_VTEP | NETCONF_7X50 | NETCONF_THIRDPARTY_HW_VTEP | NSG | NSGBR | NSGDUC | NUAGE_210_WBX_32_Q | NUAGE_210_WBX_48_S | OTHER | UNMANAGED_GATEWAY | VDF | VDFG | VRSB | VRSG | VSA | VSG)
+    
+    
+     (DC7X50 | EVDF | EVDFB | HARDWARE_VTEP | NETCONF_7X50 | NETCONF_THIRDPARTY_HW_VTEP | NSG | NSGBR | NSGDUC | NUAGE_210_WBX_32_Q | NUAGE_210_WBX_48_S | OTHER | SR_LINUX | UNMANAGED_GATEWAY | VDF | VDFG | VRSB | VRSG | VSA | VSG)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -700,6 +712,38 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_creationDate" title="Time stamp when this object was created.">creationDate</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_description" title="Description for this vport">description</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -942,6 +986,38 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_esGroupVPortInfos" title="Array of the embedded resource VPortInfo for each gateway member of ethernet segment group">esGroupVPortInfos</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_list">list
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_externalID" title="External object ID. Used for integration with third party systems">externalID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -977,6 +1053,77 @@
                     <tr>
                         <td class="fixed-text">
                             <a href="#attr_FIPIgnoreDefaultRoute" title="Determines whether the default Overlay route will be ignored or not when a VM has FIP so that it takes Underlay route.">FIPIgnoreDefaultRoute</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (DISABLED | ENABLED | INHERITED)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_flowCount" title="Maximum number of data flows allowed for a VPort. If "Flow Limit Enabled" parameter is ENABLED/DISABLED/INHERITED, Flow Count parameter is configured/ignored/derived from parent domain respectively.">flowCount</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_flowLimitEnabled" title="Indicates if flow limit is enabled or disabled or "Flow Count" attribute is derived from the parent Domain on this VPort . Possible values are ENABLED, DISABLED or INHERITED.">flowLimitEnabled</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -1164,6 +1311,38 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_lastUpdatedDate" title="Time stamp when this object was last updated.">lastUpdatedDate</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_multicast" title="Indicates multicast policy on Vport.">multicast</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -1261,7 +1440,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_operationalState" title="Operational State of the VPort. Possible values are INIT, UP, DOWN.">operationalState</a>
+                            <a href="#attr_operationalState" title="Operational State of the VPort. Possible values are INIT, UP, DOWN, DEGRADED">operationalState</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -1279,7 +1458,9 @@
     
     
     
-     (DOWN | INIT | UP)
+    
+    
+     (DEGRADED | DOWN | INIT | UP)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1288,6 +1469,34 @@
     
     
     
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_owner" title="Identifies the user that has created this object.">owner</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
     
     
     
@@ -1755,7 +1964,7 @@
 
             
             
-            <span class="fixed-text">/<a href="overlaymirrordestination.html">overlaymirrordestinations</a>/<span class="text-muted">id</span>/vports</span>
+            <span class="fixed-text">/<a href="aggregateddomain.html">aggregateddomains</a>/<span class="text-muted">id</span>/vports</span>
             
 
             
@@ -1767,13 +1976,6 @@
     
     
     <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-success">put</span>
     
             
         </div>
@@ -1835,6 +2037,50 @@
 
             
             
+            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/vports</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="floatingip.html">floatingips</a>/<span class="text-muted">id</span>/vports</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="subnet.html">subnets</a>/<span class="text-muted">id</span>/vports</span>
             
 
@@ -1854,35 +2100,6 @@
     
     
     <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="policygroup.html">policygroups</a>/<span class="text-muted">id</span>/vports</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-success">put</span>
     
             
         </div>
@@ -1938,28 +2155,6 @@
             
             
             <span class="fixed-text">/<a href="egressprofile.html">egressprofiles</a>/<span class="text-muted">id</span>/vports</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/vports</span>
             
 
             
@@ -2054,7 +2249,7 @@
 
             
             
-            <span class="fixed-text">/<a href="aggregateddomain.html">aggregateddomains</a>/<span class="text-muted">id</span>/vports</span>
+            <span class="fixed-text">/<a href="policygroup.html">policygroups</a>/<span class="text-muted">id</span>/vports</span>
             
 
             
@@ -2066,6 +2261,13 @@
     
     
     <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
     
             
         </div>
@@ -2076,7 +2278,7 @@
 
             
             
-            <span class="fixed-text">/<a href="floatingip.html">floatingips</a>/<span class="text-muted">id</span>/vports</span>
+            <span class="fixed-text">/<a href="overlaymirrordestination.html">overlaymirrordestinations</a>/<span class="text-muted">id</span>/vports</span>
             
 
             
@@ -2088,6 +2290,13 @@
     
     
     <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
     
             
         </div>
@@ -3329,7 +3538,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Id of Floating IP address associated to this vport</p>
+                        <p>Id of Floating IP address associated to this VPort</p>
 
                         <hr/>
 
@@ -3446,7 +3655,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DC7X50, EVDF, EVDFB, HARDWARE_VTEP, NETCONF_7X50, NETCONF_THIRDPARTY_HW_VTEP, NSG, NSGBR, NSGDUC, NUAGE_210_WBX_32_Q, NUAGE_210_WBX_48_S, OTHER, UNMANAGED_GATEWAY, VDF, VDFG, VRSB, VRSG, VSA, VSG</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DC7X50, EVDF, EVDFB, HARDWARE_VTEP, NETCONF_7X50, NETCONF_THIRDPARTY_HW_VTEP, NSG, NSGBR, NSGDUC, NUAGE_210_WBX_32_Q, NUAGE_210_WBX_48_S, OTHER, SR_LINUX, UNMANAGED_GATEWAY, VDF, VDFG, VRSB, VRSG, VSA, VSG</span><br/>
                             
 
                             
@@ -3920,6 +4129,59 @@
                 </div>
             </section>
             
+            <section id="attr_creationDate" class="filterable" data-filter-keyword="creationDate" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>creationDate</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Time stamp when this object was created.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">creationDate</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_description" class="filterable" data-filter-keyword="description" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -4324,6 +4586,59 @@
                 </div>
             </section>
             
+            <section id="attr_esGroupVPortInfos" class="filterable" data-filter-keyword="esGroupVPortInfos" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>esGroupVPortInfos</b>
+                        <span class="type_list fixed-text">list</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Array of the embedded resource VPortInfo for each gateway member of ethernet segment group</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">esGroupVPortInfos</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_externalID" class="filterable" data-filter-keyword="externalID" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -4429,6 +4744,116 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">FIPIgnoreDefaultRoute</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_flowCount" class="filterable" data-filter-keyword="flowCount" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>flowCount</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Maximum number of data flows allowed for a VPort. If "Flow Limit Enabled" parameter is ENABLED/DISABLED/INHERITED, Flow Count parameter is configured/ignored/derived from parent domain respectively.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">500000</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">flowCount</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_flowLimitEnabled" class="filterable" data-filter-keyword="flowLimitEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>flowLimitEnabled</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates if flow limit is enabled or disabled or "Flow Count" attribute is derived from the parent Domain on this VPort . Possible values are ENABLED, DISABLED or INHERITED.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DISABLED, ENABLED, INHERITED</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">INHERITED</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">flowLimitEnabled</span>
                         </p>
                     </div>
                 </div>
@@ -4687,6 +5112,59 @@
                 </div>
             </section>
             
+            <section id="attr_lastUpdatedDate" class="filterable" data-filter-keyword="lastUpdatedDate" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>lastUpdatedDate</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+     <span class="label label-warning"> read only </span>&nbsp;
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Time stamp when this object was last updated.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">lastUpdatedDate</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_multicast" class="filterable" data-filter-keyword="multicast" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -4865,14 +5343,63 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Operational State of the VPort. Possible values are INIT, UP, DOWN.</p>
+                        <p>Operational State of the VPort. Possible values are INIT, UP, DOWN, DEGRADED</p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DOWN, INIT, UP</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DEGRADED, DOWN, INIT, UP</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">operationalState</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_owner" class="filterable" data-filter-keyword="owner" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>owner</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+     <span class="label label-info"> autogenerated </span>&nbsp;
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Identifies the user that has created this object.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
                             
 
                             
@@ -4891,7 +5418,7 @@
 
                             
 
-                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">operationalState</span>
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">owner</span>
                         </p>
                     </div>
                 </div>
