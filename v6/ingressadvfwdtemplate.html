@@ -502,7 +502,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_priorityType" title="Possible values: TOP, BOTTOM or NONE. TOP and BOTTOM ACL policies can only be defined and managed on the template level, NONE can be used on both the template and instantiated level. These allow for careful control of ACL priority handling.">priorityType</a>
+                            <a href="#attr_priorityType" title="Possible values: TOP, BOTTOM, TOP_FIREWALL, BOTTOM_FIREWALL, MIDDLE_FIREWALL or NONE. TOP and BOTTOM ACL policies can only be defined and managed on the template level, NONE can be used on both the template and instantiated level. TOP_FIREWALL, BOTTOM_FIREWALL, MIDDLE_FIREWALL are used to represent acls dirived from Virtual Firewall Policies. These allow for careful control of ACL priority handling.">priorityType</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -520,7 +520,13 @@
     
     
     
-     (BOTTOM | NONE | TOP)
+    
+    
+    
+    
+    
+    
+     (BOTTOM | BOTTOM_FIREWALL | MIDDLE_FIREWALL | NONE | TOP | TOP_FIREWALL)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -1610,14 +1616,14 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Possible values: TOP, BOTTOM or NONE. TOP and BOTTOM ACL policies can only be defined and managed on the template level, NONE can be used on both the template and instantiated level. These allow for careful control of ACL priority handling.</p>
+                        <p>Possible values: TOP, BOTTOM, TOP_FIREWALL, BOTTOM_FIREWALL, MIDDLE_FIREWALL or NONE. TOP and BOTTOM ACL policies can only be defined and managed on the template level, NONE can be used on both the template and instantiated level. TOP_FIREWALL, BOTTOM_FIREWALL, MIDDLE_FIREWALL are used to represent acls dirived from Virtual Firewall Policies. These allow for careful control of ACL priority handling.</p>
 
                         <hr/>
 
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">BOTTOM, NONE, TOP</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">BOTTOM, BOTTOM_FIREWALL, MIDDLE_FIREWALL, NONE, TOP, TOP_FIREWALL</span><br/>
                             
 
                             
