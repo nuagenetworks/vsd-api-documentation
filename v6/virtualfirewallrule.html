@@ -111,6 +111,8 @@
                             
                             <li><a data-id="attr_protocol" href="#attr_protocol" class="fixed-text">protocol</a></li>
                             
+                            <li><a data-id="attr_reputationScore" href="#attr_reputationScore" class="fixed-text">reputationScore</a></li>
+                            
                             <li><a data-id="attr_sourcePort" href="#attr_sourcePort" class="fixed-text">sourcePort</a></li>
                             
                             <li><a data-id="attr_stateful" href="#attr_stateful" class="fixed-text">stateful</a></li>
@@ -1477,6 +1479,47 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_reputationScore" title="Web Domain Reputation Score. Valid values are LOW_RISK, MEDIUM_RISK and HIGH_RISK.  Applicable when webFilterType is WEB_DOMAIN_REPUTATION.">reputationScore</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (HIGH_RISK | LOW_RISK | MEDIUM_RISK)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_sourcePort" title="Source port to be matched if protocol is UDP or TCP. Value should be either * or a single port number or a port range like 1,2.. or 1 - 10">sourcePort</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -1720,7 +1763,9 @@
     
     
     
-     (WEB_CATEGORY | WEB_DOMAIN_NAME)
+    
+    
+     (WEB_CATEGORY | WEB_DOMAIN_NAME | WEB_DOMAIN_REPUTATION)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -4146,6 +4191,59 @@
                 </div>
             </section>
             
+            <section id="attr_reputationScore" class="filterable" data-filter-keyword="reputationScore" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>reputationScore</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Web Domain Reputation Score. Valid values are LOW_RISK, MEDIUM_RISK and HIGH_RISK.  Applicable when webFilterType is WEB_DOMAIN_REPUTATION.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">HIGH_RISK, LOW_RISK, MEDIUM_RISK</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">reputationScore</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_sourcePort" class="filterable" data-filter-keyword="sourcePort" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -4557,7 +4655,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">WEB_CATEGORY, WEB_DOMAIN_NAME</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">WEB_CATEGORY, WEB_DOMAIN_NAME, WEB_DOMAIN_REPUTATION</span><br/>
                             
 
                             
