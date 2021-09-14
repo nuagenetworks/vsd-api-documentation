@@ -93,6 +93,10 @@
                             
                             <li><a data-id="attr_flowLimitEnabled" href="#attr_flowLimitEnabled" class="fixed-text">flowLimitEnabled</a></li>
                             
+                            <li><a data-id="attr_flowSetupRate" href="#attr_flowSetupRate" class="fixed-text">flowSetupRate</a></li>
+                            
+                            <li><a data-id="attr_flowSetupRateLimitEnabled" href="#attr_flowSetupRateLimitEnabled" class="fixed-text">flowSetupRateLimitEnabled</a></li>
+                            
                             <li><a data-id="attr_gatewayMACMoveRole" href="#attr_gatewayMACMoveRole" class="fixed-text">gatewayMACMoveRole</a></li>
                             
                             <li><a data-id="attr_gatewayPortName" href="#attr_gatewayPortName" class="fixed-text">gatewayPortName</a></li>
@@ -1168,6 +1172,77 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_flowSetupRate" title="Committed flow setup rate in pps for this VPort. If Flow Setup Rate Limit parameter is ENABLED/DISABLED/INHERITED, flow setup rate parameter is configured/ignored/derived from parent domain respectively.">flowSetupRate</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_flowSetupRateLimitEnabled" title="Indicates if flow setup rate limit is enabled or disabled or derived from parent Domain. Possible values are ENABLED, DISABLED or INHERITED.">flowSetupRateLimitEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (DISABLED | ENABLED | INHERITED)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_gatewayMACMoveRole" title="Role of the gateway vport when handling MAC move errors">gatewayMACMoveRole</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -2018,35 +2093,6 @@
 
             
             
-            <span class="fixed-text">/<a href="redirectiontarget.html">redirectiontargets</a>/<span class="text-muted">id</span>/vports</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-success">put</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
             <span class="fixed-text">/<a href="subnet.html">subnets</a>/<span class="text-muted">id</span>/vports</span>
             
 
@@ -2285,6 +2331,35 @@
     
     
     <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="redirectiontarget.html">redirectiontargets</a>/<span class="text-muted">id</span>/vports</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
     
             
         </div>
@@ -4886,6 +4961,118 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">flowLimitEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_flowSetupRate" class="filterable" data-filter-keyword="flowSetupRate" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>flowSetupRate</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Committed flow setup rate in pps for this VPort. If Flow Setup Rate Limit parameter is ENABLED/DISABLED/INHERITED, flow setup rate parameter is configured/ignored/derived from parent domain respectively.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">1000</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">40000</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">flowSetupRate</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_flowSetupRateLimitEnabled" class="filterable" data-filter-keyword="flowSetupRateLimitEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>flowSetupRateLimitEnabled</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates if flow setup rate limit is enabled or disabled or derived from parent Domain. Possible values are ENABLED, DISABLED or INHERITED.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DISABLED, ENABLED, INHERITED</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">INHERITED</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">flowSetupRateLimitEnabled</span>
                         </p>
                     </div>
                 </div>

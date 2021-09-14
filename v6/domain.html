@@ -113,6 +113,10 @@
                             
                             <li><a data-id="attr_flowLimitEnabled" href="#attr_flowLimitEnabled" class="fixed-text">flowLimitEnabled</a></li>
                             
+                            <li><a data-id="attr_flowSetupRate" href="#attr_flowSetupRate" class="fixed-text">flowSetupRate</a></li>
+                            
+                            <li><a data-id="attr_flowSetupRateLimitEnabled" href="#attr_flowSetupRateLimitEnabled" class="fixed-text">flowSetupRateLimitEnabled</a></li>
+                            
                             <li><a data-id="attr_globalRoutingEnabled" href="#attr_globalRoutingEnabled" class="fixed-text">globalRoutingEnabled</a></li>
                             
                             <li><a data-id="attr_GRTEnabled" href="#attr_GRTEnabled" class="fixed-text">GRTEnabled</a></li>
@@ -1428,6 +1432,75 @@
                     <tr>
                         <td class="fixed-text">
                             <a href="#attr_flowLimitEnabled" title="Indicates if flow limit is enabled on this Domain. Possible values are ENABLED or DISABLED.">flowLimitEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (DISABLED | ENABLED)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_flowSetupRate" title="Committed flow setup rate in pps for a VPort. Applicable when flow setup rate limit is ENABLED.">flowSetupRate</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_flowSetupRateLimitEnabled" title="Indicates if flow setup rate limit is enabled on this Domain. Possible values are ENABLED or DISABLED.">flowSetupRateLimitEnabled</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_enum">enum
@@ -6564,6 +6637,118 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">flowLimitEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_flowSetupRate" class="filterable" data-filter-keyword="flowSetupRate" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>flowSetupRate</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Committed flow setup rate in pps for a VPort. Applicable when flow setup rate limit is ENABLED.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">1000</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">40000</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">flowSetupRate</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_flowSetupRateLimitEnabled" class="filterable" data-filter-keyword="flowSetupRateLimitEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>flowSetupRateLimitEnabled</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates if flow setup rate limit is enabled on this Domain. Possible values are ENABLED or DISABLED.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">DISABLED, ENABLED</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">DISABLED</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">flowSetupRateLimitEnabled</span>
                         </p>
                     </div>
                 </div>
