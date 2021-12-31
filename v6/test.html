@@ -33,6 +33,8 @@
                             
                             <li><a data-id="attr_associatedTestDefinitionID" href="#attr_associatedTestDefinitionID" class="fixed-text">associatedTestDefinitionID</a></li>
                             
+                            <li><a data-id="attr_associatedTestDefinitionType" href="#attr_associatedTestDefinitionType" class="fixed-text">associatedTestDefinitionType</a></li>
+                            
                             <li><a data-id="attr_associatedTestSuiteID" href="#attr_associatedTestSuiteID" class="fixed-text">associatedTestSuiteID</a></li>
                             
                             <li><a data-id="attr_command" href="#attr_command" class="fixed-text">command</a></li>
@@ -110,6 +112,47 @@
     
     
     
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+     <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedTestDefinitionType" title="The type of associated Test Definition instance.">associatedTestDefinitionType</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (ICMP_ECHO_TEST_DEFINITION | TEST_DEFINITION)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -638,6 +681,35 @@
 
             
             
+            <span class="fixed-text">/<a href="scheduledtestsuite.html">scheduledtestsuites</a>/<span class="text-muted">id</span>/tests</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="testsuite.html">testsuites</a>/<span class="text-muted">id</span>/tests</span>
             
 
@@ -858,6 +930,61 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedTestDefinitionID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedTestDefinitionType" class="filterable" data-filter-keyword="associatedTestDefinitionType" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedTestDefinitionType</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+     <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>The type of associated Test Definition instance.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ICMP_ECHO_TEST_DEFINITION, TEST_DEFINITION</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedTestDefinitionType</span>
                         </p>
                     </div>
                 </div>

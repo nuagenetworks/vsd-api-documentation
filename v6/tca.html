@@ -39,6 +39,8 @@
                             
                             <li><a data-id="attr_description" href="#attr_description" class="fixed-text">description</a></li>
                             
+                            <li><a data-id="attr_destinationPort" href="#attr_destinationPort" class="fixed-text">destinationPort</a></li>
+                            
                             <li><a data-id="attr_disable" href="#attr_disable" class="fixed-text">disable</a></li>
                             
                             <li><a data-id="attr_displayStatus" href="#attr_displayStatus" class="fixed-text">displayStatus</a></li>
@@ -60,6 +62,8 @@
                             <li><a data-id="attr_owner" href="#attr_owner" class="fixed-text">owner</a></li>
                             
                             <li><a data-id="attr_period" href="#attr_period" class="fixed-text">period</a></li>
+                            
+                            <li><a data-id="attr_protocol" href="#attr_protocol" class="fixed-text">protocol</a></li>
                             
                             <li><a data-id="attr_status" href="#attr_status" class="fixed-text">status</a></li>
                             
@@ -241,6 +245,36 @@
     
      <span class="label label-info"> filterable </span>&nbsp;
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_destinationPort" title="Destination Port Number. Valid range is 1-65535 for the metric DESTINATION_PORT_PROTOCOL_COUNT, 0 for rest of the metrics.">destinationPort</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -538,7 +572,9 @@
     
     
     
-     (ACL_DENY_EVENT_COUNT | ANTI_SPOOF_EVENT_COUNT | BYTES_IN | BYTES_OUT | FIP_PRE_RATE_LIMIT_BYTES | FIP_PRE_RATE_LIMIT_PACKETS | FIP_RATE_LIMIT_DROPPED_BYTES | FIP_RATE_LIMIT_DROPPED_PACKETS | HIGH_RISK_IP_ACCESS_EVENT_COUNT | IDP_EVENT_COUNT | L7_BYTES_IN | L7_BYTES_OUT | L7_PACKETS_IN | L7_PACKETS_OUT | MEDIUM_RISK_IP_ACCESS_EVENT_COUNT | PACKETS_DROPPED_BY_RATE_LIMIT | PACKETS_IN | PACKETS_IN_DROPPED | PACKETS_IN_ERROR | PACKETS_OUT | PACKETS_OUT_DROPPED | PACKETS_OUT_ERROR | PORT_SCAN_PORT_COUNT | PORT_SWEEP_IP_COUNT | TCP_FLAG_ACK_IN | TCP_FLAG_ACK_OUT | TCP_FLAG_NULL_IN | TCP_FLAG_NULL_OUT | TCP_FLAG_RST_IN | TCP_FLAG_RST_OUT | TCP_FLAG_SYN_IN | TCP_FLAG_SYN_OUT)
+    
+    
+     (ACL_DENY_EVENT_COUNT | ANTI_SPOOF_EVENT_COUNT | BYTES_IN | BYTES_OUT | DESTINATION_PORT_PROTOCOL_COUNT | FIP_PRE_RATE_LIMIT_BYTES | FIP_PRE_RATE_LIMIT_PACKETS | FIP_RATE_LIMIT_DROPPED_BYTES | FIP_RATE_LIMIT_DROPPED_PACKETS | HIGH_RISK_IP_ACCESS_EVENT_COUNT | IDP_EVENT_COUNT | L7_BYTES_IN | L7_BYTES_OUT | L7_PACKETS_IN | L7_PACKETS_OUT | MEDIUM_RISK_IP_ACCESS_EVENT_COUNT | PACKETS_DROPPED_BY_RATE_LIMIT | PACKETS_IN | PACKETS_IN_DROPPED | PACKETS_IN_ERROR | PACKETS_OUT | PACKETS_OUT_DROPPED | PACKETS_OUT_ERROR | PORT_SCAN_PORT_COUNT | PORT_SWEEP_IP_COUNT | TCP_FLAG_ACK_IN | TCP_FLAG_ACK_OUT | TCP_FLAG_NULL_IN | TCP_FLAG_NULL_OUT | TCP_FLAG_RST_IN | TCP_FLAG_RST_OUT | TCP_FLAG_SYN_IN | TCP_FLAG_SYN_OUT)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -551,6 +587,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -633,6 +673,47 @@
                             
     
      <span class="label label-danger"> required </span>&nbsp;
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_protocol" title="L4 service protocol - Possible values TCP, UDP for the metric DESTINATION_PORT_PROTOCOL_COUNT, NONE for rest of the metrics.">protocol</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_enum">enum
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     (NONE | TCP | UDP)
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
     
     
     
@@ -1635,6 +1716,59 @@
                 </div>
             </section>
             
+            <section id="attr_destinationPort" class="filterable" data-filter-keyword="destinationPort" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>destinationPort</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Destination Port Number. Valid range is 1-65535 for the metric DESTINATION_PORT_PROTOCOL_COUNT, 0 for rest of the metrics.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">65535</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">destinationPort</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_disable" class="filterable" data-filter-keyword="disable" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -2008,6 +2142,10 @@
     
     
     
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2022,7 +2160,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ACL_DENY_EVENT_COUNT, ANTI_SPOOF_EVENT_COUNT, BYTES_IN, BYTES_OUT, FIP_PRE_RATE_LIMIT_BYTES, FIP_PRE_RATE_LIMIT_PACKETS, FIP_RATE_LIMIT_DROPPED_BYTES, FIP_RATE_LIMIT_DROPPED_PACKETS, HIGH_RISK_IP_ACCESS_EVENT_COUNT, IDP_EVENT_COUNT, L7_BYTES_IN, L7_BYTES_OUT, L7_PACKETS_IN, L7_PACKETS_OUT, MEDIUM_RISK_IP_ACCESS_EVENT_COUNT, PACKETS_DROPPED_BY_RATE_LIMIT, PACKETS_IN, PACKETS_IN_DROPPED, PACKETS_IN_ERROR, PACKETS_OUT, PACKETS_OUT_DROPPED, PACKETS_OUT_ERROR, PORT_SCAN_PORT_COUNT, PORT_SWEEP_IP_COUNT, TCP_FLAG_ACK_IN, TCP_FLAG_ACK_OUT, TCP_FLAG_NULL_IN, TCP_FLAG_NULL_OUT, TCP_FLAG_RST_IN, TCP_FLAG_RST_OUT, TCP_FLAG_SYN_IN, TCP_FLAG_SYN_OUT</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">ACL_DENY_EVENT_COUNT, ANTI_SPOOF_EVENT_COUNT, BYTES_IN, BYTES_OUT, DESTINATION_PORT_PROTOCOL_COUNT, FIP_PRE_RATE_LIMIT_BYTES, FIP_PRE_RATE_LIMIT_PACKETS, FIP_RATE_LIMIT_DROPPED_BYTES, FIP_RATE_LIMIT_DROPPED_PACKETS, HIGH_RISK_IP_ACCESS_EVENT_COUNT, IDP_EVENT_COUNT, L7_BYTES_IN, L7_BYTES_OUT, L7_PACKETS_IN, L7_PACKETS_OUT, MEDIUM_RISK_IP_ACCESS_EVENT_COUNT, PACKETS_DROPPED_BY_RATE_LIMIT, PACKETS_IN, PACKETS_IN_DROPPED, PACKETS_IN_ERROR, PACKETS_OUT, PACKETS_OUT_DROPPED, PACKETS_OUT_ERROR, PORT_SCAN_PORT_COUNT, PORT_SWEEP_IP_COUNT, TCP_FLAG_ACK_IN, TCP_FLAG_ACK_OUT, TCP_FLAG_NULL_IN, TCP_FLAG_NULL_OUT, TCP_FLAG_RST_IN, TCP_FLAG_RST_OUT, TCP_FLAG_SYN_IN, TCP_FLAG_SYN_OUT</span><br/>
                             
 
                             
@@ -2209,6 +2347,61 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">period</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_protocol" class="filterable" data-filter-keyword="protocol" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>protocol</b>
+                        <span class="type_enum fixed-text">enum</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>L4 service protocol - Possible values TCP, UDP for the metric DESTINATION_PORT_PROTOCOL_COUNT, NONE for rest of the metrics.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">NONE, TCP, UDP</span><br/>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">NONE</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">protocol</span>
                         </p>
                     </div>
                 </div>
