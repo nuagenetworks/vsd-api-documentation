@@ -129,6 +129,8 @@
                             
                             <li><a data-id="attr_owner" href="#attr_owner" class="fixed-text">owner</a></li>
                             
+                            <li><a data-id="attr_pathMTUDiscovery" href="#attr_pathMTUDiscovery" class="fixed-text">pathMTUDiscovery</a></li>
+                            
                             <li><a data-id="attr_pending" href="#attr_pending" class="fixed-text">pending</a></li>
                             
                             <li><a data-id="attr_permittedAction" href="#attr_permittedAction" class="fixed-text">permittedAction</a></li>
@@ -1728,6 +1730,32 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_pathMTUDiscovery" title="Boolean flag to indicate whether Path MTU Discovery is enabled or not.">pathMTUDiscovery</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_pending" title="Indicates that this gateway is pending state or state. When in pending state it cannot be modified from REST.">pending</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -2120,7 +2148,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_TCPMaximumSegmentSize" title="Maximum Segment Size for TCP(min = 576, max = 7812).">TCPMaximumSegmentSize</a>
+                            <a href="#attr_TCPMaximumSegmentSize" title="Maximum TCP segment size (min = 576, max = 7812); value 0 indicates the use of dynamically computed MSS.">TCPMaximumSegmentSize</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_integer">integer
@@ -6044,6 +6072,55 @@
                 </div>
             </section>
             
+            <section id="attr_pathMTUDiscovery" class="filterable" data-filter-keyword="pathMTUDiscovery" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>pathMTUDiscovery</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Boolean flag to indicate whether Path MTU Discovery is enabled or not.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">true</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">pathMTUDiscovery</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_pending" class="filterable" data-filter-keyword="pending" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -6685,7 +6762,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>Maximum Segment Size for TCP(min = 576, max = 7812).</p>
+                        <p>Maximum TCP segment size (min = 576, max = 7812); value 0 indicates the use of dynamically computed MSS.</p>
 
                         <hr/>
 
@@ -6705,8 +6782,6 @@
 
                             
 
-                            
-                            <span class="small"><b>Min value: </b></span><span class="fixed-text">576</span><br/>
                             
 
                             
