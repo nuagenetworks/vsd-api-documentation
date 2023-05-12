@@ -33,6 +33,8 @@
                             
                             <li><a data-id="attr_address" href="#attr_address" class="fixed-text">address</a></li>
                             
+                            <li><a data-id="attr_associatedFIPDomainID" href="#attr_associatedFIPDomainID" class="fixed-text">associatedFIPDomainID</a></li>
+                            
                             <li><a data-id="attr_associatedGatewayIDs" href="#attr_associatedGatewayIDs" class="fixed-text">associatedGatewayIDs</a></li>
                             
                             <li><a data-id="attr_associatedSubnetID" href="#attr_associatedSubnetID" class="fixed-text">associatedSubnetID</a></li>
@@ -130,6 +132,32 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedFIPDomainID" title="ID of the associated Secondary FIP Domain. Valid for static route of type FIP.">associatedFIPDomainID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
     
     
     
@@ -650,7 +678,9 @@
     
     
     
-     (EXIT_DOMAIN | NETCONF | OVERLAY | OVERLAY_ADDRESS_TRANSLATION)
+    
+    
+     (EXIT_DOMAIN | FIP | NETCONF | OVERLAY | OVERLAY_ADDRESS_TRANSLATION)
     </span>
                         </td>
                         <td style="padding-left: 30px;" class="fixed-text hide-xs">
@@ -752,6 +782,35 @@
 
             
             
+            <span class="fixed-text">/<a href="aggregateddomain.html">aggregateddomains</a>/<span class="text-muted">id</span>/staticroutes</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="sharednetworkresource.html">sharednetworkresources</a>/<span class="text-muted">id</span>/staticroutes</span>
             
 
@@ -781,7 +840,29 @@
 
             
             
-            <span class="fixed-text">/<a href="vminterface.html">vminterfaces</a>/<span class="text-muted">id</span>/staticroutes</span>
+            <span class="fixed-text">/<a href="hostinterface.html">hostinterfaces</a>/<span class="text-muted">id</span>/staticroutes</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/staticroutes</a>
             
 
             
@@ -832,80 +913,29 @@
 
             
             
+            <span class="fixed-text">/<a href="vminterface.html">vminterfaces</a>/<span class="text-muted">id</span>/staticroutes</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="l2domain.html">l2domains</a>/<span class="text-muted">id</span>/staticroutes</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/staticroutes</a>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="hostinterface.html">hostinterfaces</a>/<span class="text-muted">id</span>/staticroutes</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="aggregateddomain.html">aggregateddomains</a>/<span class="text-muted">id</span>/staticroutes</span>
             
 
             
@@ -1174,6 +1204,55 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">address</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedFIPDomainID" class="filterable" data-filter-keyword="associatedFIPDomainID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedFIPDomainID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of the associated Secondary FIP Domain. Valid for static route of type FIP.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedFIPDomainID</span>
                         </p>
                     </div>
                 </div>
@@ -2043,7 +2122,7 @@
                         <h5><b>Charateristics</b></h5>
                         <p>
                             
-                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">EXIT_DOMAIN, NETCONF, OVERLAY, OVERLAY_ADDRESS_TRANSLATION</span><br/>
+                            <span class="small"><b>Allowed values: </b></span><span class="fixed-text">EXIT_DOMAIN, FIP, NETCONF, OVERLAY, OVERLAY_ADDRESS_TRANSLATION</span><br/>
                             
 
                             

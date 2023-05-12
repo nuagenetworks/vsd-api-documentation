@@ -53,6 +53,8 @@
                             
                             <li><a data-id="attr_associatedMulticastChannelMapID" href="#attr_associatedMulticastChannelMapID" class="fixed-text">associatedMulticastChannelMapID</a></li>
                             
+                            <li><a data-id="attr_associatedSecondaryFIPID" href="#attr_associatedSecondaryFIPID" class="fixed-text">associatedSecondaryFIPID</a></li>
+                            
                             <li><a data-id="attr_associatedSendMulticastChannelMapID" href="#attr_associatedSendMulticastChannelMapID" class="fixed-text">associatedSendMulticastChannelMapID</a></li>
                             
                             <li><a data-id="attr_associatedSSID" href="#attr_associatedSSID" class="fixed-text">associatedSSID</a></li>
@@ -533,6 +535,32 @@
                     <tr>
                         <td class="fixed-text">
                             <a href="#attr_associatedMulticastChannelMapID" title="The ID of the receive Multicast Channel Map this Vport is associated with. This has to be set when enableMultiCast is set to ENABLED">associatedMulticastChannelMapID</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_string">string
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_associatedSecondaryFIPID" title="ID of Secondary Floating IP address associated to this vport.">associatedSecondaryFIPID</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -2071,6 +2099,28 @@
 
             
             
+            <span class="fixed-text">/<a href="aggregateddomain.html">aggregateddomains</a>/<span class="text-muted">id</span>/vports</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
             <span class="fixed-text">/<a href="zone.html">zones</a>/<span class="text-muted">id</span>/vports</span>
             
 
@@ -2093,36 +2143,7 @@
 
             
             
-            <span class="fixed-text">/<a href="subnet.html">subnets</a>/<span class="text-muted">id</span>/vports</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-primary">post</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="policygroup.html">policygroups</a>/<span class="text-muted">id</span>/vports</span>
+            <span class="fixed-text">/<a href="redirectiontarget.html">redirectiontargets</a>/<span class="text-muted">id</span>/vports</span>
             
 
             
@@ -2141,6 +2162,50 @@
     
     
     <span class="label label-success">put</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/vports</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="multinicvport.html">multinicvports</a>/<span class="text-muted">id</span>/vports</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
     
             
         </div>
@@ -2163,35 +2228,6 @@
     
     
     <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="overlaymirrordestination.html">overlaymirrordestinations</a>/<span class="text-muted">id</span>/vports</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-            
-    
-    
-    
-    <span class="label label-success">put</span>
     
             
         </div>
@@ -2246,7 +2282,7 @@
 
             
             
-            <span class="fixed-text">/<a href="domain.html">domains</a>/<span class="text-muted">id</span>/vports</span>
+            <span class="fixed-text">/<a href="overlaymirrordestination.html">overlaymirrordestinations</a>/<span class="text-muted">id</span>/vports</span>
             
 
             
@@ -2258,6 +2294,13 @@
     
     
     <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-success">put</span>
     
             
         </div>
@@ -2268,7 +2311,7 @@
 
             
             
-            <span class="fixed-text">/<a href="multinicvport.html">multinicvports</a>/<span class="text-muted">id</span>/vports</span>
+            <span class="fixed-text">/<a href="subnet.html">subnets</a>/<span class="text-muted">id</span>/vports</span>
             
 
             
@@ -2280,6 +2323,13 @@
     
     
     <span class="label label-default">get</span>
+    
+            
+            
+    
+    
+    
+    <span class="label label-primary">post</span>
     
             
         </div>
@@ -2341,7 +2391,29 @@
 
             
             
-            <span class="fixed-text">/<a href="redirectiontarget.html">redirectiontargets</a>/<span class="text-muted">id</span>/vports</span>
+            <span class="fixed-text">/<a href="floatingip.html">floatingips</a>/<span class="text-muted">id</span>/vports</span>
+            
+
+            
+        </div>
+        <div class="col-xs-5 text-right">
+            
+            
+    
+    
+    
+    <span class="label label-default">get</span>
+    
+            
+        </div>
+    </div>
+    
+    <div class="row bordered-row">
+        <div class="col-xs-7">
+
+            
+            
+            <span class="fixed-text">/<a href="policygroup.html">policygroups</a>/<span class="text-muted">id</span>/vports</span>
             
 
             
@@ -2360,50 +2432,6 @@
     
     
     <span class="label label-success">put</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="aggregateddomain.html">aggregateddomains</a>/<span class="text-muted">id</span>/vports</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
-    
-            
-        </div>
-    </div>
-    
-    <div class="row bordered-row">
-        <div class="col-xs-7">
-
-            
-            
-            <span class="fixed-text">/<a href="floatingip.html">floatingips</a>/<span class="text-muted">id</span>/vports</span>
-            
-
-            
-        </div>
-        <div class="col-xs-5 text-right">
-            
-            
-    
-    
-    
-    <span class="label label-default">get</span>
     
             
         </div>
@@ -3961,6 +3989,55 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedMulticastChannelMapID</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_associatedSecondaryFIPID" class="filterable" data-filter-keyword="associatedSecondaryFIPID" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>associatedSecondaryFIPID</b>
+                        <span class="type_string fixed-text">string</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>ID of Secondary Floating IP address associated to this vport.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Format: </b></span><span class="fixed-text">free</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">associatedSecondaryFIPID</span>
                         </p>
                     </div>
                 </div>

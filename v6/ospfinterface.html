@@ -187,7 +187,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_authenticationKey" title="The authentication key that is used on the interface.">authenticationKey</a>
+                            <a href="#attr_authenticationKey" title="The authentication key that is used on the interface. When Enhanced Security for Routing Protocols is enabled, the authentication key is hidden.">authenticationKey</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_string">string
@@ -598,7 +598,7 @@
                     
                     <tr>
                         <td class="fixed-text">
-                            <a href="#attr_messageDigestKeys" title="This attribute applies only when 'authenticationType' is 'MESSAGE_DIGEST'. In that case, this attribute is a list of pairs of key ID/password used for MD5 authentication. The key ID must by an integer between 1 and 255, and the value is a password (of 16 charachters maximum) used to generate an MD5 hash. The MD5 has is then used as authentication data in the OSPF packets. No duplicate key IDs are allowed. The format for each pair is 'keyID:password' (e.g. '1:foobar')">messageDigestKeys</a>
+                            <a href="#attr_messageDigestKeys" title="This attribute applies only when 'authenticationType' is 'MESSAGE_DIGEST'. In that case, this attribute is a list of pairs of key ID/password used for MD5 authentication. The key ID must by an integer between 1 and 255, and the value is a password (of 16 charachters maximum) used to generate an MD5 hash. The MD5 has is then used as authentication data in the OSPF packets. No duplicate key IDs are allowed. The format for each pair is 'keyID:password' (e.g. '1:foobar'). When Enhanced Security for Routing Protocols is enabled, only keyID part of the keyID:password pair is visible, the password part is hidden.">messageDigestKeys</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_list">list
@@ -1162,7 +1162,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>The authentication key that is used on the interface.</p>
+                        <p>The authentication key that is used on the interface. When Enhanced Security for Routing Protocols is enabled, the authentication key is hidden.</p>
 
                         <hr/>
 
@@ -1849,7 +1849,7 @@
 
                     <div class="panel-body">
                         <h5><b>Discussion</b></h5>
-                        <p>This attribute applies only when 'authenticationType' is 'MESSAGE_DIGEST'. In that case, this attribute is a list of pairs of key ID/password used for MD5 authentication. The key ID must by an integer between 1 and 255, and the value is a password (of 16 charachters maximum) used to generate an MD5 hash. The MD5 has is then used as authentication data in the OSPF packets. No duplicate key IDs are allowed. The format for each pair is 'keyID:password' (e.g. '1:foobar')</p>
+                        <p>This attribute applies only when 'authenticationType' is 'MESSAGE_DIGEST'. In that case, this attribute is a list of pairs of key ID/password used for MD5 authentication. The key ID must by an integer between 1 and 255, and the value is a password (of 16 charachters maximum) used to generate an MD5 hash. The MD5 has is then used as authentication data in the OSPF packets. No duplicate key IDs are allowed. The format for each pair is 'keyID:password' (e.g. '1:foobar'). When Enhanced Security for Routing Protocols is enabled, only keyID part of the keyID:password pair is visible, the password part is hidden.</p>
 
                         <hr/>
 

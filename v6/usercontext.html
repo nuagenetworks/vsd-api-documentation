@@ -43,6 +43,8 @@
                             
                             <li><a data-id="attr_embeddedMetadata" href="#attr_embeddedMetadata" class="fixed-text">embeddedMetadata</a></li>
                             
+                            <li><a data-id="attr_enhancedSecurityEnabled" href="#attr_enhancedSecurityEnabled" class="fixed-text">enhancedSecurityEnabled</a></li>
+                            
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
                             <li><a data-id="attr_explicitACLMatchingEnabled" href="#attr_explicitACLMatchingEnabled" class="fixed-text">explicitACLMatchingEnabled</a></li>
@@ -50,6 +52,8 @@
                             <li><a data-id="attr_externalID" href="#attr_externalID" class="fixed-text">externalID</a></li>
                             
                             <li><a data-id="attr_flowCollectionEnabled" href="#attr_flowCollectionEnabled" class="fixed-text">flowCollectionEnabled</a></li>
+                            
+                            <li><a data-id="attr_globalNetworkMacroGroupsEnabled" href="#attr_globalNetworkMacroGroupsEnabled" class="fixed-text">globalNetworkMacroGroupsEnabled</a></li>
                             
                             <li><a data-id="attr_googleMapsAPIKey" href="#attr_googleMapsAPIKey" class="fixed-text">googleMapsAPIKey</a></li>
                             
@@ -304,6 +308,32 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_enhancedSecurityEnabled" title="Indicates if Enhanced Security is enabled for Routing Protocols.">enhancedSecurityEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_entityScope" title="Specify if scope of entity is Data center or Enterprise level">entityScope</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -406,6 +436,36 @@
                     <tr>
                         <td class="fixed-text">
                             <a href="#attr_flowCollectionEnabled" title="Enables flow statistics collection. It is needed for the VSS feature, and requires a valid VSS license. This option requires 'statisticsEnabled'.">flowCollectionEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_globalNetworkMacroGroupsEnabled" title="Enables the global network macro groups feature.">globalNetworkMacroGroupsEnabled</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
                             <span class="type_boolean">boolean
@@ -1413,6 +1473,55 @@
                 </div>
             </section>
             
+            <section id="attr_enhancedSecurityEnabled" class="filterable" data-filter-keyword="enhancedSecurityEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>enhancedSecurityEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates if Enhanced Security is enabled for Routing Protocols.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">enhancedSecurityEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_entityScope" class="filterable" data-filter-keyword="entityScope" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -1620,6 +1729,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">flowCollectionEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_globalNetworkMacroGroupsEnabled" class="filterable" data-filter-keyword="globalNetworkMacroGroupsEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>globalNetworkMacroGroupsEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> filterable </span>&nbsp;
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Enables the global network macro groups feature.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">globalNetworkMacroGroupsEnabled</span>
                         </p>
                     </div>
                 </div>

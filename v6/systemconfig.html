@@ -101,6 +101,8 @@
                             
                             <li><a data-id="attr_embeddedMetadataSize" href="#attr_embeddedMetadataSize" class="fixed-text">embeddedMetadataSize</a></li>
                             
+                            <li><a data-id="attr_enhancedSecurityEnabled" href="#attr_enhancedSecurityEnabled" class="fixed-text">enhancedSecurityEnabled</a></li>
+                            
                             <li><a data-id="attr_entityScope" href="#attr_entityScope" class="fixed-text">entityScope</a></li>
                             
                             <li><a data-id="attr_esiID" href="#attr_esiID" class="fixed-text">esiID</a></li>
@@ -140,6 +142,8 @@
                             <li><a data-id="attr_gatewayRebalancingInterval" href="#attr_gatewayRebalancingInterval" class="fixed-text">gatewayRebalancingInterval</a></li>
                             
                             <li><a data-id="attr_globalMACAddress" href="#attr_globalMACAddress" class="fixed-text">globalMACAddress</a></li>
+                            
+                            <li><a data-id="attr_globalNetworkMacroGroupsEnabled" href="#attr_globalNetworkMacroGroupsEnabled" class="fixed-text">globalNetworkMacroGroupsEnabled</a></li>
                             
                             <li><a data-id="attr_googleMapsAPIKey" href="#attr_googleMapsAPIKey" class="fixed-text">googleMapsAPIKey</a></li>
                             
@@ -204,6 +208,8 @@
                             <li><a data-id="attr_lastUpdatedBy" href="#attr_lastUpdatedBy" class="fixed-text">lastUpdatedBy</a></li>
                             
                             <li><a data-id="attr_lastUpdatedDate" href="#attr_lastUpdatedDate" class="fixed-text">lastUpdatedDate</a></li>
+                            
+                            <li><a data-id="attr_LDAPMaxConfig" href="#attr_LDAPMaxConfig" class="fixed-text">LDAPMaxConfig</a></li>
                             
                             <li><a data-id="attr_LDAPSyncInterval" href="#attr_LDAPSyncInterval" class="fixed-text">LDAPSyncInterval</a></li>
                             
@@ -1410,6 +1416,32 @@
                     
                     <tr>
                         <td class="fixed-text">
+                            <a href="#attr_enhancedSecurityEnabled" title="Indicates if Enhanced Security is enabled for Routing Protocols.">enhancedSecurityEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
                             <a href="#attr_entityScope" title="Specify if scope of entity is Data center or Enterprise level">entityScope</a>
                         </td>
                         <td style="padding-left: 10px;" class="fixed-text hide-xs">
@@ -1957,6 +1989,34 @@
     
     
     
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_globalNetworkMacroGroupsEnabled" title="Indicates if global network macro groups is enabled.  When enabled, all network macro groups created in Platform Configuration will be available to all enterprises.">globalNetworkMacroGroupsEnabled</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_boolean">boolean
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
     
     
     
@@ -2909,6 +2969,32 @@
     
     
      <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fixed-text">
+                            <a href="#attr_LDAPMaxConfig" title="Maximum number of LDAP configurations.">LDAPMaxConfig</a>
+                        </td>
+                        <td style="padding-left: 10px;" class="fixed-text hide-xs">
+                            <span class="type_integer">integer
+    
+    
+    
+    
+    </span>
+                        </td>
+                        <td style="padding-left: 30px;" class="fixed-text hide-xs">
+                            
+    
+    
+    
+    
+    
+    
     
     
     
@@ -7683,6 +7769,55 @@
                 </div>
             </section>
             
+            <section id="attr_enhancedSecurityEnabled" class="filterable" data-filter-keyword="enhancedSecurityEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>enhancedSecurityEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates if Enhanced Security is enabled for Routing Protocols.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">enhancedSecurityEnabled</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="attr_entityScope" class="filterable" data-filter-keyword="entityScope" style="padding-top: 60px; margin-top: -60px;">
                 <div class="panel panel-default">
                     <div class="panel-heading fixed-text">
@@ -8736,6 +8871,57 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">globalMACAddress</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_globalNetworkMacroGroupsEnabled" class="filterable" data-filter-keyword="globalNetworkMacroGroupsEnabled" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>globalNetworkMacroGroupsEnabled</b>
+                        <span class="type_boolean fixed-text">boolean</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+     <span class="label label-info"> orderable </span>&nbsp;
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Indicates if global network macro groups is enabled.  When enabled, all network macro groups created in Platform Configuration will be available to all enterprises.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">false</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">globalNetworkMacroGroupsEnabled</span>
                         </p>
                     </div>
                 </div>
@@ -10364,6 +10550,59 @@
                             
 
                             <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">lastUpdatedDate</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="attr_LDAPMaxConfig" class="filterable" data-filter-keyword="LDAPMaxConfig" style="padding-top: 60px; margin-top: -60px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading fixed-text">
+                        <b>LDAPMaxConfig</b>
+                        <span class="type_integer fixed-text">integer</span>
+                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+
+                    <div class="panel-body">
+                        <h5><b>Discussion</b></h5>
+                        <p>Maximum number of LDAP configurations.</p>
+
+                        <hr/>
+
+                        <h5><b>Charateristics</b></h5>
+                        <p>
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Default value: </b></span><span class="fixed-text">1</span><br/>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <span class="small"><b>Min value: </b></span><span class="fixed-text">1</span><br/>
+                            
+
+                            
+                            <span class="small"><b>Max value: </b></span><span class="fixed-text">5</span><br/>
+                            
+
+                            <span class="small"><b>SDK attribute: </b></span><span class="fixed-text">LDAPMaxConfig</span>
                         </p>
                     </div>
                 </div>
